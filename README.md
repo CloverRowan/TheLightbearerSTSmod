@@ -1,3 +1,16 @@
+new readme 
+v0.01 
+new slay the spire character using base mod and sts lib as dependencies
+
+
+
+
+
+
+
+
+
+old readme from 
 # Basic Mod
 
 This is an empty Slay the Spire mod + a modding tutorial.
