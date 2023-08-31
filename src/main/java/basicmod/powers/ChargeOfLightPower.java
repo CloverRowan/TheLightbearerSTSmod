@@ -18,7 +18,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
-    final int MAX_STACKS = 10;
+    //final int MAX_STACKS = 5;
 
     public ChargeOfLightPower(AbstractCreature owner, int amount){
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
@@ -33,10 +33,12 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
 
     @Override
     public void stackPower(int stackAmount) {
+        /*
         int newAmount = this.amount + stackAmount;
         if(newAmount >= MAX_STACKS){
             newAmount = MAX_STACKS;
         }
-        this.amount = newAmount;
+        */
+        this.amount += stackAmount;
     }
 }
