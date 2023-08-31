@@ -1,5 +1,6 @@
 package basicmod.powers;
 
+import basicmod.TheLightbearer;
 import basicmod.util.GeneralUtils;
 import basicmod.util.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
@@ -60,4 +61,5 @@ public abstract class BasePower extends AbstractPower {
         if (initDescription)
             this.updateDescription();
     }
+
 }

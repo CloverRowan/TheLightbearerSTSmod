@@ -5,12 +5,12 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import basicmod.cards.BaseCard;
 import basicmod.character.MyCharacter;
+import basicmod.relics.BaseRelic;
+import basicmod.relics.LittleLight;
 import basicmod.util.GeneralUtils;
 import basicmod.util.KeywordInfo;
 import basicmod.util.TextureLoader;
 import com.badlogic.gdx.Gdx;
-
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.modthespire.Loader;
@@ -20,9 +20,11 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
+import com.badlogic.gdx.graphics.Color;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -32,6 +34,7 @@ import java.util.Set;
 
 @SpireInitializer
 public class TheLightbearer implements
+        EditRelicsSubscriber,
         EditCardsSubscriber,
         EditCharactersSubscriber,
         EditStringsSubscriber,
@@ -52,9 +55,10 @@ public class TheLightbearer implements
     private static final String ENERGY_ORB = characterPath("cardback/energy_orb.png");
     private static final String ENERGY_ORB_P = characterPath("cardback/energy_orb_p.png");
     private static final String SMALL_ORB = characterPath("cardback/small_orb.png");
-    private static final Color cardColor = new Color(128f/255f, 128f/255f, 128f/255f, 1f);
     private static final String CHAR_SELECT_BUTTON = characterPath("select/button.png");
     private static final String CHAR_SELECT_PORTRAIT = characterPath("select/portrait.png");
+
+    private static final Color cardColor = new Color(254f/255f, 254f/255f, 215f/255f, 1f);
 
     //This is used to prefix the IDs of various objects like cards and relics,
     //to avoid conflicts between different mods using the same name for things.
@@ -64,14 +68,13 @@ public class TheLightbearer implements
 
     //This will be called by ModTheSpire because of the @SpireInitializer annotation at the top of the class.
     public static void initialize() {
+
         new TheLightbearer();
 
         BaseMod.addColor(MyCharacter.Enums.CARD_COLOR, cardColor,
-            BG_ATTACK,BG_SKILL, BG_POWER, ENERGY_ORB,
+                BG_ATTACK, BG_SKILL, BG_POWER, ENERGY_ORB,
                 BG_ATTACK_P, BG_SKILL_P, BG_POWER_P, ENERGY_ORB_P,
                 SMALL_ORB);
-
-
     }
 
     public TheLightbearer() {
@@ -87,19 +90,7 @@ public class TheLightbearer implements
         //The information used is taken from your pom.xml file.
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
-    @Override
-    public void receiveEditCharacters() {
-    BaseMod.addCharacter(new MyCharacter(),
-            CHAR_SELECT_BUTTON, CHAR_SELECT_PORTRAIT, MyCharacter.Enums.THE_LIGHTBEARER);
 
-    }
-    @Override
-    public void receiveEditCards() { //somewhere in the class
-        new AutoAdd(modID) //Loads files from this mod
-                .packageFilter(BaseCard.class) //In the same package as this class
-                .setDefaultSeen(true) //And marks them as seen in the compendium
-                .cards(); //Adds the cards
-    }
     /*----------Localization----------*/
 
     //This is used to load the appropriate localization files based on language.
@@ -217,5 +208,35 @@ public class TheLightbearer implements
         }
     }
 
+    @Override
+    public void receiveEditCharacters() {
+        BaseMod.addCharacter(new MyCharacter(),
+                CHAR_SELECT_BUTTON, CHAR_SELECT_PORTRAIT, MyCharacter.Enums.THE_LIGHTBEARER);
+    }
+
+    @Override
+    public void receiveEditCards() {
+        new AutoAdd(modID) //Loads files from this mod
+                .packageFilter(BaseCard.class) //In the same package as this class
+                .setDefaultSeen(true) //And marks them as seen in the compendium
+                .cards(); //Adds the cards
+    }
+
+    @Override
+    public void receiveEditRelics() {
+        new AutoAdd(modID) //Loads files from this mod
+                .packageFilter(BaseRelic.class) //In the same package as this class
+                .any(BaseRelic.class, (info, relic) -> { //Run this code for any classes that extend this class
+                    if (relic.pool != null)
+                        BaseMod.addRelicToCustomPool(relic, relic.pool); //Register a custom character specific relic
+                    else
+                        BaseMod.addRelic(relic, relic.relicType); //Register a shared or base game character specific relic
+
+                    //If the class is annotated with @AutoAdd.Seen, it will be marked as seen, making it visible in the relic library.
+                    //If you want all your relics to be visible by default, just remove this if statement.
+                    if (info.seen)
+                        UnlockTracker.markRelicAsSeen(relic.relicId);
+                });
+    }
 
 }

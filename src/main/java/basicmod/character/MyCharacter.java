@@ -5,8 +5,6 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import basicmod.TheLightbearer;
 import basicmod.cards.Defend;
-import basicmod.cards.GuardiansFate;
-import basicmod.cards.QuickDraw;
 import basicmod.cards.Strike;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -95,8 +93,6 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(GuardiansFate.ID);
-        retVal.add(QuickDraw.ID);
 
         return retVal;
     }

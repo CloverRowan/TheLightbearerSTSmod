@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class GuardiansFate extends BaseCard {
 
-    public static final String ID = makeID("GuardiansFate");
+    public static final String ID = makeID("GuardiansFaith");
     private static final CardStats info = new CardStats(
             MyCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
