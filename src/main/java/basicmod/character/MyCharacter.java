@@ -5,6 +5,8 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import basicmod.TheLightbearer;
 import basicmod.cards.Defend;
+import basicmod.cards.GuardiansFate;
+import basicmod.cards.QuickDraw;
 import basicmod.cards.Strike;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -54,7 +56,7 @@ public class MyCharacter extends CustomPlayer {
         //These are used to identify your character, as well as your character's card color.
         //Library color is basically the same as card color, but you need both because that's how the game was made.
         @SpireEnum
-        public static AbstractPlayer.PlayerClass THE_LIGHTBEARER;
+        public static PlayerClass THE_LIGHTBEARER;
         @SpireEnum(name = "LIGHTBEARER_GRAY_COLOR") // These two MUST match. Change it to something unique for your character.
         public static AbstractCard.CardColor CARD_COLOR;
         @SpireEnum(name = "LIGHTBEARER_GRAY_COLOR") @SuppressWarnings("unused")
@@ -93,6 +95,8 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
+        retVal.add(GuardiansFate.ID);
+        retVal.add(QuickDraw.ID);
 
         return retVal;
     }

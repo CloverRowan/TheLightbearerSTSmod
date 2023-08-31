@@ -15,7 +15,7 @@ import static basicmod.TheLightbearer.makeID;
 
 public class ChargeOfLightPower extends BasePower implements CloneablePowerInterface {
     public static final String POWER_ID = makeID("ChargeOfLight");
-    private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
+    private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
     final int MAX_STACKS = 10;
