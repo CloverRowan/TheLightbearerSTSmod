@@ -10,68 +10,43 @@
     ]
   },
   "${modID}:MyCard": {
-    "NAME": "fick",
-    "DESCRIPTION": "Smack your enemies with light dealing !D! Damage",
-    "UPGRADE_DESCRIPTION": "Smack your enemies with light dealing !D! Damage",
+    "NAME": "MyCard",
+    "DESCRIPTION": "Deal !D! damage NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
     "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
+      "",
+      "",
+      ""
     ]
   },
   "${modID}:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Smack your enemies with light dealing !D! Damage",
-    "UPGRADE_DESCRIPTION": "Smack your enemies with light dealing !D! Damage",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
+      "",
+      "",
+      ""
     ]
   },
   "${modID}:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Call upon the power of light to gain !B! block. ",
-    "UPGRADE_DESCRIPTION": "Call upon the power of light to gain !B! block.",
+    "DESCRIPTION": "Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block.",
     "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
+      "",
+      "",
+      ""
     ]
   },
-  "${modID}:GuardiansFate": {
-    "NAME": "Guardian's Fate",
+  "${modID}:GuardiansFaith": {
+    "NAME": "Guardian's Faith",
     "DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards",
     "UPGRADE_DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards.",
     "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
+      "",
+      "",
+      ""
     ]
-  },
-  "${modID}:QuickDraw": {
-    "NAME": "Quick Draw",
-    "DESCRIPTION": "Draw !M! Cards",
-    "UPGRADE_DESCRIPTION": "Draw !M! Cards.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
-  },
-  "${modID}:HeavyKnife": {
-    "NAME": "Heavy Knife",
-    "DESCRIPTION": "Deal !D! Damage",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
-  },
-  "${modID}:BlessingOfRadiance": {
-  "NAME": "Blessing of Radiance",
-  "DESCRIPTION": "Summon the power of the Traveller and gain !B! block and !M! Charges of light.",
-  "UPGRADE_DESCRIPTION": "Summon the power of the Traveller and gain !B! block and !M! Charges of light."
-}
+  }
 }
