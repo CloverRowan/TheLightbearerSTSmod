@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class GuardiansFate extends BaseCard {
 
-    public static final String ID = makeID("GuardiansFaith");
+    public static final String ID = makeID("GuardiansFate");
     private static final CardStats info = new CardStats(
             MyCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -22,8 +22,7 @@ public class GuardiansFate extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             0
     );
-    private static final int DAMAGE = 0;
-    private static final int UPG_DAMAGE = 0;
+
 
     private static final int BLOCK = 3;
     private static final int UPG_BLOCK = 3;
@@ -34,7 +33,6 @@ public class GuardiansFate extends BaseCard {
 
     public GuardiansFate() {
         super(ID, info);
-        setDamage(DAMAGE, UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(magicNumber,magicUpgrade);
     }
@@ -42,7 +40,6 @@ public class GuardiansFate extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         addToBot(new ScryAction(this.magicNumber));
     }
 

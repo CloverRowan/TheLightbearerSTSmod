@@ -39,8 +39,8 @@
       ""
     ]
   },
-  "${modID}:GuardiansFaith": {
-    "NAME": "Guardian's Faith",
+  "${modID}:GuardiansFate": {
+    "NAME": "Guardian's Fate",
     "DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards",
     "UPGRADE_DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards.",
     "EXTENDED_DESCRIPTION": [
@@ -48,5 +48,35 @@
       "",
       ""
     ]
+  },
+  "${modID}:QuickDraw": {
+    "NAME": "Quick Draw",
+    "DESCRIPTION": "Draw !M! Cards",
+    "UPGRADE_DESCRIPTION": "Draw !M! Cards.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:HeavyKnife": {
+    "NAME": "Heavy Knife",
+    "DESCRIPTION": "Deal !D! Damage",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:BlessingOfRadiance": {
+  "NAME": "Blessing of Radiance",
+  "DESCRIPTION": "Summon the power of the Traveller and gain !B! block and !M! Charges of light.",
+  "UPGRADE_DESCRIPTION": "Summon the power of the Traveller and gain !B! block and !M! Charges of light."
+},
+  "${modID}:TravellersIncandescence": {
+    "NAME": "Travellers Incandescence",
+    "DESCRIPTION": "Ethereal NL Summon the power of the Traveller and gain !M! Strength and !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Summon the power of the Traveller and gain !M! Strength and !M! Dexterity."
   }
 }
