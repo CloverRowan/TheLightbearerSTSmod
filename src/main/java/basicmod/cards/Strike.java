@@ -26,7 +26,7 @@ import static basicmod.util.TextureLoader.getCardTextureString;
 public class Strike extends BaseCard {
     public static final String ID = makeID("Strike");
 
-
+//This is a change
     private static final CardStats info = new CardStats(
             MyCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
