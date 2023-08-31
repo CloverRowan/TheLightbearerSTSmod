@@ -34,6 +34,7 @@ public class TravellersIncandescence extends BaseCard {
         setMagic(magicNumber);
         setEthereal(baseEthereal,upgEthereal);
         setCostUpgrade(costUpgrade);
+
     }
 
     @Override
