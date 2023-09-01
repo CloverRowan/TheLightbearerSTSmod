@@ -1,13 +1,9 @@
 package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
-import basicmod.util.GeneralUtils;
-import basicmod.util.TextureLoader;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import basemod.interfaces.OnPlayerTurnStartSubscriber;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static basicmod.TheLightbearer.makeID;
@@ -33,12 +29,17 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
 
     @Override
     public void stackPower(int stackAmount) {
-        /*
-        int newAmount = this.amount + stackAmount;
-        if(newAmount >= MAX_STACKS){
-            newAmount = MAX_STACKS;
-        }
-        */
         this.amount += stackAmount;
+
+        while(this.amount >= 5) {
+            //Apply supercharged power
+            this.amount -= -5;
+        }
+        this.amount = Math.max(this.amount, 0);
+
+    }
+
+    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        this.amount += 1;
     }
 }

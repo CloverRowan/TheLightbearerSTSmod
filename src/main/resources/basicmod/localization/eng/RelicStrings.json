@@ -8,10 +8,9 @@
   },
   "${modID}:LittleLight": {
     "NAME": "Little Light",
-    "FLAVOR": "Your faithful spark of light",
+    "FLAVOR": "Your faithful spark of light.",
     "DESCRIPTIONS": [
-      "At the start of your turn gain a #y",
-      "Charge of Light "
+      "At the start of your turn gain a #yCharge #yof #yLight."
     ]
   }
 }

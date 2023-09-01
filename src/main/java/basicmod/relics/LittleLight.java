@@ -5,6 +5,7 @@ import basicmod.character.MyCharacter;
 import basicmod.powers.ChargeOfLightPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
@@ -17,6 +18,12 @@ public class LittleLight extends BaseRelic{
     private static final LandingSound SOUND = LandingSound.CLINK; //The sound played when the relic is clicked.
     public LittleLight(){
         super(ID, NAME, MyCharacter.Enums.CARD_COLOR, RARITY, SOUND);
+    }
+
+    @Override
+    public String getUpdatedDescription() {
+
+        return DESCRIPTIONS[0];
     }
 
     public void atTurnStart(){
