@@ -1,4 +1,5 @@
 package basicmod.cards;
+import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
@@ -21,7 +22,7 @@ import java.util.function.BiFunction;
 
 import static basicmod.util.GeneralUtils.removePrefix;
 import static basicmod.util.TextureLoader.getCardTextureString;
-
+@AutoAdd.Ignore
 public class MyCard  extends BaseCard{
     public static final String ID = makeID("MyCard");
 
