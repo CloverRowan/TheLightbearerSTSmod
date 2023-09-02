@@ -70,10 +70,10 @@
     ]
   },
   "${modID}:BlessingOfRadiance": {
-  "NAME": "Blessing of Radiance",
-  "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light.",
-  "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light."
-},
+    "NAME": "Blessing of Radiance",
+    "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light.",
+    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light."
+  },
   "${modID}:TravellersIncandescence": {
     "NAME": "Travellers Incandescence",
     "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
@@ -83,5 +83,25 @@
     "NAME": "Golden Gun",
     "DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage.",
     "UPGRADE_DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage."
+  },
+  "${modID}:EchoOfDilation": {
+    "NAME": "Echo Of Dilation",
+    "DESCRIPTION": "Ethereal NL Apply !M! Slow and deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Ethereal NL Apply !M! Slow and deal !D! Damage ."
+  },
+  "${modID}:SparkOfFeedback": {
+    "NAME": "Spark Of Feedback",
+    "DESCRIPTION": "Whenever you take damage Draw !M! cards",
+    "UPGRADE_DESCRIPTION": "Whenever you take damage Draw !M! cards."
+  },
+  "${modID}:TouchOfVoid": {
+    "NAME": "Touch Of Void",
+    "DESCRIPTION": "Deal !D! damage and randomly Exhaust !M! cards",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and Exhaust !M! cards."
+  },
+  "${modID}:TripmineGrenade": {
+    "NAME": "Tripmine Grenade",
+    "DESCRIPTION": "Ethereal NL Deal !D! damage to all enemies ",
+    "UPGRADE_DESCRIPTION": "Ethereal NL Deal !D! damage to all enemies."
   }
 }

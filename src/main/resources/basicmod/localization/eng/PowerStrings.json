@@ -19,5 +19,12 @@
       "Supers",
       " to reduce their Cost to #b0."
     ]
-  }
+  },
+  "${modID}:SparkOfFeedbackPower": {
+    "NAME": "Spark Of Feedback",
+    "DESCRIPTIONS": [
+      "When you take damage draw",
+      "card"
+      ]
 }
+    }
