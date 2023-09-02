@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import static basicmod.TheLightbearer.makeID;
 
@@ -22,7 +23,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
     public void updateDescription(){
-        this.description = DESCRIPTIONS[0] + "#b" + MAX_STACKS + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + MAX_STACKS + DESCRIPTIONS[1];
     }
     @Override
     public AbstractPower makeCopy() {
@@ -33,7 +34,9 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
     public void stackPower(int stackAmount) {
         int newAmount = this.amount + stackAmount;
         flash();
-        if(newAmount >= MAX_STACKS) {
+        if(newAmount >= MAX_STACKS && AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&
+                AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+
             addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
                     new SuperCharged(AbstractDungeon.player, 1)));
             this.amount = newAmount -MAX_STACKS;

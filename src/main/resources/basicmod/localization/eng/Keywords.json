@@ -23,9 +23,8 @@
   {
     "PROPER_NAME": "Super",
     "NAMES": [
-      "Super",
       "super"
     ],
-    "DESCRIPTION": "Costs 0 if you are #ySuper #yCharged."
+    "DESCRIPTION": "Costs #b0 if you are #ySuper #yCharged."
   }
 ]
