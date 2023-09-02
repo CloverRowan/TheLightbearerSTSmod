@@ -26,6 +26,6 @@
       "Super",
       "super"
     ],
-    "DESCRIPTION": "Consume 5 #yCharges #yOf #yLight to reduce Cost to 0."
+    "DESCRIPTION": "Costs 0 if you are #ySuper #yCharged."
   }
 ]

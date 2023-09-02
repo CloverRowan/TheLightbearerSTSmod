@@ -8,9 +8,16 @@
   "${modID}:ChargeOfLight": {
     "NAME": "Charge of Light",
     "DESCRIPTIONS": [
+      "Upon reaching ",
+      " stacks, gain #Super #yCharged and remove 10 stacks of #yCharge #yOf #yLight."
+    ]
+  },
+  "${modID}:SuperCharged": {
+    "NAME": "Super charged",
+    "DESCRIPTIONS": [
       "Consumed by #y",
       "Supers",
-      " to enhance their effects."
+      " to reduce their Cost to 0."
     ]
   }
 }

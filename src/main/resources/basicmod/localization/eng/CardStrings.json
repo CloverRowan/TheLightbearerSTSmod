@@ -71,12 +71,17 @@
   },
   "${modID}:BlessingOfRadiance": {
   "NAME": "Blessing of Radiance",
-  "DESCRIPTION": "Summon the power of the Traveller and gain !B! block and !M! Charges of light.",
-  "UPGRADE_DESCRIPTION": "Summon the power of the Traveller and gain !B! block and !M! Charges of light."
+  "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light.",
+  "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light."
 },
   "${modID}:TravellersIncandescence": {
     "NAME": "Travellers Incandescence",
-    "DESCRIPTION": "Ethereal NL Summon the power of the Traveller and gain !M! Strength and !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Summon the power of the Traveller and gain !M! Strength and !M! Dexterity."
+    "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
+  },
+  "${modID}:GoldenGun": {
+    "NAME": "Golden Gun",
+    "DESCRIPTION": "#ySuper NL Summon a Flaming Golden Gun and deal !D! damage NL This card is free if you are SuperCharged.",
+    "UPGRADE_DESCRIPTION": "#ySuper NL Summon a Glaming Golden Gun and deal !D! damage NL This card is free if you are SuperCharged."
   }
 }

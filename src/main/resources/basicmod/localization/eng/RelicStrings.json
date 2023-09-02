@@ -10,7 +10,14 @@
     "NAME": "Little Light",
     "FLAVOR": "Your faithful spark of light.",
     "DESCRIPTIONS": [
-      "At the start of your turn gain a #yCharge #yof #yLight."
+      "The first time you drop below #b50% each combat heal #b10 HP."
+    ]
+  },
+  "${modID}:TheTraveler": {
+    "NAME": "The Traveler",
+    "FLAVOR": "Your sacred fountain of light.",
+    "DESCRIPTIONS": [
+      "At the start of your turn and whenever you play an attack gain a #yCharge #yof #yLight."
     ]
   }
 }

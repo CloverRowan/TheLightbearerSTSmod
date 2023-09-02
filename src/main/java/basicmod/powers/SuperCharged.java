@@ -1,23 +1,16 @@
 package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
-import basemod.interfaces.OnPlayerTurnStartSubscriber;
-import basicmod.util.GeneralUtils;
-import basicmod.util.TextureLoader;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import javax.management.ObjectName;
-
 import static basicmod.TheLightbearer.makeID;
+import static basicmod.util.CustomTags.SUPERSPELL;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 
 public class SuperCharged extends BasePower implements CloneablePowerInterface {
@@ -40,12 +33,54 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        /* 36 */     if (card.tags.contains(SUPERSPELL) && !card.purgeOnUse && this.amount > 0) {
-            /* 37 */       flash();
-            /* 38 */       this.amount--;
-            /* 39 */       if (this.amount == 0)
-                /* 40 */         addToTop((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, "FreeAttackPower"));
-            /*    */     }
-        /*    */   }
+        if (card.tags.contains(SUPERSPELL) && !card.purgeOnUse && this.amount > 0) {
+                flash();
+                this.amount--;
+                if (this.amount == 0){
+                    addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "SuperCharged"));
+                }
+        }
+    }
+
+    @Override
+    public void onInitialApplication() {
+        //Set cost of all supers in hand, draw, and discard pile to 0
+        reduceSuperCost(player.hand);
+        reduceSuperCost(player.drawPile);
+        reduceSuperCost(player.discardPile);
+    }
+
+    @Override
+    public void onRemove(){
+        //set cost of all supers back to default
+        returnSuperCost(player.hand);
+        returnSuperCost(player.drawPile);
+        returnSuperCost(player.discardPile);
+    }
+
+    public void reduceSuperCost(CardGroup cg){
+        for(int i = 0; i < cg.size(); i++){
+            AbstractCard c = cg.group.get(i);
+            if(c.tags.contains(SUPERSPELL)){
+                c.costForTurn = 0;
+                c.isCostModified = true;
+                c.isGlowing = true;
+            }
+        }
+    }
+
+    public void returnSuperCost(CardGroup cg){
+        for(int i = 0; i < cg.size(); i++){
+            AbstractCard c = cg.group.get(i);
+            if(c.tags.contains(SUPERSPELL)){
+                c.costForTurn = c.cost;
+                c.isCostModified = false;
+                c.isGlowing = false;
+            }
+        }
+    }
+
+
+
 
 }

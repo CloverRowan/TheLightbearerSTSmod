@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static basicmod.powers.ChargeOfLightPower.chargeAmount;
+import static basicmod.util.CustomTags.SUPERSPELL;
 
 
 public class GoldenGun extends BaseCard {
@@ -33,6 +33,7 @@ public class GoldenGun extends BaseCard {
     public GoldenGun() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        tags.add(SUPERSPELL);
     }
 
 

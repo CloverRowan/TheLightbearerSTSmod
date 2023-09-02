@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import static basicmod.TheLightbearer.makeID;
 
 public class LittleLight extends BaseRelic{
@@ -26,12 +28,29 @@ public class LittleLight extends BaseRelic{
         return DESCRIPTIONS[0];
     }
 
-    public void atTurnStart(){
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                new ChargeOfLightPower(AbstractDungeon.player, 1)));
+    boolean used = false;
 
-
+    @Override
+    public void onBloodied() {
+        if(!used) {
+            addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            int healAmt = 10;
+            AbstractDungeon.player.heal(healAmt, true);
+            flash();
+            this.grayscale = true;
+            used = true;
+        }
     }
 
+    @Override
+    public void onVictory() {
+        this.grayscale = false;
+        used = false;
+    }
 
+    public AbstractRelic makeCopy() {
+        return new LittleLight();
+    }
 }
+
+
