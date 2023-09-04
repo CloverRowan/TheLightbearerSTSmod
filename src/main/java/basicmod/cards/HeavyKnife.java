@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.SOLAR;
+
 public class HeavyKnife extends BaseCard {
 
     public static final String ID = makeID("HeavyKnife");
@@ -28,6 +30,7 @@ public class HeavyKnife extends BaseCard {
     public HeavyKnife() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        tags.add(SOLAR);
     }
 
     @Override

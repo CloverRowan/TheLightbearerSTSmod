@@ -79,8 +79,4 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
             }
         }
     }
-
-
-
-
-}
+    }

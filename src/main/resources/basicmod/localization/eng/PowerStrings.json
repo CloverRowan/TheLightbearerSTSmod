@@ -25,6 +25,13 @@
     "DESCRIPTIONS": [
       "When you take damage draw",
       "card"
-      ]
+    ]
+  },
+  "${modID}:EchoOfHarvestPower": {
+    "NAME": "Echo Of Harvest",
+    "DESCRIPTIONS": [
+      "When you Exhaust a card gain",
+      "Temporary HP"
+    ]
+  }
 }
-    }

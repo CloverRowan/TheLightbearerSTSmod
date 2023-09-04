@@ -11,6 +11,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.SOLAR;
+
 public class TripmineGrenade extends BaseCard {
 
     public static final String ID = makeID("TripmineGrenade");
@@ -29,6 +31,7 @@ public class TripmineGrenade extends BaseCard {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
         setEthereal(true);
+        tags.add(SOLAR);
     }
 
     @Override

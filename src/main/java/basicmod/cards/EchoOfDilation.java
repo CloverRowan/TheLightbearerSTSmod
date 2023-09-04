@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.SlowPower;
 
+import static basicmod.util.CustomTags.VOID;
+
 public class EchoOfDilation extends BaseCard {
 
     public static final String ID = makeID("EchoOfDilation");
@@ -32,6 +34,7 @@ public class EchoOfDilation extends BaseCard {
        setCostUpgrade(costUpgrade);
        setMagic(magicNumber);
        setExhaust(true);
+       tags.add(VOID);
     }
 
     @Override

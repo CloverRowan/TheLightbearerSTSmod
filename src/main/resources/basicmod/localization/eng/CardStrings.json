@@ -103,5 +103,31 @@
     "NAME": "Tripmine Grenade",
     "DESCRIPTION": "Ethereal NL Deal !D! damage to all enemies ",
     "UPGRADE_DESCRIPTION": "Ethereal NL Deal !D! damage to all enemies."
+  },
+  "${modID}:MarksmansDodge": {
+    "NAME": "Marksman's Dodge",
+    "DESCRIPTION": "Exhaust NL Draw !M! Cards.",
+    "UPGRADE_DESCRIPTION": "Exhaust NL Draw !M! Cards."
+  },
+  "${modID}:TrappersAmbush": {
+    "NAME": "Trapper's Ambush",
+    "DESCRIPTION": "Apply !M! Weak to an enemy.",
+    "UPGRADE_DESCRIPTION": "INNATE NL Apply !M! Weak to an enemy."
+  },
+  "${modID}:StylishExecution": {
+"NAME": "Stylish Execution",
+"DESCRIPTION": "Deal !D! damage, deal damage again for each unique debuff applied to the enemy.",
+"UPGRADE_DESCRIPTION": "Deal !D! damage, deal damage again for each unique debuff applied to the enemy."
+},
+  "${modID}:EchoOfHarvest": {
+    "NAME": "Echo Of Harvest",
+    "DESCRIPTION": "Whenever you exhaust a card gain !M! Temporary HP.",
+    "UPGRADE_DESCRIPTION": "Whenever you exhaust a card gain !M! Temporary HP."
+  },
+
+  "${modID}:VanishingStep": {
+    "NAME": "VanishingStep",
+    "DESCRIPTION": "Gain !B! Block and Exhaust up to 2 Cards.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and Exhaust up to 2 Cards."
   }
 }
