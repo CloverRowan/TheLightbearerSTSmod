@@ -6,7 +6,6 @@ import basemod.interfaces.*;
 import basicmod.cards.BaseCard;
 import basicmod.character.MyCharacter;
 import basicmod.relics.BaseRelic;
-import basicmod.relics.LittleLight;
 import basicmod.util.GeneralUtils;
 import basicmod.util.KeywordInfo;
 import basicmod.util.TextureLoader;
@@ -34,6 +33,7 @@ import java.util.Set;
 
 @SpireInitializer
 public class TheLightbearer implements
+        AddAudioSubscriber,
         EditRelicsSubscriber,
         EditCardsSubscriber,
         EditCharactersSubscriber,
@@ -237,6 +237,11 @@ public class TheLightbearer implements
                     if (info.seen)
                         UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
+    }
+
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio("GoldenGunSFX.pgg", "basicmod/audio/GoldenGunSFX.ogg");
     }
 
 }

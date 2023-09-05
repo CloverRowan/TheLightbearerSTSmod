@@ -5,11 +5,14 @@ import basicmod.character.MyCharacter;
 import basicmod.powers.ChargeOfLightPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
+
 import static basicmod.TheLightbearer.makeID;
 
 public class TheTraveler extends BaseRelic{
@@ -35,8 +38,13 @@ public class TheTraveler extends BaseRelic{
 
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         //Make attacks that aren't supers not generate charges
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                new ChargeOfLightPower(AbstractDungeon.player, 1)));
+
+        if(AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&
+                AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
+
+             addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
+                    new ChargeOfLightPower(AbstractDungeon.player, 1)));
+        }
     }
 
 

@@ -81,8 +81,8 @@
   },
   "${modID}:GoldenGun": {
     "NAME": "Golden Gun",
-    "DESCRIPTION": "#ySuper NL Summon a Flaming Golden Gun and deal !D! damage NL This card is free if you are SuperCharged.",
-    "UPGRADE_DESCRIPTION": "#ySuper NL Summon a Flaming Golden Gun and deal !D! damage NL This card is free if you are SuperCharged."
+    "DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage."
   },
   "${modID}:EchoOfDilation": {
     "NAME": "Echo Of Dilation",
