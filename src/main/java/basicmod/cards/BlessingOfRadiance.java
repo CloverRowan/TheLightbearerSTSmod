@@ -28,19 +28,20 @@ public class BlessingOfRadiance extends BaseCard {
 
     private static final int BLOCK = 11;
     private static final int UPG_BLOCK = 4;
-    private static final int magicNumber = 1;
-    private static final int magicUpgrade = 2;
+
+    private static final int MAGIC_NUMBER = 1;
+    private static final int UPG_MAGIC_NUMBER = 2;
 
     public BlessingOfRadiance() {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
-        setMagic(magicNumber,magicUpgrade);
+        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p,magicNumber)));
+        addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p,this.magicNumber)));
     }
 
     @Override

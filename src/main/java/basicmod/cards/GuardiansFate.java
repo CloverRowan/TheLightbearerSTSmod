@@ -26,15 +26,15 @@ public class GuardiansFate extends BaseCard {
 
     private static final int BLOCK = 3;
     private static final int UPG_BLOCK = 3;
-    private static final int magicNumber = 3;
+    private static final int MAGIC_NUMBER = 3;
 
-    private static final int magicUpgrade = 3;
+    private static final int UPG_MAGIC_NUMBER = 3;
 
 
     public GuardiansFate() {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
-        setMagic(magicNumber,magicUpgrade);
+        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     }
 
     @Override

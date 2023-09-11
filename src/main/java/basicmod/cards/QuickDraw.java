@@ -22,18 +22,18 @@ public class QuickDraw extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int magicNumber = 2;
-    private static final int magicUpgrade = 2;
+    private static final int MAGIC_NUMBER = 2;
+    private static final int UPG_MAGIC_NUMBER = 2;
 
     public QuickDraw() {
         super(ID, info);
-        setMagic(magicNumber, magicUpgrade);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-      addToBot(new DrawCardAction(magicNumber));
+      addToBot(new DrawCardAction(this.magicNumber));
     }
 
     @Override
