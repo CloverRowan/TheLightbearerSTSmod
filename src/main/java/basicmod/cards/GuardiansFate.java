@@ -35,6 +35,7 @@ public class GuardiansFate extends BaseCard {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(magicNumber,magicUpgrade);
+        upgradeMagicNumber(magicUpgrade);
     }
 
     @Override
