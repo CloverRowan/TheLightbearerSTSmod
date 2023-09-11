@@ -28,15 +28,19 @@ public class SpectralBlades extends BaseCard {
             3
     );
 
+    private static int MAGIC_NUMBER = 2;
+    private static int UPG_MAGIC_NUMBER = 3;
+
     public SpectralBlades() {
         super(ID, info);
         tags.add(SUPERSPELL);
         tags.add(VOID);
+        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p,new SpectralBladesPower(p,2),1));
+        addToBot(new ApplyPowerAction(p,p,new SpectralBladesPower(p,this.magicNumber),1));
         addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,3),1));
 
     }

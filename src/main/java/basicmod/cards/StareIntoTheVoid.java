@@ -28,17 +28,19 @@ public class StareIntoTheVoid extends BaseCard {
             1
     );
 
-
+    private static int MAGIC_NUMBER = 10;
+    private static int UPG_MAGIC_NUMBER = 7;
 
     public StareIntoTheVoid() {
         super(ID, info);
         tags.add(VOID);
         setEthereal(true);
+        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new LosePercentHPAction(10));
+        addToBot(new LosePercentHPAction(this.magicNumber));
         addToBot(new ExhumeAction(false));
     }
 

@@ -33,5 +33,17 @@
       "When you Exhaust a card gain",
       "Temporary HP"
     ]
-  }
+  },  "${modID}:SpectralBladesPower": {
+  "NAME": "Spectral Blades",
+  "DESCRIPTIONS": [
+    "Take 50 Percent less attack Damage",
+    ""
+  ]
+},  "${modID}:FeedTheVoidPower": {
+  "NAME": "Echo Of Harvest",
+  "DESCRIPTIONS": [
+    "At the Start of your turn Exhaust up to  ",
+    "Card"
+  ]
+}
 }

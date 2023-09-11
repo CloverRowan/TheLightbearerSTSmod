@@ -193,5 +193,35 @@
     "NAME": "Elemental Plating",
     "DESCRIPTION": "Whenever you draw a *Burn, discard it.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, discard it."
+  },
+  "${modID}:BarrierOfVoid": {
+    "NAME": " Barrier of Void",
+    "DESCRIPTION": "Exhaust NL Gain !B! Block for every card in your Exhaust Pile",
+    "UPGRADE_DESCRIPTION": "Exhaust NL Gain !B! Block for every card in your Exhaust Pile."
+  },
+  "${modID}:ConsumeTheFuture": {
+  "NAME": " Consume The Future",
+  "DESCRIPTION": "Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand NL Exhaust",
+  "UPGRADE_DESCRIPTION": "Retain NL Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand. NL Exhaust"
+},
+  "${modID}:FearTheVoid": {
+    "NAME": "Fear The Void",
+    "DESCRIPTION": "Deal !D! Damage and Scry !M! Cards",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and Scry !M! Cards"
+  },
+  "${modID}:FeedTheVoid": {
+    "NAME": "Feed The Void",
+    "DESCRIPTION": "At the start of your turn Exhaust one card",
+    "UPGRADE_DESCRIPTION": "At the start of your turn Exhaust one card"
+  },
+  "${modID}:SpectralBlades": {
+    "NAME": "Spectral Blades",
+    "DESCRIPTION": "Take half damage and gain 3 Strength for !M! Turns",
+    "UPGRADE_DESCRIPTION": "Take half damage and gain 3 Strength for !M! Turns"
+  },
+  "${modID}:StareIntoTheVoid": {
+    "NAME": "Stare Into The Void",
+    "DESCRIPTION": "Ethereal NL Lose !M! Percent Hp Exhume 1 Card",
+    "UPGRADE_DESCRIPTION": "Ethereal NL Lose !M! Percent Hp Exhume 1 Card"
   }
 }
