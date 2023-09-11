@@ -1,7 +1,10 @@
 package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.ExhaustToHandAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -39,7 +42,7 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
                 flash();
                 this.amount--;
                 if (this.amount <= 0){
-                    addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+                        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
                     //set cost of all supers back to 3
                     raiseSuperCostHand(player.hand);
                     raiseSuperCostHand(player.drawPile);
@@ -66,7 +69,7 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
             AbstractCard c = cg.group.get(i);
             if(c.tags.contains(SUPERSPELL)){
                 c.setCostForTurn(0);
-                c.beginGlowing();
+                //c.beginGlowing();
             }
         }
     }
@@ -77,7 +80,7 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
                 c.setCostForTurn(3);
                 c.isCostModified = false;
                 c.isCostModifiedForTurn = false;
-                c.stopGlowing();
+                //c.stopGlowing();
             }
         }
     }

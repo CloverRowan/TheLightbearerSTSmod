@@ -22,19 +22,19 @@ public class MarksmansDodge extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             0
     );
-    private static int magicNumber = 3;
-    private static int magicUpgrade = 3;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUMBER = 3;
 
 
     public MarksmansDodge() {
         super(ID, info);
-        setMagic(magicNumber,magicUpgrade);
+        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p, magicNumber));
+        addToBot(new DrawCardAction(p, this.magicNumber));
 
     }
 

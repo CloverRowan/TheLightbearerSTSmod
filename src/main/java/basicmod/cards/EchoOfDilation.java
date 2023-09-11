@@ -26,13 +26,13 @@ public class EchoOfDilation extends BaseCard {
     );
     private static final int DAMAGE = 5;
     private static final int costUpgrade = 1;
-    private static final int magicNumber = 1;
+    private static final int MAGIC_NUMBER = 1;
     public EchoOfDilation() {
         super(ID, info);
        setEthereal(true);
        setDamage(DAMAGE);
        setCostUpgrade(costUpgrade);
-       setMagic(magicNumber);
+       setMagic(MAGIC_NUMBER);
        setExhaust(true);
        tags.add(VOID);
     }

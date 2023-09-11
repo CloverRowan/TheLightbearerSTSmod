@@ -25,13 +25,13 @@ public class TravellersIncandescence extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             3
     );
-    private static  final int magicNumber = 3;
+    private static  final int MAGIC_NUMBER = 3;
     private static final boolean baseEthereal = true;
     private static final boolean upgEthereal = true;
     private static  final int costUpgrade = 2;
     public TravellersIncandescence() {
         super(ID, info);
-        setMagic(magicNumber);
+        setMagic(MAGIC_NUMBER);
         setEthereal(baseEthereal,upgEthereal);
         setCostUpgrade(costUpgrade);
 
@@ -39,8 +39,8 @@ public class TravellersIncandescence extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new ApplyPowerAction(p,p, (AbstractPower)new StrengthPower(p, magicNumber)));
-        addToBot((AbstractGameAction)new ApplyPowerAction(p,p, (AbstractPower)new DexterityPower(p, magicNumber)));
+        addToBot((AbstractGameAction)new ApplyPowerAction(p,p, (AbstractPower)new StrengthPower(p, this.magicNumber)));
+        addToBot((AbstractGameAction)new ApplyPowerAction(p,p, (AbstractPower)new DexterityPower(p, this.magicNumber)));
     }
 
     @Override

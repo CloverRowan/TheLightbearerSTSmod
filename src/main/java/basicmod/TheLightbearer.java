@@ -241,7 +241,7 @@ public class TheLightbearer implements
 
     @Override
     public void receiveAddAudio() {
-        BaseMod.addAudio("GoldenGunSFX.pgg", "basicmod/audio/GoldenGunSFX.ogg");
+        BaseMod.addAudio("GoldenGunSFX", "basicmod/audio/GoldenGunSFX.ogg");
     }
 
 }

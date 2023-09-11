@@ -81,8 +81,8 @@
   },
   "${modID}:GoldenGun": {
     "NAME": "Golden Gun",
-    "DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage."
+    "DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage !M! times."
   },
   "${modID}:EchoOfDilation": {
     "NAME": "Echo Of Dilation",
@@ -148,5 +148,50 @@
     "NAME": "VoidWall Grenade",
     "DESCRIPTION": "Deal !D! damage to all enemies.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to all enemies."
+  },
+  "${modID}:LightweightKnife": {
+    "NAME": "Lightweight Knife",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle a *Burn into your discard pile."
+  },
+  "${modID}:EmberOfSearing": {
+    "NAME": "Ember of Searing",
+    "DESCRIPTION": "Whenever you draw a *Burn, deal !M! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, deal !M! damage to ALL enemies."
+  },
+  "${modID}:GunpowderGamble": {
+    "NAME": "Gunpowder Gamble",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar card, hit an extra time.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar card, hit an extra time."
+  },
+  "${modID}:LineEmUp": {
+    "NAME": "Line 'Em Up",
+    "DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 *Charges *of *Light.",
+    "UPGRADE_DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 *Charges *of *Light."
+  },
+  "${modID}:KnockEmDown": {
+    "NAME": "Knock 'Em Down",
+    "DESCRIPTION": "Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "${modID}:AcrobatsDodge": {
+    "NAME": "Acrobat's Dodge",
+    "DESCRIPTION": "Gain !B! Block. Your next Attack deals !M! additional damage.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Your next Attack deals !M! additional damage."
+  },
+  "${modID}:BladeBarrage": {
+    "NAME": "Blade Barrage",
+    "DESCRIPTION": "${modID}:Super NL Deal !D! damage twice to all enemies.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Deal !D! damage twice to all enemies."
+  },
+  "${modID}:EmberOfMercy": {
+    "NAME": "Ember of Mercy",
+    "DESCRIPTION": "Gain !B! Block. NL Shuffle !M! *Burns into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Shuffle !M! *Burns into your discard pile."
+  },
+  "${modID}:ElementalPlating": {
+    "NAME": "Elemental Plating",
+    "DESCRIPTION": "Whenever you draw a *Burn, discard it.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, discard it."
   }
 }

@@ -25,20 +25,20 @@ public class TrappersAmbush extends BaseCard {
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static int magicNumber= 3;
-    private static boolean baseInnate = false;
-    private static boolean upgInnate = true;
+    private static final int MAGIC_NUMBER= 3;
+    private static final boolean baseInnate = false;
+    private static final boolean upgInnate = true;
 
     public TrappersAmbush() {
         super(ID, info);
-        setMagic(magicNumber);
+        setMagic(MAGIC_NUMBER);
         tags.add(VOID);
         setInnate(baseInnate,upgInnate);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m,p, new  WeakPower(p, magicNumber, false)));
+        addToBot(new ApplyPowerAction(m,p, new  WeakPower(p, this.magicNumber, false)));
     }
 
     @Override

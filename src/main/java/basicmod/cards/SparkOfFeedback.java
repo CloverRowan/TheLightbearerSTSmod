@@ -1,6 +1,7 @@
 package basicmod.cards;
 
 
+import basemod.patches.com.megacrit.cardcrawl.screens.charSelect.CharacterOption.UpdateHitboxBgImg;
 import basicmod.character.MyCharacter;
 import basicmod.powers.SparkOfFeedbackPower;
 import basicmod.util.CardStats;
@@ -26,17 +27,17 @@ public class SparkOfFeedback extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int magicNumber= 1;
-    private static final int magicUpgrade = 2;
+    private static final int MAGIC_NUMBER= 1;
+    private static final int UPG_MAGIC_NUMBER = 2;
     public SparkOfFeedback() {
         super(ID, info);
-        setMagic(magicNumber,magicUpgrade);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(ARC);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p, new SparkOfFeedbackPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p,p, new SparkOfFeedbackPower(p, this.magicNumber)));
 
     }
 

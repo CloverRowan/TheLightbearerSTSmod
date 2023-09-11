@@ -27,13 +27,13 @@ public class TouchOfVoid extends BaseCard {
     private static final int DAMAGE = 8;
     private static final int UPG_DAMAGE = 4;
 
-    private static final int magicNumber = 1;
+    private static final int MAGIC_NUMBER = 1;
 
 
     public TouchOfVoid() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
-        setMagic(magicNumber);
+        setMagic(MAGIC_NUMBER);
         tags.add(VOID);
 
     }
@@ -42,9 +42,9 @@ public class TouchOfVoid extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         if(!this.upgraded) {
-            addToBot(new ExhaustAction(magicNumber, true, false, false));
+            addToBot(new ExhaustAction(this.magicNumber, true, false, false));
         } else {
-            addToBot(new ExhaustAction(magicNumber, false, false,false));
+            addToBot(new ExhaustAction(this.magicNumber, false, false,false));
         }
     }
 
