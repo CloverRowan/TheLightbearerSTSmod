@@ -1,22 +1,11 @@
 package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
-import basemod.interfaces.OnPlayerTurnStartSubscriber;
-import basicmod.util.GeneralUtils;
-import basicmod.util.TextureLoader;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.brashmonkey.spriter.Player;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
-import javax.management.ObjectName;
 
 import static basicmod.TheLightbearer.makeID;
 

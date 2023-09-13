@@ -29,7 +29,7 @@ public class SpectralBlades extends BaseCard {
     );
 
     private static int MAGIC_NUMBER = 2;
-    private static int UPG_MAGIC_NUMBER = 3;
+    private static int UPG_MAGIC_NUMBER = 1;
 
     public SpectralBlades() {
         super(ID, info);

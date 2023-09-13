@@ -34,7 +34,7 @@ public class SpectralBladesPower extends BasePower implements CloneablePowerInte
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1] + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0];
     }
 
     @Override

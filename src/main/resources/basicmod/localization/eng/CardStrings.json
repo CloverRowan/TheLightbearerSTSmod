@@ -223,5 +223,15 @@
     "NAME": "Stare Into The Void",
     "DESCRIPTION": "Ethereal NL Lose !M! Percent Hp Exhume 1 Card",
     "UPGRADE_DESCRIPTION": "Ethereal NL Lose !M! Percent Hp Exhume 1 Card"
+  },
+  "${modID}:EmbraceMadness": {
+    "NAME": "Embrace Madness",
+    "DESCRIPTION": "Block for !B! and if the enemy Intends to Attack apply !M! Vulnerable",
+    "UPGRADE_DESCRIPTION": "Block for !B! and if the enemy Intends to Attack apply !M! Vulnerable"
+  },
+  "${modID}:ExpelDarkness": {
+    "NAME": "Expel Darkness",
+    "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
+    "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
   }
 }

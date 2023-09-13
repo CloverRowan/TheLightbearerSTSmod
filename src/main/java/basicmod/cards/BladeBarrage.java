@@ -1,29 +1,15 @@
 package basicmod.cards;
 
-import basemod.BaseMod;
-import basemod.abstracts.CustomCard;
-import basemod.abstracts.DynamicVariable;
-import basicmod.TheLightbearer;
 import basicmod.character.MyCharacter;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.function.BiFunction;
-
 import static basicmod.util.CustomTags.SUPERSPELL;
-import static basicmod.util.GeneralUtils.removePrefix;
-import static basicmod.util.TextureLoader.getCardTextureString;
 
 public class BladeBarrage extends BaseCard {
     public static final String ID = makeID("BladeBarrage");
