@@ -72,7 +72,7 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
         for(int i = 0; i < cg.size(); i++){
             AbstractCard c = cg.group.get(i);
             if(c.tags.contains(SUPERSPELL)){
-                c.setCostForTurn(3);
+                c.setCostForTurn(4);
                 c.isCostModified = false;
                 c.isCostModifiedForTurn = false;
                 //c.stopGlowing();

@@ -42,8 +42,7 @@
 },  "${modID}:FeedTheVoidPower": {
   "NAME": "Echo Of Harvest",
   "DESCRIPTIONS": [
-    "At the Start of your turn Exhaust up to  ",
-    "Card"
+    "At the start of your turn Exhaust up to "
   ]
 }
 }
