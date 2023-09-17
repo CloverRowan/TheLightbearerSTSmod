@@ -26,5 +26,18 @@
       "super"
     ],
     "DESCRIPTION": "Costs #b0 if you are #ySuper #yCharged."
+  },
+  {
+    "PROPER_NAME": "Charge Of Light",
+    "NAMES": [
+      "Charge Of Light",
+      "Charge_Of_Light",
+      "Charge_of_Light",
+      "Charges_of_Light",
+      "Charges_Of_Light",
+      "charge_of_light",
+      "charges_of_light"
+    ],
+    "DESCRIPTION": "Upon reaching #b10 stacks, remove #b10 stacks of #yCharge #yOf #yLight. Your next #ySuper costs 0."
   }
 ]

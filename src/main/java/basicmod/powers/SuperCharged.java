@@ -38,7 +38,7 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
                 this.amount--;
                 if (this.amount <= 0){
                         addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-                    //set cost of all supers back to 3
+                    //set cost of all supers back to 4
                     raiseSuperCostHand(player.hand);
                     raiseSuperCostHand(player.drawPile);
                     raiseSuperCostHand(player.discardPile);

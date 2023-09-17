@@ -9,7 +9,7 @@
     "NAME": "Charge of Light",
     "DESCRIPTIONS": [
       "Upon reaching #b",
-      " stacks, gain #ySuper #yCharged and remove #b10 stacks of #yCharge #yOf #yLight."
+      " stacks, remove all #yCharge #yOf #yLight. Your next #ySuper costs 0."
     ]
   },
   "${modID}:SuperCharged": {
@@ -33,16 +33,25 @@
       "When you Exhaust a card gain",
       "Temporary HP"
     ]
-  },  "${modID}:SpectralBladesPower": {
+  },
+  "${modID}:SpectralBladesPower": {
   "NAME": "Spectral Blades",
   "DESCRIPTIONS": [
     "Take 50 Percent less attack Damage",
     ""
   ]
-},  "${modID}:FeedTheVoidPower": {
-  "NAME": "Echo Of Harvest",
-  "DESCRIPTIONS": [
-    "At the start of your turn Exhaust up to "
-  ]
-}
+  },
+  "${modID}:FeedTheVoidPower": {
+    "NAME": "Echo Of Harvest",
+    "DESCRIPTIONS": [
+      "At the start of your turn Exhaust up to "
+    ]
+  },
+  "${modID}:DeadshotPower": {
+    "NAME": "Deadshot",
+    "DESCRIPTIONS": [
+      "At the start of your turn gain ",
+      " Vigor."
+    ]
+  }
 }
