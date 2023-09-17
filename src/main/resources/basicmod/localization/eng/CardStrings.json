@@ -234,9 +234,16 @@
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
   },
+<<<<<<< HEAD
   "${modID}:Deadshot": {
     "NAME": "Deadshot",
     "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Vigor."
+=======
+  "${modID}:ShunTheLight": {
+    "NAME": "Shun The Light",
+    "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
+>>>>>>> origin/Rowie_Push_Branch
   }
 }
