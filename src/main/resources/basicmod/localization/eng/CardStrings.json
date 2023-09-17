@@ -200,10 +200,10 @@
     "UPGRADE_DESCRIPTION": "Exhaust NL Gain !B! Block for every card in your Exhaust Pile."
   },
   "${modID}:ConsumeTheFuture": {
-  "NAME": " Consume The Future",
-  "DESCRIPTION": "Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand NL Exhaust",
-  "UPGRADE_DESCRIPTION": "Retain NL Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand. NL Exhaust"
-},
+    "NAME": " Consume The Future",
+    "DESCRIPTION": "Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain NL Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand. NL Exhaust"
+  },
   "${modID}:FearTheVoid": {
     "NAME": "Fear The Void",
     "DESCRIPTION": "Deal !D! Damage and Scry !M! Cards",
@@ -238,5 +238,10 @@
     "NAME": "Shun The Light",
     "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
-  }
+   },
+"${modID}:CallOnLight": {
+"NAME": "Call On Light",
+"DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
+"UPGRADE_DESCRIPTION": "Retain NL Gain !M! ${modID}:Charge_Of_Light"
+}
 }
