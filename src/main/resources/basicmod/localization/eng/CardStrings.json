@@ -239,9 +239,30 @@
     "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
    },
-"${modID}:CallOnLight": {
-"NAME": "Call On Light",
-"DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
-"UPGRADE_DESCRIPTION": "Retain NL Gain !M! ${modID}:Charge_Of_Light"
-}
+    "${modID}:CallOnLight": {
+    "NAME": "Call On Light",
+    "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
+    "UPGRADE_DESCRIPTION": "Retain NL Gain !M! ${modID}:Charge_Of_Light"
+},
+    "${modID}:Equalize": {
+    "NAME": "Equalize",
+    "DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust"
+},
+
+  "${modID}:MonteCarlo": {
+    "NAME": "Monte Carlo",
+    "DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light"
+  },
+  "${modID}:VigilanceWing": {
+    "NAME": "Vigilance Wing",
+    "DESCRIPTION": "Deal !D! Damage if this is the last card in your hand deal !D! Damage again",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage if this is the last card in your hand deal !D! Damage again"
+  },
+  "${modID}:FlareBlast": {
+    "NAME": "Flare Blast",
+    "DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn"
+  }
 }

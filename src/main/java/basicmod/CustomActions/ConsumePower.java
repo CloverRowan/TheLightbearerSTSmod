@@ -28,8 +28,20 @@ public class ConsumePower extends AbstractGameAction {
         }
         return false;
     }
+
     public void update(){
 
     }
 }
+ /*public int QueryPowerAmount() {
+    todo fix this nullpointer
+        for (AbstractPower FindPower : player.powers) {
+                if (FindPower.ID.equals(power)) {
+                    magic = FindPower.amount;
+                    return magic;
+
+                }
+        }
+    return 0;
+    }*/
 
