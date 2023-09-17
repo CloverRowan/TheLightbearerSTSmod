@@ -71,11 +71,11 @@
   },
   "${modID}:BlessingOfRadiance": {
     "NAME": "Blessing of Radiance",
-    "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light.",
-    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light."
+    "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! ${modID}:Charge_Of_Light."
   },
-  "${modID}:TravellersIncandescence": {
-    "NAME": "Travellers Incandescence",
+  "${modID}:TravelersIncandescence": {
+    "NAME": "Travelers Incandescence",
     "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
   },
@@ -166,8 +166,8 @@
   },
   "${modID}:LineEmUp": {
     "NAME": "Line 'Em Up",
-    "DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 *Charges *of *Light.",
-    "UPGRADE_DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 *Charges *of *Light."
+    "DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 ${modID}:Charge_Of_Light."
   },
   "${modID}:KnockEmDown": {
     "NAME": "Knock 'Em Down",
@@ -233,5 +233,10 @@
     "NAME": "Expel Darkness",
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
+  },
+  "${modID}:Deadshot": {
+    "NAME": "Deadshot",
+    "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Vigor."
   }
 }
