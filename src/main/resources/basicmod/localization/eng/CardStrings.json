@@ -233,5 +233,10 @@
     "NAME": "Expel Darkness",
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
+  },
+  "${modID}:ShunTheLight": {
+    "NAME": "Shun The Light",
+    "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
   }
 }

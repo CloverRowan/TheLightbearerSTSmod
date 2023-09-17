@@ -5,7 +5,7 @@
       "You are Very Cool and Strong."
     ]
   },
-  "${modID}:ChargeOfLight": {
+  "${modID}:ChargeOfLightPower": {
     "NAME": "Charge of Light",
     "DESCRIPTIONS": [
       "Upon reaching #b",
