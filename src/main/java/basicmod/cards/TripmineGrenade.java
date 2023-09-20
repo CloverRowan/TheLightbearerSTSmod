@@ -34,7 +34,7 @@ public class TripmineGrenade extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new DamageAllEnemiesAction(p, DAMAGE, damageType.NORMAL , AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction(p, this.damage, damageType.NORMAL , AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
 
     }
 

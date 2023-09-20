@@ -31,7 +31,7 @@ public class VanishingStep extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ExhaustAction(baseExhaust, false, false, true));
+        addToBot(new ExhaustAction(baseExhaust, false, true, true));
     }
 
     @Override

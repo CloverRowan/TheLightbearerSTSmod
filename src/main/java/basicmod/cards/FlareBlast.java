@@ -36,7 +36,7 @@ public class FlareBlast extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(p,damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.LIGHTNING)) ;
+        addToBot(new DamageAllEnemiesAction(p,this.damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.LIGHTNING)) ;
         for (int i = 0; i < player.hand.size(); i++) {
             AbstractCard c = player.hand.group.get(i);
             if(c.cardID == "Burn" ){

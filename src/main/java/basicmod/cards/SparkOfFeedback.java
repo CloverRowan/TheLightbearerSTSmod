@@ -22,7 +22,7 @@ public class SparkOfFeedback extends BaseCard {
             1
     );
     private static final int MAGIC_NUMBER= 1;
-    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int UPG_MAGIC_NUMBER = 1;
     public SparkOfFeedback() {
         super(ID, info);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);

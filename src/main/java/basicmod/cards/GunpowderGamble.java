@@ -39,12 +39,12 @@ public class GunpowderGamble extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int i = 0; i < this.magicNumber; i++){
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL),
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL),
                     AbstractGameAction.AttackEffect.FIRE));
         }
         if(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 2 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
                 .get(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - 2)).tags.contains(SOLAR)){
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL),
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL),
                     AbstractGameAction.AttackEffect.FIRE));
         }
     }
