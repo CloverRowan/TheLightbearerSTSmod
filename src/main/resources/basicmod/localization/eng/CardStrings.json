@@ -264,5 +264,15 @@
     "NAME": "Flare Blast",
     "DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn"
+  },
+  "${modID}:LightningStrike": {
+    "NAME": "Lightning Strike",
+    "DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand."
+  },
+  "${modID}:JumpStart": {
+    "NAME": "Jump Start",
+    "DESCRIPTION": "Draw 1 Card and Discard !M! Cards",
+    "UPGRADE_DESCRIPTION": "Draw 1 Card and Discard !M! Cards."
   }
 }
