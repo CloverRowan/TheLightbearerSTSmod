@@ -71,11 +71,11 @@
   },
   "${modID}:BlessingOfRadiance": {
     "NAME": "Blessing of Radiance",
-    "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light.",
-    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light."
+    "DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:TravellersIncandescence": {
-    "NAME": "Travellers Incandescence",
+    "NAME": "Traveler's Incandescence",
     "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
   },
@@ -233,6 +233,7 @@
     "NAME": "Expel Darkness",
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
+  },
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
