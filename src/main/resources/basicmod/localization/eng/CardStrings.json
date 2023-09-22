@@ -74,7 +74,7 @@
     "DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light."
   },
-  "${modID}:TravelersIncandescence": {
+  "${modID}:TravellersIncandescence": {
     "NAME": "Traveler's Incandescence",
     "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
@@ -166,8 +166,8 @@
   },
   "${modID}:LineEmUp": {
     "NAME": "Line 'Em Up",
-    "DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 ${modID}:Charge_Of_Light."
+    "DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 *Charges *of *Light.",
+    "UPGRADE_DESCRIPTION": "Your next Attack deals !M! additional damage. Gain 2 *Charges *of *Light."
   },
   "${modID}:KnockEmDown": {
     "NAME": "Knock 'Em Down",
@@ -200,10 +200,10 @@
     "UPGRADE_DESCRIPTION": "Exhaust NL Gain !B! Block for every card in your Exhaust Pile."
   },
   "${modID}:ConsumeTheFuture": {
-  "NAME": " Consume The Future",
-  "DESCRIPTION": "Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand NL Exhaust",
-  "UPGRADE_DESCRIPTION": "Retain NL Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand. NL Exhaust"
-},
+    "NAME": " Consume The Future",
+    "DESCRIPTION": "Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain NL Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand. NL Exhaust"
+  },
   "${modID}:FearTheVoid": {
     "NAME": "Fear The Void",
     "DESCRIPTION": "Deal !D! Damage and Scry !M! Cards",
@@ -234,14 +234,36 @@
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
   },
-  "${modID}:Deadshot": {
-    "NAME": "Deadshot",
-    "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Vigor."
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
     "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
+   },
+    "${modID}:CallOnLight": {
+    "NAME": "Call On Light",
+    "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
+    "UPGRADE_DESCRIPTION": "Retain NL Gain !M! ${modID}:Charge_Of_Light"
+},
+    "${modID}:Equalize": {
+    "NAME": "Equalize",
+    "DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust"
+},
+
+  "${modID}:MonteCarlo": {
+    "NAME": "Monte Carlo",
+    "DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light"
+  },
+  "${modID}:VigilanceWing": {
+    "NAME": "Vigilance Wing",
+    "DESCRIPTION": "Deal !D! Damage if this is the last card in your hand deal !D! Damage again",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage if this is the last card in your hand deal !D! Damage again"
+  },
+  "${modID}:FlareBlast": {
+    "NAME": "Flare Blast",
+    "DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn"
   }
 }

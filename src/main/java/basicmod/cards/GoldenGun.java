@@ -65,7 +65,7 @@ public class GoldenGun extends BaseCard {
             //AbstractGameAction.AttackEffect gg = new AbstractGameAction.AttackEffect();
 
             addToBot(new VFXAction(GoldenGunVFX, 0.1F));
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), EnumPatch.GOLDEN_GUN));
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), EnumPatch.GOLDEN_GUN));
         }
 
 
