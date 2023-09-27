@@ -234,7 +234,6 @@
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
   },
-  },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
     "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
@@ -275,5 +274,20 @@
     "NAME": "Jump Start",
     "DESCRIPTION": "Draw 1 Card and Discard !M! Cards",
     "UPGRADE_DESCRIPTION": "Draw 1 Card and Discard !M! Cards."
+  },
+  "${modID}:CompoundingExhaustion": {
+    "NAME": "Compounding Exhaustion",
+    "DESCRIPTION": "Deal !D! Damage",
+    "UPGRADE_DESCRIPTION": "Draw 1 Card and Discard !M! Cards."
+  },
+  "${modID}:VolatileCollapse": {
+    "NAME": "Volatile Collapse",
+    "DESCRIPTION": "When you Exhaust a Card deal !M! Damage to a random enemy",
+    "UPGRADE_DESCRIPTION": "When you Exhaust a Card deal !M! Damage to a random enemy."
+  },
+  "${modID}:RagingCurrent": {
+    "NAME": "Raging Current",
+    "DESCRIPTION": "This turn when you Draw a card gain !B! Block",
+    "UPGRADE_DESCRIPTION": "This turn when you Draw a card gain !B! Block."
   }
 }

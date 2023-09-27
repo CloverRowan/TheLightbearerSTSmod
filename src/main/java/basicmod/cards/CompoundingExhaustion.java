@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -15,7 +16,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
-@AutoAdd.Ignore
+
 public class CompoundingExhaustion extends BaseCard {
 
     public static final String ID = makeID("CompoundingExhaustion");
@@ -40,24 +41,19 @@ public class CompoundingExhaustion extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
-    //todo fix the updating card numbers no working
     @Override
     public void triggerOnExhaust(){
-    AbstractCard copyOfThis = this.makeCopy();
-    addToBot(new AbstractGameAction() {
-        @Override
-        public void update() {
+        AbstractCard copyOfThis = this.makeCopy();
 
-            copyOfThis.cost =  copyOfThis.cost + MAGIC_NUMBER;
-            copyOfThis.damage = copyOfThis.baseDamage = (baseDamage * cost);
-            this.isDone = true;
-        }
-    });
-
-        addToBot(new MakeTempCardInHandAction(copyOfThis));
+   for (int i = 0; i <=1; i++ ){
+      copyOfThis.cost = cost + 1;
+      copyOfThis.costForTurn = copyOfThis.cost;
+      copyOfThis.baseDamage = baseDamage * 2;
+          copyOfThis.isCostModified = true;
+      }
+        addToTop(new MakeTempCardInHandAction(copyOfThis));
     }
     @Override
     public AbstractCard makeCopy() {

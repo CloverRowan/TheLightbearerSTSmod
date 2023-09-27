@@ -53,5 +53,19 @@
       "At the start of your turn gain ",
       " Vigor."
     ]
+  },
+  "${modID}:VolatileCollapsePower": {
+    "NAME": "Volatile Collapse",
+    "DESCRIPTIONS": [
+      "When you Exhaust a card Deal ",
+      " Damage to a random enemy."
+    ]
+  },
+  "${modID}:RagingCurrentPower": {
+    "NAME": "Raging Current",
+    "DESCRIPTIONS": [
+      "This Turn when you Draw a card gain ",
+      " Block."
+    ]
   }
 }

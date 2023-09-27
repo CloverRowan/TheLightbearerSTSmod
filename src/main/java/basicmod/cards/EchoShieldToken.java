@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 @AutoAdd.Ignore
+@AutoAdd.NotSeen
 public class EchoShieldToken extends BaseCard {
 
     public static final String ID = makeID("EchoShieldToken");
