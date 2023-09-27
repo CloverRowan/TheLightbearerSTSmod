@@ -41,8 +41,8 @@
   },
   "${modID}:GuardiansFate": {
     "NAME": "Guardian's Fate",
-    "DESCRIPTION": "Summon the light of the Traveler to gain !B! Block and Scry !M! cards",
-    "UPGRADE_DESCRIPTION": "Summon the light of the Traveler to gain !B! Block and Scry !M! cards.",
+    "DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards",
+    "UPGRADE_DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",
@@ -71,11 +71,19 @@
   },
   "${modID}:BlessingOfRadiance": {
     "NAME": "Blessing of Radiance",
+<<<<<<< HEAD
     "DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:TravelersIncandescence": {
     "NAME": "Traveler's Incandescence",
+=======
+    "DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light.",
+    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! block and !M! Charges of light."
+  },
+  "${modID}:TravellersIncandescence": {
+    "NAME": "Travellers Incandescence",
+>>>>>>> origin/Rowie_Push_Branch
     "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
   },
@@ -234,10 +242,20 @@
     "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
     "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
   },
+<<<<<<< HEAD
+  "${modID}:Deadshot": {
+    "NAME": "Deadshot",
+    "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Vigor."
+  },
+=======
+>>>>>>> origin/Rowie_Push_Branch
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
     "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
+<<<<<<< HEAD
+=======
    },
     "${modID}:CallOnLight": {
     "NAME": "Call On Light",
@@ -249,6 +267,7 @@
     "DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust"
 },
+
   "${modID}:MonteCarlo": {
     "NAME": "Monte Carlo",
     "DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light",
@@ -263,45 +282,6 @@
     "NAME": "Flare Blast",
     "DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn"
-  },
-  "${modID}:LightningStrike": {
-    "NAME": "Lightning Strike",
-    "DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand."
-  },
-  "${modID}:JumpStart": {
-    "NAME": "Jump Start",
-    "DESCRIPTION": "Innate. NL Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Draw !M! cards."
-  },
-  "${modID}:Deadshot": {
-    "NAME": "Deadshot",
-    "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Vigor."
-  },
-  "${modID}:Shadowshot": {
-    "NAME": "Shadowshot",
-    "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies."
-  },
-  "${modID}:ShockingTumble": {
-    "NAME": "Shocking Tumble",
-    "DESCRIPTION": "Gain !B! Block. If the last card played this combat was an attack, gain !B! Block again.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. If the last card played this combat was an attack, gain !B! Block again."
-  },
-  "${modID}:CompoundingExhaustion": {
-    "NAME": "Compounding Exhaustion",
-    "DESCRIPTION": "Deal !D! Damage",
-    "UPGRADE_DESCRIPTION": "Draw 1 Card and Discard !M! Cards."
-  },
-  "${modID}:VolatileCollapse": {
-    "NAME": "Volatile Collapse",
-    "DESCRIPTION": "When you Exhaust a Card deal !M! Damage to a random enemy",
-    "UPGRADE_DESCRIPTION": "When you Exhaust a Card deal !M! Damage to a random enemy."
-  },
-  "${modID}:RagingCurrent": {
-    "NAME": "Raging Current",
-    "DESCRIPTION": "This turn when you Draw a card gain !B! Block",
-    "UPGRADE_DESCRIPTION": "This turn when you Draw a card gain !B! Block."
+>>>>>>> origin/Rowie_Push_Branch
   }
 }
