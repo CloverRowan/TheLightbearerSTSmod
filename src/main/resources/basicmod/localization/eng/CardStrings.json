@@ -289,5 +289,10 @@
     "NAME": "Raging Current",
     "DESCRIPTION": "This turn when you Draw a card gain !B! Block",
     "UPGRADE_DESCRIPTION": "This turn when you Draw a card gain !B! Block."
+  },
+  "${modID}:ShockingTumble": {
+    "NAME": "Shocking Tumble",
+    "DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again. ",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again."
   }
 }
