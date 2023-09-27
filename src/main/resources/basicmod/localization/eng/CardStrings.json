@@ -238,18 +238,17 @@
     "NAME": "Shun The Light",
     "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
-   },
-    "${modID}:CallOnLight": {
+  },
+  "${modID}:CallOnLight": {
     "NAME": "Call On Light",
     "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
     "UPGRADE_DESCRIPTION": "Retain NL Gain !M! ${modID}:Charge_Of_Light"
-},
-    "${modID}:Equalize": {
+  },
+  "${modID}:Equalize": {
     "NAME": "Equalize",
     "DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust"
-},
-
+  },
   "${modID}:MonteCarlo": {
     "NAME": "Monte Carlo",
     "DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light",
@@ -294,5 +293,15 @@
     "NAME": "Shocking Tumble",
     "DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again. ",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again."
+  },
+  "${modID}:DisorientingBlow": {
+    "NAME": "Disorienting Blow",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "${modID}:TempestStrike": {
+    "NAME": "Tempest Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again."
   }
 }
