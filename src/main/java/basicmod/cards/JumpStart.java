@@ -29,13 +29,12 @@ public class JumpStart extends BaseCard {
     public JumpStart() {
         super(ID, info);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
-        setInnate(false,true);
+        setInnate(true,true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p,TEMP_MAGIC));
-        addToBot(new DiscardAction(p,p,this.magicNumber, false, false));
+        addToBot(new DrawCardAction(p,this.magicNumber));
     }
 
     @Override

@@ -5,9 +5,7 @@ import basicmod.character.MyCharacter;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -18,9 +16,9 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import static basicmod.util.CustomTags.SUPERSPELL;
 
-public class Tether extends BaseCard {
+public class Shadowshot extends BaseCard {
 
-    public static final String ID = makeID("Tether");
+    public static final String ID = makeID("Shadowshot");
     private static final CardStats info = new CardStats(
             MyCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -33,7 +31,7 @@ public class Tether extends BaseCard {
     private static final int MAGIC_NUMBER = 3;
 
 
-    public Tether() {
+    public Shadowshot() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
@@ -44,7 +42,7 @@ public class Tether extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new CorpseExplosionPower(p)));
+            addToBot(new ApplyPowerAction(mo, p, new CorpseExplosionPower(mo),1,AbstractGameAction.AttackEffect.POISON));
             addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(p, this.magicNumber, false)));
         }
         addToBot(new DamageAllEnemiesAction(p,this.damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
@@ -52,6 +50,6 @@ public class Tether extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Tether();
+        return new Shadowshot();
     }
 }
