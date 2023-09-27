@@ -303,5 +303,10 @@
     "NAME": "Tempest Strike",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again."
+  },
+  "${modID}:FulminisDischarge": {
+    "NAME": "Fulminis Discharge",
+    "DESCRIPTION": "Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb .",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb"
   }
 }
