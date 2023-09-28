@@ -313,5 +313,10 @@
     "NAME": "Lethal Current",
     "DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust."
-  }
+  },
+  "${modID}:ElectroPlating": {
+  "NAME": "Electro Plating",
+  "DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust.",
+  "UPGRADE_DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust."
+}
 }
