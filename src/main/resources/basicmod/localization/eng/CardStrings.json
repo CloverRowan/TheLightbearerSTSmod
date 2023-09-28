@@ -308,5 +308,10 @@
     "NAME": "Fulminis Discharge",
     "DESCRIPTION": "Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb .",
     "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb"
+  },
+  "${modID}:LethalCurrent": {
+    "NAME": "Lethal Current",
+    "DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust."
   }
 }
