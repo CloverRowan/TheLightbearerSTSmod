@@ -67,5 +67,12 @@
       "This Turn when you Draw a card gain ",
       " Block."
     ]
+  },
+  "${modID}:FlowStatePower": {
+    "NAME": "Flow State",
+    "DESCRIPTIONS": [
+      "When you play an attack draw ",
+      " Card."
+    ]
   }
 }

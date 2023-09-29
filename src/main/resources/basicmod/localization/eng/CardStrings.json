@@ -318,5 +318,10 @@
   "NAME": "Electro Plating",
   "DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust.",
   "UPGRADE_DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust."
-}
+},
+  "${modID}:FlowState": {
+    "NAME": "Flow State",
+    "DESCRIPTION": "When you play an attack draw a card.",
+    "UPGRADE_DESCRIPTION": "When you play an attack draw a card."
+  }
 }
