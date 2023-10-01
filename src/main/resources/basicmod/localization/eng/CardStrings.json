@@ -216,8 +216,8 @@
   },
   "${modID}:SpectralBlades": {
     "NAME": "Spectral Blades",
-    "DESCRIPTION": "Take half damage and gain 3 Strength for !M! Turns",
-    "UPGRADE_DESCRIPTION": "Take half damage and gain 3 Strength for !M! Turns"
+    "DESCRIPTION": "${modID}:Super NL Take half damage and gain 3 Strength for !M! turns.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Take half damage and gain 3 Strength for !M! turns."
   },
   "${modID}:StareIntoTheVoid": {
     "NAME": "Stare Into The Void",
@@ -309,6 +309,10 @@
     "DESCRIPTION": "Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb .",
     "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb"
   },
+  "${modID}:GatheringStorm": {
+    "NAME": "Gathering Storm",
+    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage."
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
     "DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust.",
@@ -318,6 +322,10 @@
   "NAME": "Electro Plating",
   "DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust.",
   "UPGRADE_DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust."
+  "${modID}:ArcStaff": {
+    "NAME": "Arc Staff",
+    "DESCRIPTION": "${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity for !M! turns.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity for !M! turns."
 },
   "${modID}:FlowState": {
     "NAME": "Flow State",

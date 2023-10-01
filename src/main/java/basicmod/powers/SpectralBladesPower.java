@@ -6,6 +6,7 @@ import basicmod.util.GeneralUtils;
 import basicmod.util.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -23,7 +24,7 @@ import static basicmod.TheLightbearer.makeID;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 
-public class SpectralBladesPower extends BasePower implements CloneablePowerInterface {
+public class SpectralBladesPower extends BasePower implements CloneablePowerInterface, NonStackablePower {
     public static final String POWER_ID = makeID("SpectralBladesPower");
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = true;
