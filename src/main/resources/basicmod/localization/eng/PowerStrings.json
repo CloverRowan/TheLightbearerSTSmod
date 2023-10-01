@@ -67,5 +67,19 @@
       "This Turn when you Draw a card gain ",
       " Block."
     ]
+  },
+  "${modID}:GatheringStormPower": {
+    "NAME": "Gathering Storm",
+    "DESCRIPTIONS": [
+      "At the start of its next turn, loses #b",
+      " HP.",
+      "At the start of its turn, loses #b"
+    ]
+  },
+  "${modID}:ArcStaffPower": {
+    "NAME": "Arc Staff",
+    "DESCRIPTIONS": [
+      "Gain [E] and draw #b1 card at the start of each turn."
+    ]
   }
 }
