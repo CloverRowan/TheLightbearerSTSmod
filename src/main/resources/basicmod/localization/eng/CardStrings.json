@@ -74,7 +74,7 @@
     "DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light."
   },
-  "${modID}:TravellersIncandescence": {
+  "${modID}:TravelersIncandescence": {
     "NAME": "Traveler's Incandescence",
     "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
@@ -313,15 +313,17 @@
     "NAME": "Gathering Storm",
     "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage."
+  },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
     "DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust."
   },
   "${modID}:ElectroPlating": {
-  "NAME": "Electro Plating",
-  "DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust.",
-  "UPGRADE_DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust."
+    "NAME": "Electro Plating",
+    "DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Metallicize for every energy spent. NL Exhaust."
+  },
   "${modID}:ArcStaff": {
     "NAME": "Arc Staff",
     "DESCRIPTION": "${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity for !M! turns.",
@@ -331,5 +333,15 @@
     "NAME": "Flow State",
     "DESCRIPTION": "When you play an attack draw a card.",
     "UPGRADE_DESCRIPTION": "When you play an attack draw a card."
+  },
+  "${modID}:Deadshot": {
+    "NAME": "Deadshot",
+    "DESCRIPTION": "At the start of each turn, gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "At the start of each turn, gain !M! Vigor."
+  },
+  "${modID}:Shadowshot": {
+    "NAME": "Shadowshot",
+    "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies."
   }
 }
