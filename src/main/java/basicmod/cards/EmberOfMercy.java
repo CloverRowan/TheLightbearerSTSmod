@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class EmberOfMercy extends BaseCard {
     public static final String ID = makeID("EmberOfMercy");
 
@@ -31,6 +34,7 @@ public class EmberOfMercy extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override

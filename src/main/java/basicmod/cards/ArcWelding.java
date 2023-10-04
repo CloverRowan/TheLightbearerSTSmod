@@ -11,6 +11,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class ArcWelding extends BaseCard {
 
     public static final String ID = makeID("ArcWelding");
@@ -31,6 +34,7 @@ public class ArcWelding extends BaseCard {
         super(ID, info);
         setEthereal(true);
         setBlock(BLOCK, UPG_BLOCK);
+        tags.add(ARC);
     }
 
     @Override

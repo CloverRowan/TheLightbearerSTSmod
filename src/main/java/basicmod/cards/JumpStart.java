@@ -10,6 +10,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class JumpStart extends BaseCard {
 
     public static final String ID = makeID("JumpStart");
@@ -30,6 +33,7 @@ public class JumpStart extends BaseCard {
         super(ID, info);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setInnate(true,true);
+        tags.add(ARC);
     }
 
     @Override

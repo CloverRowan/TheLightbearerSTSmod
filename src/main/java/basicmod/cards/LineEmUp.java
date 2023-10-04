@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class LineEmUp extends BaseCard {
     public static final String ID = makeID("LineEmUp");
 
@@ -28,6 +31,7 @@ public class LineEmUp extends BaseCard {
     public LineEmUp() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override

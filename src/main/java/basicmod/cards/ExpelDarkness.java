@@ -16,6 +16,8 @@ import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
+import static basicmod.util.CustomTags.*;
+
 public class ExpelDarkness extends BaseCard {
 
     public static final String ID = makeID("ExpelDarkness");
@@ -34,6 +36,7 @@ public class ExpelDarkness extends BaseCard {
         super(ID, info);
     setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     setEthereal(true);
+        tags.add(VOID);
     }
 
     @Override

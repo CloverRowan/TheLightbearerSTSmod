@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
+import static basicmod.util.CustomTags.*;
+
 public class EmbraceMadness extends BaseCard {
 
     public static final String ID = makeID("EmbraceMadness");
@@ -34,6 +36,7 @@ public class EmbraceMadness extends BaseCard {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
+        tags.add(VOID);
     }
 
     @Override

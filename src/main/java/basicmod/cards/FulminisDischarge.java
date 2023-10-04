@@ -15,6 +15,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class FulminisDischarge extends BaseCard {
 
     public static final String ID = makeID("FulminisDischarge");
@@ -37,6 +40,7 @@ public class FulminisDischarge extends BaseCard {
         this.showEvokeValue = true;
         this.showEvokeOrbCount = 1;
         setSelfRetain(false,true);
+        tags.add(ARC);
     }
 
     @Override

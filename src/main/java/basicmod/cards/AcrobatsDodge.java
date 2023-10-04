@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
+import static basicmod.util.CustomTags.SOLAR;
+
 public class AcrobatsDodge extends BaseCard {
     public static final String ID = makeID("AcrobatsDodge");
 
@@ -30,7 +32,7 @@ public class AcrobatsDodge extends BaseCard {
 
     public AcrobatsDodge() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-
+        tags.add(SOLAR);
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
     }

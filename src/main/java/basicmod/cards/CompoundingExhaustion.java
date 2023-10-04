@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.*;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class CompoundingExhaustion extends BaseCard {
@@ -37,6 +38,7 @@ public class CompoundingExhaustion extends BaseCard {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
+        tags.add(VOID);
     }
 
     @Override

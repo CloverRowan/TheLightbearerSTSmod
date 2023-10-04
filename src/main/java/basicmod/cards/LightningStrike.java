@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class LightningStrike extends BaseCard {
@@ -37,6 +39,7 @@ public class LightningStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         setExhaust(true,false);
+        tags.add(ARC);
     }
 
     @Override

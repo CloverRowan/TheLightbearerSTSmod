@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class TempestStrike extends BaseCard {
     public static final String ID = makeID("TempestStrike");
 
@@ -28,6 +31,7 @@ public class TempestStrike extends BaseCard {
     public TempestStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        tags.add(ARC);
     }
 
     @Override

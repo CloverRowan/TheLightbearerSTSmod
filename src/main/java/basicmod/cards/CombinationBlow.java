@@ -13,6 +13,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class CombinationBlow extends BaseCard {
 
     public static final String ID = makeID("CombinationBlow");
@@ -31,6 +34,7 @@ public class CombinationBlow extends BaseCard {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
+        tags.add(ARC);
     }
 
     @Override

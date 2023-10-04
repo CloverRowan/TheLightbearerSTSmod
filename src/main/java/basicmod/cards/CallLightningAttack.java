@@ -5,15 +5,17 @@ import basicmod.character.MyCharacter;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CallLightingAttack extends BaseCard {
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
 
-    public static final String ID = makeID("CallLightingAttack");
+public class CallLightningAttack extends BaseCard {
+
+    public static final String ID = makeID("CallLightningAttack");
     private static final CardStats info = new CardStats(
             MyCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -25,9 +27,10 @@ public class CallLightingAttack extends BaseCard {
     private static final int UPG_DAMAGE = 3;
 
 
-    public CallLightingAttack() {
+    public CallLightningAttack() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        tags.add(SOLAR);
 
     }
 
@@ -37,7 +40,12 @@ public class CallLightingAttack extends BaseCard {
     }
 
     @Override
+    public void upgrade() {
+        super.upgrade();
+    }
+
+    @Override
     public AbstractCard makeCopy() {
-        return new CallLightingAttack();
+        return new CallLightningAttack();
     }
 }

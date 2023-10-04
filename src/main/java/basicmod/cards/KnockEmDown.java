@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class KnockEmDown extends BaseCard {
     public static final String ID = makeID("KnockEmDown");
 
@@ -31,6 +34,7 @@ public class KnockEmDown extends BaseCard {
         setDamage(2, 1); //Sets the card's damage and how much it changes when upgraded.
 
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override

@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.*;
+
 public class BarrierOfVoid extends BaseCard {
 
     public static final String ID = makeID("BarrierOfVoid");
@@ -26,6 +28,7 @@ public class BarrierOfVoid extends BaseCard {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
         setExhaust(true);
+        tags.add(VOID);
     }
 
     @Override

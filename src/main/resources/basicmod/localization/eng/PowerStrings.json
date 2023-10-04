@@ -94,14 +94,18 @@
     "DESCRIPTIONS": [
       "When you deal unblocked attack damage, gain half that as block."
     ]
-  }
-}
   },
   "${modID}:ElementalPlatingPower": {
     "NAME": "Elemental Plating",
     "DESCRIPTIONS": [
       "Whenever you draw a Burn, gain #b",
       " Block."
+    ]
+  },
+  "${modID}:CallLightningPower": {
+    "NAME": "Call Lightning",
+    "DESCRIPTIONS": [
+      "Whenever you draw, Recall Call Lightning to your hand."
     ]
   }
 }

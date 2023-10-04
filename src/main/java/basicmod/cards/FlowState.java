@@ -13,6 +13,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class FlowState extends BaseCard {
 
     public static final String ID = makeID("FlowState");
@@ -31,6 +34,7 @@ public class FlowState extends BaseCard {
         super(ID, info);
        setMagic(MAGIC_NUMBER);
        setCostUpgrade(1);
+        tags.add(ARC);
     }
 
     @Override

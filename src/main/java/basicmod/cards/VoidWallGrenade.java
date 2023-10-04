@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.*;
+
 public class VoidWallGrenade extends BaseCard {
 
     public static final String ID = makeID("VoidWallGrenade");
@@ -27,6 +29,7 @@ public class VoidWallGrenade extends BaseCard {
     public VoidWallGrenade() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        tags.add(VOID);
     }
 
     @Override

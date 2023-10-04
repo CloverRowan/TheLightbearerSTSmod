@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static basicmod.util.CustomTags.SUPERSPELL;
+import static basicmod.util.CustomTags.*;
 
 public class BladeBarrage extends BaseCard {
     public static final String ID = makeID("BladeBarrage");
@@ -34,6 +34,7 @@ public class BladeBarrage extends BaseCard {
         tags.add(SUPERSPELL);
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override

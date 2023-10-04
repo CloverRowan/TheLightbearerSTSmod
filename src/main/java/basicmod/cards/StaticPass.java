@@ -13,6 +13,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class StaticPass extends BaseCard {
 
     public static final String ID = makeID("StaticPass");
@@ -33,6 +36,7 @@ public class StaticPass extends BaseCard {
     public StaticPass() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        tags.add(ARC);
     }
 
     @Override

@@ -2,6 +2,7 @@ package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import basemod.interfaces.OnPlayerTurnStartSubscriber;
+import basicmod.cards.CallLightningAttack;
 import basicmod.util.GeneralUtils;
 import basicmod.util.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
@@ -18,6 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import javax.management.ObjectName;
 
 import static basicmod.TheLightbearer.makeID;
+import static basicmod.TheLightbearer.modID;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 
@@ -32,7 +34,7 @@ public class CallLightningPower extends BasePower implements CloneablePowerInter
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1] + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0];
     }
 
     @Override
@@ -44,7 +46,7 @@ public class CallLightningPower extends BasePower implements CloneablePowerInter
     public void onCardDraw(AbstractCard card) {
         super.onCardDraw(card);
         for (AbstractCard c: player.discardPile.group) {
-            if(c.name.equals("TheLightbearer:CallLighting")){
+            if(c.cardID.equals(makeID("CallLightningAttack"))){
                 addToBot(new DiscardToHandAction(c));
             }
         }

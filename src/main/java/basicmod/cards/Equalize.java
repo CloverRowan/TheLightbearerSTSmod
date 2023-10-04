@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.*;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import basicmod.CustomActions.CheckPowerStacks;
 public class Equalize extends BaseCard {
@@ -36,6 +37,7 @@ public class Equalize extends BaseCard {
         super(ID, info);
         setExhaust(true);
         setCostUpgrade(1);
+        tags.add(VOID);
     }
 
     @Override

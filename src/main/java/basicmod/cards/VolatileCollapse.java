@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.*;
+
 public class VolatileCollapse extends BaseCard {
 
     public static final String ID = makeID("VolatileCollapse");
@@ -27,6 +29,7 @@ public class VolatileCollapse extends BaseCard {
     public VolatileCollapse() {
         super(ID, info);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
+        tags.add(VOID);
     }
 
     @Override

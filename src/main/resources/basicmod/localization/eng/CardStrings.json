@@ -379,14 +379,19 @@
     "DESCRIPTION": "Ethereal. NL Gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !B! Block."
   },
-  "${modID}:CallLightingAttack": {
+  "${modID}:CallLightningAttack": {
     "NAME": "Call Lightning",
-    "DESCRIPTION": "Deal !D! Damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage."
+    "DESCRIPTION": "Deal !D! Damage. NL Returns to hand when you draw a card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Returns to hand when you draw a card."
   },
-  "${modID}:CallLighting": {
+  "${modID}:CallLightning": {
     "NAME": "Call Lightning",
-    "DESCRIPTION": "Gain a 0 cost !D! ",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage."
+    "DESCRIPTION": "Shuffle a Call Lightning into your deck.",
+    "UPGRADE_DESCRIPTION": "Shuffle a Call Lightning into your deck."
+  },
+  "${modID}:InvigoratingKick": {
+    "NAME": "InvigoratingKick",
+    "DESCRIPTION": "Deal !D! Damage and gain !M! Temp Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and gain !M! Temp Strength."
   }
 }

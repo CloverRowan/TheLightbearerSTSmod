@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.*;
+
 public class FeedTheVoid extends BaseCard {
 
     public static final String ID = makeID("FeedTheVoid");
@@ -23,6 +25,7 @@ public class FeedTheVoid extends BaseCard {
     public FeedTheVoid() {
         super(ID, info);
         setCostUpgrade(1);
+        tags.add(VOID);
 
 
     }

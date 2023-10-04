@@ -13,6 +13,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class PowerDifferential extends BaseCard {
 
     public static final String ID = makeID("PowerDifferential");
@@ -31,6 +34,7 @@ public class PowerDifferential extends BaseCard {
         super(ID, info);
         setEthereal(true,false);
         setMagic(MAGIC_NUMBER);
+        tags.add(ARC);
     }
 
     @Override

@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class ElectroPlating extends BaseCard {
@@ -34,6 +36,7 @@ public class ElectroPlating extends BaseCard {
         super(ID, info);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setExhaust(true);
+        tags.add(ARC);
 
     }
 

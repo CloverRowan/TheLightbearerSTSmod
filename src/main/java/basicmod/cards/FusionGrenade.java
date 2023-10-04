@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
 
-import static basicmod.util.CustomTags.SUPERSPELL;
+import static basicmod.util.CustomTags.*;
 import static basicmod.util.GeneralUtils.removePrefix;
 import static basicmod.util.TextureLoader.getCardTextureString;
 
@@ -43,8 +43,9 @@ public class FusionGrenade extends BaseCard {
 
     public FusionGrenade() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        tags.add(SOLAR);
+
     }
 
     @Override

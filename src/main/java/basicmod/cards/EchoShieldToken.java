@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import static basicmod.util.CustomTags.*;
+
 @AutoAdd.Ignore
 @AutoAdd.NotSeen
 public class EchoShieldToken extends BaseCard {
@@ -31,6 +34,7 @@ public class EchoShieldToken extends BaseCard {
         setBlock(BLOCK, UPG_BLOCK);
         setEthereal(true);
         setExhaust(true);
+        tags.add(VOID);
     }
 
     @Override

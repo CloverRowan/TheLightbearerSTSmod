@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class ShockingTumble extends BaseCard {
 
     public static final String ID = makeID("ShockingTumble");
@@ -29,6 +32,7 @@ public class ShockingTumble extends BaseCard {
         super(ID, info);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setBlock(BLOCK, UPG_BLOCK);
+        tags.add(ARC);
     }
 
     @Override

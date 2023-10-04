@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.ARC;
+import static basicmod.util.CustomTags.SOLAR;
+
 public class ElementalPlating extends BaseCard {
     public static final String ID = makeID("ElementalPlating");
 
@@ -28,6 +31,7 @@ public class ElementalPlating extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setCostUpgrade(costUpgrade);
         setMagic(MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override
