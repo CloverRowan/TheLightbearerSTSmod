@@ -96,3 +96,12 @@
     ]
   }
 }
+  },
+  "${modID}:ElementalPlatingPower": {
+    "NAME": "Elemental Plating",
+    "DESCRIPTIONS": [
+      "Whenever you draw a Burn, gain #b",
+      " Block."
+    ]
+  }
+}

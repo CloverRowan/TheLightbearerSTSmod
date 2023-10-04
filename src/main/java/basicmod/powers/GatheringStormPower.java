@@ -21,10 +21,11 @@ public class GatheringStormPower extends BasePower implements CloneablePowerInte
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
-    private static int counter = 0;
+    private int counter = 0;
 
     public GatheringStormPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+        this.counter = 0;
     }
 
     public void updateDescription() {
@@ -37,19 +38,19 @@ public class GatheringStormPower extends BasePower implements CloneablePowerInte
     }
 
     public void onInitialApplication(){
-        counter = 0;
+        this.counter = 0;
     }
 
     public void atStartOfTurn(){
         if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && counter == 1){
+                !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 1){
             flashWithoutSound();
             addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
             addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
         }else if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && counter == 0){
+                !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 0){
             flashWithoutSound();
-            counter = 1;
+            this.counter = 1;
             this.updateDescription();
         }
     }

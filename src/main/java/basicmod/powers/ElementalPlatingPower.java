@@ -2,6 +2,7 @@ package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -33,7 +34,7 @@ public class ElementalPlatingPower extends BasePower implements CloneablePowerIn
     public void onCardDraw(AbstractCard card) {
         if(card.cardID.equals("Burn")){
             flash();
-            addToBot(new DiscardSpecificCardAction(card, player.hand));
+            addToBot(new GainBlockAction(player, this.amount));
         }
     }
 }
