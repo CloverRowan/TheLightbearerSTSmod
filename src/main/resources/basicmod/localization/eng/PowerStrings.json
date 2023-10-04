@@ -88,5 +88,11 @@
     "DESCRIPTIONS": [
       "Gain [E] and draw #b1 card at the start of each turn."
     ]
+  },
+  "${modID}:PowerDifferentialPower": {
+    "NAME": "Power Differential",
+    "DESCRIPTIONS": [
+      "When you deal unblocked attack damage, gain half that as block."
+    ]
   }
 }

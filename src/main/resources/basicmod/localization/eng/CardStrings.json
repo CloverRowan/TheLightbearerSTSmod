@@ -343,5 +343,35 @@
     "NAME": "Shadowshot",
     "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies."
+  },
+  "${modID}:CalculatedSpark": {
+  "NAME": "CalculatedSpark",
+  "DESCRIPTION": "Gain !B! Block and Channel !M! Lightning orbs",
+  "UPGRADE_DESCRIPTION": "Gain !B! Block and Channel !M! Lightning orbs."
+},
+  "${modID}:StaticPass": {
+    "NAME": "Static Pass",
+    "DESCRIPTION": "Deal !D! Damage to all Enemies and Draw a card for each hit.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all Enemies and Draw a card for each hit. NL Draw one additional Card."
+  },
+  "${modID}:PowerDifferential": {
+  "NAME": "Power Differential",
+  "DESCRIPTION": "Ethereal. NL When you Attack a monster, Gain Block equal to half damage dealt.",
+  "UPGRADE_DESCRIPTION": "When you Attack a monster, Gain Block equal to half damage dealt."
+},
+  "${modID}:ArcWelding": {
+    "NAME": "Arc Welding",
+    "DESCRIPTION": "Ethereal. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !B! Block."
+  },
+  "${modID}:CallLightingAttack": {
+    "NAME": "Call Lightning",
+    "DESCRIPTION": "Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage."
+  },
+  "${modID}:CallLighting": {
+    "NAME": "Call Lightning",
+    "DESCRIPTION": "Gain a 0 cost !D! ",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage."
   }
 }
