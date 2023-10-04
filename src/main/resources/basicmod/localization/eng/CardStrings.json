@@ -191,8 +191,8 @@
   },
   "${modID}:ElementalPlating": {
     "NAME": "Elemental Plating",
-    "DESCRIPTION": "Whenever you draw a *Burn, discard it.",
-    "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, discard it."
+    "DESCRIPTION": "Whenever you draw a *Burn, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, gain !M! Block."
   },
   "${modID}:BarrierOfVoid": {
     "NAME": " Barrier of Void",
@@ -311,8 +311,8 @@
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
-    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage."
+    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage to ALL enemies."
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
@@ -343,5 +343,20 @@
     "NAME": "Shadowshot",
     "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies."
+  },
+  "${modID}:FusionGrenade": {
+    "NAME": "Fusion Grenade",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage for each *Burn in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage for each *Burn in your hand."
+  },
+  "${modID}:HeatVenting": {
+    "NAME": "Heat Venting",
+    "DESCRIPTION": "Gain !B! Block. NL Discard all *Burns in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Discard all *Burns in your hand."
+  },
+  "${modID}:OnYourMark": {
+    "NAME": "On Your Mark",
+    "DESCRIPTION": "Gain !M! Vigor for each *Burn in your hand, deck or discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Vigor for each *Burn in your hand, deck or discard pile."
   }
 }

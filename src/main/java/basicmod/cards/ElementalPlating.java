@@ -22,15 +22,17 @@ public class ElementalPlating extends BaseCard {
 
 
     private static  final int costUpgrade = 1;
+    private static final int MAGIC_NUMBER = 2;
 
     public ElementalPlating() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setCostUpgrade(costUpgrade);
+        setMagic(MAGIC_NUMBER);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p,new ElementalPlatingPower(p, 1)));
+        addToBot(new ApplyPowerAction(p,p,new ElementalPlatingPower(p, this.magicNumber)));
     }
 
     @Override
