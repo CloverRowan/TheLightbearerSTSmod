@@ -94,8 +94,6 @@
     "DESCRIPTIONS": [
       "When you deal unblocked attack damage, gain half that as block."
     ]
-  }
-}
   },
   "${modID}:ElementalPlatingPower": {
     "NAME": "Elemental Plating",

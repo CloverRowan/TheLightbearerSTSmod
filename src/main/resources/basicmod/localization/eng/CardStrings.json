@@ -388,5 +388,20 @@
     "NAME": "Call Lightning",
     "DESCRIPTION": "Gain a 0 cost !D! ",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage."
+  },
+  "${modID}:ComfortingFlames": {
+    "NAME": "Comforting Flames",
+    "DESCRIPTION": "Gain !B! Block. Shuffle !M! Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Shuffle !M! Burn into your discard pile."
+  },
+  "${modID}:MasterOfLight": {
+    "NAME": "Master of Light",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card. NL Improved for each *Solar, *Arc, and *Void card in your deck respectively.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card. NL Improved for each *Solar, *Arc, and *Void card in your deck respectively.",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      "",
+      ""
+    ]
   }
 }

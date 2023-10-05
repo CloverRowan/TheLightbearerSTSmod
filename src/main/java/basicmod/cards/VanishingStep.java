@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.util.CustomTags.VOID;
+
 public class VanishingStep extends BaseCard {
 
     public static final String ID = makeID("VanishingStep");
@@ -25,7 +27,7 @@ public class VanishingStep extends BaseCard {
     public VanishingStep() {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
-
+        tags.add(VOID);
     }
 
     @Override
