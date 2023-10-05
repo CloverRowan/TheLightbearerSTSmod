@@ -30,9 +30,7 @@ public class KnockEmDown extends BaseCard {
 
     public KnockEmDown() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-
-        setDamage(2, 1); //Sets the card's damage and how much it changes when upgraded.
-
+        setDamage(DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
     }
