@@ -418,6 +418,7 @@
       " left).",
       " NL (Ready!)"
     ]
+  },
   "${modID}:Telesto": {
     "NAME": "Telesto",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Telesto Bolts.",
@@ -432,6 +433,7 @@
     "NAME": "Jötun",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!."
+  },
   "${modID}:WorldlineZero": {
     "NAME": "Worldline Zero",
     "DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat.",
