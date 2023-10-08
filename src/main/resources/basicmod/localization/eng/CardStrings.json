@@ -393,6 +393,7 @@
     "NAME": "InvigoratingKick",
     "DESCRIPTION": "Deal !D! Damage and gain !M! Temp Strength.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage and gain !M! Temp Strength."
+  },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
     "DESCRIPTION": "Gain !B! Block. Shuffle !M! Burn into your discard pile.",
@@ -407,5 +408,20 @@
       "",
       ""
     ]
+  },
+  "${modID}:WhisperOfTheWorm": {
+    "NAME": "Whisper of The Worm",
+    "DESCRIPTION": "Deal !D! damage. NL Every third time you play this gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Every third time you play this gain [E] [E] .",
+    "EXTENDED_DESCRIPTION": [
+      " NL (3",
+      " left).",
+      " NL (Ready!)"
+    ]
+  },
+  "${modID}:Jotun": {
+    "NAME": "Jötun",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!."
   }
 }

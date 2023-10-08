@@ -84,7 +84,7 @@ public class MasterOfLight extends BaseCard {
         initializeDescription();
     }
 
-    public void countCards(){
+    private void countCards(){
         int solarCount = 0;
         int voidCount = 0;
         int arcCount = 0;
