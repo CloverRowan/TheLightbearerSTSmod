@@ -107,5 +107,13 @@
     "DESCRIPTIONS": [
       "Whenever you draw, Recall Call Lightning to your hand."
     ]
+  },
+  "${modID}:TelestoPower": {
+    "NAME": "Telesto Bolts",
+    "DESCRIPTIONS": [
+      "At the start of its next turn, loses #b",
+      " HP.",
+      "At the start of its turn, loses #b"
+    ]
   }
 }

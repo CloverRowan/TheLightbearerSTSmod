@@ -389,10 +389,10 @@
     "DESCRIPTION": "Shuffle a Call Lightning into your deck.",
     "UPGRADE_DESCRIPTION": "Shuffle a Call Lightning into your deck."
   },
-  "${modID}:InvigoratingKick": {
-    "NAME": "InvigoratingKick",
-    "DESCRIPTION": "Deal !D! Damage and gain !M! Temp Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage and gain !M! Temp Strength."
+  "${modID}:InvigoratingRoar": {
+    "NAME": "InvigoratingRoar",
+    "DESCRIPTION": "Gain !M! Temp Strength and shuffle a *burn into your Discard Pile.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Temp Strength and shuffle a *burn into your Discard Pile."
   },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
@@ -418,10 +418,23 @@
       " left).",
       " NL (Ready!)"
     ]
+  "${modID}:Telesto": {
+    "NAME": "Telesto",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Telesto Bolts.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Telesto Bolts."
+  },
+  "${modID}:WardcliffCoil": {
+    "NAME": "Wardcliff Coil",
+    "DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards."
   },
   "${modID}:Jotun": {
     "NAME": "Jötun",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!."
+  "${modID}:WorldlineZero": {
+    "NAME": "Worldline Zero",
+    "DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat"
   }
 }

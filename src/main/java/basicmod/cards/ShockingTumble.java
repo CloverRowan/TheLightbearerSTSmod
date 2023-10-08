@@ -45,6 +45,17 @@ public class ShockingTumble extends BaseCard {
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        if(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+                .get(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - 1)).type.equals(CardType.ATTACK)) {
+            glowColor = GOLD_BORDER_GLOW_COLOR;
+        }
+        else {
+            glowColor = BLUE_BORDER_GLOW_COLOR;
+        }
+    }
+
+    @Override
     public AbstractCard makeCopy() {
         return new ShockingTumble();
     }
