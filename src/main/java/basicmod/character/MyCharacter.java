@@ -12,6 +12,7 @@ import basicmod.cards.Strike;
 import basicmod.powers.ChargeOfLightPower;
 import basicmod.relics.LittleLight;
 import basicmod.relics.TheTraveler;
+import basicmod.util.SuperReward;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -33,6 +34,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.BurningBlood;
+import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basicmod.powers.ChargeOfLightPower;
@@ -224,6 +226,12 @@ public class MyCharacter extends CustomPlayer {
         return new MyCharacter();
     }
 
-
+    @Override
+    public void onVictory() {
+        super.onVictory();
+        if(AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.MonsterRoomBoss){
+            AbstractDungeon.getCurrRoom().rewards.add(new SuperReward());
+        }
+    }
 
 }
