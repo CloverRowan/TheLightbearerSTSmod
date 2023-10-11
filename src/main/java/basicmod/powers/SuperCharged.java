@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
 import static basicmod.TheLightbearer.makeID;
 import static basicmod.util.CustomTags.SUPERSPELL;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
-
+//defunct
 
 public class SuperCharged extends BasePower implements CloneablePowerInterface {
     public static final String POWER_ID = makeID("SuperCharged");
