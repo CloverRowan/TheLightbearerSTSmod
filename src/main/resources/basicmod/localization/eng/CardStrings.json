@@ -256,8 +256,8 @@
   },
   "${modID}:VigilanceWing": {
     "NAME": "Vigilance Wing",
-    "DESCRIPTION": "Deal !D! Damage if this is the last card in your hand deal !D! Damage again",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage if this is the last card in your hand deal !D! Damage again"
+    "DESCRIPTION": "Deal !D! damage. NL If your hand contains 3 or less cards, deal !D! damage again.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If your hand contains 3 or less cards, deal !D! damage again."
   },
   "${modID}:FlareBlast": {
     "NAME": "Flare Blast",
@@ -276,8 +276,8 @@
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",
-    "DESCRIPTION": "Deal !D! Damage",
-    "UPGRADE_DESCRIPTION": "Draw 1 Card and Discard !M! Cards."
+    "DESCRIPTION": "Deal !D! Damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage."
   },
   "${modID}:VolatileCollapse": {
     "NAME": "Volatile Collapse",
@@ -311,13 +311,13 @@
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
-    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's next turn, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies."
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
-    "DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply Choke to all Enemies. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Choke to all Enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Choke to all Enemies. NL Exhaust."
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
@@ -438,5 +438,15 @@
     "NAME": "Worldline Zero",
     "DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat"
+  },
+  "${modID}:AceOfSpades": {
+    "NAME": "Ace of Spades",
+    "DESCRIPTION": "Deal !D! damage. If this defeats an enemy gain deal !D! damage to all other enemies and gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If this defeats an enemy gain deal !D! damage to all other enemies and gain !M! Strength."
+  },
+  "${modID}:TractorCannon": {
+    "NAME": "Tractor Cannon",
+    "DESCRIPTION": "Apply !M! Weak. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak. NL Exhaust."
   }
 }

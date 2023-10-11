@@ -40,6 +40,10 @@ public class CompoundingExhaustion extends BaseCard {
         setMagic(MAGIC_NUMBER);
         tags.add(VOID);
     }
+    @Override
+    public float getTitleFontSize() {
+        return 16;
+    }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

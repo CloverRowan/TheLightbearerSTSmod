@@ -38,20 +38,22 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.tags.contains(SUPERSPELL) && !card.purgeOnUse && this.amount > 0) {
-                flash();
-                this.amount--;
-                if (this.amount <= 0){
-                        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-                    //set cost of all supers back to 4
-                    raiseSuperCostHand(player.hand);
+            flash();
+            this.amount--;
+            if (this.amount <= 0){
+                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+            }
+        }
+    }
+}
+
+/*
+//set cost of all supers back to 4
+ raiseSuperCostHand(player.hand);
                     raiseSuperCostHand(player.drawPile);
                     raiseSuperCostHand(player.discardPile);
                     reduceSuperCostHand(player.exhaustPile);
-                }
-        }
-    }
-
-    public void onInitialApplication() {
+ public void onInitialApplication() {
         //Set cost of all supers in hand, draw, and discard pile to 0
         reduceSuperCostHand(player.hand);
         reduceSuperCostHand(player.drawPile);
@@ -59,11 +61,11 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
         reduceSuperCostHand(player.exhaustPile);
     }
 
-    /*public void atStartOfTurnPostDraw() {
+    public void atStartOfTurnPostDraw() {
         reduceSuperCostHand(player.hand);
         reduceSuperCostHand(player.drawPile);
         reduceSuperCostHand(player.discardPile);
-    }*/
+    }
 
     public void reduceSuperCostHand(CardGroup cg){
         for(int i = 0; i < cg.size(); i++){
@@ -91,4 +93,4 @@ public class SuperCharged extends BasePower implements CloneablePowerInterface {
             }
         }
     }
-}
+ */
