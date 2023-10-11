@@ -230,7 +230,10 @@ public class MyCharacter extends CustomPlayer {
     public void onVictory() {
         super.onVictory();
         if(AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.MonsterRoomBoss){
-            AbstractDungeon.getCurrRoom().rewards.add(new SuperReward());
+            SuperReward s = new SuperReward();
+            s.generate_reward_cards();
+            AbstractDungeon.getCurrRoom().rewards.add(s);
+
         }
     }
 

@@ -2,16 +2,22 @@ package basicmod;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.abstracts.CustomReward;
 import basemod.interfaces.*;
 import basicmod.cards.BaseCard;
 import basicmod.character.MyCharacter;
+import basicmod.patches.EnumPatch;
+import basicmod.potions.BasePotion;
+import basicmod.potions.BottleOfLight;
 import basicmod.relics.BaseRelic;
 import basicmod.util.GeneralUtils;
 import basicmod.util.KeywordInfo;
+import basicmod.util.SuperReward;
 import basicmod.util.TextureLoader;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.ModInfo;
 import com.evacipated.cardcrawl.modthespire.Patcher;
@@ -19,6 +25,8 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rewards.RewardItem;
+import com.megacrit.cardcrawl.rewards.RewardSave;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -30,6 +38,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Optional;
 import java.util.Set;
+import com.megacrit.cardcrawl.rewards.RewardItem;
+
+
 
 @SpireInitializer
 public class TheLightbearer implements
@@ -39,7 +50,7 @@ public class TheLightbearer implements
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber{
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -89,7 +100,11 @@ public class TheLightbearer implements
         //Set up the mod information displayed in the in-game mods menu.
         //The information used is taken from your pom.xml file.
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        registerPotions();
+        //registerCustomRewards();
     }
+
+
 
     /*----------Localization----------*/
 
@@ -238,10 +253,25 @@ public class TheLightbearer implements
                         UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
     }
+    private static void registerPotions() {
+    new AutoAdd(modID)
+        .packageFilter(BasePotion.class)
+            .any(BasePotion.class,(info, potion) ->{
+                BaseMod.addPotion(potion.getClass(),null,null,null, potion.ID, potion.playerClass);
+            });
+    }
 
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio("GoldenGunSFX", "basicmod/audio/GoldenGunSFX.ogg");
     }
+    /*public void registerCustomRewards(){
+        BaseMod.registerCustomReward(
+                SUPER_REWARD_TYPE,
+                rewardSave -> new SuperReward(),
+                customReward -> new RewardSave(customReward.type.toString(),null,0,0)
+        );
+     }
 
+     */
 }

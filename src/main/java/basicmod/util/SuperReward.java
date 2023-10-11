@@ -2,6 +2,7 @@ package basicmod.util;
 
 import basemod.abstracts.CustomReward;
 import basicmod.TheLightbearer;
+import basicmod.patches.EnumPatch;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -57,9 +58,9 @@ public class SuperReward extends CustomReward {
     }
 
     public boolean claimReward(){
-        if(AbstractDungeon.screen == AbstractDungeon.CurrentScreen.BOSS_REWARD){
-            AbstractDungeon.cardRewardScreen.open(this.cards,(RewardItem)this,TEXT[1] );
-            AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.BOSS_REWARD;
+        if(AbstractDungeon.screen == AbstractDungeon.CurrentScreen.COMBAT_REWARD){
+            AbstractDungeon.cardRewardScreen.open(this.cards,this,TEXT[1] );
+            AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.COMBAT_REWARD;
         }
         return false;
     }
