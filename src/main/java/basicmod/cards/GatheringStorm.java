@@ -24,14 +24,14 @@ public class GatheringStorm extends BaseCard {
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             CardRarity.RARE, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            4 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
+            3 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
     private static final int DAMAGE = 20;
     private static final int UPG_DAMAGE = 8;
 
-    private static final int MAGIC_NUMBER = 10;
-    private static final int UPG_MAGIC_NUMBER = 4;
+    private static final int MAGIC_NUMBER = 14;
+    private static final int UPG_MAGIC_NUMBER = 6;
 
     public GatheringStorm() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -48,7 +48,10 @@ public class GatheringStorm extends BaseCard {
             addToBot(new ApplyPowerAction(mo, p, new GatheringStormPower(mo, this.magicNumber), this.magicNumber));
         }
     }
-
+    @Override
+    public void triggerOnGlowCheck() {
+        glowColor = canPlay(this) ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
+    }
     @Override
     public AbstractCard makeCopy() { //Optional
         return new GatheringStorm();

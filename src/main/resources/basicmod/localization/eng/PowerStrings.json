@@ -8,8 +8,7 @@
   "${modID}:ChargeOfLightPower": {
     "NAME": "Charge of Light",
     "DESCRIPTIONS": [
-      "Upon reaching #b",
-      " stacks, remove all #yCharge #yOf #yLight. Your next #ySuper costs 0."
+      "#ySupers consume #b10 #yCharge #yOf #yLight when played."
     ]
   },
   "${modID}:SuperCharged": {
@@ -17,7 +16,7 @@
     "DESCRIPTIONS": [
       "Consumed by #y",
       "Supers",
-      " to reduce their Cost to #b0."
+      " to make them playable."
     ]
   },
   "${modID}:SparkOfFeedbackPower": {

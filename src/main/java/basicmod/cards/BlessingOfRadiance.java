@@ -40,6 +40,11 @@ public class BlessingOfRadiance extends BaseCard {
     }
 
     @Override
+    public float getTitleFontSize() {
+        return 20;
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p,this.magicNumber)));

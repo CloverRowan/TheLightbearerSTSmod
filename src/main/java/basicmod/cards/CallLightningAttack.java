@@ -1,6 +1,7 @@
 package basicmod.cards;
 
 
+import basemod.AutoAdd;
 import basicmod.character.MyCharacter;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -12,7 +13,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static basicmod.util.CustomTags.ARC;
 import static basicmod.util.CustomTags.SOLAR;
-
+@AutoAdd.Ignore
+@AutoAdd.NotSeen
 public class CallLightningAttack extends BaseCard {
 
     public static final String ID = makeID("CallLightningAttack");

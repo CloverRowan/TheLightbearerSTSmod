@@ -25,7 +25,7 @@
     "NAMES": [
       "super"
     ],
-    "DESCRIPTION": "Costs #b0 if you are #ySuper #yCharged."
+    "DESCRIPTION": "Can only be played if you have at least #b10 #yCharge #yOf #yLight."
   },
   {
     "PROPER_NAME": "Charge Of Light",
@@ -38,6 +38,6 @@
       "charge_of_light",
       "charges_of_light"
     ],
-    "DESCRIPTION": "Upon reaching #b10 stacks, remove #b10 stacks of #yCharge #yOf #yLight. Your next #ySuper costs 0."
+    "DESCRIPTION": "#ySupers consume #b10 #yCharge #yOf #yLight when played."
   }
 ]

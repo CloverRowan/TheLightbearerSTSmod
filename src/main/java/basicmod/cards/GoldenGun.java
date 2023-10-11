@@ -28,10 +28,10 @@ public class GoldenGun extends BaseCard {
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             CardRarity.RARE, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            4
+            0
     );
-    private static final int DAMAGE = 9 ;
-    private static final int UPG_DAMAGE = 3;
+    private static final int DAMAGE = 4 ;
+    private static final int UPG_DAMAGE = 2;
 
     private static final int MAGIC_NUMBER = 3;
 
@@ -72,7 +72,10 @@ public class GoldenGun extends BaseCard {
 
 
     }
-
+    @Override
+    public void triggerOnGlowCheck() {
+        glowColor = canPlay(this) ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
+    }
     @Override
     public AbstractCard makeCopy() {
         return new GoldenGun();
