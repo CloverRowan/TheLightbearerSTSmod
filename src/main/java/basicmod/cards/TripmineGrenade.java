@@ -26,7 +26,7 @@ public class TripmineGrenade extends BaseCard {
 
 
     public TripmineGrenade() {
-        super(ID, info);
+        super(ID, info, "solar");
         setDamage(DAMAGE, UPG_DAMAGE);
         setEthereal(true);
         tags.add(SOLAR);

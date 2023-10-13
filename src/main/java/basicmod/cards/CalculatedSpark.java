@@ -29,7 +29,7 @@ public class CalculatedSpark extends BaseCard {
     private static final int UPG_BLOCK = 4 ;
 
     public CalculatedSpark() {
-        super(ID, info);
+        super(ID, info, "arc");
         tags.add(ARC);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER);

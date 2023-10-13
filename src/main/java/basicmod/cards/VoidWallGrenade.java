@@ -27,7 +27,7 @@ public class VoidWallGrenade extends BaseCard {
 
 
     public VoidWallGrenade() {
-        super(ID, info);
+        super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(VOID);
     }

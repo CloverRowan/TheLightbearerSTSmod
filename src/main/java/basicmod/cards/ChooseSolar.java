@@ -29,7 +29,7 @@ public class ChooseSolar extends BaseCard {
 
 
     public ChooseSolar() {
-        super(ID, info);
+        super(ID, info, "solar");
     }
 
     @Override

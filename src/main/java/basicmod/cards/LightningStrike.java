@@ -35,7 +35,7 @@ public class LightningStrike extends BaseCard {
 
 
     public LightningStrike() {
-        super(ID, info);
+        super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         setExhaust(true,false);

@@ -30,7 +30,7 @@ public class CallLightningAttack extends BaseCard {
 
 
     public CallLightningAttack() {
-        super(ID, info);
+        super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(SOLAR);
 

@@ -31,7 +31,7 @@ public class FlowState extends BaseCard {
 
 
     public FlowState() {
-        super(ID, info);
+        super(ID, info, "arc");
        setMagic(MAGIC_NUMBER);
        setCostUpgrade(1);
         tags.add(ARC);

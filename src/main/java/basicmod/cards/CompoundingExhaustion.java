@@ -35,7 +35,7 @@ public class CompoundingExhaustion extends BaseCard {
 
 
     public CompoundingExhaustion() {
-        super(ID, info);
+        super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         tags.add(VOID);

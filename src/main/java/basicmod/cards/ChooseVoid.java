@@ -30,7 +30,7 @@ public class ChooseVoid extends BaseCard {
 
 
     public ChooseVoid() {
-        super(ID, info);
+        super(ID, info,"void");
     }
 
     @Override

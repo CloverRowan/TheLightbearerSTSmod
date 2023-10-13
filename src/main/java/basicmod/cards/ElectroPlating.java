@@ -33,7 +33,7 @@ public class ElectroPlating extends BaseCard {
     private boolean freeToPlayOnce = false;
 
     public ElectroPlating() {
-        super(ID, info);
+        super(ID, info, "arc");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setExhaust(true);
         tags.add(ARC);

@@ -34,7 +34,7 @@ public class GatheringStorm extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 6;
 
     public GatheringStorm() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "arc"); //Pass the required information to the BaseCard constructor.
         tags.add(SUPERSPELL);
         tags.add(ARC);
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.

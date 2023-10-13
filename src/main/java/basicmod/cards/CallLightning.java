@@ -32,7 +32,7 @@ public class CallLightning extends BaseCard {
     private static final int MAGIC_NUMBER = 1;
 
     public CallLightning() {
-        super(ID, info);
+        super(ID, info, "arc");
     setMagic(MAGIC_NUMBER);
     cardsToPreview = new CallLightningAttack();
         tags.add(ARC);

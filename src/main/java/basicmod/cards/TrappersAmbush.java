@@ -26,7 +26,7 @@ public class TrappersAmbush extends BaseCard {
     private static final boolean upgInnate = true;
 
     public TrappersAmbush() {
-        super(ID, info);
+        super(ID, info,"void");
         setMagic(MAGIC_NUMBER);
         tags.add(VOID);
         setInnate(baseInnate,upgInnate);

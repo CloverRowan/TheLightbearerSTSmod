@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
 
+import static basicmod.util.CustomTags.SOLAR;
 import static basicmod.util.GeneralUtils.removePrefix;
 import static basicmod.util.TextureLoader.getCardTextureString;
 
@@ -47,9 +48,10 @@ public class AceOfSpades extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 0;
 
     public AceOfSpades() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override

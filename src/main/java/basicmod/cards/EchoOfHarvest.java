@@ -25,7 +25,7 @@ public class EchoOfHarvest extends BaseCard {
     private static final int costUpgrade = 1;
 
     public EchoOfHarvest() {
-        super(ID, info);
+        super(ID, info,"void");
         setCostUpgrade(costUpgrade);
         setMagic(MAGIC_NUMBER);
         tags.add(VOID);

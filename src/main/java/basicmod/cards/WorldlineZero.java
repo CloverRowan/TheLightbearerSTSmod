@@ -30,7 +30,7 @@ public class WorldlineZero extends BaseCard {
 
 
     public WorldlineZero() {
-        super(ID, info);
+        super(ID, info, "arc");
         setDamage(DAMAGE);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         this.isMultiDamage = true;

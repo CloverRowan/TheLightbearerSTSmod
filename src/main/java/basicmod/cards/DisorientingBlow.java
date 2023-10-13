@@ -33,7 +33,7 @@ public class DisorientingBlow extends BaseCard {
 
 
     public DisorientingBlow() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "arc"); //Pass the required information to the BaseCard constructor.
 
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER);

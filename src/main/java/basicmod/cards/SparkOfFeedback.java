@@ -24,7 +24,7 @@ public class SparkOfFeedback extends BaseCard {
     private static final int MAGIC_NUMBER= 1;
     private static final int UPG_MAGIC_NUMBER = 1;
     public SparkOfFeedback() {
-        super(ID, info);
+        super(ID, info, "arc");
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(ARC);
     }

@@ -30,7 +30,7 @@ public class EchoShieldToken extends BaseCard {
     private static final int UPG_BLOCK = 3;
 
     public EchoShieldToken() {
-        super(ID, info);
+        super(ID, info,"void");
         setBlock(BLOCK, UPG_BLOCK);
         setEthereal(true);
         setExhaust(true);

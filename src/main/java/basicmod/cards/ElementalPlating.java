@@ -28,7 +28,7 @@ public class ElementalPlating extends BaseCard {
     private static final int MAGIC_NUMBER = 2;
 
     public ElementalPlating() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setCostUpgrade(costUpgrade);
         setMagic(MAGIC_NUMBER);
         tags.add(SOLAR);

@@ -29,7 +29,7 @@ public class Jotun extends BaseCard {
     private static final int EXHAUSTIVE = 2;
 
     public Jotun() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(EXHAUSTIVE);
         ExhaustiveVariable.setBaseValue(this, EXHAUSTIVE);

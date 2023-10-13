@@ -31,7 +31,7 @@ public class LightweightKnife extends BaseCard {
 
 
     public LightweightKnife() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(SOLAR);
     }

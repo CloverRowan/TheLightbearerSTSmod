@@ -31,7 +31,7 @@ public class FearTheVoid extends BaseCard {
 
 
     public FearTheVoid() {
-        super(ID, info);
+        super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         tags.add(VOID);

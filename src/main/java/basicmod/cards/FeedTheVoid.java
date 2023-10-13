@@ -23,7 +23,7 @@ public class FeedTheVoid extends BaseCard {
     );
 
     public FeedTheVoid() {
-        super(ID, info);
+        super(ID, info,"void");
         setCostUpgrade(1);
         tags.add(VOID);
 

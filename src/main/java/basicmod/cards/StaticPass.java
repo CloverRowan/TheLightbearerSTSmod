@@ -36,7 +36,7 @@ public class StaticPass extends BaseCard {
 
 
     public StaticPass() {
-        super(ID, info);
+        super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(ARC);
         this.isMultiDamage = true;

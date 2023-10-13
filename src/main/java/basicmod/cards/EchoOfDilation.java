@@ -28,7 +28,7 @@ public class EchoOfDilation extends BaseCard {
     private static final int costUpgrade = 1;
     private static final int MAGIC_NUMBER = 1;
     public EchoOfDilation() {
-        super(ID, info);
+        super(ID, info,"void");
        setEthereal(true);
        setDamage(DAMAGE);
        setCostUpgrade(costUpgrade);

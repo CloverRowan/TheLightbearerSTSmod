@@ -31,7 +31,7 @@ public class PowerDifferential extends BaseCard {
 
 
     public PowerDifferential() {
-        super(ID, info);
+        super(ID, info, "arc");
         setEthereal(true,false);
         setMagic(MAGIC_NUMBER);
         tags.add(ARC);

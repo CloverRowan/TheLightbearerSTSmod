@@ -29,7 +29,7 @@ public class FlareBlast extends BaseCard {
 
 
     public FlareBlast() {
-        super(ID, info);
+        super(ID, info, "solar");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(SOLAR);
     }

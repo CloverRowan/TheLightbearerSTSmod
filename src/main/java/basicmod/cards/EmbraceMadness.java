@@ -33,7 +33,7 @@ public class EmbraceMadness extends BaseCard {
     private static int UPG_MAGIC_NUMBER = 1;
 
     public EmbraceMadness() {
-        super(ID, info);
+        super(ID, info,"void");
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         tags.add(VOID);

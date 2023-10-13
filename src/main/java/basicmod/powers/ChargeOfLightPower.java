@@ -43,7 +43,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
 
             //DimmerSwitch logic
             for (AbstractRelic r : player.relics) {
-                if (r.name.equals(makeID("DimmerSwitch"))) {
+                if (r.relicId.equals(makeID("DimmerSwitch"))) {
                     addToBot(new GainEnergyAction(2));
                     r.flash();
                 }

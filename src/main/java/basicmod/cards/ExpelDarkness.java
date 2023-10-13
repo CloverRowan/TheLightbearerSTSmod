@@ -33,7 +33,7 @@ public class ExpelDarkness extends BaseCard {
     private static int UPG_MAGIC_NUMBER = 2;
 
     public ExpelDarkness() {
-        super(ID, info);
+        super(ID, info,"void");
     setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     setEthereal(true);
         tags.add(VOID);

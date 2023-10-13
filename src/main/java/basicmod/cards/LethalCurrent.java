@@ -31,13 +31,12 @@ public class LethalCurrent extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 2;
 
     public LethalCurrent() {
-        super(ID, info);
+        super(ID, info, "arc");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setExhaust(true);
         tags.add(ARC);
 
     }
-    //todo pass magic num to string
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

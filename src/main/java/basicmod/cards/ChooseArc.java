@@ -34,7 +34,7 @@ public class ChooseArc extends BaseCard {
 
 
     public ChooseArc() {
-        super(ID, info);
+        super(ID, info, "arc");
     }
 
     @Override

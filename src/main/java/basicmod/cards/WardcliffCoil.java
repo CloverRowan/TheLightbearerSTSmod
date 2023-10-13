@@ -31,7 +31,7 @@ public class WardcliffCoil extends BaseCard {
 
 
     public WardcliffCoil() {
-        super(ID, info);
+        super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
         this.isMultiDamage = true;
         tags.add(ARC);

@@ -25,7 +25,7 @@ public class VanishingStep extends BaseCard {
     private static final int UPG_BLOCK = 3;
     private static final int baseExhaust = 2;
     public VanishingStep() {
-        super(ID, info);
+        super(ID, info,"void");
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(VOID);
     }

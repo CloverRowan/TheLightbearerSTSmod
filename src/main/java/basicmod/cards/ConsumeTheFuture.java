@@ -24,7 +24,7 @@ public class ConsumeTheFuture extends BaseCard {
     );
 
     public ConsumeTheFuture() {
-        super(ID, info);
+        super(ID, info,"void");
         setExhaust(true);
         setSelfRetain(false, true);
         tags.add(VOID);

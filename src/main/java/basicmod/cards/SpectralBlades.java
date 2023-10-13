@@ -28,7 +28,7 @@ public class SpectralBlades extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 1;
 
     public SpectralBlades() {
-        super(ID, info);
+        super(ID, info,"void");
         tags.add(SUPERSPELL);
         tags.add(VOID);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);

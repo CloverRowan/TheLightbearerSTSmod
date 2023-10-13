@@ -31,7 +31,7 @@ public class BladeBarrage extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 0;
 
     public BladeBarrage() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         tags.add(SUPERSPELL);
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);

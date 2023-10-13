@@ -28,7 +28,7 @@ public class ArcStaff extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 1;
 
     public ArcStaff() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "arc"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SUPERSPELL);
         tags.add(ARC);

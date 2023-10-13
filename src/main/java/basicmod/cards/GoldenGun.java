@@ -38,7 +38,7 @@ public class GoldenGun extends BaseCard {
 
 
     public GoldenGun() {
-        super(ID, info);
+        super(ID, info, "solar");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         tags.add(SUPERSPELL);

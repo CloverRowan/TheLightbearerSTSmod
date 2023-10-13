@@ -34,7 +34,7 @@ public class Equalize extends BaseCard {
 
 
     public Equalize() {
-        super(ID, info);
+        super(ID, info,"void");
         setExhaust(true);
         setCostUpgrade(1);
         tags.add(VOID);

@@ -29,7 +29,7 @@ public class ShockingTumble extends BaseCard {
     private static final int UPG_BLOCK = 2;
 
     public ShockingTumble() {
-        super(ID, info);
+        super(ID, info, "arc");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(ARC);

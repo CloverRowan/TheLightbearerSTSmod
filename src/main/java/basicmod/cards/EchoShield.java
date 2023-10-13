@@ -25,7 +25,7 @@ public class EchoShield extends BaseCard {
     private static final int UPG_BLOCK = 3;
 
     public EchoShield() {
-        super(ID, info);
+        super(ID, info,"void");
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(VOID);
     }

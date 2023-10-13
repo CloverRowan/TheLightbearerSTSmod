@@ -28,7 +28,7 @@ public class Deadshot extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 0;
 
     public Deadshot() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
         setCostUpgrade(1);

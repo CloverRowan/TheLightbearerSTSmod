@@ -27,7 +27,7 @@ public class StylishExecution extends BaseCard {
 
 
     public StylishExecution() {
-        super(ID, info);
+        super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(VOID);
     }

@@ -30,7 +30,7 @@ public class JumpStart extends BaseCard {
 
 
     public JumpStart() {
-        super(ID, info);
+        super(ID, info, "arc");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setInnate(true,true);
         tags.add(ARC);

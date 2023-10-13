@@ -34,7 +34,7 @@ public class FulminisDischarge extends BaseCard {
     private static final int MAGIC_NUMBER = 1;
 
     public FulminisDischarge() {
-        super(ID, info);
+        super(ID, info, "arc");
         setMagic(MAGIC_NUMBER);
         setDamage(DAMAGE, UPG_DAMAGE);
         this.showEvokeValue = true;

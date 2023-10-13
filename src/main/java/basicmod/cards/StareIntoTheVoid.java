@@ -27,7 +27,7 @@ public class StareIntoTheVoid extends BaseCard {
     private static int UPG_MAGIC_NUMBER = 7;
 
     public StareIntoTheVoid() {
-        super(ID, info);
+        super(ID, info,"void");
         tags.add(VOID);
         setEthereal(true);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);

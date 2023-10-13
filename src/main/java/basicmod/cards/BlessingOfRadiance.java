@@ -32,7 +32,7 @@ public class BlessingOfRadiance extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 2;
 
     public BlessingOfRadiance() {
-        super(ID, info);
+        super(ID, info, "solar");
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         tags.add(SOLAR);

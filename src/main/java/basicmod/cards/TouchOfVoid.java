@@ -30,7 +30,7 @@ public class TouchOfVoid extends BaseCard {
 
 
     public TouchOfVoid() {
-        super(ID, info);
+        super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         tags.add(VOID);

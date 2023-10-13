@@ -31,7 +31,7 @@ public class CombinationBlow extends BaseCard {
     private static final int MAGIC_NUMBER = 2;
 
     public CombinationBlow() {
-        super(ID, info);
+        super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         tags.add(ARC);

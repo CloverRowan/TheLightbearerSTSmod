@@ -31,7 +31,7 @@ public class ArcWelding extends BaseCard {
     private static final int UPG_BLOCK = 7;
 
     public ArcWelding() {
-        super(ID, info);
+        super(ID, info, "arc");
         setEthereal(true);
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(ARC);

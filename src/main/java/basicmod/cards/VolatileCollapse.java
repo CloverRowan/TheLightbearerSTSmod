@@ -27,7 +27,7 @@ public class VolatileCollapse extends BaseCard {
 
 
     public VolatileCollapse() {
-        super(ID, info);
+        super(ID, info,"void");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         tags.add(VOID);
     }

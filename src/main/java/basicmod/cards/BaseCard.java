@@ -51,12 +51,15 @@ public abstract class BaseCard extends CustomCard {
     final protected Map<String, LocalVarInfo> cardVariables = new HashMap<>();
 
     public BaseCard(String ID, CardStats info) {
-        this(ID, info.baseCost, info.cardType, info.cardTarget, info.cardRarity, info.cardColor);
+        this(ID, info.baseCost, info.cardType, info.cardTarget, info.cardRarity, info.cardColor, "none");
     }
-    public BaseCard(String ID, CardStats info, boolean upgradesDescription) {
-        this(ID, info.baseCost, info.cardType, info.cardTarget, info.cardRarity, info.cardColor, upgradesDescription);
+    public BaseCard(String ID, CardStats info, String element) {
+        this(ID, info.baseCost, info.cardType, info.cardTarget, info.cardRarity, info.cardColor, element);
     }
-    public BaseCard(String ID, int cost, CardType cardType, CardTarget target, CardRarity rarity, CardColor color)
+    public BaseCard(String ID, CardStats info, boolean upgradesDescription, String element) {
+        this(ID, info.baseCost, info.cardType, info.cardTarget, info.cardRarity, info.cardColor, upgradesDescription, element);
+    }
+    public BaseCard(String ID, int cost, CardType cardType, CardTarget target, CardRarity rarity, CardColor color, String element)
     {
         super(ID, getName(ID), getCardTextureString(removePrefix(ID), cardType), cost, getInitialDescription(ID), cardType, color, rarity, target);
         this.cardStrings = CardCrawlGame.languagePack.getCardStrings(cardID);
@@ -74,10 +77,17 @@ public abstract class BaseCard extends CustomCard {
         this.damageUpgrade = 0;
         this.blockUpgrade = 0;
         this.magicUpgrade = 0;
+        setBackgroundTexture("basicmod/character/character/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element + ".png",
+                "basicmod/character/character/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element +  "_p.png");
+    }
+    public BaseCard(String ID, int cost, CardType cardType, CardTarget target, CardRarity rarity, CardColor color, boolean upgradesDescription, String element)
+    {
+        this(ID, cost, cardType, target, rarity, color, element);
+        this.upgradesDescription = upgradesDescription;
     }
     public BaseCard(String ID, int cost, CardType cardType, CardTarget target, CardRarity rarity, CardColor color, boolean upgradesDescription)
     {
-        this(ID, cost, cardType, target, rarity, color);
+        this(ID, cost, cardType, target, rarity, color, "none");
         this.upgradesDescription = upgradesDescription;
     }
 

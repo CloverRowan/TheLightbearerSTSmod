@@ -25,7 +25,7 @@ public class BarrierOfVoid extends BaseCard {
     private static final int UPG_BLOCK = 3;
 
     public BarrierOfVoid() {
-        super(ID, info);
+        super(ID, info,"void");
         setBlock(BLOCK, UPG_BLOCK);
         setExhaust(true);
         tags.add(VOID);

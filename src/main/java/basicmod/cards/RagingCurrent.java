@@ -33,7 +33,7 @@ public class RagingCurrent extends BaseCard {
     private static final int UPG_BLOCK = 2;
 
     public RagingCurrent() {
-        super(ID, info);
+        super(ID, info, "arc");
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(ARC);
     }

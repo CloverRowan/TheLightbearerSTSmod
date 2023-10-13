@@ -30,7 +30,7 @@ public class GunpowderGamble extends BaseCard {
 
 
     public GunpowderGamble() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE,UPG_DAMAGE ); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER);
         tags.add(SOLAR);

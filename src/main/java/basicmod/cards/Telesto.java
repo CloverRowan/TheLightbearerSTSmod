@@ -30,7 +30,7 @@ public class Telesto extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 5;
 
     public Telesto() {
-        super(ID, info);
+        super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     }

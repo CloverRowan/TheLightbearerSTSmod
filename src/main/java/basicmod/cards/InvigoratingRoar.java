@@ -30,7 +30,7 @@ public class InvigoratingRoar extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 3;
 
     public InvigoratingRoar() {
-        super(ID, info);
+        super(ID, info, "solar");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
     }

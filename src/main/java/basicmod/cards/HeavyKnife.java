@@ -28,7 +28,7 @@ public class HeavyKnife extends BaseCard {
 
 
     public HeavyKnife() {
-        super(ID, info);
+        super(ID, info, "solar");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(SOLAR);
     }

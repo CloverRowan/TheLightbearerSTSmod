@@ -29,7 +29,7 @@ public class TractorCannon extends BaseCard {
     private static final int MAGIC_NUMBER = 99;
 
     public TractorCannon() {
-        super(ID, info);
+        super(ID, info,"void");
         setMagic(MAGIC_NUMBER);
         setExhaust(true);
         setCostUpgrade(1);
