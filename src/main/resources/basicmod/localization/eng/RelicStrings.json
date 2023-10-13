@@ -26,5 +26,12 @@
     "DESCRIPTIONS": [
       "Gain #b2 [E] whenever you have #b10 #y${modID}:Charges_Of_Light."
     ]
+  },
+  "${modID}:SagirasShell": {
+    "NAME": "Sagira's Shell",
+    "FLAVOR": "Honor an old friend.",
+    "DESCRIPTIONS": [
+      "Right-Click to heal for 10"
+    ]
   }
 }

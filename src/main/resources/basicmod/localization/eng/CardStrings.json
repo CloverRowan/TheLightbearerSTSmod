@@ -448,5 +448,21 @@
     "NAME": "Tractor Cannon",
     "DESCRIPTION": "Apply !M! Weak. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Weak. NL Exhaust."
-  }
+  },
+  "${modID}:ChooseArc": {
+    "NAME": "Choose Arc",
+    "DESCRIPTION": "When picked Add 1 *ARC Card to your hand, it costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "When picked Add 2 *ARC Cards to your hand, it costs 0 this turn."
+  },
+  "${modID}:ChooseVoid": {
+    "NAME": "Choose Void",
+    "DESCRIPTION": "When picked Add 1 *Void Card to your hand, it costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "When picked Add 2 *Void Cards to your hand, it costs 0 this turn."
+  },
+  "${modID}:ChooseSolar": {
+  "NAME": "Choose Solar",
+  "DESCRIPTION": "When picked Add 1 *Solar Card to your hand, it costs 0 this turn.",
+  "UPGRADE_DESCRIPTION": "When picked Add 2 *Solar Cards to your hand, it costs 0 this turn."
 }
+}
+
