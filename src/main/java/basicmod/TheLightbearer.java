@@ -57,12 +57,12 @@ public class TheLightbearer implements
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
     private static final String resourcesFolder = "basicmod";
 
-    private static final String BG_ATTACK = characterPath("cardback/bg_attack.png");
-    private static final String BG_ATTACK_P = characterPath("cardback/bg_attack_p.png");
-    private static final String BG_SKILL = characterPath("cardback/bg_skill.png");
-    private static final String BG_SKILL_P = characterPath("cardback/bg_skill_p.png");
-    private static final String BG_POWER = characterPath("cardback/bg_power.png");
-    private static final String BG_POWER_P = characterPath("cardback/bg_power_p.png");
+    private static final String BG_ATTACK = characterPath("cardback/none/attack_none.png");
+    private static final String BG_ATTACK_P = characterPath("cardback/none/attack_none_p.png");
+    private static final String BG_SKILL = characterPath("cardback/none/skill_none.png");
+    private static final String BG_SKILL_P = characterPath("cardback/none/skill_none_p.png");
+    private static final String BG_POWER = characterPath("cardback/none/power_none.png");
+    private static final String BG_POWER_P = characterPath("cardback/none/power_none_p.png");
     private static final String ENERGY_ORB = characterPath("cardback/energy_orb.png");
     private static final String ENERGY_ORB_P = characterPath("cardback/energy_orb_p.png");
     private static final String SMALL_ORB = characterPath("cardback/small_orb.png");

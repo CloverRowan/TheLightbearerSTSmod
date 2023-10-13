@@ -25,7 +25,7 @@ public class Defend extends BaseCard {
     private static final int UPG_BLOCK = 3;
 
     public Defend() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "none"); //Pass the required information to the BaseCard constructor.
 
 
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.

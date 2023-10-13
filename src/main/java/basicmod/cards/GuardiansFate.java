@@ -29,7 +29,7 @@ public class GuardiansFate extends BaseCard {
 
 
     public GuardiansFate() {
-        super(ID, info);
+        super(ID, info, "none");
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
     }

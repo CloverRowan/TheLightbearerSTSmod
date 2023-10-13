@@ -22,7 +22,7 @@ public class QuickDraw extends BaseCard {
     private static final int UPG_MAGIC_NUMBER = 2;
 
     public QuickDraw() {
-        super(ID, info);
+        super(ID, info, "none");
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
 
     }

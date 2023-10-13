@@ -27,7 +27,7 @@ public class Strike extends BaseCard {
 
 
     public Strike() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, "none"); //Pass the required information to the BaseCard constructor.
 
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STARTER_STRIKE); //This tag marks it as a basic Strike
