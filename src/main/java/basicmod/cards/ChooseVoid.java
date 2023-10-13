@@ -19,7 +19,7 @@ import static basicmod.util.CustomTags.VOID;
 @AutoAdd.NotSeen
 public class ChooseVoid extends BaseCard {
 
-    public static final String ID = makeID("ChooseArc");
+    public static final String ID = makeID("ChooseVoid");
     private static final CardStats info = new CardStats(
             MyCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.
             CardType.STATUS, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
