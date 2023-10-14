@@ -114,5 +114,12 @@
       " HP.",
       "At the start of its turn, loses #b"
     ]
+  },
+  "${modID}:EmberOfSearingPower": {
+    "NAME": "Ember Of Searing",
+    "DESCRIPTIONS": [
+      "When you draw a #yBurn deal #b",
+      " damage to all enemies."
+    ]
   }
 }

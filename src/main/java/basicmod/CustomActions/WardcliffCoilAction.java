@@ -11,8 +11,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-
+import static basicmod.TheLightbearer.logger;
 import static basicmod.util.CustomTags.*;
+
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class WardcliffCoilAction extends AbstractGameAction {
@@ -31,6 +32,7 @@ public class WardcliffCoilAction extends AbstractGameAction {
         this.energyOnUse = energyOnUse;
         this.p = p;
         this.freeToPlayOnce = freeToPlayOnce;
+        this.damageType = damageType;
     }
 
     public void update() {
@@ -60,7 +62,7 @@ public class WardcliffCoilAction extends AbstractGameAction {
                     arcCount++;
                 }
             }
-            effect = effect + arcCount;
+            effect += arcCount;
 
 
             for (int i = 0; i < effect; ++i) {
@@ -70,9 +72,10 @@ public class WardcliffCoilAction extends AbstractGameAction {
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
+            //logger.info("energy down");
         }
-
         isDone = true;
+       // logger.info("Done");
     }
 }
 

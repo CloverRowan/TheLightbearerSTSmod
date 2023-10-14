@@ -25,8 +25,8 @@ public class WardcliffCoil extends BaseCard {
             CardTarget.ALL_ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             -1
     );
-    private static final int DAMAGE = 3;
-    private static final int UPG_DAMAGE = 3;
+    private static final int DAMAGE = 2;
+    private static final int UPG_DAMAGE = 2;
     int arcCount = 0;
 
 
@@ -36,14 +36,15 @@ public class WardcliffCoil extends BaseCard {
         this.isMultiDamage = true;
         tags.add(ARC);
         this.arcCount = 0;
+        this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
+        this.initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction) new WardcliffCoilAction(p, this.multiDamage, this.damageTypeForTurn, this.freeToPlayOnce, this.upgraded, this.energyOnUse));
+        addToBot(new WardcliffCoilAction(p, this.multiDamage, this.damageTypeForTurn, this.freeToPlayOnce, this.upgraded, this.energyOnUse));
     }
     private void countCards() {
-        int arcCount = 0;
         for (AbstractCard c : player.hand.group) {
             if (c.tags.contains(ARC)) {
                 arcCount++;
@@ -59,27 +60,26 @@ public class WardcliffCoil extends BaseCard {
                 arcCount++;
             }
         }
+
     }
 
-    public void applyPowers() {
+   public void applyPowers() {
         countCards();
-        super.applyPowers();
-        this.rawDescription = "Deal !D! damage for each energy spent plus other" + (this.arcCount > 1 ? "s." : ".")
-                + " *Arc Cards.";
+        setMagic(arcCount);
+       super.applyPowers();
+       this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
 
     public void onMoveToDiscard() {
-        this.rawDescription = "Deal !D! damage for each energy spent plus other" + (this.arcCount > 1 ? "s." : ".")
-                + " *Arc Cards.";
+        this.rawDescription = this.cardStrings.DESCRIPTION;
         initializeDescription();
     }
 
 
     public void calculateCardDamage(AbstractMonster mo) {
-        super.calculateCardDamage(mo);
-        this.rawDescription = "Deal !D! damage for each energy spent plus other" + (this.arcCount > 1 ? "s." : ".")
-                + " *Arc Cards.";
+    super.calculateCardDamage(mo);
+        this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
         @Override

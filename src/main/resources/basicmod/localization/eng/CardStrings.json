@@ -427,7 +427,10 @@
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",
     "DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have !M! *Arc Cards.)"
+    ]
   },
   "${modID}:Jotun": {
     "NAME": "Jötun",
