@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static basicmod.TheLightbearer.logger;
 import static basicmod.util.CustomTags.ARC;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
@@ -27,15 +28,17 @@ public class WardcliffCoil extends BaseCard {
     );
     private static final int DAMAGE = 2;
     private static final int UPG_DAMAGE = 2;
-    int arcCount = 0;
+    //private int arcCount = 0;
 
+    private static final int MAGIC = 0;
 
     public WardcliffCoil() {
         super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
+        setMagic(MAGIC);
         this.isMultiDamage = true;
         tags.add(ARC);
-        this.arcCount = 0;
+        //this.arcCount = 0;
         this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
@@ -44,7 +47,8 @@ public class WardcliffCoil extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new WardcliffCoilAction(p, this.multiDamage, this.damageTypeForTurn, this.freeToPlayOnce, this.upgraded, this.energyOnUse));
     }
-    private void countCards() {
+    private int countCards() {
+        int arcCount = 0;
         for (AbstractCard c : player.hand.group) {
             if (c.tags.contains(ARC)) {
                 arcCount++;
@@ -60,14 +64,13 @@ public class WardcliffCoil extends BaseCard {
                 arcCount++;
             }
         }
-
+        return arcCount;
     }
 
    public void applyPowers() {
-        countCards();
-        setMagic(arcCount);
-       super.applyPowers();
-       this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
+        this.magicNumber = this.baseMagicNumber = countCards() - 1;
+        super.applyPowers();
+        this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
 
@@ -78,7 +81,7 @@ public class WardcliffCoil extends BaseCard {
 
 
     public void calculateCardDamage(AbstractMonster mo) {
-    super.calculateCardDamage(mo);
+        super.calculateCardDamage(mo);
         this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
