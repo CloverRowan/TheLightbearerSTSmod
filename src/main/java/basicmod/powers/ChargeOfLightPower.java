@@ -1,6 +1,7 @@
 package basicmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
+import basicmod.CustomActions.CheckPowerStacks;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -68,7 +69,12 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.tags.contains(SUPERSPELL) && !card.purgeOnUse) {
             flash();
-            this.amount-=10;
+            /*
+            if(new CheckPowerStacks(player,"DuplicationPower").CheckPowerStacksAction() < 1){
+                this.amount-=10;
+            }
+            */
+
         }
     }
 }

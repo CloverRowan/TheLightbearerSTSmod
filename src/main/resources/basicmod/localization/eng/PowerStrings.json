@@ -22,15 +22,15 @@
   "${modID}:SparkOfFeedbackPower": {
     "NAME": "Spark Of Feedback",
     "DESCRIPTIONS": [
-      "When you take damage draw",
-      "card"
+      "When you take damage draw ",
+      " card."
     ]
   },
   "${modID}:EchoOfHarvestPower": {
     "NAME": "Echo Of Harvest",
     "DESCRIPTIONS": [
-      "When you Exhaust a card gain",
-      "Temporary HP"
+      "When you Exhaust a card gain ",
+      " Temporary HP"
     ]
   },
   "${modID}:SpectralBladesPower": {
@@ -41,7 +41,7 @@
   ]
   },
   "${modID}:FeedTheVoidPower": {
-    "NAME": "Echo Of Harvest",
+    "NAME": "Feed The Void",
     "DESCRIPTIONS": [
       "At the start of your turn Exhaust up to "
     ]

@@ -1,6 +1,7 @@
 package basicmod.cards;
 
 import basicmod.character.MyCharacter;
+import basicmod.powers.ChargeOfLightPower;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -26,8 +27,8 @@ public class DisorientingBlow extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 8;
-    private static final int UPG_DAMAGE = 3;
+    private static final int DAMAGE = 6;
+    private static final int UPG_DAMAGE = 2;
 
     private static final int MAGIC_NUMBER = 2;
 
@@ -43,7 +44,7 @@ public class DisorientingBlow extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new ChargeOfLightPower(p, 1), 1));
     }
 
     @Override

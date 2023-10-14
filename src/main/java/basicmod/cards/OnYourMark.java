@@ -63,7 +63,9 @@ public class OnYourMark extends BaseCard {
             if(c.name.equals("Burn"))
                 burnCount++;
         }
-        addToBot(new ApplyPowerAction(p,p,new VigorPower(p,this.magicNumber*burnCount), this.magicNumber*burnCount));
+        if(burnCount > 0){
+            addToBot(new ApplyPowerAction(p,p,new VigorPower(p,this.magicNumber*burnCount), this.magicNumber*burnCount));
+        }
     }
 
     @Override

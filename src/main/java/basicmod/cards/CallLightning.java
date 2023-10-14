@@ -52,4 +52,12 @@ public class CallLightning extends BaseCard {
     public AbstractCard makeCopy() {
         return new CallLightning();
     }
+
+    @Override
+    public void upgrade(){
+        super.upgrade();
+        AbstractCard upgPreview = new CallLightningAttack();
+        upgPreview.upgrade();
+        cardsToPreview = upgPreview;
+    }
 }
