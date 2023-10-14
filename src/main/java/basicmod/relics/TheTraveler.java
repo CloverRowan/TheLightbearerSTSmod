@@ -1,15 +1,12 @@
 package basicmod.relics;
 
-import basicmod.CustomActions.CheckPowerStacks;
 import basicmod.character.MyCharacter;
 import basicmod.powers.ChargeOfLightPower;
-import basicmod.powers.SuperCharged;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DuplicationPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Necronomicon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -26,6 +23,8 @@ public class TheTraveler extends BaseRelic {
     public static final String ID = makeID(NAME);
     private static final RelicTier RARITY = RelicTier.COMMON; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.CLINK; //The sound played when the relic is clicked.
+    public boolean playForFree;
+    ArrayList <Boolean> freeCharge = new ArrayList<>();
 
     public TheTraveler() {
         super(ID, NAME, MyCharacter.Enums.CARD_COLOR, RARITY, SOUND);
@@ -42,20 +41,6 @@ public class TheTraveler extends BaseRelic {
         addToBot(new ApplyPowerAction(player, player,
                 new ChargeOfLightPower(player, 1)));
     }
-
-    /*
-        public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-            //Make attacks that aren't supers not generate charges?
-
-            if(AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&
-                    AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT &&
-                    info.type == DamageInfo.DamageType.NORMAL){
-
-                 addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                        new ChargeOfLightPower(AbstractDungeon.player, 1)));
-            }
-        }
-    */
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if (player != null && AbstractDungeon.currMapNode != null &&
                 AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT &&
@@ -64,16 +49,25 @@ public class TheTraveler extends BaseRelic {
             addToTop(new ApplyPowerAction(player, player,
                     new ChargeOfLightPower(player, 1)));
         }
-
-
+        if(player.hasPower("DuplicationPower")){
+            for (int i = 0; i<=1; i++) {
+                freeCharge.add(playForFree);
+                freeCharge.set(i, true);
+            }
+        }
     }
-
     public boolean canPlay(AbstractCard card) {
         if (card.tags.contains(SUPERSPELL)) {
             for (AbstractPower p : player.powers) {
                 if (p.ID.equals(makeID("ChargeOfLightPower"))) {
-                    if(p.amount >= 10){
+                    if(p.amount >= 10 || (!freeCharge.isEmpty() && freeCharge.get(0) == true)){
+                        if (!freeCharge.isEmpty()){
+                            freeCharge.remove(0);
+                            logger.info("got to the array reduce");
+                            return super.canPlay(card);
+                        }
                         return super.canPlay(card);
+
                     }
                     ArrayList<AbstractCard> cards = AbstractDungeon.actionManager.cardsPlayedThisCombat;
 
@@ -87,19 +81,7 @@ public class TheTraveler extends BaseRelic {
                             return super.canPlay(card);
                         }
                     }
-
-                    //fix this
-                    /*if(new CheckPowerStacks(player,"DuplicationPower").CheckPowerStacksAction() >= 1 &&
-                            !cards.isEmpty() && cards.get(cards.size()-1).tags.contains(SUPERSPELL)){
-                        if(cards.size() >= 2 && cards.get(cards.size()-2).tags.contains(SUPERSPELL)){
-                            return false;
-                        }
-                        return super.canPlay(card);
-                    }
-*/
-
                     return false;
-
                 }
             }
         }

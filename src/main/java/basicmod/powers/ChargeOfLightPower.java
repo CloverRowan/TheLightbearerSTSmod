@@ -69,12 +69,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.tags.contains(SUPERSPELL) && !card.purgeOnUse) {
             flash();
-            /*
-            if(new CheckPowerStacks(player,"DuplicationPower").CheckPowerStacksAction() < 1){
-                this.amount-=10;
-            }
-            */
-
+            this.amount-=10;
         }
     }
 }
