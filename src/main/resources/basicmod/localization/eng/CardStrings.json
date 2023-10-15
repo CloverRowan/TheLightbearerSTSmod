@@ -154,8 +154,8 @@
     "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle a *Burn into your discard pile."
   },
-  "${modID}:EmberOfSearing": {
-    "NAME": "Ember of Searing",
+  "${modID}:Incandescence": {
+    "NAME": "Incandescence",
     "DESCRIPTION": "Whenever you draw a *Burn, deal !M! damage to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, deal !M! damage to ALL enemies."
   },
@@ -311,8 +311,8 @@
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
-    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies."
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
@@ -341,8 +341,8 @@
   },
   "${modID}:Shadowshot": {
     "NAME": "Shadowshot",
-    "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage to ALL enemies. NL When an enemy dies, deal damage equal to its Max HP to ALL enemies."
+    "DESCRIPTION": "${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Apply !M! Vulnerable and deal !D! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Apply !M! Vulnerable and deal !D! damage to ALL enemies."
   },
   "${modID}:FusionGrenade": {
     "NAME": "Fusion Grenade",

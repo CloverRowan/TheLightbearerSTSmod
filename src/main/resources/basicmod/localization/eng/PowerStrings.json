@@ -22,7 +22,7 @@
   "${modID}:SparkOfFeedbackPower": {
     "NAME": "Spark Of Feedback",
     "DESCRIPTIONS": [
-      "When you take damage draw ",
+      "When you take damage draw #b",
       " card."
     ]
   },
@@ -43,27 +43,27 @@
   "${modID}:FeedTheVoidPower": {
     "NAME": "Feed The Void",
     "DESCRIPTIONS": [
-      "At the start of your turn Exhaust up to "
+      "At the start of your turn Exhaust up to #b"
     ]
   },
   "${modID}:DeadshotPower": {
     "NAME": "Deadshot",
     "DESCRIPTIONS": [
-      "At the start of your turn gain ",
+      "At the start of your turn gain #b",
       " Vigor."
     ]
   },
   "${modID}:VolatileCollapsePower": {
     "NAME": "Volatile Collapse",
     "DESCRIPTIONS": [
-      "When you Exhaust a card Deal ",
+      "When you Exhaust a card Deal #b",
       " Damage to a random enemy."
     ]
   },
   "${modID}:RagingCurrentPower": {
     "NAME": "Raging Current",
     "DESCRIPTIONS": [
-      "This Turn when you Draw a card gain ",
+      "This Turn when you Draw a card gain #b",
       " Block."
     ]
   },
@@ -115,8 +115,8 @@
       "At the start of its turn, loses #b"
     ]
   },
-  "${modID}:EmberOfSearingPower": {
-    "NAME": "Ember Of Searing",
+  "${modID}:IncandescencePower": {
+    "NAME": "Incandescence",
     "DESCRIPTIONS": [
       "When you draw a #yBurn deal #b",
       " damage to all enemies."

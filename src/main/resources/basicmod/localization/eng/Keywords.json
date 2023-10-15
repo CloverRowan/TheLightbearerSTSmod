@@ -39,5 +39,13 @@
       "charges_of_light"
     ],
     "DESCRIPTION": "#ySupers consume #b10 #yCharge #yOf #yLight when played."
-  }
+  },
+  {
+  "PROPER_NAME": "Corpse Explosion",
+  "NAMES": [
+    "corpse explosion",
+    "corpse_explosion"
+  ],
+  "DESCRIPTION": "When the enemy dies, deal damage equal to its Max HP to ALL enemies."
+}
 ]

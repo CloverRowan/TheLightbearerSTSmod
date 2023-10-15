@@ -1,7 +1,7 @@
 package basicmod.cards;
 
 import basicmod.character.MyCharacter;
-import basicmod.powers.EmberOfSearingPower;
+import basicmod.powers.IncandescencePower;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,8 +12,8 @@ import static basicmod.util.CustomTags.SOLAR;
 
 
 
-public class EmberOfSearing extends BaseCard {
-    public static final String ID = makeID("EmberOfSearing");
+public class Incandescence extends BaseCard {
+    public static final String ID = makeID("Incandescence");
 
 
     private static final CardStats info = new CardStats(
@@ -28,7 +28,7 @@ public class EmberOfSearing extends BaseCard {
     private static final int MAGIC_NUMBER= 10;
     private static final int UPG_MAGIC_NUMBER = 4;
 
-    public EmberOfSearing() {
+    public Incandescence() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
@@ -36,11 +36,11 @@ public class EmberOfSearing extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new EmberOfSearingPower(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new IncandescencePower(p,this.magicNumber)));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new EmberOfSearing();
+        return new Incandescence();
     }
 }

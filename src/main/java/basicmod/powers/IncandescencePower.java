@@ -12,13 +12,13 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static basicmod.TheLightbearer.makeID;
 
 
-public class EmberOfSearingPower extends BasePower implements CloneablePowerInterface {
-    public static final String POWER_ID = makeID("EmberOfSearingPower");
+public class IncandescencePower extends BasePower implements CloneablePowerInterface {
+    public static final String POWER_ID = makeID("IncandescencePower");
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
 
-    public EmberOfSearingPower(AbstractCreature owner, int amount) {
+    public IncandescencePower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
@@ -28,7 +28,7 @@ public class EmberOfSearingPower extends BasePower implements CloneablePowerInte
 
     @Override
     public AbstractPower makeCopy() {
-        return new EmberOfSearingPower(owner, amount);
+        return new IncandescencePower(owner, amount);
     }
 
     @Override
