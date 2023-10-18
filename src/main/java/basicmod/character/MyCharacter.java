@@ -3,10 +3,7 @@ package basicmod.character;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
-import basicmod.cards.Defend;
-import basicmod.cards.GuardiansFate;
-import basicmod.cards.QuickDraw;
-import basicmod.cards.Strike;
+import basicmod.cards.*;
 import basicmod.relics.LittleLight;
 import basicmod.relics.TheTraveler;
 import basicmod.util.SuperReward;
@@ -97,8 +94,8 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(GuardiansFate.ID);
-        retVal.add(QuickDraw.ID);
+        retVal.add(BlessingOfRadiance.ID);
+        retVal.add(ShunTheLight.ID);
 
         return retVal;
     }
@@ -116,7 +113,7 @@ public class MyCharacter extends CustomPlayer {
     public AbstractCard getStartCardForEvent() {
         //This card is used for the Gremlin card matching game.
         //It should be a non-strike non-defend starter card, but it doesn't have to be.
-        return new Strike_Red();
+        return new BlessingOfRadiance();
     }
 
     /*- Below this is methods that you should *probably* adjust, but don't have to. -*/
