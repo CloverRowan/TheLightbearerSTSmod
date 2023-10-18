@@ -87,7 +87,7 @@
   "${modID}:EchoOfDilation": {
     "NAME": "Echo Of Dilation",
     "DESCRIPTION": "Ethereal. NL Apply !M! Slow and deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Ethereal. NL Apply !M! Slow and deal !D! damage ."
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Apply !M! Slow and deal !D! damage."
   },
   "${modID}:SparkOfFeedback": {
     "NAME": "Spark Of Feedback",
@@ -426,8 +426,8 @@
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your deck.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your deck.",
     "EXTENDED_DESCRIPTION": [
       " NL (You have !M! other *Arc cards.)"
     ]
