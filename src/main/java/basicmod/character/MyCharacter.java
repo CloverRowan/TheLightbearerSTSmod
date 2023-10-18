@@ -5,10 +5,7 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import basemod.interfaces.OnStartBattleSubscriber;
 import basicmod.TheLightbearer;
-import basicmod.cards.Defend;
-import basicmod.cards.GuardiansFate;
-import basicmod.cards.QuickDraw;
-import basicmod.cards.Strike;
+import basicmod.cards.*;
 import basicmod.powers.ChargeOfLightPower;
 import basicmod.relics.LittleLight;
 import basicmod.relics.TheTraveler;
@@ -109,8 +106,8 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(GuardiansFate.ID);
-        retVal.add(QuickDraw.ID);
+        retVal.add(BlessingOfRadiance.ID);
+        retVal.add(ShunTheLight.ID);
 
         return retVal;
     }
