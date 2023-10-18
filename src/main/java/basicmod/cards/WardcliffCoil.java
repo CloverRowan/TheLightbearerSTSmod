@@ -79,6 +79,13 @@ public class WardcliffCoil extends BaseCard {
         initializeDescription();
     }
 
+    @Override
+    public void upgrade() {
+        super.upgrade();
+        this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
+        this.initializeDescription();
+    }
+
 
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
