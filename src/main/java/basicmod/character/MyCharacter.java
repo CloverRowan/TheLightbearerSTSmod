@@ -2,26 +2,21 @@ package basicmod.character;
 
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
-import basemod.interfaces.OnStartBattleSubscriber;
-import basicmod.TheLightbearer;
+import basemod.animations.SpineAnimation;
 import basicmod.cards.Defend;
 import basicmod.cards.GuardiansFate;
 import basicmod.cards.QuickDraw;
 import basicmod.cards.Strike;
-import basicmod.powers.ChargeOfLightPower;
 import basicmod.relics.LittleLight;
 import basicmod.relics.TheTraveler;
 import basicmod.util.SuperReward;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
+import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.Defend_Blue;
-import com.megacrit.cardcrawl.cards.green.Neutralize;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -32,17 +27,9 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.relics.BurningBlood;
-import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
-import basicmod.powers.ChargeOfLightPower;
-
-import com.megacrit.cardcrawl.relics.AbstractRelic;
-
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import static basicmod.TheLightbearer.characterPath;
 import static basicmod.TheLightbearer.makeID;
@@ -80,7 +67,7 @@ public class MyCharacter extends CustomPlayer {
     public MyCharacter() {
         super(NAMES[0], Enums.THE_LIGHTBEARER,
                 new CustomEnergyOrb(null, null, null), //Energy Orb
-                new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
+                new SpineAnimation("basicmod/images/character/animation/skeleton.atlas", "basicmod/images/character/animation/skeleton.json", 3f)); //Animation
 
         initializeClass(null,
                 SHOULDER_2,
@@ -93,6 +80,7 @@ public class MyCharacter extends CustomPlayer {
         //Location for text bubbles. You can adjust it as necessary later. For most characters, these values are fine.
         dialogX = (drawX + 0.0F * Settings.scale);
         dialogY = (drawY + 220.0F * Settings.scale);
+        AnimationState.TrackEntry e = state.setAnimation(0, "idle",true);
     }
 
     @Override

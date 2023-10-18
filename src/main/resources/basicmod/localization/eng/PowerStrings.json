@@ -22,8 +22,7 @@
   "${modID}:SparkOfFeedbackPower": {
     "NAME": "Spark Of Feedback",
     "DESCRIPTIONS": [
-      "When you take damage draw #b",
-      " card."
+      "When you take damage draw #b"
     ]
   },
   "${modID}:EchoOfHarvestPower": {
@@ -36,7 +35,7 @@
   "${modID}:SpectralBladesPower": {
   "NAME": "Spectral Blades",
   "DESCRIPTIONS": [
-    "Take 50 Percent less attack Damage",
+    "Take 50 Percent less attack damage",
     ""
   ]
   },
@@ -91,7 +90,7 @@
   "${modID}:PowerDifferentialPower": {
     "NAME": "Power Differential",
     "DESCRIPTIONS": [
-      "When you deal unblocked attack damage, gain half that as block."
+      "When you deal unblocked attack damage, gain half as block."
     ]
   },
   "${modID}:ElementalPlatingPower": {
@@ -104,7 +103,7 @@
   "${modID}:CallLightningPower": {
     "NAME": "Call Lightning",
     "DESCRIPTIONS": [
-      "Whenever you draw, Recall Call Lightning to your hand."
+      "Whenever you draw a card, recall Call Lightning to your hand from your discard pile."
     ]
   },
   "${modID}:TelestoPower": {

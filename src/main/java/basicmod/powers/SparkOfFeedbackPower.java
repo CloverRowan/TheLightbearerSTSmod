@@ -22,7 +22,7 @@ public class SparkOfFeedbackPower extends BasePower implements CloneablePowerInt
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + (this.amount > 1 ? " cards." : " card.");
     }
 
     @Override

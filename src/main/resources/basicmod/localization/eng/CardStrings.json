@@ -41,8 +41,8 @@
   },
   "${modID}:GuardiansFate": {
     "NAME": "Guardian's Fate",
-    "DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards",
-    "UPGRADE_DESCRIPTION": "Summon the light of the Traveller to gain !B! Block and Scry !M! cards.",
+    "DESCRIPTION": "Gain !B! Block and Scry !M! cards.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and Scry !M! cards.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",
@@ -51,8 +51,8 @@
   },
   "${modID}:QuickDraw": {
     "NAME": "Quick Draw",
-    "DESCRIPTION": "Draw !M! Cards",
-    "UPGRADE_DESCRIPTION": "Draw !M! Cards.",
+    "DESCRIPTION": "Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
       "If you need to use it for stuff.",
@@ -61,8 +61,8 @@
   },
   "${modID}:HeavyKnife": {
     "NAME": "Heavy Knife",
-    "DESCRIPTION": "Deal !D! Damage",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
       "If you need to use it for stuff.",
@@ -71,37 +71,37 @@
   },
   "${modID}:BlessingOfRadiance": {
     "NAME": "Blessing of Radiance",
-    "DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !B! Block and !M! ${modID}:Charge_Of_Light."
+    "DESCRIPTION": "Gain !B! Block and !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:TravelersIncandescence": {
     "NAME": "Traveler's Incandescence",
-    "DESCRIPTION": "Ethereal NL Summon the power of the Traveler and gain !M! Strength and !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Summon the power of the Traveler and gain !M! Strength and !M! Dexterity."
+    "DESCRIPTION": "Ethereal. NL Gain !M! Strength and !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !M! Strength and !M! Dexterity."
   },
   "${modID}:GoldenGun": {
     "NAME": "Golden Gun",
-    "DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage !M! times.",
-    "UPGRADE_DESCRIPTION": "${modID}:Super NL Summon a Flaming Golden Gun to deal !D! damage !M! times."
+    "DESCRIPTION": "${modID}:Super NL Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Deal !D! damage !M! times."
   },
   "${modID}:EchoOfDilation": {
     "NAME": "Echo Of Dilation",
-    "DESCRIPTION": "Ethereal NL Apply !M! Slow and deal !D! Damage.",
-    "UPGRADE_DESCRIPTION": "Ethereal NL Apply !M! Slow and deal !D! Damage ."
+    "DESCRIPTION": "Ethereal. NL Apply !M! Slow and deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Apply !M! Slow and deal !D! damage ."
   },
   "${modID}:SparkOfFeedback": {
     "NAME": "Spark Of Feedback",
-    "DESCRIPTION": "Whenever you take damage Draw !M! cards",
-    "UPGRADE_DESCRIPTION": "Whenever you take damage Draw !M! cards."
+    "DESCRIPTION": "Whenever you take damage, draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Whenever you take damage, draw !M! cards."
   },
   "${modID}:TouchOfVoid": {
     "NAME": "Touch Of Void",
-    "DESCRIPTION": "Deal !D! damage and randomly Exhaust !M! cards",
+    "DESCRIPTION": "Deal !D! damage and randomly Exhaust !M! cards.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and Exhaust !M! cards."
   },
   "${modID}:TripmineGrenade": {
     "NAME": "Tripmine Grenade",
-    "DESCRIPTION": "Ethereal NL Deal !D! damage to all enemies ",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage to all enemies.",
     "UPGRADE_DESCRIPTION": "Ethereal NL Deal !D! damage to all enemies."
   },
   "${modID}:MarksmansDodge": {
@@ -126,18 +126,18 @@
   },
   "${modID}:VanishingStep": {
     "NAME": "VanishingStep",
-    "DESCRIPTION": "Gain !B! Block and Exhaust up to 2 Cards.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block and Exhaust up to 2 Cards."
+    "DESCRIPTION": "Gain !B! Block and Exhaust up to 2 cards.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and Exhaust up to 2 cards."
   },
   "${modID}:EchoShield": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": "Gain !B! Block NL Generate an Ethereal Exhaust EchoShield in your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block NL Generate an Ethereal Exhaust EchoShield in your hand."
+    "DESCRIPTION": "Gain !B! Block NL Generate a temporary EchoShield in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block NL Generate a temporary EchoShield in your hand."
   },
   "${modID}:EchoShieldToken": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": " Ethereal NL Exhaust NL Gain !B! Block NL Generate an Ethereal Exhaust EchoShield in your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block NL Generate an Ethereal Exhaust EchoShield in your hand."
+    "DESCRIPTION": " Ethereal. NL Exhaust NL Gain !B! Block NL Generate a temporary EchoShield in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block NL Generate a temporary EchoShield in your hand."
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
@@ -146,8 +146,8 @@
   },
   "${modID}:VoidWallGrenade": {
     "NAME": "VoidWall Grenade",
-    "DESCRIPTION": "Deal !D! damage to all enemies.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to all enemies."
+    "DESCRIPTION": "Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:LightweightKnife": {
     "NAME": "Lightweight Knife",
@@ -181,8 +181,8 @@
   },
   "${modID}:BladeBarrage": {
     "NAME": "Blade Barrage",
-    "DESCRIPTION": "${modID}:Super NL Deal !D! damage twice to all enemies.",
-    "UPGRADE_DESCRIPTION": "${modID}:Super NL Deal !D! damage twice to all enemies."
+    "DESCRIPTION": "${modID}:Super NL Deal !D! damage twice to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Deal !D! damage twice to ALL enemies."
   },
   "${modID}:EmberOfMercy": {
     "NAME": "Ember of Mercy",
@@ -195,24 +195,24 @@
     "UPGRADE_DESCRIPTION": "Whenever you draw a *Burn, gain !M! Block."
   },
   "${modID}:BarrierOfVoid": {
-    "NAME": " Barrier of Void",
-    "DESCRIPTION": "Exhaust NL Gain !B! Block for every card in your Exhaust Pile",
-    "UPGRADE_DESCRIPTION": "Exhaust NL Gain !B! Block for every card in your Exhaust Pile."
+    "NAME": "Barrier of Void",
+    "DESCRIPTION": "Gain !B! Block for every card in your exhaust pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block for every card in your exhaust pile. NL Exhaust."
   },
   "${modID}:ConsumeTheFuture": {
-    "NAME": " Consume The Future",
-    "DESCRIPTION": "Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain NL Exhaust your Draw Pile NL Generate a new Random Card for each Card Exhausted NL Randomize the cost of cards in hand. NL Exhaust"
+    "NAME": "Consume The Future",
+    "DESCRIPTION": "Exhaust your draw pile. NL Generate a new random card for each card Exhausted NL Randomize the cost of cards in your hand NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain NL Exhaust your draw pile. NL Generate a new random card for each card Exhausted. NL Randomize the cost of cards in your hand. NL Exhaust."
   },
   "${modID}:FearTheVoid": {
     "NAME": "Fear The Void",
-    "DESCRIPTION": "Deal !D! Damage and Scry !M! Cards",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage and Scry !M! Cards"
+    "DESCRIPTION": "Deal !D! damage. NL Scry !M!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
   },
   "${modID}:FeedTheVoid": {
     "NAME": "Feed The Void",
-    "DESCRIPTION": "At the start of your turn Exhaust one card",
-    "UPGRADE_DESCRIPTION": "At the start of your turn Exhaust one card"
+    "DESCRIPTION": "At the start of your turn, Exhaust one card.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, Exhaust one card."
   },
   "${modID}:SpectralBlades": {
     "NAME": "Spectral Blades",
@@ -221,38 +221,38 @@
   },
   "${modID}:StareIntoTheVoid": {
     "NAME": "Stare Into The Void",
-    "DESCRIPTION": "Ethereal NL Lose !M! Percent Hp Exhume 1 Card",
-    "UPGRADE_DESCRIPTION": "Ethereal NL Lose !M! Percent Hp Exhume 1 Card"
+    "DESCRIPTION": "Ethereal. NL Lose !M! Percent of current Hp. Exhume 1 card.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Lose !M! Percent of current Hp. Exhume 1 card."
   },
   "${modID}:EmbraceMadness": {
     "NAME": "Embrace Madness",
-    "DESCRIPTION": "Block for !B! and if the enemy Intends to Attack apply !M! Vulnerable",
-    "UPGRADE_DESCRIPTION": "Block for !B! and if the enemy Intends to Attack apply !M! Vulnerable"
+    "DESCRIPTION": "Gain !B! Block. If the enemy intends to attack, apply !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If the enemy intends to attack, apply !M! Vulnerable."
   },
   "${modID}:ExpelDarkness": {
     "NAME": "Expel Darkness",
-    "DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies",
-    "UPGRADE_DESCRIPTION": "Exhaust NL Apply !M! Weak and Vulnerable to All Enemies"
+    "DESCRIPTION": "Exhaust. NL Apply !M! Weak and Vulnerable to All Enemies",
+    "UPGRADE_DESCRIPTION": "Exhaust. NL Apply !M! Weak and Vulnerable to All Enemies"
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
-    "DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If you have !M! ${modID}:Charge_Of_Light lose !M! ${modID}:Charge_Of_Light NL gain !B! Block."
+    "DESCRIPTION": "Deal !D! damage. NL Consume !M! ${modID}:Charge_Of_Light to gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Consume !M! ${modID}:Charge_Of_Light to gain !B! Block."
   },
   "${modID}:CallOnLight": {
     "NAME": "Call On Light",
     "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
-    "UPGRADE_DESCRIPTION": "Retain NL Gain !M! ${modID}:Charge_Of_Light"
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! ${modID}:Charge_Of_Light"
   },
   "${modID}:Equalize": {
     "NAME": "Equalize",
-    "DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Consume ${modID}:Charge_Of_Light gain Energy equal to half removed. NL Exhaust"
+    "DESCRIPTION": "Consume all ${modID}:Charge_Of_Light NL Gain Energy equal to half the amount removed. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Consume all ${modID}:Charge_Of_Light NL Gain Energy equal to half the amount removed. NL Exhaust."
   },
   "${modID}:MonteCarlo": {
     "NAME": "Monte Carlo",
-    "DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage and gain !M! ${modID}:Charge_Of_Light"
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${modID}:Charge_Of_Light",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! ${modID}:Charge_Of_Light"
   },
   "${modID}:VigilanceWing": {
     "NAME": "Vigilance Wing",
@@ -261,37 +261,37 @@
   },
   "${modID}:FlareBlast": {
     "NAME": "Flare Blast",
-    "DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies and discard a burn"
+    "DESCRIPTION": "Deal !D! Damage to all enemies. NL Discard a burn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies. NL Discard a burn."
   },
   "${modID}:LightningStrike": {
     "NAME": "Lightning Strike",
-    "DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand. NL Exhaust",
+    "DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand."
   },
   "${modID}:JumpStart": {
     "NAME": "Jump Start",
-    "DESCRIPTION": "Draw 1 Card and Discard !M! Cards",
-    "UPGRADE_DESCRIPTION": "Draw 1 Card and Discard !M! Cards."
+    "DESCRIPTION": "Draw 1 card. NL Discard !M! cards.",
+    "UPGRADE_DESCRIPTION": "Draw 1 card. NL Discard !M! cards."
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",
-    "DESCRIPTION": "Deal !D! Damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage."
+    "DESCRIPTION": "Deal !D! damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage."
   },
   "${modID}:VolatileCollapse": {
     "NAME": "Volatile Collapse",
-    "DESCRIPTION": "When you Exhaust a Card deal !M! Damage to a random enemy",
-    "UPGRADE_DESCRIPTION": "When you Exhaust a Card deal !M! Damage to a random enemy."
+    "DESCRIPTION": "Whenever you Exhaust a card, deal !M! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Whenever you Exhaust a card, deal !M! damage to a random enemy."
   },
   "${modID}:RagingCurrent": {
     "NAME": "Raging Current",
-    "DESCRIPTION": "This turn when you Draw a card gain !B! Block",
-    "UPGRADE_DESCRIPTION": "This turn when you Draw a card gain !B! Block."
+    "DESCRIPTION": "Whenever you draw a card this turn, gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a card this turn, gain !B! Block."
   },
   "${modID}:ShockingTumble": {
     "NAME": "Shocking Tumble",
-    "DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again. ",
+    "DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again."
   },
   "${modID}:DisorientingBlow": {
@@ -306,8 +306,8 @@
   },
   "${modID}:FulminisDischarge": {
     "NAME": "Fulminis Discharge",
-    "DESCRIPTION": "Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb .",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If you have less then 5 Cards in your Drawpile Channel 1 Lightning Orb"
+    "DESCRIPTION": "Deal !D! damage. NL If you have less then 5 cards in your draw pile, Channel 1 Lightning.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If you have less then 5 cards in your draw pile, Channel 1 Lightning."
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
@@ -331,8 +331,8 @@
 },
   "${modID}:FlowState": {
     "NAME": "Flow State",
-    "DESCRIPTION": "When you play an attack draw a card.",
-    "UPGRADE_DESCRIPTION": "When you play an attack draw a card."
+    "DESCRIPTION": "Whenever you play an Attack, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "When you play an Attack, draw 1 card."
   },
   "${modID}:Deadshot": {
     "NAME": "Deadshot",
@@ -346,8 +346,8 @@
   },
   "${modID}:FusionGrenade": {
     "NAME": "Fusion Grenade",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage for each *Burn in your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage for each *Burn in your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage again for each *Burn in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage again for each *Burn in your hand."
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",
@@ -361,18 +361,18 @@
   },
   "${modID}:CalculatedSpark": {
   "NAME": "CalculatedSpark",
-  "DESCRIPTION": "Gain !B! Block and Channel !M! Lightning orbs",
-  "UPGRADE_DESCRIPTION": "Gain !B! Block and Channel !M! Lightning orbs."
+  "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning.",
+  "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning."
 },
   "${modID}:StaticPass": {
     "NAME": "Static Pass",
-    "DESCRIPTION": "Deal !D! Damage to all Enemies and Draw a card for each hit.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all Enemies and Draw a card for each hit. NL Draw one additional Card."
+    "DESCRIPTION": "Deal !D! damage to ALL Enemies. Draw a card for each enemy hit.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL Enemies. Draw a card for each enemy hit. NL Draw 1 additional card."
   },
   "${modID}:PowerDifferential": {
   "NAME": "Power Differential",
-  "DESCRIPTION": "Ethereal. NL When you Attack a monster, Gain Block equal to half damage dealt.",
-  "UPGRADE_DESCRIPTION": "When you Attack a monster, Gain Block equal to half damage dealt."
+  "DESCRIPTION": "Ethereal. NL Whenever you Attack, gain Block equal to half unblocked damage dealt.",
+  "UPGRADE_DESCRIPTION": "Whenever you Attack, gain Block equal to half unblocked damage dealt."
 },
   "${modID}:ArcWelding": {
     "NAME": "Arc Welding",
@@ -381,8 +381,8 @@
   },
   "${modID}:CallLightningAttack": {
     "NAME": "Call Lightning",
-    "DESCRIPTION": "Deal !D! Damage. NL Returns to hand when you draw a card.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Returns to hand when you draw a card."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand."
   },
   "${modID}:CallLightning": {
     "NAME": "Call Lightning",
@@ -391,13 +391,13 @@
   },
   "${modID}:InvigoratingRoar": {
     "NAME": "InvigoratingRoar",
-    "DESCRIPTION": "Gain !M! Temp Strength and shuffle a *burn into your Discard Pile.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Temp Strength and shuffle a *burn into your Discard Pile."
+    "DESCRIPTION": "Gain !M! Temporary Strength and shuffle a *Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Temporary Strength and shuffle a *Burn into your discard pile."
   },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
-    "DESCRIPTION": "Gain !B! Block. Shuffle !M! Burn into your discard pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Shuffle !M! Burn into your discard pile."
+    "DESCRIPTION": "Gain !B! Block. Shuffle !M! *Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Shuffle !M! *Burn into your discard pile."
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
@@ -426,10 +426,10 @@
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",
-    "DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage for each energy spent plus other *Arc Cards.",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your hand, draw pile, and discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your hand, draw pile, and discard pile.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have !M! other *Arc Cards.)"
+      " NL (You have !M! other *Arc cards.)"
     ]
   },
   "${modID}:Jotun": {
@@ -439,13 +439,13 @@
   },
   "${modID}:WorldlineZero": {
     "NAME": "Worldline Zero",
-    "DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage, increase this cards Damage by !M! this combat"
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Increase this card's damage by !M! this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Increase this card's damage by !M! this combat."
   },
   "${modID}:AceOfSpades": {
     "NAME": "Ace of Spades",
-    "DESCRIPTION": "Deal !D! damage. If this defeats an enemy gain deal !D! damage to all other enemies and gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If this defeats an enemy gain deal !D! damage to all other enemies and gain !M! Strength."
+    "DESCRIPTION": "Deal !D! damage. If this defeats an enemy, deal !D! damage to all other enemies and gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If this defeats an enemy, deal !D! damage to all other enemies and gain !M! Strength."
   },
   "${modID}:TractorCannon": {
     "NAME": "Tractor Cannon",
@@ -454,18 +454,18 @@
   },
   "${modID}:ChooseArc": {
     "NAME": "Choose Arc",
-    "DESCRIPTION": "When picked Add 1 *ARC Card to your hand, it costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "When picked Add 2 *ARC Cards to your hand, it costs 0 this turn."
+    "DESCRIPTION": "Add a random *Arc card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Add 2 random *Arc cards to your hand. They cost 0 this turn."
   },
   "${modID}:ChooseVoid": {
     "NAME": "Choose Void",
-    "DESCRIPTION": "When picked Add 1 *Void Card to your hand, it costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "When picked Add 2 *Void Cards to your hand, it costs 0 this turn."
+    "DESCRIPTION": "Add a random *Void card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Add 2 random *Void cards to your hand. They cost 0 this turn."
   },
   "${modID}:ChooseSolar": {
   "NAME": "Choose Solar",
-  "DESCRIPTION": "When picked Add 1 *Solar Card to your hand, it costs 0 this turn.",
-  "UPGRADE_DESCRIPTION": "When picked Add 2 *Solar Cards to your hand, it costs 0 this turn."
+    "DESCRIPTION": "Add a random *Solar card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Add 2 random *Solar cards to your hand. They cost 0 this turn."
 }
 }
 

@@ -1,0 +1,111 @@
+
+TheLightbearer.png
+size: 0,0
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Torso
+  rotate: false
+  xy: 1, 445
+  size: 315, 343
+  orig: 315, 343
+  offset: 0, 0
+  index: -1
+Thigh
+  rotate: false
+  xy: 562, 244
+  size: 359, 309
+  orig: 359, 309
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 1, 1
+  size: 669, 241
+  orig: 669, 241
+  offset: 0, 0
+  index: -1
+RightHand
+  rotate: false
+  xy: 821, 1
+  size: 137, 161
+  orig: 137, 161
+  offset: 0, 0
+  index: -1
+Leg2
+  rotate: false
+  xy: 1, 846
+  size: 432, 233
+  orig: 432, 233
+  offset: 0, 0
+  index: -1
+Leg1
+  rotate: false
+  xy: 435, 846
+  size: 455, 135
+  orig: 455, 135
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 688, 555
+  size: 286, 244
+  orig: 286, 244
+  offset: 0, 0
+  index: -1
+Ghost
+  rotate: false
+  xy: 318, 445
+  size: 89, 87
+  orig: 89, 87
+  offset: 0, 0
+  index: -1
+CloakMiddle
+  rotate: false
+  xy: 318, 555
+  size: 368, 289
+  orig: 368, 289
+  offset: 0, 0
+  index: -1
+CloakLeft
+  rotate: false
+  xy: 1, 244
+  size: 559, 199
+  orig: 559, 199
+  offset: 0, 0
+  index: -1
+Arm4
+  rotate: false
+  xy: 892, 801
+  size: 105, 162
+  orig: 105, 162
+  offset: 0, 0
+  index: -1
+Arm3
+  rotate: false
+  xy: 892, 965
+  size: 85, 119
+  orig: 85, 119
+  offset: 0, 0
+  index: -1
+Arm2
+  rotate: false
+  xy: 672, 1
+  size: 147, 205
+  orig: 147, 205
+  offset: 0, 0
+  index: -1
+Arm1
+  rotate: false
+  xy: 923, 164
+  size: 100, 168
+  orig: 100, 168
+  offset: 0, 0
+  index: -1
+GhostHand
+  rotate: false
+  xy: 923, 334
+  size: 100, 136
+  orig: 100, 136
+  offset: 0, 0
+  index: -1
