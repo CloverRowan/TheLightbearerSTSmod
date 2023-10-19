@@ -2,6 +2,8 @@ package basicmod.cards;
 
 
 import basicmod.character.MyCharacter;
+import basicmod.powers.GatheringStormPower;
+import basicmod.powers.TelestoPower;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -47,6 +49,12 @@ public class StylishExecution extends BaseCard {
             addToTop(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
         if(m.hasPower(CorpseExplosionPower.POWER_ID)) {
+            addToTop(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        }
+        if(m.hasPower(TelestoPower.POWER_ID)) {
+            addToTop(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        }
+        if(m.hasPower(GatheringStormPower.POWER_ID)) {
             addToTop(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
     }

@@ -34,7 +34,7 @@ public class TrappersAmbush extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m,p, new  WeakPower(p, this.magicNumber, false)));
+        addToBot(new ApplyPowerAction(m,p, new  WeakPower(m, this.magicNumber, false)));
     }
 
     @Override

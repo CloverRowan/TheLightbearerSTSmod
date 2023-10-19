@@ -44,7 +44,7 @@ public class DisorientingBlow extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        addToBot(new ApplyPowerAction(m, p, new ChargeOfLightPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber,false)));
     }
 
     @Override
