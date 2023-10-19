@@ -2,7 +2,7 @@
 # **Welcome to the repository for the Lightbearer Slay the Spire mod!**
 ## Introduction
 TheLightbearer mod is a small collaborative effort of two friends and our first attempt at modding. We are currently in Beta v1.0.1 and looking for feedback!
-Please feel free to give it a try, find it on steam here --->(Steamlinkhere)
+Please feel free to give it a try, find it on steam here --->(https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=3054190297)
 
 ## Goals
 This mod started as a question, There has to be a Destiny X Slay The Spire mod right?, Suprisingly there wasnt. Being huge fans of both games we set off to fix that.
