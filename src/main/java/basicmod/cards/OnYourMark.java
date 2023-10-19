@@ -39,8 +39,8 @@ public class OnYourMark extends BaseCard {
             0 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int MAGIC_NUMBER = 4;
-    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUMBER = 1;
 
     public OnYourMark() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.

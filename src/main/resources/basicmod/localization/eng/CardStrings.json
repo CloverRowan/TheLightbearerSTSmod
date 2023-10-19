@@ -112,7 +112,7 @@
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
     "DESCRIPTION": "Apply !M! Weak to an enemy.",
-    "UPGRADE_DESCRIPTION": "INNATE NL Apply !M! Weak to an enemy."
+    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Weak to an enemy."
   },
   "${modID}:StylishExecution": {
     "NAME": "Stylish Execution",
@@ -131,8 +131,8 @@
   },
   "${modID}:EchoShield": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": "Gain !B! Block NL Generate a temporary EchoShield in your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block NL Generate a temporary EchoShield in your hand."
+    "DESCRIPTION": "Gain !B! Block NL Generate a temporary Echo Shield in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block NL Generate a temporary Echo Shield in your hand."
   },
   "${modID}:EchoShieldToken": {
     "NAME": "Echo Shield",
@@ -266,8 +266,8 @@
   },
   "${modID}:LightningStrike": {
     "NAME": "Lightning Strike",
-    "DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage and chose a card from your discard pile to return to your hand."
+    "DESCRIPTION": "Deal !D! Damage. NL Choose a card from your discard pile to return to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage NL Choose a card from your discard pile to return to your hand."
   },
   "${modID}:JumpStart": {
     "NAME": "Jump Start",
@@ -316,8 +316,8 @@
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
-    "DESCRIPTION": "Apply !M! Choke to all Enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Choke to all Enemies. NL Exhaust."
+    "DESCRIPTION": "Choose an enemy. Whenever you play a card this turn, the enemy loses !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose an enemy. Whenever you play a card this turn, the enemy loses !M! HP. NL Exhaust."
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
@@ -356,8 +356,8 @@
   },
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",
-    "DESCRIPTION": "Gain !M! Vigor for each *Burn in your hand, deck or discard pile.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Vigor for each *Burn in your hand, deck or discard pile."
+    "DESCRIPTION": "Gain !M! Vigor for each *Burn in your deck.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Vigor for each *Burn in your deck."
   },
   "${modID}:CalculatedSpark": {
   "NAME": "CalculatedSpark",
