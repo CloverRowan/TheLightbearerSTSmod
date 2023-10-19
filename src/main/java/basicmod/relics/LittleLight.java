@@ -5,6 +5,7 @@ import basicmod.character.MyCharacter;
 import basicmod.powers.ChargeOfLightPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -30,8 +31,8 @@ public class LittleLight extends BaseRelic{
 
     boolean used = false;
 
-    @Override
-    public void onBloodied() {
+
+    public void healPlayer() {
         if(!used) {
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             int healAmt = 10;
@@ -40,6 +41,13 @@ public class LittleLight extends BaseRelic{
             this.grayscale = true;
             used = true;
         }
+    }
+    @Override
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if(AbstractDungeon.player.currentHealth - damageAmount <= AbstractDungeon.player.maxHealth/2){
+            healPlayer();
+        }
+        return damageAmount;
     }
 
     @Override

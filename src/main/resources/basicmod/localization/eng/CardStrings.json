@@ -141,8 +141,8 @@
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
-    "DESCRIPTION": "Deal !D! damage twice gain !M! temporary Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice gain !M! temporary Strength."
+    "DESCRIPTION": "Deal !D! damage twice. NL Gain !M! temporary Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL Gain !M! temporary Strength."
   },
   "${modID}:VoidWallGrenade": {
     "NAME": "VoidWall Grenade",
@@ -380,14 +380,14 @@
     "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !B! Block."
   },
   "${modID}:CallLightningAttack": {
-    "NAME": "Call Lightning",
+    "NAME": "Discharge",
     "DESCRIPTION": "Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand."
   },
   "${modID}:CallLightning": {
     "NAME": "Call Lightning",
-    "DESCRIPTION": "Shuffle a Call Lightning into your deck.",
-    "UPGRADE_DESCRIPTION": "Shuffle a Call Lightning into your deck."
+    "DESCRIPTION": "Add a *Discharge to your hand.",
+    "UPGRADE_DESCRIPTION": "Add an Upgraded *Discharge to your hand."
   },
   "${modID}:InvigoratingRoar": {
     "NAME": "InvigoratingRoar",
@@ -421,8 +421,8 @@
   },
   "${modID}:Telesto": {
     "NAME": "Telesto",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Telesto Bolts.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Telesto Bolts."
+    "DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage."
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",

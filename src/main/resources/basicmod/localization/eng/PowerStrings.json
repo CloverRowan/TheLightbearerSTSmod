@@ -103,13 +103,13 @@
   "${modID}:CallLightningPower": {
     "NAME": "Call Lightning",
     "DESCRIPTIONS": [
-      "Whenever you draw a card, recall Call Lightning to your hand from your discard pile."
+      "Whenever you draw a card, recall #yDischarge to your hand from your discard pile."
     ]
   },
   "${modID}:TelestoPower": {
     "NAME": "Telesto Bolts",
     "DESCRIPTIONS": [
-      "At the start of its next turn, loses #b",
+      "At the start of its NEXT turn, loses #b",
       " HP.",
       "At the start of its turn, loses #b"
     ]

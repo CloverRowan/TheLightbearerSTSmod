@@ -10,7 +10,7 @@
     "NAME": "Little Light",
     "FLAVOR": "Your faithful spark of light.",
     "DESCRIPTIONS": [
-      "The first time you drop below #b50% health each combat heal #b10 HP."
+      "The first time you drop below #b50% health each combat, heal #b10 HP."
     ]
   },
   "${modID}:TheTraveler": {
