@@ -10,7 +10,7 @@
     "NAME": "Little Light",
     "FLAVOR": "Your faithful spark of light.",
     "DESCRIPTIONS": [
-      "The first time you drop below #b50% health each combat heal #b10 HP."
+      "The first time you drop below #b50% health each combat, heal #b10 HP."
     ]
   },
   "${modID}:TheTraveler": {
@@ -24,7 +24,7 @@
     "NAME": "Dimmer Switch",
     "FLAVOR": "Turn down the light turn up the party.",
     "DESCRIPTIONS": [
-      "Gain #b2 [E] whenever you have #b10 #y${modID}:Charges_Of_Light."
+      "Gain #b2 [E] whenever your #y${modID}:Charge_Of_Light reaches a multiple of #b10."
     ]
   },
   "${modID}:SagirasShell": {

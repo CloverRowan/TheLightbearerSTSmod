@@ -9,6 +9,7 @@ import basicmod.relics.TheTraveler;
 import basicmod.util.SuperReward;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
@@ -220,6 +221,13 @@ public class MyCharacter extends CustomPlayer {
             AbstractDungeon.getCurrRoom().rewards.add(s);
 
         }
+    }
+
+    @Override
+    public void renderPlayerImage(SpriteBatch sb){
+        sr.setPremultipliedAlpha(false);
+        super.renderPlayerImage(sb);
+        sr.setPremultipliedAlpha(true);
     }
 
 }

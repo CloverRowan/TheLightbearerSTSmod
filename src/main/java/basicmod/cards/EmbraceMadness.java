@@ -43,7 +43,7 @@ public class EmbraceMadness extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         if (m != null && m.getIntentBaseDmg() >= 0) {
-        addToBot(new ApplyPowerAction(m,p, new VulnerablePower(p, this.magicNumber, false)));
+        addToBot(new ApplyPowerAction(m,p, new VulnerablePower(m, this.magicNumber, false)));
         }
 
     }

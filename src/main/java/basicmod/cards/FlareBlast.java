@@ -24,7 +24,7 @@ public class FlareBlast extends BaseCard {
             CardTarget.ALL_ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 7;
     private static final int UPG_DAMAGE = 3;
 
 

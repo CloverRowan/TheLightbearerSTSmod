@@ -34,7 +34,7 @@ public class VigilanceWing extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(player.hand.size() <=3 ) {
-            addToBot(new DamageAction(m, new DamageInfo(p,this.damage,DamageInfo.DamageType.NORMAL)));
+            addToBot(new DamageAction(m, new DamageInfo(p,this.damage,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
