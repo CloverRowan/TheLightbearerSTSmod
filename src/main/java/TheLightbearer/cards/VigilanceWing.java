@@ -3,6 +3,7 @@ package TheLightbearer.cards;
 
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -33,10 +34,15 @@ public class VigilanceWing extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(player.hand.size() <=3 ) {
+        if(player.hand.size() <= 4) {
             addToBot(new DamageAction(m, new DamageInfo(p,this.damage,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        glowColor = player.hand.size() <= 4 ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
     }
 
     @Override

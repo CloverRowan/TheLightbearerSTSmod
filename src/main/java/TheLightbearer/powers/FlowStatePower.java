@@ -21,7 +21,7 @@ public class FlowStatePower extends BasePower implements CloneablePowerInterface
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + (this.amount > 1 ? " cards." : " card.");
     }
 
     @Override
