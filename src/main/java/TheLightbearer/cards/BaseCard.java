@@ -5,15 +5,22 @@ import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
 import TheLightbearer.TheLightbearer;
 import TheLightbearer.util.CardStats;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
 
+import static TheLightbearer.util.CustomTags.*;
 import static TheLightbearer.util.GeneralUtils.removePrefix;
 import static TheLightbearer.util.TextureLoader.getCardTextureString;
 
@@ -388,6 +395,78 @@ public abstract class BaseCard extends CustomCard {
         }
 
         super.calculateCardDamage(m);
+    }
+
+    @Override
+    public void render(SpriteBatch sb){
+        super.render(sb);
+        renderBorderText(sb);
+    }
+
+    @Override
+    public void renderInLibrary(SpriteBatch sb) {
+        super.renderInLibrary(sb);
+        if (!(SingleCardViewPopup.isViewingUpgrade && this.isSeen && !this.isLocked)) {
+            renderBorderText(sb);
+        }
+    }
+
+    public void renderBorderText(SpriteBatch sb) {
+        renderBorderText(sb, this.current_x, this.current_y, 400, this.drawScale);
+    }
+
+    public void renderBorderText(SpriteBatch sb, float xPos, float yPos, float yOffsetBase, float scale) {
+        renderBorderText(sb, xPos, yPos, yOffsetBase, scale, false);
+    }
+
+    public void renderBorderText(SpriteBatch sb, float xPos, float yPos, float yOffsetBase, float scale, boolean renderBottom){
+        String text;
+        Color color;
+        if(this.tags.contains(VOID)){
+            text = "Void";
+            color = Settings.PURPLE_COLOR;
+        }else if(this.tags.contains(SOLAR)){
+            text = "Solar";
+            color = Color.ORANGE;
+        }else if(this.tags.contains(ARC)){
+            text = "Arc";
+            color = Color.CYAN;
+        }else{
+            text = "";
+            color = Settings.CREAM_COLOR.cpy();
+        }
+
+        if(this.cardID.equals(makeID("MasterOfLight"))){
+            text = "All Elements";
+            color = Settings.CREAM_COLOR.cpy();
+        }
+
+
+        if (text != null) {
+            float offsetY;
+            BitmapFont font;
+            if (this.isFlipped || this.isLocked || this.transparency <= 0.0F)
+                return;
+            font = FontHelper.cardTitleFont;
+            if (renderBottom) {
+                yOffsetBase *= -1;
+                yOffsetBase += 15f;
+            }
+            offsetY = yOffsetBase * Settings.scale * scale / 2.0F;
+            BitmapFont.BitmapFontData fontData = font.getData();
+            float originalScale = fontData.scaleX;
+            float scaleMulti = 0.8F;
+            int length = text.length();
+            if (length > 20) {
+                scaleMulti -= 0.02F * (length - 20);
+                if (scaleMulti < 0.5F)
+                    scaleMulti = 0.5F;
+            }
+            fontData.setScale(scaleMulti * (scale * 0.85f));
+            color.a = this.transparency;
+            FontHelper.renderRotatedText(sb, font, text, xPos, yPos, 0.0F, offsetY, this.angle, true, color);
+            fontData.setScale(originalScale);
+        }
     }
 
     private static class QuickDynamicVariable extends DynamicVariable {

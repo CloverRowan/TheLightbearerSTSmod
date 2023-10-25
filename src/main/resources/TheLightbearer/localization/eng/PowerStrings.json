@@ -69,8 +69,7 @@
   "${modID}:FlowStatePower": {
     "NAME": "Flow State",
     "DESCRIPTIONS": [
-      "When you play an attack draw ",
-      " Card."
+      "When you play an attack draw #b"
     ]
   },
   "${modID}:GatheringStormPower": {
