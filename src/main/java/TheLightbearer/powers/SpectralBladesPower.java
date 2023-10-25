@@ -32,10 +32,16 @@ public class SpectralBladesPower extends BasePower implements CloneablePowerInte
         return new SpectralBladesPower(owner, amount);
     }
 
-    @Override
-    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+    //@Override
+   // public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
 
-        return super.onAttackedToChangeDamage(info, damageAmount/2);
+        //return super.onAttackedToChangeDamage(info, damageAmount/2);
+   // }
+
+    @Override
+    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
+
+        return super.atDamageReceive(damage/2, damageType);
     }
 
     @Override

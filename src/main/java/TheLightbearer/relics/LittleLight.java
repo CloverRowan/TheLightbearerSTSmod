@@ -6,6 +6,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
+
 import static TheLightbearer.TheLightbearer.makeID;
 
 public class LittleLight extends BaseRelic{
@@ -27,7 +29,7 @@ public class LittleLight extends BaseRelic{
 
 
     public void healPlayer() {
-        if(!used) {
+        if(!used && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             int healAmt = 10;
             AbstractDungeon.player.heal(healAmt, true);
@@ -37,11 +39,10 @@ public class LittleLight extends BaseRelic{
         }
     }
     @Override
-    public int onAttacked(DamageInfo info, int damageAmount) {
+    public void onLoseHp(int damageAmount) {
         if(AbstractDungeon.player.currentHealth - damageAmount <= AbstractDungeon.player.maxHealth/2){
             healPlayer();
         }
-        return damageAmount;
     }
 
     @Override

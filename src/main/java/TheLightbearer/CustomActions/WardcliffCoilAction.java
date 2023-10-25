@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import static TheLightbearer.util.CustomTags.*;
 
+import static TheLightbearer.TheLightbearer.logger;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class WardcliffCoilAction extends AbstractGameAction {
@@ -22,7 +23,7 @@ public class WardcliffCoilAction extends AbstractGameAction {
     private DamageInfo.DamageType damageType;
 
 
-    public WardcliffCoilAction(AbstractPlayer p, int[] multiDamage, DamageInfo.DamageType damageType, boolean upgraded, boolean freeToPlayOnce, int energyOnUse) {
+    public WardcliffCoilAction(AbstractPlayer p, int[] multiDamage, DamageInfo.DamageType damageType, boolean freeToPlayOnce, boolean upgraded, int energyOnUse) {
         this.actionType = ActionType.SPECIAL;
         this.multiDamage = multiDamage;
         this.upgraded = upgraded;
@@ -67,12 +68,12 @@ public class WardcliffCoilAction extends AbstractGameAction {
 
             }
         }
-        if (!freeToPlayOnce) {
+        if (!this.freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
             //logger.info("energy down");
         }
         isDone = true;
-       // logger.info("Done");
+        //logger.info("Done");
     }
 }
 

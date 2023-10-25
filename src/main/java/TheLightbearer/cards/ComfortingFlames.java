@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.SOLAR;
+
 public class ComfortingFlames extends BaseCard {
     public static final String ID = makeID("ComfortingFlames");
 
@@ -31,6 +33,7 @@ public class ComfortingFlames extends BaseCard {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
     }
 
     @Override
