@@ -32,6 +32,7 @@ public class StylishExecution extends BaseCard {
         super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(VOID);
+        setCostUpgrade(1);
     }
 
     @Override

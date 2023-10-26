@@ -2,6 +2,7 @@ package TheLightbearer.cards;
 
 
 import TheLightbearer.character.LightbearerCharacter;
+import TheLightbearer.powers.ChargeOfLightPower;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -35,6 +36,7 @@ public class TrappersAmbush extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m,p, new  WeakPower(m, this.magicNumber, false)));
+        addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p, this.magicNumber)));
     }
 
     @Override

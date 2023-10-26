@@ -41,8 +41,8 @@
   },
   "${modID}:GuardiansFate": {
     "NAME": "Guardian's Fate",
-    "DESCRIPTION": "{@@}Gain !B! Block and Scry !M! cards.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block and Scry !M! cards.",
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Scry !M! cards.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Scry !M! cards.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",
@@ -111,13 +111,13 @@
   },
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
-    "DESCRIPTION": "{@@}Apply !M! Weak to an enemy.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy."
+    "DESCRIPTION": "{@@}Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light.."
   },
   "${modID}:StylishExecution": {
     "NAME": "Stylish Execution",
-    "DESCRIPTION": "{@@}Deal !D! damage, deal damage again for each unique debuff applied to the enemy.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, deal damage again for each unique debuff applied to the enemy."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Deal damage again for each unique debuff applied to the enemy.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Deal damage again for each unique debuff applied to the enemy."
   },
   "${modID}:EchoOfHarvest": {
     "NAME": "Echo Of Harvest",
@@ -161,8 +161,8 @@
   },
   "${modID}:GunpowderGamble": {
     "NAME": "Gunpowder Gamble",
-    "DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar card, hit an extra time.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar card, hit an extra time."
+    "DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar-Infused card, hit an extra time.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar-Infused card, hit an extra time."
   },
   "${modID}:LineEmUp": {
     "NAME": "Line 'Em Up",
@@ -231,8 +231,8 @@
   },
   "${modID}:ExpelDarkness": {
     "NAME": "Expel Darkness",
-    "DESCRIPTION": "{@@}Exhaust. NL Apply !M! Weak and Vulnerable to All Enemies",
-    "UPGRADE_DESCRIPTION": "{@@}Exhaust. NL Apply !M! Weak and Vulnerable to All Enemies"
+    "DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to All Enemies",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to All Enemies"
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
@@ -316,8 +316,8 @@
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
-    "DESCRIPTION": "{@@}Choose an enemy. Whenever you play a card this turn, the enemy loses !M! HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}hoose an enemy. Whenever you play a card this turn, the enemy loses !M! HP. NL Exhaust."
+    "DESCRIPTION": "{@@}Whenever you play a card this turn, All Enemies loses !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play a card this turn, All Enemies loses !M! HP. NL Exhaust."
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
@@ -401,8 +401,8 @@
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar, *Arc, and *Void card in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar, *Arc, and *Void card in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand, draw pile, and discard pile.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand, draw pile, and discard pile.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",
@@ -426,10 +426,10 @@
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",
-    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc card in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc-Infused card in your hand, draw pile, and discard pile.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc-Infused card in your hand, draw pile, and discard pile.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have !M! other *Arc cards.)"
+      " NL (You have !M! other *Arc-Infused cards.)"
     ]
   },
   "${modID}:Jotun": {
@@ -454,18 +454,18 @@
   },
   "${modID}:ChooseArc": {
     "NAME": "Choose Arc",
-    "DESCRIPTION": "{@@}Add a random *Arc card to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Arc cards to your hand. They cost 0 this turn."
+    "DESCRIPTION": "{@@}Add a random *Arc-Infused card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Arc-Infused cards to your hand. They cost 0 this turn."
   },
   "${modID}:ChooseVoid": {
     "NAME": "Choose Void",
-    "DESCRIPTION": "{@@}Add a random *Void card to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Void cards to your hand. They cost 0 this turn."
+    "DESCRIPTION": "{@@}Add a random *Void-Infused card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Void-Infused cards to your hand. They cost 0 this turn."
   },
   "${modID}:ChooseSolar": {
   "NAME": "Choose Solar",
-    "DESCRIPTION": "{@@}Add a random *Solar card to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Solar cards to your hand. They cost 0 this turn."
+    "DESCRIPTION": "{@@}Add a random *Solar-Infused card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Solar-Infused cards to your hand. They cost 0 this turn."
 }
 }
 

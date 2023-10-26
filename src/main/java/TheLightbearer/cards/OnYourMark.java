@@ -35,15 +35,15 @@ public class OnYourMark extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int burnCount = 0;
         for(AbstractCard c : p.drawPile.group){
-            if(c.name.equals("Burn"))
+            if(c.cardID.equals("Burn"))
                 burnCount++;
         }
         for(AbstractCard c : p.hand.group){
-            if(c.name.equals("Burn"))
+            if(c.cardID.equals("Burn"))
                 burnCount++;
         }
         for(AbstractCard c : p.discardPile.group){
-            if(c.name.equals("Burn"))
+            if(c.cardID.equals("Burn"))
                 burnCount++;
         }
         if(burnCount > 0){

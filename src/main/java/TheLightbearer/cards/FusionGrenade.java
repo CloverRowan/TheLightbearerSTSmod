@@ -39,7 +39,7 @@ public class FusionGrenade extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         for(int i = 0; i < p.hand.size(); i++){
             AbstractCard c = p.hand.group.get(i);
-            if(c.name.equals("Burn"))
+            if(c.cardID.equals("Burn"))
                 addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
     }
