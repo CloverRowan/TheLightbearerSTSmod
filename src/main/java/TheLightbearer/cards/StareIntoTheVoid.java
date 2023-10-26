@@ -24,7 +24,7 @@ public class StareIntoTheVoid extends BaseCard {
     );
 
     private static int MAGIC_NUMBER = 10;
-    private static int UPG_MAGIC_NUMBER = 7;
+    private static int UPG_MAGIC_NUMBER = -3;
 
     public StareIntoTheVoid() {
         super(ID, info,"void");

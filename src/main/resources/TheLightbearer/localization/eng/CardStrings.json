@@ -96,8 +96,8 @@
   },
   "${modID}:TouchOfVoid": {
     "NAME": "Touch Of Void",
-    "DESCRIPTION": "{@@}Deal !D! damage and randomly Exhaust !M! cards.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage and Exhaust !M! cards."
+    "DESCRIPTION": "{@@}Deal !D! damage and randomly Exhaust !M! card.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage and Exhaust !M! card."
   },
   "${modID}:TripmineGrenade": {
     "NAME": "Tripmine Grenade",
@@ -112,7 +112,7 @@
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
     "DESCRIPTION": "{@@}Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light.."
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:StylishExecution": {
     "NAME": "Stylish Execution",
@@ -161,8 +161,8 @@
   },
   "${modID}:GunpowderGamble": {
     "NAME": "Gunpowder Gamble",
-    "DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar-Infused card, hit an extra time.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was a *Solar-Infused card, hit an extra time."
+    "DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was *Solar-Infused, hit an extra time.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was *Solar-Infused, hit an extra time."
   },
   "${modID}:LineEmUp": {
     "NAME": "Line 'Em Up",
@@ -241,8 +241,8 @@
   },
   "${modID}:CallOnLight": {
     "NAME": "Call On Light",
-    "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! ${modID}:Charge_Of_Light"
+    "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:Equalize": {
     "NAME": "Equalize",
@@ -261,8 +261,8 @@
   },
   "${modID}:FlareBlast": {
     "NAME": "Flare Blast",
-    "DESCRIPTION": "{@@}Deal !D! Damage to all enemies. NL Discard a burn.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage to all enemies. NL Discard a burn."
+    "DESCRIPTION": "{@@}Deal !D! Damage to all enemies. NL Discard a Burn.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage to all enemies. NL Discard a Burn."
   },
   "${modID}:LightningStrike": {
     "NAME": "Lightning Strike",
@@ -272,7 +272,7 @@
   "${modID}:JumpStart": {
     "NAME": "Jump Start",
     "DESCRIPTION": "{@@}Innate. NL Draw !M! card{!M!|>1=s}.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Draw !M! card{!M!>1=s}."
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Draw !M! cards."
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",
@@ -316,8 +316,8 @@
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
-    "DESCRIPTION": "{@@}Whenever you play a card this turn, All Enemies loses !M! HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you play a card this turn, All Enemies loses !M! HP. NL Exhaust."
+    "DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies loses !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies loses !M! HP. NL Exhaust."
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
@@ -341,8 +341,8 @@
   },
   "${modID}:Shadowshot": {
     "NAME": "Shadowshot",
-    "DESCRIPTION": "{@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Apply !M! Vulnerable and deal !D! damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Apply !M! Vulnerable and deal !D! damage to ALL enemies."
+    "DESCRIPTION": "{@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies."
   },
   "${modID}:FusionGrenade": {
     "NAME": "Fusion Grenade",
@@ -360,7 +360,7 @@
     "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile."
   },
   "${modID}:CalculatedSpark": {
-  "NAME": "CalculatedSpark",
+  "NAME": "Calculated Spark",
   "DESCRIPTION": "{@@}Gain !B! Block. NL Channel !M! Lightning.",
   "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Channel !M! Lightning."
 },
@@ -411,8 +411,8 @@
   },
   "${modID}:WhisperOfTheWorm": {
     "NAME": "Whisper of The Worm",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this gain [E] [E] .",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this gain [E] [E] .",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 4 Energy.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 4 Energy.",
     "EXTENDED_DESCRIPTION": [
       " NL (3",
       " left).",
