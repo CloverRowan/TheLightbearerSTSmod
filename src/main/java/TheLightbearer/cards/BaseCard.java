@@ -423,13 +423,13 @@ public abstract class BaseCard extends CustomCard {
         String text;
         Color color;
         if(this.tags.contains(VOID)){
-            text = "Void";
+            text = "Void-Infused";
             color = Settings.PURPLE_COLOR;
         }else if(this.tags.contains(SOLAR)){
-            text = "Solar";
+            text = "Solar-Infused";
             color = Color.ORANGE;
         }else if(this.tags.contains(ARC)){
-            text = "Arc";
+            text = "Arc-Infused";
             color = Color.CYAN;
         }else{
             text = "";

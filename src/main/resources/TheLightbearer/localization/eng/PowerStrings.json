@@ -89,7 +89,8 @@
   "${modID}:PowerDifferentialPower": {
     "NAME": "Power Differential",
     "DESCRIPTIONS": [
-      "When you deal unblocked attack damage, gain half as block."
+      "When you deal unblocked attack damage, gain #b",
+      "% as Block."
     ]
   },
   "${modID}:ElementalPlatingPower": {

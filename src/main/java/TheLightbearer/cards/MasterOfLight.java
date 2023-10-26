@@ -44,7 +44,7 @@ public class MasterOfLight extends BaseCard {
         tags.add(VOID);
         tags.add(ARC);
         this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar, *Arc, and *Void card in your deck respectively.";
+                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your deck respectively.";
     }
 
 

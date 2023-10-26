@@ -20,7 +20,7 @@ public class PowerDifferentialPower extends BasePower implements CloneablePowerI
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0] + 50*this.amount + DESCRIPTIONS[1];
     }
 
     @Override
