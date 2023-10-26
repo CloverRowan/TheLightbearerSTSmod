@@ -30,7 +30,7 @@ public class FeedTheVoidPower extends BasePower implements CloneablePowerInterfa
     @Override
     public void atStartOfTurnPostDraw() {
         super.atStartOfTurnPostDraw();
-        addToBot(new ExhaustAction(this.amount, true));
+        addToBot(new ExhaustAction(this.amount, false, true, true));
     }
 }
 

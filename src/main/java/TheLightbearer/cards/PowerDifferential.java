@@ -21,7 +21,7 @@ public class PowerDifferential extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             3
     );
-    private static final int MAGIC_NUMBER =1;
+    private static final int MAGIC_NUMBER = 1;
 
 
 

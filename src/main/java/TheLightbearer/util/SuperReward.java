@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
+import com.megacrit.cardcrawl.relics.BustedCrown;
 
 import java.util.ArrayList;
 
@@ -21,7 +22,20 @@ public class SuperReward extends CustomReward {
     }
     public static ArrayList<AbstractCard> getCards(){
         ArrayList<AbstractCard> cardsList = new ArrayList<>();
-        while(cardsList.size() < 3){
+        int numOfRewards = 3;
+        if(AbstractDungeon.player.hasRelic("Busted Crown")){
+            numOfRewards = 1;
+        }
+        if(AbstractDungeon.player.hasRelic("Question Card")){
+            numOfRewards = 4;
+        }
+        if(AbstractDungeon.player.hasRelic("Busted Crown") && AbstractDungeon.player.hasRelic("Question Card")){
+            numOfRewards = 2;
+
+        }
+
+
+        while(cardsList.size() < numOfRewards){
             AbstractCard d = getSuperCards();
             if(!cardsListDuplicate(cardsList, d)){
                 cardsList.add(d);
