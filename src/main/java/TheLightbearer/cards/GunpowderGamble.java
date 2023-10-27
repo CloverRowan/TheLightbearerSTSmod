@@ -48,6 +48,11 @@ public class GunpowderGamble extends BaseCard {
                     AbstractGameAction.AttackEffect.FIRE));
         }
     }
+    @Override
+    public void triggerOnGlowCheck() {
+        glowColor =  AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+                .get(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - 1)).tags.contains(SOLAR) ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
+    }
 
     @Override
     public AbstractCard makeCopy() { //Optional

@@ -10,10 +10,12 @@ import com.megacrit.cardcrawl.relics.BustedCrown;
 
 import java.util.ArrayList;
 
-import static TheLightbearer.util.CustomTags.SUPERSPELL;
+import static TheLightbearer.TheLightbearer.makeID;
+import static TheLightbearer.util.CustomTags.*;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class SuperReward extends CustomReward {
-    public static final String ID = TheLightbearer.makeID("SuperReward");
+    public static final String ID = makeID("SuperReward");
     public static final String[] TEXT =(CardCrawlGame.languagePack.getUIString(ID)).TEXT;
 
     public SuperReward() {
@@ -23,13 +25,13 @@ public class SuperReward extends CustomReward {
     public static ArrayList<AbstractCard> getCards(){
         ArrayList<AbstractCard> cardsList = new ArrayList<>();
         int numOfRewards = 3;
-        if(AbstractDungeon.player.hasRelic("Busted Crown")){
+        if(player.hasRelic("Busted Crown")){
             numOfRewards = 1;
         }
-        if(AbstractDungeon.player.hasRelic("Question Card")){
+        if(player.hasRelic("Question Card")){
             numOfRewards = 4;
         }
-        if(AbstractDungeon.player.hasRelic("Busted Crown") && AbstractDungeon.player.hasRelic("Question Card")){
+        if(player.hasRelic("Busted Crown") && player.hasRelic("Question Card")){
             numOfRewards = 2;
 
         }
@@ -52,7 +54,28 @@ public class SuperReward extends CustomReward {
         ArrayList<AbstractCard> list = new ArrayList<>();
         for(AbstractCard d : CardLibrary.getAllCards()){
             if(d.tags.contains(SUPERSPELL)){
-                list.add(d.makeCopy());
+                AbstractCard u = d.makeCopy();
+                if(d.tags.contains(VOID) && player.hasRelic(makeID("OrpheusRig"))){
+                    u.upgrade();
+                }
+                if(d.tags.contains(SOLAR) && player.hasRelic(makeID("ShardsOfGalanor"))){
+                    u.upgrade();
+                }
+                if(d.tags.contains(ARC) && player.hasRelic(makeID("RaidenFlux"))){
+                    u.upgrade();
+                }
+                if(d.type.equals(AbstractCard.CardType.ATTACK) && player.hasRelic("Molten Egg 2")){
+                    u.upgrade();
+                }
+                if(d.type.equals(AbstractCard.CardType.SKILL) && player.hasRelic(makeID("Toxic Egg 2"))){
+                    u.upgrade();
+                }
+                if(d.type.equals(AbstractCard.CardType.POWER) && player.hasRelic(makeID("Frozen Egg 2"))){
+                    u.upgrade();
+                }
+
+
+                list.add(u);
             }
         }
         return list.get(AbstractDungeon.cardRng.random(list.size()-1));

@@ -357,7 +357,11 @@
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",
     "DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile."
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have ",
+      " Burns)"
+    ]
   },
   "${modID}:CalculatedSpark": {
   "NAME": "CalculatedSpark",
