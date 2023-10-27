@@ -13,7 +13,7 @@ import static TheLightbearer.TheLightbearer.makeID;
 public class LittleLight extends BaseRelic{
     private static final String NAME = "LittleLight";
     public static final String ID = makeID(NAME);
-    private static final RelicTier RARITY = RelicTier.COMMON; //The relic's rarity.
+    private static final RelicTier RARITY = RelicTier.STARTER; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.CLINK; //The sound played when the relic is clicked.
     public LittleLight(){
         super(ID, NAME, LightbearerCharacter.Enums.CARD_COLOR, RARITY, SOUND);

@@ -230,6 +230,7 @@ public class TheLightbearer implements
 
     @Override
     public void receiveEditRelics() {
+
         new AutoAdd(modID) //Loads files from this mod
                 .packageFilter(BaseRelic.class) //In the same package as this class
                 .any(BaseRelic.class, (info, relic) -> { //Run this code for any classes that extend this class

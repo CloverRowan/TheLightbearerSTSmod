@@ -8,9 +8,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 
 import static TheLightbearer.TheLightbearer.relicPath;
+import static TheLightbearer.character.LightbearerCharacter.Enums.CARD_COLOR;
 
 public abstract class BaseRelic extends CustomRelic {
-    public AbstractCard.CardColor pool = null;
+    public AbstractCard.CardColor pool = CARD_COLOR;
     public RelicType relicType = RelicType.SHARED;
     protected String imageName;
 

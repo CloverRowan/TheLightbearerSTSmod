@@ -55,5 +55,14 @@
       "Slow"
     ],
     "DESCRIPTION": "Whenever you play a card, receives #b10% more damage from #yAttacks this turn."
+  },
+  {
+    "PROPER_NAME": "Synergy",
+    "NAMES": [
+      "synergy",
+      "Synergy"
+    ],
+    "DESCRIPTION": "When used in combination with the listed card, gain a bonus use."
   }
+
 ]
