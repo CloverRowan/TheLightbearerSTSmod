@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class GunpowderGamble extends BaseCard {
     public static final String ID = makeID("GunpowderGamble");
@@ -50,7 +51,15 @@ public class GunpowderGamble extends BaseCard {
     }
     @Override
     public void triggerOnGlowCheck() {
-        glowColor =  AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+        boolean inHand = false;
+        for(AbstractCard c : player.hand.group){
+            if(c == this){
+                inHand = true;
+                break;
+            }
+        }
+        if(inHand)
+            glowColor =  AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
                 .get(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - 1)).tags.contains(SOLAR) ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
     }
 

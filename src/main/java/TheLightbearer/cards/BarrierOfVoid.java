@@ -33,9 +33,11 @@ public class BarrierOfVoid extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-    for(int i = 0; i< p.exhaustPile.size(); i++ ){
-        addToBot(new GainBlockAction(p,block));
-    }
+        int exhaustCount = 0;
+        for(int i = 0; i< p.exhaustPile.size(); i++ ){
+            exhaustCount++;
+        }
+        addToBot(new GainBlockAction(p,block*exhaustCount));
     }
 
     @Override
