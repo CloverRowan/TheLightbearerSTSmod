@@ -5,10 +5,14 @@ import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.screen;
 
 public class OnYourMark extends BaseCard {
     public static final String ID = makeID("OnYourMark");
@@ -29,26 +33,57 @@ public class OnYourMark extends BaseCard {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] + 0 + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int burnCount = 0;
-        for(AbstractCard c : p.drawPile.group){
-            if(c.cardID.equals("Burn"))
-                burnCount++;
-        }
-        for(AbstractCard c : p.hand.group){
-            if(c.cardID.equals("Burn"))
-                burnCount++;
-        }
-        for(AbstractCard c : p.discardPile.group){
-            if(c.cardID.equals("Burn"))
-                burnCount++;
-        }
+        int burnCount = countBurns();
         if(burnCount > 0){
             addToBot(new ApplyPowerAction(p,p,new VigorPower(p,this.magicNumber*burnCount), this.magicNumber*burnCount));
         }
+    }
+
+    private int countBurns(){
+        int burnCount = 0;
+        for(AbstractCard c : AbstractDungeon.player.drawPile.group){
+            if(c.cardID.equals("Burn"))
+                burnCount++;
+        }
+        for(AbstractCard c : AbstractDungeon.player.hand.group){
+            if(c.cardID.equals("Burn"))
+                burnCount++;
+        }
+        for(AbstractCard c : AbstractDungeon.player.discardPile.group){
+            if(c.cardID.equals("Burn"))
+                burnCount++;
+        }
+        return burnCount;
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] +  countBurns() + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
+    public void onMoveToDiscard() {
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] +  countBurns() + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] +  countBurns() + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
+    @Override
+    public void upgrade() {
+        super.upgrade();
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] + 0 + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
     }
 
     @Override

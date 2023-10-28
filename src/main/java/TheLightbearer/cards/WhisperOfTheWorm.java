@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class WhisperOfTheWorm extends BaseCard {
     public static final String ID = makeID("WhisperOfTheWorm");
@@ -73,7 +74,15 @@ public class WhisperOfTheWorm extends BaseCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        glowColor = counter == 1 ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
+        boolean inHand = false;
+        for(AbstractCard c : player.hand.group){
+            if(c == this){
+                inHand = true;
+                break;
+            }
+        }
+        if(inHand)
+            glowColor = counter == 1 ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
     }
     @Override
     public AbstractCard makeCopy() { //Optional

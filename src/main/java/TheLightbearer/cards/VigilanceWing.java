@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.screen;
 
 public class VigilanceWing extends BaseCard {
 
@@ -42,7 +43,15 @@ public class VigilanceWing extends BaseCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        glowColor = player.hand.size() <= 4 ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
+        boolean inHand = false;
+        for(AbstractCard c : player.hand.group){
+            if(c == this){
+                inHand = true;
+                break;
+            }
+        }
+        if(inHand)
+            glowColor = player.hand.size() <= 4 ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
     }
 
     @Override
