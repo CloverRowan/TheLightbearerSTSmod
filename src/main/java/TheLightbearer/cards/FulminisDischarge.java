@@ -1,8 +1,10 @@
 package TheLightbearer.cards;
 
 
+import TheLightbearer.CustomActions.ConsumePower;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
@@ -12,8 +14,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
+import static TheLightbearer.TheLightbearer.logger;
 
 import static TheLightbearer.util.CustomTags.ARC;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class FulminisDischarge extends BaseCard {
 
@@ -28,7 +32,7 @@ public class FulminisDischarge extends BaseCard {
     private static final int DAMAGE = 7;
     private static final int UPG_DAMAGE = 3;
 
-    private static final int MAGIC_NUMBER = 1;
+    private static final int MAGIC_NUMBER = 5;
 
     public FulminisDischarge() {
         super(ID, info, "arc");
@@ -38,14 +42,17 @@ public class FulminisDischarge extends BaseCard {
         this.showEvokeOrbCount = 1;
         setSelfRetain(false,true);
         tags.add(ARC);
+        ExhaustiveVariable.setBaseValue(this, 2);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if(p.drawPile.size() <= 5 && player.hasPower("Flex")){
+            //logger.info("passed logic");
+            new ConsumePower(p,"Flex",this.magicNumber).ConsumePowerAction();
+            //logger.info("Strenght should reduce");
+        }
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        if(p.drawPile.size() < 5){
-        addToBot((AbstractGameAction) new ChannelAction((AbstractOrb) new Lightning()));
-            }
         }
 
     @Override

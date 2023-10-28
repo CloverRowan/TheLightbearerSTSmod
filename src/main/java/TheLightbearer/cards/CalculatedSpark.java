@@ -3,12 +3,14 @@ package TheLightbearer.cards;
 
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Lightning;
+import com.megacrit.cardcrawl.powers.EnergizedPower;
 
 import static TheLightbearer.util.CustomTags.ARC;
 
@@ -38,10 +40,7 @@ public class CalculatedSpark extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        for(int i = 0; i< this.magicNumber; i++) {
-            addToBot(new ChannelAction(new Lightning()));
-        }
-
+        addToBot(new ApplyPowerAction(p,p, new EnergizedPower(p,this.magicNumber)));
     }
 
     @Override

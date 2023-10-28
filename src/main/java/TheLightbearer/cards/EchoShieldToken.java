@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLightbearer.util.CustomTags.*;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 @AutoAdd.Ignore
 @AutoAdd.NotSeen
@@ -40,8 +41,16 @@ public class EchoShieldToken extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new MakeTempCardInHandAction(new EchoShieldToken(), 1));
+        if(this.upgraded){
+            AbstractCard c = new  EchoShieldToken();
+            c.upgrade();
+            addToBot(new MakeTempCardInHandAction( c,1));
+        }
+        else {
+            addToBot(new MakeTempCardInHandAction(new EchoShieldToken(), 1));
+        }
     }
+
 
     @Override
     public AbstractCard makeCopy() {

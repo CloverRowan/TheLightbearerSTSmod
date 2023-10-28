@@ -24,6 +24,9 @@ public class ConsumePower extends AbstractGameAction {
                     FindPower.amount = FindPower.amount - magic;
                     return true;
                 }
+                else{
+                    FindPower.amount = 0;
+                }
             }
         }
         return false;

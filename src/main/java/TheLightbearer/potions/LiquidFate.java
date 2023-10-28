@@ -23,7 +23,7 @@ public class LiquidFate extends BasePotion {
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
 
     public LiquidFate() {
-        super(ID, 1, PotionRarity.UNCOMMON, PotionSize.HEART, PotionColor.WEAK);
+        super(ID, 1, PotionRarity.UNCOMMON, PotionSize.CARD, PotionColor.WEAK);
         this.isThrown = false;
         this.targetRequired = false;
         this.labOutlineColor = Color.GRAY.cpy();

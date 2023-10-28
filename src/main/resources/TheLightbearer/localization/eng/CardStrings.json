@@ -136,8 +136,8 @@
   },
   "${modID}:EchoShieldToken": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": "{@@}Ethereal. NL Exhaust NL Gain !B! Block NL Generate a temporary EchoShield in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block NL Generate a temporary EchoShield in your hand."
+    "DESCRIPTION": "{@@}Ethereal. NL Exhaust NL Gain !B! Block NL Generate a temporary Echo Shield in your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Exhaust NL Gain !B! Block NL Generate a temporary Echo Shield in your hand."
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
@@ -306,8 +306,8 @@
   },
   "${modID}:FulminisDischarge": {
     "NAME": "Fulminis Discharge",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have less then 5 cards in your draw pile, Channel 1 Lightning.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have less then 5 cards in your draw pile, Channel 1 Lightning."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have less then 5 cards in your draw pile, remove !M! Strength Down.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have less then 5 cards in your draw pile, remove !M! Strength Down."
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
@@ -361,8 +361,8 @@
   },
   "${modID}:CalculatedSpark": {
   "NAME": "Calculated Spark",
-  "DESCRIPTION": "{@@}Gain !B! Block. NL Channel !M! Lightning.",
-  "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Channel !M! Lightning."
+  "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Energy next turn.",
+  "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Energy next turn."
 },
   "${modID}:StaticPass": {
     "NAME": "Static Pass",
