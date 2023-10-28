@@ -136,8 +136,8 @@
   },
   "${modID}:EchoShieldToken": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": "{@@}Ethereal. NL Exhaust NL Gain !B! Block NL Generate a temporary Echo Shield in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Exhaust NL Gain !B! Block NL Generate a temporary Echo Shield in your hand."
+    "DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block NL Generate a temporary Echo Shield in your hand NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block NL Generate a temporary Echo Shield in your hand NL Exhaust."
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
@@ -201,8 +201,8 @@
   },
   "${modID}:ConsumeTheFuture": {
     "NAME": "Consume The Future",
-    "DESCRIPTION": "{@@}Exhaust your draw pile. NL Generate a new random card for each card Exhausted NL Randomize the cost of cards in your hand NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain NL Exhaust your draw pile. NL Generate a new random card for each card Exhausted. NL Randomize the cost of cards in your hand. NL Exhaust."
+    "DESCRIPTION": "{@@}Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted NL Randomize the cost of cards in your hand NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain NL Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted. NL Randomize the cost of cards in your hand. NL Exhaust."
   },
   "${modID}:FearTheVoid": {
     "NAME": "Fear The Void",
@@ -211,8 +211,8 @@
   },
   "${modID}:FeedTheVoid": {
     "NAME": "Feed The Void",
-    "DESCRIPTION": "{@@}At the start of your turn, Exhaust one card.",
-    "UPGRADE_DESCRIPTION": "{@@}At the start of your turn, Exhaust one card."
+    "DESCRIPTION": "{@@}At the start of your turn, Exhaust up to one card.",
+    "UPGRADE_DESCRIPTION": "{@@}At the start of your turn, Exhaust up to one card."
   },
   "${modID}:SpectralBlades": {
     "NAME": "Spectral Blades",
@@ -306,8 +306,8 @@
   },
   "${modID}:FulminisDischarge": {
     "NAME": "Fulminis Discharge",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have less then 5 cards in your draw pile, remove !M! Strength Down.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have less then 5 cards in your draw pile, remove !M! Strength Down."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have 5 or less cards in your draw pile, remove !M! Strength Down.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have 5 or less in your draw pile, remove !M! Strength Down."
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
