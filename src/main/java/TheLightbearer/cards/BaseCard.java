@@ -432,7 +432,7 @@ public abstract class BaseCard extends CustomCard {
             text = "Arc-Infused";
             color = Color.CYAN;
         }else{
-            text = "";
+            text = null;
             color = Settings.CREAM_COLOR.cpy();
         }
 

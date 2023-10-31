@@ -35,7 +35,9 @@ public class SingleCardViewBorderTextPatch {
     public static void Postfix(SingleCardViewPopup __instance, SpriteBatch sb) {
         try {
             AbstractCard card = (AbstractCard)cardField.get(__instance);
-            ((BaseCard)card).renderBorderText(sb, Settings.WIDTH / 2.0F, (float)yField.get(__instance), yOffsetBase, drawScale);
+            if(card.cardID.startsWith("TheLightbearer")){
+                ((BaseCard)card).renderBorderText(sb, Settings.WIDTH / 2.0F, (float)yField.get(__instance), yOffsetBase, drawScale);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
