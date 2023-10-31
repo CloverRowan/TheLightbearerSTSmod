@@ -40,6 +40,7 @@ public class SpectralBlades extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p,p,new SuperArmor(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p,p,new SpectralBladesPower(p,this.magicNumber)));
         addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,3),3));
         addToBot(new AddTemporaryHPAction(p,p,15));
 

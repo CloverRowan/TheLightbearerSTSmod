@@ -30,11 +30,12 @@ public class SuperArmor extends BasePower implements CloneablePowerInterface {
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        super.atEndOfTurn(isPlayer);
+    public void atEndOfRound() {
+        super.atEndOfRound();
         if(this.amount > 0) {
             reducePower(1);
-        } else{
+        }
+        if(this.amount == 0){
             addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,makeID("SuperArmor")));
         }
     }

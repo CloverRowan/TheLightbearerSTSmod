@@ -145,7 +145,7 @@
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength."
   },
   "${modID}:VoidWallGrenade": {
-    "NAME": "VoidWall Grenade",
+    "NAME": "Void Wall Grenade",
     "DESCRIPTION": "{@@}Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light.",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light."
   },
