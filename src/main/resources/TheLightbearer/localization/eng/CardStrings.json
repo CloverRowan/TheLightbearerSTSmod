@@ -221,8 +221,8 @@
   },
   "${modID}:StareIntoTheVoid": {
     "NAME": "Stare Into The Void",
-    "DESCRIPTION": "{@@}Ethereal. NL Lose !M! Percent of current Hp. Exhume 1 card.",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Lose !M! Percent of current Hp. Exhume 1 card."
+    "DESCRIPTION": "{@@}Ethereal. NL Lose !M! Percent of current Hp. Put a card from your Exhaust pile into your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Lose !M! Percent of current Hp. Put a card from your Exhaust pile into your hand"
   },
   "${modID}:EmbraceMadness": {
     "NAME": "Embrace Madness",
