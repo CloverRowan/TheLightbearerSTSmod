@@ -111,7 +111,8 @@
     "DESCRIPTIONS": [
       "At the start of its NEXT turn, loses #b",
       " HP.",
-      "At the start of its turn, loses #b"
+      "At the start of its turn, loses #b",
+      "Also triggers when a card is Exhausted."
     ]
   },
   "${modID}:IncandescencePower": {

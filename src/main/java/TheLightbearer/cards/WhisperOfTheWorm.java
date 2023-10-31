@@ -25,8 +25,8 @@ public class WhisperOfTheWorm extends BaseCard {
             2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 14;
-    private static final int UPG_DAMAGE = 6;
+    private static final int DAMAGE = 15;
+    private static final int UPG_DAMAGE = 0;
 
     private int counter;
 
@@ -37,6 +37,7 @@ public class WhisperOfTheWorm extends BaseCard {
         this.counter = 3;
         this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0] + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
+        setCostUpgrade(1);
     }
 
     @Override
@@ -57,7 +58,7 @@ public class WhisperOfTheWorm extends BaseCard {
                 this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[2];
                 break;
             case 0:
-                addToBot(new GainEnergyAction(4));
+                addToBot(new GainEnergyAction(3));
                 counter = 3;
                 this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0] + cardStrings.EXTENDED_DESCRIPTION[1];
                 break;

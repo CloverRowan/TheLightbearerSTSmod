@@ -27,11 +27,11 @@ public class GatheringStorm extends BaseCard {
             3 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 20;
+    private static final int DAMAGE = 22;
     private static final int UPG_DAMAGE = 8;
 
-    private static final int MAGIC_NUMBER = 14;
-    private static final int UPG_MAGIC_NUMBER = 6;
+    private static final int MAGIC_NUMBER = 22;
+    private static final int UPG_MAGIC_NUMBER = 8;
 
     public GatheringStorm() {
         super(ID, info, "arc"); //Pass the required information to the BaseCard constructor.
