@@ -7,6 +7,7 @@ import TheLightbearer.util.CardStats;
 import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -14,6 +15,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+
 import static TheLightbearer.TheLightbearer.logger;
 
 import static TheLightbearer.util.CustomTags.ARC;
@@ -50,7 +53,13 @@ public class FulminisDischarge extends BaseCard {
         if(p.drawPile.size() <= 5 && player.hasPower("Flex")){
             //logger.info("passed logic");
             new ConsumePower(p,"Flex",this.magicNumber).ConsumePowerAction();
-            //logger.info("Strenght should reduce");
+            //logger.info("Strength should reduce");
+            for (AbstractPower FindPower : player.powers) {
+                if (FindPower.ID.equals("Flex") && FindPower.amount <= 0) {
+                    addToBot(new RemoveSpecificPowerAction(p,p,"Flex"));
+                }
+            }
+
         }
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
