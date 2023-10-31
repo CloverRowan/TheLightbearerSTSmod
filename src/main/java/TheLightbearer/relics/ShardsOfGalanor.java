@@ -3,6 +3,7 @@ package TheLightbearer.relics;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ChargeOfLightPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -55,6 +56,7 @@ public class ShardsOfGalanor extends BaseRelic {
             //logger.info("passing logic gate");
             addToBot(new MakeTempCardInHandAction(card));
             addToBot(new ApplyPowerAction(player,player,new ChargeOfLightPower(player, 10)));
+            addToBot(new GainEnergyAction(2));
             isUsed = true;
             //logger.info("orig done");
         }

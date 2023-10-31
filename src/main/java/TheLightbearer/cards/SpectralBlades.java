@@ -3,7 +3,9 @@ package TheLightbearer.cards;
 
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.SpectralBladesPower;
+import TheLightbearer.powers.SuperArmor;
 import TheLightbearer.util.CardStats;
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,6 +14,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import static TheLightbearer.util.CustomTags.SUPERSPELL;
 import static TheLightbearer.util.CustomTags.VOID;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class SpectralBlades extends BaseCard {
 
@@ -36,8 +39,9 @@ public class SpectralBlades extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p,new SpectralBladesPower(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p,p,new SuperArmor(p,this.magicNumber)));
         addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,3),3));
+        addToBot(new AddTemporaryHPAction(p,p,15));
 
     }
     @Override

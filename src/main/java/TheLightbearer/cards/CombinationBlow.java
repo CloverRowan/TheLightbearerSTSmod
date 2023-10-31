@@ -27,7 +27,7 @@ public class CombinationBlow extends BaseCard {
     );
     private static final int DAMAGE = 4;
     private static final int UPG_DAMAGE = 2;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 1;
 
     public CombinationBlow() {
         super(ID, info, "arc");
@@ -37,11 +37,10 @@ public class CombinationBlow extends BaseCard {
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    public void use(AbstractPlayer p, AbstractMonster m) { // new order dosent buff damage
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         addToBot(new ApplyPowerAction(p,p, new StrengthPower(p,magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p,p, new LoseStrengthPower(p,magicNumber), magicNumber));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
     @Override

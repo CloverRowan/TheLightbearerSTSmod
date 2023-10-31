@@ -120,5 +120,11 @@
       "When you draw a #yBurn deal #b",
       " damage to all enemies."
     ]
+  },
+  "${modID}:SuperArmor": {
+    "NAME": "Super Armor",
+    "DESCRIPTIONS": [
+      "Take 50% less attack Damage"
+    ]
   }
 }

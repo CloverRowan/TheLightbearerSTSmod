@@ -2,6 +2,7 @@ package TheLightbearer.cards;
 
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ArcStaffPower;
+import TheLightbearer.powers.SuperArmor;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -37,6 +38,7 @@ public class ArcStaff extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p,p,new ArcStaffPower(p,this.magicNumber),this.magicNumber));
+        addToBot(new ApplyPowerAction(p,p, new SuperArmor(p,this.magicNumber)));
         addToBot(new ApplyPowerAction(p,p,new DexterityPower(p,3),3));
     }
     @Override

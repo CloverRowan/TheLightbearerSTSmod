@@ -86,8 +86,8 @@
   },
   "${modID}:EchoOfDilation": {
     "NAME": "Echo Of Dilation",
-    "DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow and deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow and deal !D! damage."
+    "DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow and deal !D! damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow and deal !D! damage. NL Exhaust."
   },
   "${modID}:SparkOfFeedback": {
     "NAME": "Spark Of Feedback",
@@ -111,8 +111,8 @@
   },
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
-    "DESCRIPTION": "{@@}Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light."
+    "DESCRIPTION": "{@@}Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust."
   },
   "${modID}:StylishExecution": {
     "NAME": "Stylish Execution",
@@ -141,8 +141,8 @@
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
-    "DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! temporary Strength.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! temporary Strength."
+    "DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength."
   },
   "${modID}:VoidWallGrenade": {
     "NAME": "VoidWall Grenade",
@@ -216,8 +216,8 @@
   },
   "${modID}:SpectralBlades": {
     "NAME": "Spectral Blades",
-    "DESCRIPTION": "{@@}${modID}:Super NL Take half damage and gain 3 Strength for !M! turns.",
-    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Take half damage and gain 3 Strength for !M! turns."
+    "DESCRIPTION": "{@@}${modID}:Super NL Gain ${modID}:Super_Armor and 3 Strength for !M! turns. NL Gain 15 Temporary HP.",
+    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Gain ${modID}:Super_Armor and 3 Strength for !M! turns. NL Gain 15 Temporary HP."
   },
   "${modID}:StareIntoTheVoid": {
     "NAME": "Stare Into The Void",
@@ -326,8 +326,8 @@
   },
   "${modID}:ArcStaff": {
     "NAME": "Arc Staff",
-    "DESCRIPTION": "{@@}${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity for !M! turns.",
-    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity for !M! turns."
+    "DESCRIPTION": "{@@}${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and ${modID}:Super_Armor for !M! turns.",
+    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and ${modID}:Super_Armor for !M! turns."
 },
   "${modID}:FlowState": {
     "NAME": "Flow State",

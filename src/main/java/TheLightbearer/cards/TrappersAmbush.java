@@ -31,6 +31,7 @@ public class TrappersAmbush extends BaseCard {
         setMagic(MAGIC_NUMBER);
         tags.add(VOID);
         setInnate(baseInnate,upgInnate);
+        setExhaust(true);
     }
 
     @Override
