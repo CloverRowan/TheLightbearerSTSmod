@@ -124,7 +124,7 @@
   "${modID}:SuperArmor": {
     "NAME": "Super Armor",
     "DESCRIPTIONS": [
-      "Take 50% less attack Damage"
+      "Take 50% less attack damage."
     ]
   }
 }
