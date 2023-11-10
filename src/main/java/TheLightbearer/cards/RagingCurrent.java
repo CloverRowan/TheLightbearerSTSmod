@@ -21,21 +21,22 @@ public class RagingCurrent extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             0
     );
-    private static final int MAGIC_NUMBER = 0;
-    private static final int UPG_MAGIC_NUM = 0;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUM = 1;
 
     private static final int BLOCK = 2;
     private static final int UPG_BLOCK = 2;
 
     public RagingCurrent() {
         super(ID, info, "arc");
-        setBlock(BLOCK, UPG_BLOCK);
+        //setBlock(BLOCK, UPG_BLOCK);
+        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUM);
         tags.add(ARC);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p ,p , new RagingCurrentPower(p,this.block),this.block));
+        addToBot(new ApplyPowerAction(p ,p , new RagingCurrentPower(p,this.magicNumber),this.magicNumber));
 
     }
 

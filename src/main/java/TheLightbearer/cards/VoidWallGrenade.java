@@ -33,13 +33,14 @@ public class VoidWallGrenade extends BaseCard {
     public VoidWallGrenade() {
         super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
+        this.isMultiDamage = true;
         tags.add(VOID);
         setMagic(MAGIC);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(p,this.damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction(p,this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p,this.magicNumber)));
     }
 

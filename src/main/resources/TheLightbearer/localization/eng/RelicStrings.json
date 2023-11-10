@@ -31,27 +31,27 @@
     "NAME": "Sagira's Shell",
     "FLAVOR": "Honor an old friend.",
     "DESCRIPTIONS": [
-      "Right-Click to heal for 10"
+      "Right-Click to heal for #b10 HP once per combat."
     ]
   },
   "${modID}:OrpheusRig": {
     "NAME": "Orpheus Rig",
     "FLAVOR": "You've chosen the path of the void, walk it carefully.",
     "DESCRIPTIONS": [
-      "When you add a #yVoid-Infused card to your deck it is upgraded, this relic has #y${modID}:Synergy with Shadowshot."
+      "When you add a #yVoid-Infused card to your deck, upgrade it. This relic has #y${modID}:Synergy with Shadowshot."
     ]
   },
   "${modID}:ShardsOfGalanor": {
     "NAME": "Shards of Galanor",
     "FLAVOR": "You've chosen the path of the Sun, walk it warmly.",
     "DESCRIPTIONS": [
-      "When you add a #ySolar-Infused card to your deck it is upgraded, this relic has #y${modID}:Synergy with Blade Barrage."
+      "When you add a #ySolar-Infused card to your deck, upgrade it. This relic has #y${modID}:Synergy with Blade Barrage."
     ]
   },"${modID}:RaidenFlux": {
   "NAME": "Raiden Flux",
   "FLAVOR": "You've chosen the path of Arc, walk it quickly.",
   "DESCRIPTIONS": [
-    "When you add a #yArc-Infused card to your deck it is upgraded, this relic has #y${modID}:Synergy with Arc Staff."
+    "When you add a #yArc-Infused card to your deck, upgrade it. This relic has #y${modID}:Synergy with Arc Staff."
   ]
 }
 }
