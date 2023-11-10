@@ -28,7 +28,7 @@ public class EchoShieldToken extends BaseCard {
 
 
     private static final int BLOCK = 8;
-    private static final int UPG_BLOCK = 3;
+    private static final int UPG_BLOCK = 1;
 
     public EchoShieldToken() {
         super(ID, info,"void");

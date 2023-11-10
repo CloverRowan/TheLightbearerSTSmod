@@ -145,7 +145,7 @@
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength."
   },
   "${modID}:VoidWallGrenade": {
-    "NAME": "VoidWall Grenade",
+    "NAME": "Void Wall Grenade",
     "DESCRIPTION": "{@@}Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light.",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light."
   },
@@ -415,8 +415,8 @@
   },
   "${modID}:WhisperOfTheWorm": {
     "NAME": "Whisper of The Worm",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 3 Energy.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 3 Energy.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 2 Energy.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 2 Energy.",
     "EXTENDED_DESCRIPTION": [
       " NL (3",
       " left).",

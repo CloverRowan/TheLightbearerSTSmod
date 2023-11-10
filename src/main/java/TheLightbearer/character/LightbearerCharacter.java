@@ -37,7 +37,7 @@ public class LightbearerCharacter extends CustomPlayer {
     public static final int MAX_HP = 70;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
-    public static final int ORB_SLOTS = 2;
+    public static final int ORB_SLOTS = 0;
 
     //Strings
     private static final String ID = makeID("TheLightbearer"); //This should match whatever you have in the CharacterStrings.json file

@@ -22,11 +22,11 @@ public class WhisperOfTheWorm extends BaseCard {
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             CardRarity.UNCOMMON, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
+            0 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 15;
-    private static final int UPG_DAMAGE = 0;
+    private static final int DAMAGE = 4;
+    private static final int UPG_DAMAGE = 2;
 
     private int counter;
 
@@ -37,7 +37,7 @@ public class WhisperOfTheWorm extends BaseCard {
         this.counter = 3;
         this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0] + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
-        setCostUpgrade(1);
+
     }
 
     @Override
@@ -58,7 +58,7 @@ public class WhisperOfTheWorm extends BaseCard {
                 this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[2];
                 break;
             case 0:
-                addToBot(new GainEnergyAction(3));
+                addToBot(new GainEnergyAction(2));
                 counter = 3;
                 this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0] + cardStrings.EXTENDED_DESCRIPTION[1];
                 break;
