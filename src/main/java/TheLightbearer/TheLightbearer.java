@@ -256,6 +256,12 @@ public class TheLightbearer implements
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio("GoldenGunSFX", "TheLightbearer/audio/GoldenGunSFX.ogg");
+        BaseMod.addAudio("GoldenGunCast", "TheLightbearer/audio/GoldenGunCast.ogg");
+        BaseMod.addAudio("BladeBarrageCast", "TheLightbearer/audio/BladeBarrageCast.ogg");
+        BaseMod.addAudio("ArcStaffCast", "TheLightbearer/audio/ArcStaffCast.ogg");
+        BaseMod.addAudio("GatheringStormCast", "TheLightbearer/audio/GatheringStormCast.ogg");
+        BaseMod.addAudio("ShadowshotCast", "TheLightbearer/audio/ShadowshotCast.ogg");
+        BaseMod.addAudio("SpectralBladesCast", "TheLightbearer/audio/SpectralBladesCast.ogg");
     }
     /*public void registerCustomRewards(){
         BaseMod.registerCustomReward(

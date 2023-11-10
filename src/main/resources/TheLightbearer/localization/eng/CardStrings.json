@@ -75,7 +75,7 @@
     "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block and !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:TravelersIncandescence": {
-    "NAME": "Traveler's Incandescence",
+    "NAME": "Traveler's Might",
     "DESCRIPTION": "{@@}Ethereal. NL Gain !M! Strength and !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !M! Strength and !M! Dexterity."
   },
@@ -221,8 +221,12 @@
   },
   "${modID}:StareIntoTheVoid": {
     "NAME": "Stare Into The Void",
-    "DESCRIPTION": "{@@}Ethereal. NL Lose !M! Percent of current Hp. Put a card from your Exhaust pile into your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Lose !M! Percent of current Hp. Put a card from your Exhaust pile into your hand"
+    "DESCRIPTION": "{@@}Ethereal. NL Lose !M!% of current Hp. Put a card from your Exhaust pile into your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Lose !M!% of current Hp. Put a card from your Exhaust pile into your hand",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Costs ",
+      " HP)"
+    ]
   },
   "${modID}:EmbraceMadness": {
     "NAME": "Embrace Madness",
@@ -242,7 +246,7 @@
   "${modID}:CallOnLight": {
     "NAME": "Call On Light",
     "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! ${modID}:Charge_Of_Light."
+    "UPGRADE_DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:Equalize": {
     "NAME": "Equalize",
@@ -286,8 +290,8 @@
   },
   "${modID}:RagingCurrent": {
     "NAME": "Raging Current",
-    "DESCRIPTION": "{@@}Whenever you draw a card this turn, gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw a card this turn, gain !B! Block."
+    "DESCRIPTION": "{@@}Whenever you draw a card this turn, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw a card this turn, gain !M! Block."
   },
   "${modID}:ShockingTumble": {
     "NAME": "Shocking Tumble",
@@ -384,14 +388,14 @@
     "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block."
   },
   "${modID}:CallLightningAttack": {
-    "NAME": "Discharge",
+    "NAME": "Spark",
     "DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand.",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand."
   },
   "${modID}:CallLightning": {
     "NAME": "Call Lightning",
-    "DESCRIPTION": "{@@}Add a *Discharge to your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Add an Upgraded *Discharge to your hand."
+    "DESCRIPTION": "{@@}Add a *Spark to your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Add an Upgraded *Spark to your hand."
   },
   "${modID}:InvigoratingRoar": {
     "NAME": "Invigorating Roar",
@@ -425,8 +429,8 @@
   },
   "${modID}:Telesto": {
     "NAME": "Telesto",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers early when a card is Exhausted.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers early when a card is Exhausted."
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",

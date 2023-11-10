@@ -35,8 +35,8 @@
   "${modID}:SpectralBladesPower": {
   "NAME": "Spectral Blades",
   "DESCRIPTIONS": [
-    "Take 50 Percent less attack damage",
-    ""
+    "Gain #b3 Strength. In #b",
+    " lose #b3 Strength"
   ]
   },
   "${modID}:FeedTheVoidPower": {
@@ -112,7 +112,7 @@
       "At the start of its NEXT turn, loses #b",
       " HP.",
       "At the start of its turn, loses #b",
-      " Nl Also triggers when a card is Exhausted."
+      " NL Triggers early when a card is Exhausted."
     ]
   },
   "${modID}:IncandescencePower": {
@@ -126,6 +126,13 @@
     "NAME": "Super Armor",
     "DESCRIPTIONS": [
       "Take 50% less attack damage."
+    ]
+  },
+  "${modID}:Energized": {
+    "NAME": "Super Armor",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " additional [E] next turn."
     ]
   }
 }

@@ -2,6 +2,7 @@ package TheLightbearer.cards;
 
 
 import TheLightbearer.character.LightbearerCharacter;
+import TheLightbearer.powers.Energized;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -40,7 +41,7 @@ public class CalculatedSpark extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p,p, new EnergizedPower(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p,p, new Energized(p,this.magicNumber)));
     }
 
     @Override

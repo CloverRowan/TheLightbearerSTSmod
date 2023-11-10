@@ -7,14 +7,20 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class ConsumePower extends AbstractGameAction {
-    private AbstractPlayer p;
-    private String power;
-    private int magic;
+    private final boolean consumeIfNotEnough;
+    private final AbstractPlayer p;
+    private final String power;
+    private final int magic;
+
     public ConsumePower(AbstractPlayer p, String power, int magic){
+        this(p, power, magic, false);
+    }
+    public ConsumePower(AbstractPlayer p, String power, int magic, boolean consumeIfNotEnough){
         this.actionType = ActionType.REDUCE_POWER;
         this.p = p;
         this.power = power;
         this.magic = magic;
+        this.consumeIfNotEnough = consumeIfNotEnough;
     }
     public boolean ConsumePowerAction() {
 
@@ -24,7 +30,7 @@ public class ConsumePower extends AbstractGameAction {
                     FindPower.amount = FindPower.amount - magic;
                     return true;
                 }
-                else{
+                else if(consumeIfNotEnough){
                     FindPower.amount = 0;
                 }
             }

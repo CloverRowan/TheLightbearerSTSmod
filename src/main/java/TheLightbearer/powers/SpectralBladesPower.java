@@ -24,7 +24,7 @@ public class SpectralBladesPower extends BasePower implements CloneablePowerInte
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0] + this.amount + (this.amount > 1 ? " turns,":" turn") + DESCRIPTIONS[1];
     }
 
     @Override
@@ -43,7 +43,7 @@ public class SpectralBladesPower extends BasePower implements CloneablePowerInte
             addToBot(new ApplyPowerAction(player,player,new StrengthPower(player,-3)));
             addToBot(new RemoveSpecificPowerAction(player, player,this));
         }
-
+        updateDescription();
     }
 }
 
