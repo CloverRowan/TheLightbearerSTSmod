@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.LosePercentHPAction;
 import com.megacrit.cardcrawl.actions.unique.ExhumeAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLightbearer.util.CustomTags.VOID;
@@ -31,12 +32,43 @@ public class StareIntoTheVoid extends BaseCard {
         tags.add(VOID);
         setEthereal(true);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
+        this.rawDescription = this.cardStrings.DESCRIPTION;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new LosePercentHPAction(this.magicNumber));
         addToBot(new ExhumeAction(false));
+    }
+
+    //Everything for dynamic description
+    private int calcHPLoss(){
+        float percentConversion = (float)this.magicNumber / 100.0F;
+        return (int)((float) AbstractDungeon.player.currentHealth * percentConversion);
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] +  calcHPLoss() + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
+    public void onMoveToDiscard() {
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] +  calcHPLoss() + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] +  calcHPLoss() + this.cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
+    @Override
+    public void upgrade(){
+        super.upgrade();
+        this.rawDescription = this.cardStrings.DESCRIPTION;
+        this.initializeDescription();
     }
 
     @Override

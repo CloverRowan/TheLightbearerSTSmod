@@ -6,9 +6,11 @@ import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -43,6 +45,9 @@ public class GatheringStorm extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot((AbstractGameAction)new WaitAction(0.8F));
+        CardCrawlGame.sound.playV("GatheringStormCast", 16f);
+        addToBot((AbstractGameAction)new WaitAction(0.5F));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.LIGHTNING));
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters){
             addToBot(new ApplyPowerAction(mo, p, new GatheringStormPower(mo, this.magicNumber), this.magicNumber));

@@ -6,8 +6,11 @@ import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.patches.EnumPatch;
 import TheLightbearer.util.CardStats;
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -50,22 +53,19 @@ public class GoldenGun extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         //fix sound and vfx
-
+        AbstractGameEffect GoldenGunVFX = new VfxBuilder(ImageMaster.HORIZONTAL_LINE, p.drawX, m.hb.cY, 0.05f)
+                .setColor(Color.ORANGE)
+                .setScale(2.0f)
+                .moveX(p.drawX,m.drawX)
+                .build();
+        addToBot((AbstractGameAction)new WaitAction(0.8F));
+        CardCrawlGame.sound.playV("GoldenGunCast", 16f);
+        addToBot((AbstractGameAction)new WaitAction(0.5F));
+        //addToBot(new SFXAction("GoldenGunSFX"));
         for(int i = 0; i < this.magicNumber; i++){
-
-            CardCrawlGame.sound.playV("GoldenGunSFX", 1.25f);
-
-
-            AbstractGameEffect GoldenGunVFX = new VfxBuilder(ImageMaster.HORIZONTAL_LINE, p.drawX, m.hb.cY, 0.1f)
-                    .setColor(Color.ORANGE)
-                    .setScale(2.0f)
-                    .moveX(p.drawX,m.drawX)
-                    .build();
-
             //AbstractGameAction.AttackEffect gg = new AbstractGameAction.AttackEffect();
-
-            addToBot(new VFXAction(GoldenGunVFX, 0.1F));
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), EnumPatch.GOLDEN_GUN));
+            addToBot(new VFXAction(GoldenGunVFX, 0.05F));
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
         }
 
 

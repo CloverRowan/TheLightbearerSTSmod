@@ -25,7 +25,7 @@ public class RagingCurrentPower extends BasePower implements CloneablePowerInter
     @Override
     public void onCardDraw(AbstractCard card) {
         super.onCardDraw(card);
-        addToBot(new GainBlockAction(player,this.amount));
+        addToBot(new GainBlockAction(player, player, this.amount));
     }
 
     @Override
