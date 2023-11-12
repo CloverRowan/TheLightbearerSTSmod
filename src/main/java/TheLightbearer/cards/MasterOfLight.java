@@ -43,8 +43,9 @@ public class MasterOfLight extends BaseCard {
         tags.add(SOLAR);
         tags.add(VOID);
         tags.add(ARC);
+        setExhaust(true);
         this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand, draw pile, and discard pile.";
+                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
     }
 
 
@@ -65,13 +66,13 @@ public class MasterOfLight extends BaseCard {
         countCards();
         super.applyPowers();
         this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar, *Arc, and *Void card in your hand, draw pile, and discard pile.";
+                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
         initializeDescription();
     }
 
     public void onMoveToDiscard(){
         this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar, *Arc, and *Void card in your hand, draw pile, and discard pile.";
+                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
         initializeDescription();
     }
 
@@ -79,7 +80,7 @@ public class MasterOfLight extends BaseCard {
     public void calculateCardDamage(AbstractMonster mo){
         super.calculateCardDamage(mo);
         this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar, *Arc, and *Void card in your hand, draw pile, and discard pile.";
+                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
         initializeDescription();
     }
 
@@ -98,7 +99,7 @@ public class MasterOfLight extends BaseCard {
                 arcCount++;
             }
         }
-        for(AbstractCard c : player.discardPile.group){
+        /*for(AbstractCard c : player.discardPile.group){
             if(c.tags.contains(SOLAR)){
                 solarCount++;
             }
@@ -119,7 +120,7 @@ public class MasterOfLight extends BaseCard {
             if(c.tags.contains(ARC)){
                 arcCount++;
             }
-        }
+        }*/
         this.baseDamage = solarCount * (this.upgraded ? 4 : 3);
         this.baseBlock = voidCount * (this.upgraded ? 4 : 3);
         this.baseMagicNumber = this.magicNumber = arcCount;

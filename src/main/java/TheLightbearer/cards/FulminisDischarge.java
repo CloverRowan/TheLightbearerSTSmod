@@ -50,15 +50,17 @@ public class FulminisDischarge extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(p.drawPile.size() <= 5 && player.hasPower("Flex")){
+        if(p.drawPile.size() <= 5 && player.hasPower("Weakened")){
             //logger.info("passed logic");
-            new ConsumePower(p,"Flex",this.magicNumber,true).ConsumePowerAction();
+            /*new ConsumePower(p,"Flex",this.magicNumber,true).ConsumePowerAction();
             //logger.info("Strength should reduce");
             for (AbstractPower FindPower : player.powers) {
                 if (FindPower.ID.equals("Flex") && FindPower.amount <= 0) {
                     addToBot(new RemoveSpecificPowerAction(p,p,"Flex"));
                 }
-            }
+            }*/
+
+        addToBot(new RemoveSpecificPowerAction(p,p,"Weakened"));
 
         }
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));

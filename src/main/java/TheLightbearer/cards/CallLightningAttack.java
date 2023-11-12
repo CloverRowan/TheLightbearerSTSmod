@@ -16,7 +16,7 @@ import static TheLightbearer.util.CustomTags.SOLAR;
 @AutoAdd.Ignore
 @AutoAdd.NotSeen
 public class CallLightningAttack extends BaseCard {
-
+    //Named Spark in game
     public static final String ID = makeID("CallLightningAttack");
     private static final CardStats info = new CardStats(
             CardColor.COLORLESS, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.

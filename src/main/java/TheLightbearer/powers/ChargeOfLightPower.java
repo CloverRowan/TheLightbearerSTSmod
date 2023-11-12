@@ -35,7 +35,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
 
     @Override
     public void stackPower(int stackAmount) {
-        if(this.amount%10 + stackAmount >= 10 && AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&
+        /*if(this.amount%10 + stackAmount >= 10 && AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&
                 AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
 
             //DimmerSwitch logic
@@ -47,7 +47,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
             }
 
             //TODO play supercharged sound
-        }
+        }*/
         int newAmount = this.amount + stackAmount;
         flashWithoutSound();
        /* if(newAmount >= MAX_STACKS && AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&

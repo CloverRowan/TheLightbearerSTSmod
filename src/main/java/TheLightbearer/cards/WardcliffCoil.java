@@ -22,7 +22,7 @@ public class WardcliffCoil extends BaseCard {
             -1
     );
     private static final int DAMAGE = 2;
-    private static final int UPG_DAMAGE = 2;
+    private static final int UPG_DAMAGE = 1;
     //private int arcCount = 0;
 
     private static final int MAGIC = 0;

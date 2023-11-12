@@ -31,8 +31,10 @@ public class PowerDifferentialPower extends BasePower implements CloneablePowerI
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         super.onAttack(info, damageAmount, target);
-        for (int i = 0; i  < this.amount; i++) {
-            addToBot(new GainBlockAction(owner, (damageAmount / 2)));
+        if(info.type.equals(DamageInfo.DamageType.NORMAL)){
+            for (int i = 0; i  < this.amount; i++) {
+                addToBot(new GainBlockAction(owner, (damageAmount / 2)));
+            }
         }
     }
 }

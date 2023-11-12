@@ -9,7 +9,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class BottleOfLight extends BasePotion {
 
@@ -26,8 +29,17 @@ public class BottleOfLight extends BasePotion {
     }
     public void use(AbstractCreature target) {
         if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
-        addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new ChargeOfLightPower(AbstractDungeon.player,this.potency)));}
-
+            addToBot(new ApplyPowerAction(player, player,new ChargeOfLightPower(player,this.potency)));
+            for(AbstractRelic r : player.relics){
+                if(r.relicId.equals("TheLightbearer:DimmerSwitch")){
+                   if(player.hasRelic("SacredBark")){
+                       r.counter += 10;
+                   }else{
+                       r.counter += 5;
+                   }
+                }
+            }
+        }
     }
     public int getPotency(int ascensionLevel) {
         return 5;

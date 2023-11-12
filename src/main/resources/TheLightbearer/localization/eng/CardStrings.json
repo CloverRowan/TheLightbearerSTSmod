@@ -105,7 +105,7 @@
     "UPGRADE_DESCRIPTION": "{@@}Ethereal NL Deal !D! damage to all enemies."
   },
   "${modID}:MarksmansDodge": {
-    "NAME": "Marksman's Dodge",
+    "NAME": "Rapid Reload",
     "DESCRIPTION": "{@@}Exhaust NL Draw !M! card{!M!|>1=s}.",
     "UPGRADE_DESCRIPTION": "{@@}Exhaust NL Draw !M! card{!M!|>1=s}."
   },
@@ -310,8 +310,8 @@
   },
   "${modID}:FulminisDischarge": {
     "NAME": "Fulminis Discharge",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have 5 or less cards in your draw pile, remove !M! Strength Down.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have 5 or less in your draw pile, remove !M! Strength Down."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have 5 or less cards in your draw pile, remove your Weak.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have 5 or less in your draw pile, remove your Weak."
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
@@ -409,8 +409,8 @@
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",

@@ -36,7 +36,7 @@ public class LethalCurrent extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo,mo, new ChokePower(mo,this.magicNumber),this.magicNumber));
+            addToBot(new ApplyPowerAction(mo,p, new ChokePower(mo,this.magicNumber),this.magicNumber));
         }
     }
 

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class TravelersIncandescence extends BaseCard {
-
+    //Named Traveler's Might in game
     public static final String ID = makeID("TravelersIncandescence");
     private static final CardStats info = new CardStats(
             LightbearerCharacter.Enums.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or something similar for a basegame character color.

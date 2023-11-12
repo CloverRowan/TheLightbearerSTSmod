@@ -13,6 +13,7 @@ import static TheLightbearer.TheLightbearer.makeID;
 public class LittleLight extends BaseRelic{
     private static final String NAME = "LittleLight";
     public static final String ID = makeID(NAME);
+    public boolean used = false;
     private static final RelicTier RARITY = RelicTier.STARTER; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.CLINK; //The sound played when the relic is clicked.
     public LittleLight(){
@@ -25,7 +26,11 @@ public class LittleLight extends BaseRelic{
         return DESCRIPTIONS[0];
     }
 
-    boolean used = false;
+    @Override
+    public void atPreBattle() {
+        used = false;
+        beginLongPulse();
+    }
 
 
     public void healPlayer() {
@@ -34,7 +39,8 @@ public class LittleLight extends BaseRelic{
             int healAmt = 10;
             AbstractDungeon.player.heal(healAmt, true);
             flash();
-            this.grayscale = true;
+            //this.grayscale = true;
+            stopPulse();
             used = true;
         }
     }
@@ -47,7 +53,7 @@ public class LittleLight extends BaseRelic{
 
     @Override
     public void onVictory() {
-        this.grayscale = false;
+        //this.grayscale = false;
         used = false;
     }
 
