@@ -1,0 +1,16 @@
+{
+  "TheLightbearer:ChargeTutorial": {
+    "TEXT": [
+      "At the start of each turn and whenever you attack, you gain a #yCharge #yof #yLight. NL  NL You can spend 10 Charges of Light to play a powerful #ySuper card!",
+      "Second String",
+      "Third String"
+    ],
+    "LABEL": [
+      "Next",
+      "Got It!",
+      "Charge of Light",
+      "(Page ",
+      " of 2)"
+    ]
+  }
+}

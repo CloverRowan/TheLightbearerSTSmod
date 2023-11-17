@@ -1,5 +1,7 @@
 package TheLightbearer.character;
 
+//import TheLightbearer.screens.TutorialScreen;
+import basemod.BaseMod;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
@@ -11,6 +13,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -50,6 +53,7 @@ public class LightbearerCharacter extends CustomPlayer {
     private static final String SHOULDER_2 = characterPath("shoulder2.png");
     private static final String CORPSE = characterPath("corpse.png"); //Corpse is when you die.
 
+    public boolean first = true;
     public static class Enums {
         //These are used to identify your character, as well as your character's card color.
         //Library color is basically the same as card color, but you need both because that's how the game was made.
@@ -59,6 +63,14 @@ public class LightbearerCharacter extends CustomPlayer {
         public static AbstractCard.CardColor CARD_COLOR;
         @SpireEnum(name = "LIGHTBEARER_GRAY_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
+    }
+
+    public void applyStartOfCombatPreDrawLogic(){
+        if(first){
+           // BaseMod.openCustomScreen(TutorialScreen.Enum.TUTORIAL_SCREEN);
+        }
+        first = false;
+        super.applyStartOfCombatPreDrawLogic();
     }
 
     public LightbearerCharacter() {

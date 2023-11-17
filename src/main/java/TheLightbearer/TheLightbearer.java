@@ -1,7 +1,9 @@
 package TheLightbearer;
 
+
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.abstracts.CustomScreen;
 import basemod.interfaces.*;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
@@ -16,6 +18,7 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.ModInfo;
 import com.evacipated.cardcrawl.modthespire.Patcher;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
@@ -26,11 +29,11 @@ import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
 import com.badlogic.gdx.graphics.Color;
 
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
+
+import static basemod.BaseMod.addCustomScreen;
 
 
 @SpireInitializer
@@ -46,6 +49,7 @@ public class TheLightbearer implements
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
+    public static SpireConfig lightbearerConfig;
     private static final String resourcesFolder = "TheLightbearer";
 
     private static final String BG_ATTACK = characterPath("cardback/none/attack_none.png");
@@ -82,6 +86,16 @@ public class TheLightbearer implements
     public TheLightbearer() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
         logger.info(modID + " subscribed to BaseMod.");
+        Properties lightbearerDefaults = new Properties();
+        lightbearerDefaults.setProperty("Charge Tutorial Seen","FALSE");
+        try{
+            lightbearerConfig = new SpireConfig("The Lightbearer","TheLightbearer",lightbearerDefaults);
+        }catch (IOException e){
+            logger.error("TheLightbearer SpireConfig initialization failed:");
+            e.printStackTrace();
+        }
+        logger.info("LIGHTBEARER CONFIG OPTIONS LOADED:");
+        logger.info("Charge tutorial seen: " + lightbearerConfig.getString("Charge Tutorial Seen") + ".");
     }
 
     @Override
@@ -93,6 +107,9 @@ public class TheLightbearer implements
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
         registerPotions();
         //registerCustomRewards();
+
+       // BaseMod.addCustomScreen(new TutorialScreen());
+
     }
 
 
@@ -144,6 +161,8 @@ public class TheLightbearer implements
                 localizationPath(lang, "RelicStrings.json"));
         BaseMod.loadCustomStringsFile(UIStrings.class,
                 localizationPath(lang, "UIStrings.json"));
+        BaseMod.loadCustomStringsFile(TutorialStrings.class,
+                localizationPath(lang, "TutorialStrings.json"));
     }
 
     @Override
