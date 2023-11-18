@@ -37,9 +37,9 @@ public class ExpelDarkness extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, true)));
+            addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false)));
 
-            addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, this.magicNumber, true)));
+            addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, this.magicNumber, false)));
         }
     }
 

@@ -33,9 +33,9 @@ public class BottleOfLight extends BasePotion {
             for(AbstractRelic r : player.relics){
                 if(r.relicId.equals("TheLightbearer:DimmerSwitch")){
                    if(player.hasRelic("SacredBark")){
-                       r.counter += 10;
+                       r.counter += 20;
                    }else{
-                       r.counter += 5;
+                       r.counter += 10;
                    }
                 }
             }

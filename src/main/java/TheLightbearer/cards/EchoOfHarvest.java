@@ -33,7 +33,7 @@ public class EchoOfHarvest extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p, new EchoOfHarvestPower(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p,p, new EchoOfHarvestPower(p, this.magicNumber),this.magicNumber,true));
     }
 
     @Override

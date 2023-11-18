@@ -45,7 +45,7 @@ public class Shadowshot extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new WaitAction(0.8F));
-        CardCrawlGame.sound.playV("ShadowshotCast", 16f);
+        CardCrawlGame.sound.playV("ShadowshotCast", 8f);
         addToBot(new ApplyPowerAction(m, p, new CorpseExplosionPower(m),1,AbstractGameAction.AttackEffect.POISON));
         addToBot(new DamageAllEnemiesAction(p,this.damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {

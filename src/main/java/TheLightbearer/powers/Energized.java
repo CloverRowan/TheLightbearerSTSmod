@@ -32,7 +32,7 @@ public class Energized extends BasePower implements CloneablePowerInterface {
     public void onEnergyRecharge() {
         flash();
         AbstractDungeon.player.gainEnergy(this.amount);
-        addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, "Energized"));
+        addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, makeID("Energized")));
     }
 
     @Override

@@ -129,7 +129,7 @@
     ]
   },
   "${modID}:Energized": {
-    "NAME": "Super Armor",
+    "NAME": "Energized",
     "DESCRIPTIONS": [
       "Gain #b",
       " additional [E] next turn."

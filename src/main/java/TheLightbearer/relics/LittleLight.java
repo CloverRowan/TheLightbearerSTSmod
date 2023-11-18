@@ -39,7 +39,7 @@ public class LittleLight extends BaseRelic{
             int healAmt = 10;
             AbstractDungeon.player.heal(healAmt, true);
             flash();
-            //this.grayscale = true;
+            this.grayscale = true;
             stopPulse();
             used = true;
         }
@@ -53,7 +53,7 @@ public class LittleLight extends BaseRelic{
 
     @Override
     public void onVictory() {
-        //this.grayscale = false;
+        this.grayscale = false;
         used = false;
     }
 
