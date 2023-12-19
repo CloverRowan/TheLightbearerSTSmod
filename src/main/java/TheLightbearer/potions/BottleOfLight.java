@@ -19,7 +19,7 @@ public class BottleOfLight extends BasePotion {
     private static final String ID = TheLightbearer.makeID("BottleOfLight");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
     public BottleOfLight() {
-        super(ID, 5 , PotionRarity.COMMON, PotionSize.JAR, PotionColor.WHITE);
+        super(ID, 10 , PotionRarity.COMMON, PotionSize.JAR, PotionColor.WHITE);
         this.isThrown = false;
         this.targetRequired = false;
         this.labOutlineColor = Color.GRAY.cpy();
@@ -42,7 +42,7 @@ public class BottleOfLight extends BasePotion {
         }
     }
     public int getPotency(int ascensionLevel) {
-        return 5;
+        return 10;
     }
 
     @Override

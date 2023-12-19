@@ -86,8 +86,8 @@
   },
   "${modID}:EchoOfDilation": {
     "NAME": "Echo Of Dilation",
-    "DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow and deal !D! damage. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow and deal !D! damage. NL Exhaust."
+    "DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply ${modID}:Slow NL Exhaust."
   },
   "${modID}:SparkOfFeedback": {
     "NAME": "Spark Of Feedback",
@@ -315,8 +315,8 @@
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
-    "DESCRIPTION": "{@@}${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "{@@}${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, ALL enemies lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, ALL enemies lose !M! HP."
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
