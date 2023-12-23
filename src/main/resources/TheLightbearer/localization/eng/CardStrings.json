@@ -389,8 +389,8 @@
   },
   "${modID}:CallLightningAttack": {
     "NAME": "Spark",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile it returns to your hand."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile, it returns to your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile, it returns to your hand."
   },
   "${modID}:CallLightning": {
     "NAME": "Call Lightning",

@@ -30,6 +30,10 @@ public class ConsumeTheFuture extends BaseCard {
         tags.add(VOID);
     }
 
+    public float getTitleFontSize() {
+        return 20;
+    }
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int i = 0; i <p.drawPile.size(); i++){
