@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.ARC;
+
 public class WorldlineZero extends BaseCard {
 
     public static final String ID = makeID("WorldlineZero");
@@ -30,6 +32,7 @@ public class WorldlineZero extends BaseCard {
         setDamage(DAMAGE);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         this.isMultiDamage = true;
+        tags.add(ARC);
 
     }
 
