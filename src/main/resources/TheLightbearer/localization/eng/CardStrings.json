@@ -146,8 +146,8 @@
   },
   "${modID}:VoidWallGrenade": {
     "NAME": "Void Wall Grenade",
-    "DESCRIPTION": "{@@}Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to all enemies. Gain !M! ${modID}:Charge_Of_Light."
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. Gain !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:LightweightKnife": {
     "NAME": "Lightweight Knife",

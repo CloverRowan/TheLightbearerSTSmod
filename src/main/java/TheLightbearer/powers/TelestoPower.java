@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -47,7 +48,8 @@ public class TelestoPower extends BasePower implements CloneablePowerInterface, 
             if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
                     !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 1){
                 flashWithoutSound();
-                addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
+                //addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
+                addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
                 addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
             }else if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
                     !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 0){
@@ -59,10 +61,11 @@ public class TelestoPower extends BasePower implements CloneablePowerInterface, 
 
     @Override
     public void enemyOnExhaust(AbstractCard card) {
-        logger.info("exhausted a card");
+        //logger.info("exhausted a card");
         if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()){
-            logger.info("passed logic gate");
-            addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
+            //logger.info("passed logic gate");
+            //addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
+            addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
             addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
         }
     }
