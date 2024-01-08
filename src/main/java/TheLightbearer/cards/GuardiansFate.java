@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 public class GuardiansFate extends BaseCard {
 
     public static final String ID = makeID("GuardiansFate");
@@ -32,6 +34,7 @@ public class GuardiansFate extends BaseCard {
         super(ID, info, "none");
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
+        tags.add(NONE);
     }
 
     @Override

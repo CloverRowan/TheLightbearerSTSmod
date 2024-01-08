@@ -431,6 +431,9 @@ public abstract class BaseCard extends CustomCard {
         }else if(this.tags.contains(ARC)){
             text = "Arc-Infused";
             color = Color.CYAN;
+        }else if(this.tags.contains(NONE)){
+            text = "Non-Elemental";
+            color = Settings.CREAM_COLOR.cpy();
         }else{
             text = null;
             color = Settings.CREAM_COLOR.cpy();

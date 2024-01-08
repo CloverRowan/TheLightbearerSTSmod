@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+import static TheLightbearer.util.CustomTags.SOLAR;
 import static com.megacrit.cardcrawl.cards.AbstractCard.CardTarget.SELF;
 
 public class BlessingOfRadiance extends BaseCard {
@@ -33,7 +35,7 @@ public class BlessingOfRadiance extends BaseCard {
         super(ID, info, "none");
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
-
+        tags.add(NONE);
     }
 
     @Override

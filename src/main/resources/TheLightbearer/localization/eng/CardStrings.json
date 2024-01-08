@@ -61,8 +61,8 @@
   },
   "${modID}:HeavyKnife": {
     "NAME": "Heavy Knife",
-    "DESCRIPTION": "{@@}Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
       "If you need to use it for stuff.",
@@ -409,8 +409,8 @@
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your hand.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",

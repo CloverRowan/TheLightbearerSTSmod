@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 public class TravelersIncandescence extends BaseCard {
     //Named Traveler's Might in game
     public static final String ID = makeID("TravelersIncandescence");
@@ -25,11 +27,11 @@ public class TravelersIncandescence extends BaseCard {
     private static final boolean upgEthereal = true;
     private static  final int costUpgrade = 2;
     public TravelersIncandescence() {
-        super(ID, info);
+        super(ID, info, "none");
         setMagic(MAGIC_NUMBER);
         setEthereal(baseEthereal,upgEthereal);
         setCostUpgrade(costUpgrade);
-
+        tags.add(NONE);
     }
 
     @Override

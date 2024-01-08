@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.screen;
 
@@ -29,8 +30,9 @@ public class VigilanceWing extends BaseCard {
 
 
     public VigilanceWing() {
-        super(ID, info);
+        super(ID, info, "none");
         setDamage(DAMAGE, UPG_DAMAGE);
+        tags.add(NONE);
     }
 
     @Override

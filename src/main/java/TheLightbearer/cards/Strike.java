@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 public class Strike extends BaseCard {
     public static final String ID = makeID("Strike");
 
@@ -32,7 +34,7 @@ public class Strike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STARTER_STRIKE); //This tag marks it as a basic Strike
         tags.add(CardTags.STRIKE); //This tag marks it as a Strike card for the purposes of Perfected Strike and any similar modded effects
-
+        tags.add(NONE);
     }
 
     @Override

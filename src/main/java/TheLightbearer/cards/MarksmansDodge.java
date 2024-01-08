@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 public class MarksmansDodge extends BaseCard {
     //Named Rapid Reload in game
     public static final String ID = makeID("MarksmansDodge");
@@ -23,9 +25,10 @@ public class MarksmansDodge extends BaseCard {
 
 
     public MarksmansDodge() {
-        super(ID, info);
+        super(ID, info, "none");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setExhaust(true);
+        tags.add(NONE);
     }
 
     @Override

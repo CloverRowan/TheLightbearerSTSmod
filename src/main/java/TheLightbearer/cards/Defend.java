@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 public class Defend extends BaseCard {
     public static final String ID = makeID("Defend");
 
@@ -27,7 +29,7 @@ public class Defend extends BaseCard {
     public Defend() {
         super(ID, info, "none"); //Pass the required information to the BaseCard constructor.
 
-
+        tags.add(NONE);
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
         tags.add(CardTags.STARTER_DEFEND); //This tag marks it as a basic Strike
     }

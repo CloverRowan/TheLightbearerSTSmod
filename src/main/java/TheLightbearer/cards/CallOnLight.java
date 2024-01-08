@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 public class CallOnLight extends BaseCard {
 
     public static final String ID = makeID("CallOnLight");
@@ -24,10 +26,10 @@ public class CallOnLight extends BaseCard {
 
 
     public CallOnLight() {
-        super(ID, info);
+        super(ID, info, "none");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setSelfRetain(false,true);
-
+        tags.add(NONE);
     }
 
     @Override

@@ -23,7 +23,7 @@ import static TheLightbearer.TheLightbearer.makeID;
 public class GatheringStormPower extends BasePower implements CloneablePowerInterface,
         HealthBarRenderPower {
     public static final String POWER_ID = makeID("GatheringStormPower");
-    private static final PowerType TYPE = PowerType.BUFF;
+    private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
 
     private int counter = 0;

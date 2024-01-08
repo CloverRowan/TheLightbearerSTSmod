@@ -63,7 +63,7 @@ public class TheTraveler extends BaseRelic {
                     if(p.amount >= 10 || (!freeCharge.isEmpty() && freeCharge.get(0) == true)){
                         if (!freeCharge.isEmpty()){
                             freeCharge.remove(0);
-                            logger.info("got to the array reduce");
+                            //logger.info("got to the array reduce");
                             return super.canPlay(card);
                         }
                         return super.canPlay(card);

@@ -8,5 +8,6 @@ public class CustomTags {
     @SpireEnum public static AbstractCard.CardTags ARC;
     @SpireEnum public static AbstractCard.CardTags SOLAR;
     @SpireEnum public static AbstractCard.CardTags VOID;
+    @SpireEnum public static AbstractCard.CardTags NONE;
 }
 

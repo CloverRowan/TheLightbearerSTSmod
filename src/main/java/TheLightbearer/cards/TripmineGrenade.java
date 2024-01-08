@@ -6,6 +6,7 @@ import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -30,11 +31,12 @@ public class TripmineGrenade extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE);
         setEthereal(true);
         tags.add(SOLAR);
+        this.isMultiDamage = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new DamageAllEnemiesAction(p, this.damage, damageType.NORMAL , AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction(p,this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
 
     }
 

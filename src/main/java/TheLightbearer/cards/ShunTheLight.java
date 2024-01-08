@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.NONE;
+
 
 public class ShunTheLight extends BaseCard {
 
@@ -32,10 +34,11 @@ public class ShunTheLight extends BaseCard {
 
 
     public ShunTheLight() {
-        super(ID, info);
+        super(ID, info, "none");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setBlock(BLOCK,UPG_BLOCK);
+        tags.add(NONE);
     }
 
     @Override
