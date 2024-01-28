@@ -21,8 +21,8 @@ public class CallOnLight extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             2
     );
-    private static final int MAGIC_NUMBER = 5 ;
-    private static final int UPG_MAGIC_NUMBER = 7 ;
+    private static final int MAGIC_NUMBER = 7 ;
+    private static final int UPG_MAGIC_NUMBER = 3 ;
 
 
     public CallOnLight() {

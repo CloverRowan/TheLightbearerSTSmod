@@ -336,7 +336,7 @@
   "${modID}:FlowState": {
     "NAME": "Flow State",
     "DESCRIPTION": "{@@}Ethereal. NL Whenever you play an Attack, draw 1 card.",
-    "UPGRADE_DESCRIPTION": "{@@}When you play an Attack, draw 1 card."
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play an Attack, draw 1 card."
   },
   "${modID}:Deadshot": {
     "NAME": "Deadshot",
