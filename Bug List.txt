@@ -1,0 +1,18 @@
+Bugs:
+Wardcliff coil interacts strangely with Chemical X
+Character art is very purple
+
+
+Todo:
+Rework Solar burns
+Reduce Super costs to 5 light, add more ways to consume light
+Combine Traveler and Little Light into 1 relic, make charge of light innate to character
+Custom cardback for non-element cards
+Art for a few cards
+End screen after heart
+Buff Master of Light
+Reword Master of Light's description to be more clear
+Sound effects for exotic weapons
+
+
+
