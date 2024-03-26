@@ -409,8 +409,8 @@
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !B! Block. NL Draw 1 card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your hand.",
+    "DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your draw pile. NL Retain. Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your draw pile. NL Retain. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",

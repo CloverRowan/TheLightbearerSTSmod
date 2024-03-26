@@ -34,6 +34,9 @@ public class MasterOfLight extends BaseCard {
     private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = 0;
 
+    private String descriptionString = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
+            + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your draw pile. NL Retain. Exhaust.";
+
     public MasterOfLight() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
 
@@ -43,9 +46,8 @@ public class MasterOfLight extends BaseCard {
         tags.add(SOLAR);
         tags.add(VOID);
         tags.add(ARC);
-        //setExhaust(true);
-        this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
+        setExhaust(true);
+        this.rawDescription = descriptionString;
     }
 
 
@@ -65,22 +67,19 @@ public class MasterOfLight extends BaseCard {
     public void applyPowers(){
         countCards();
         super.applyPowers();
-        this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
+        this.rawDescription = descriptionString;
         initializeDescription();
     }
 
     public void onMoveToDiscard(){
-        this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
+        this.rawDescription = descriptionString;
         initializeDescription();
     }
 
 
     public void calculateCardDamage(AbstractMonster mo){
         super.calculateCardDamage(mo);
-        this.rawDescription = "Deal !D! damage. NL Gain !B! Block. NL Draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your hand.";
+        this.rawDescription = descriptionString;
         initializeDescription();
     }
 
@@ -99,7 +98,7 @@ public class MasterOfLight extends BaseCard {
                 arcCount++;
             }
         }
-        /*for(AbstractCard c : player.discardPile.group){
+        for(AbstractCard c : player.discardPile.group){
             if(c.tags.contains(SOLAR)){
                 solarCount++;
             }
@@ -120,7 +119,7 @@ public class MasterOfLight extends BaseCard {
             if(c.tags.contains(ARC)){
                 arcCount++;
             }
-        }*/
+        }
         this.baseDamage = solarCount * (this.upgraded ? 4 : 3);
         this.baseBlock = voidCount * (this.upgraded ? 4 : 3);
         this.baseMagicNumber = this.magicNumber = arcCount;

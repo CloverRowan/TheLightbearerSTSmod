@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static TheLightbearer.util.CustomTags.VOID;
+
 public class Telesto extends BaseCard {
 
     public static final String ID = makeID("Telesto");
@@ -32,6 +34,7 @@ public class Telesto extends BaseCard {
         super(ID, info,"void");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
+        tags.add(VOID);
     }
 
     @Override

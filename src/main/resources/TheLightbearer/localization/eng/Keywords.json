@@ -73,6 +73,14 @@
       "super_armor"
     ],
     "DESCRIPTION": "Take 50% less attack damage."
+  },
+  {
+    "PROPER_NAME": "Infusion",
+    "NAMES": [
+      "Infusion",
+      "infusion",
+      "Infusion:"
+    ],
+    "DESCRIPTION": "Does an additional effect for each card in your hand, draw pile, and discard pile with a matching element"
   }
-
 ]
