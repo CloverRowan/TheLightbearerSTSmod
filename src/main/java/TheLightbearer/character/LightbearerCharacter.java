@@ -1,13 +1,14 @@
 package TheLightbearer.character;
 
 //import TheLightbearer.screens.TutorialScreen;
+import TheLightbearer.powers.ChargeOfLightPower;
 import basemod.BaseMod;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
 import TheLightbearer.cards.*;
 import TheLightbearer.relics.LittleLight;
-import TheLightbearer.relics.TheTraveler;
+//import TheLightbearer.relics.TheTraveler;
 import TheLightbearer.util.SuperReward;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -117,7 +118,7 @@ public class LightbearerCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
         retVal.add(LittleLight.ID);
-        retVal.add(TheTraveler.ID);
+        //retVal.add(TheTraveler.ID);
         return retVal;
     }
 
@@ -239,6 +240,11 @@ public class LightbearerCharacter extends CustomPlayer {
         sr.setPremultipliedAlpha(false);
         super.renderPlayerImage(sb);
         sr.setPremultipliedAlpha(true);
+    }
+
+    public void preBattlePrep(){
+        super.preBattlePrep();
+        AbstractDungeon.player.powers.add(new ChargeOfLightPower(AbstractDungeon.player,0));
     }
 
 }

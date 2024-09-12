@@ -1,3 +1,6 @@
+/* Deprecated 9/12/24
+
+
 package TheLightbearer.relics;
 
 import TheLightbearer.character.LightbearerCharacter;
@@ -87,4 +90,4 @@ public class TheTraveler extends BaseRelic {
         }
         return super.canPlay(card);
     }
-}
+}*/

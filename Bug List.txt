@@ -5,8 +5,8 @@ Character art is very purple
 
 Todo:
 Rework Solar burns
-Reduce Super costs to 5 light, add more ways to consume light
-Combine Traveler and Little Light into 1 relic, make charge of light innate to character
+
+Make Traveler do something and replace Little Light
 
 Reword Master of Light's description to be more clear
 Sound effects for exotic weapons
@@ -21,6 +21,7 @@ readme for github
 make github public
 ember of mercy and comforting flames too similar
 lightweight knife and heavyweight knife too similar
+make consume the future exhaust deck without adding random cards
 
 Art:
 	make new icon for echo of harvest instead of stealing invincible
