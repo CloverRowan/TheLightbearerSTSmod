@@ -1,11 +1,13 @@
 package TheLightbearer.character;
 
 //import TheLightbearer.screens.TutorialScreen;
-import basemod.BaseMod;
+import TheLightbearer.cards.NonElemental.BlessingOfRadiance;
+import TheLightbearer.cards.NonElemental.Defend;
+import TheLightbearer.cards.NonElemental.ShunTheLight;
+import TheLightbearer.cards.NonElemental.Strike;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
-import TheLightbearer.cards.*;
 import TheLightbearer.relics.LittleLight;
 import TheLightbearer.relics.TheTraveler;
 import TheLightbearer.util.SuperReward;
@@ -13,7 +15,6 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

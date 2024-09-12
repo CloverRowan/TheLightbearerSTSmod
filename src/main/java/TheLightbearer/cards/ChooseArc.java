@@ -31,7 +31,7 @@ public class ChooseArc extends BaseCard {
 
     public ChooseArc() {
         super(ID, info, "arc");
-    }
+}
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -1,6 +1,5 @@
 package TheLightbearer.relics;
 
-import TheLightbearer.cards.Shadowshot;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ChargeOfLightPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;

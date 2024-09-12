@@ -1,28 +1,21 @@
 package TheLightbearer.relics;
 
-import TheLightbearer.TheLightbearer;
-import TheLightbearer.cards.ArcStaff;
 import TheLightbearer.character.LightbearerCharacter;
 
 import TheLightbearer.powers.ChargeOfLightPower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 
 import static TheLightbearer.TheLightbearer.makeID;
 import static TheLightbearer.util.CustomTags.ARC;
-import static TheLightbearer.util.CustomTags.SOLAR;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class RaidenFlux extends BaseRelic {
