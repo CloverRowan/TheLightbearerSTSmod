@@ -1,5 +1,6 @@
 package TheLightbearer.cards;
 
+import TheLightbearer.powers.ChargeOfLightPower;
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
@@ -11,11 +12,16 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.relics.Necronomicon;
 import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
@@ -23,6 +29,7 @@ import java.util.function.BiFunction;
 import static TheLightbearer.util.CustomTags.*;
 import static TheLightbearer.util.GeneralUtils.removePrefix;
 import static TheLightbearer.util.TextureLoader.getCardTextureString;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 
 public abstract class BaseCard extends CustomCard {
@@ -470,6 +477,40 @@ public abstract class BaseCard extends CustomCard {
             FontHelper.renderRotatedText(sb, font, text, xPos, yPos, 0.0F, offsetY, this.angle, true, color);
             fontData.setScale(originalScale);
         }
+    }
+
+    public boolean canPlay(AbstractCard card) {
+        if (card.tags.contains(SUPERSPELL)) {
+            for (AbstractPower p : player.powers) {
+                if (p.ID.equals(makeID("ChargeOfLightPower"))) {
+                    if(p.amount >= ChargeOfLightPower.SUPER_COST || (!ChargeOfLightPower.getFreeCharge().isEmpty() && ChargeOfLightPower.getFreeCharge().get(0) == true)){
+                        if (!ChargeOfLightPower.getFreeCharge().isEmpty()){
+                            ArrayList<Boolean> freeChargeCopy = ChargeOfLightPower.getFreeCharge();
+                            freeChargeCopy.remove(0);
+                            ChargeOfLightPower.setFreeCharge(freeChargeCopy);
+                            //logger.info("got to the array reduce");
+                            return super.canPlay(card);
+                        }
+                        return super.canPlay(card);
+
+                    }
+                    ArrayList<AbstractCard> cards = AbstractDungeon.actionManager.cardsPlayedThisCombat;
+
+                    for(AbstractRelic r : player.relics){
+                        //logger.info(r.toString());
+                        if(r.relicId.equals(Necronomicon.ID) && card.cost >= 2 &&
+                                !cards.isEmpty() && cards.get(cards.size()-1).tags.contains(SUPERSPELL)){
+                            if(cards.size() >= 2 && cards.get(cards.size()-2).tags.contains(SUPERSPELL)){
+                                return false;
+                            }
+                            return super.canPlay(card);
+                        }
+                    }
+                    return false;
+                }
+            }
+        }
+        return super.canPlay(card);
     }
 
     private static class QuickDynamicVariable extends DynamicVariable {
