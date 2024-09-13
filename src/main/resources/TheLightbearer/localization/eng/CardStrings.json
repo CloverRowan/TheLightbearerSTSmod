@@ -61,7 +61,7 @@
   },
   "${modID}:HeavyKnife": {
     "NAME": "Heavy Knife",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",

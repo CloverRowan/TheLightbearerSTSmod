@@ -1,12 +1,15 @@
 package TheLightbearer.cards.Solar;
 
 
+import TheLightbearer.CustomActions.AceOfSpadesAction;
+import TheLightbearer.CustomActions.HeavyKnifeAction;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Burn;
@@ -38,8 +41,12 @@ public class HeavyKnife extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new MakeTempCardInDiscardAction(new Burn(), 1));
+        //addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new HeavyKnifeAction(p, m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), this.magicNumber));
+        addToBot(new PressEndTurnButtonAction());
+
+
+
     }
 
     @Override
