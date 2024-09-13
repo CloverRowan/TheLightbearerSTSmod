@@ -52,6 +52,19 @@ public class HeavyKnifeEffect extends AbstractGameEffect {
         this.forcedAngle = true;
     }
 
+    public HeavyKnifeEffect(float x, float y, float fAngle, float length) {
+        this.img = ImageMaster.DAGGER_STREAK;
+        this.x = x - length - this.img.packedWidth / 2.0F;
+        this.destY = y;
+        this.y = this.destY - this.img.packedHeight / 2.0F;
+        this.startingDuration = 0.4F;
+        this.duration = 0.4F;
+        this.scale = Settings.scale;
+        this.rotation = fAngle;
+        this.color = Color.ORANGE.cpy();
+        this.forcedAngle = true;
+    }
+
     private void playRandomSfX() {
         int roll = MathUtils.random(5);
         switch (roll) {
