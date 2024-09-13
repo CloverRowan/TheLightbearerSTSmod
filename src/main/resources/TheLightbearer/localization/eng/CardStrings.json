@@ -176,8 +176,8 @@
   },
   "${modID}:AcrobatsDodge": {
     "NAME": "Acrobat's Dodge",
-    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Vigor.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Vigor."
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Temporary Strength. NL Gain !B! Block. NL This card's Block is affected by Strength."
   },
   "${modID}:BladeBarrage": {
     "NAME": "Blade Barrage",
@@ -235,8 +235,8 @@
   },
   "${modID}:ExpelDarkness": {
     "NAME": "Expel Darkness",
-    "DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to All Enemies",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to All Enemies"
+    "DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to ALL Enemies",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to ALL Enemies"
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
@@ -452,8 +452,8 @@
   },
   "${modID}:AceOfSpades": {
     "NAME": "Ace of Spades",
-    "DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to all other enemies and gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to all other enemies and gain !M! Strength."
+    "DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to ALL other enemies and gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to ALL other enemies and gain !M! Strength."
   },
   "${modID}:TractorCannon": {
     "NAME": "Tractor Cannon",

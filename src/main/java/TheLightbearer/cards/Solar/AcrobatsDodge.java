@@ -1,16 +1,24 @@
 package TheLightbearer.cards.Solar;
 
+import TheLightbearer.CustomActions.CheckPowerStacks;
+import TheLightbearer.CustomActions.TempStrengthAction;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
-import static TheLightbearer.util.CustomTags.SOLAR;
+import static TheLightbearer.util.CustomTags.*;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class AcrobatsDodge extends BaseCard {
     public static final String ID = makeID("AcrobatsDodge");
@@ -30,6 +38,8 @@ public class AcrobatsDodge extends BaseCard {
 
     private static final int MAGIC_NUMBER = 2;
     private static final int UPG_MAGIC_NUMBER = 0;
+    private String descriptionString = "Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength." ;
+    private String upgradedDescriptionString = "Gain !M! Temporary Strength. NL Gain !B! Block. NL This card's Block is affected by Strength.";
 
     public AcrobatsDodge() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
@@ -40,8 +50,32 @@ public class AcrobatsDodge extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p,p,new VigorPower(p, this.magicNumber), this.magicNumber));
+        if(this.upgraded){
+            addToBot(new TempStrengthAction(p,magicNumber));
+            addToBot(new GainBlockAction(p, p, block));
+        }else{
+            addToBot(new GainBlockAction(p, p, block));
+            addToBot(new TempStrengthAction(p,magicNumber));
+        }
+
+    }
+    public void applyPowers(){
+        this.baseBlock =(this.upgraded ? UPG_BLOCK : BLOCK) + (new CheckPowerStacks(player,"Strength")).CheckPowerStacksAction();
+        super.applyPowers();
+        this.rawDescription = (this.upgraded ? upgradedDescriptionString : descriptionString);
+        initializeDescription();
+    }
+
+    public void onMoveToDiscard(){
+        this.rawDescription = descriptionString;
+        initializeDescription();
+    }
+
+
+    public void calculateCardDamage(AbstractMonster mo){
+        super.calculateCardDamage(mo);
+        this.rawDescription = descriptionString;
+        initializeDescription();
     }
 
     @Override
