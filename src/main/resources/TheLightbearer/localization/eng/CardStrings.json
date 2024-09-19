@@ -404,7 +404,7 @@
   },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
-    "DESCRIPTION": "{@@}Gain !B! Block. Shuffle !M! *Burn into your discard pile.",
+    "DESCRIPTION": "{@@}Take !D! damage. NL Gain !B! Block.",
     "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. Shuffle !M! *Burn into your discard pile."
   },
   "${modID}:MasterOfLight": {
