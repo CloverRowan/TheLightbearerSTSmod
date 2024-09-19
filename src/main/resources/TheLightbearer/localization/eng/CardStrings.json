@@ -265,8 +265,8 @@
   },
   "${modID}:FlareBlast": {
     "NAME": "Flare Blast",
-    "DESCRIPTION": "{@@}Deal !D! Damage to all enemies. NL Discard a Burn.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage to all enemies. NL Discard a Burn."
+    "DESCRIPTION": "{@@}Deal !D! Damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit."
   },
   "${modID}:LightningStrike": {
     "NAME": "Lightning Strike",
