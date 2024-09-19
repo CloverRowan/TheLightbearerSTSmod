@@ -275,8 +275,8 @@
   },
   "${modID}:JumpStart": {
     "NAME": "Jump Start",
-    "DESCRIPTION": "{@@}Innate. NL Draw !M! card{!M!|>1=s}.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Draw !M! cards."
+    "DESCRIPTION": "{@@}Innate. NL Next turn, draw 2 cards and gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Next turn, draw 2 cards and gain [E] [E]. NL Exhaust."
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",

@@ -3,11 +3,13 @@ package TheLightbearer.cards.Arc;
 
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
+import TheLightbearer.powers.Energized;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import static TheLightbearer.util.CustomTags.ARC;
 
@@ -21,7 +23,7 @@ public class JumpStart extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = 1;
 
     private static final int TEMP_MAGIC = 1;
@@ -32,11 +34,14 @@ public class JumpStart extends BaseCard {
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         setInnate(true,true);
         tags.add(ARC);
+        setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p,this.magicNumber));
+        //addToBot(new DrawCardAction(p,this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, 2), 2));
+        addToBot(new ApplyPowerAction(p,p, new Energized(p,this.magicNumber)));
     }
 
     @Override
