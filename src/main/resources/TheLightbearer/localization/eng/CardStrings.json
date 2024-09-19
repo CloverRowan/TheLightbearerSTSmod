@@ -399,8 +399,8 @@
   },
   "${modID}:InvigoratingRoar": {
     "NAME": "Invigorating Roar",
-    "DESCRIPTION": "{@@}Gain !M! Temporary Strength and shuffle a *Burn into your discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Temporary Strength and shuffle a *Burn into your discard pile."
+    "DESCRIPTION": "{@@}Gain !M! Temporary HP. NL Gain !M! Temporary Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Temporary HP. NL Gain !M! Temporary Strength. NL Exhaust."
   },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
