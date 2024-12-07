@@ -62,7 +62,7 @@
   "${modID}:HeavyKnife": {
     "NAME": "Heavy Knife",
     "DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
       "If you need to use it for stuff.",
@@ -151,8 +151,8 @@
   },
   "${modID}:LightweightKnife": {
     "NAME": "Lightweight Knife",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile."
+    "DESCRIPTION": "{@@}Deal !D! damage. Lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. Lose !M! HP."
   },
   "${modID}:Incandescence": {
     "NAME": "Incandescence",
