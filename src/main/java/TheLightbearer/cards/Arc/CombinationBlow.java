@@ -31,7 +31,7 @@ public class CombinationBlow extends BaseCard {
             1
     );
     private static final int DAMAGE = 4;
-    private static final int UPG_DAMAGE = 2;
+    private static final int UPG_DAMAGE = 1;
 
     //private int hits = 1;
 
@@ -42,7 +42,7 @@ public class CombinationBlow extends BaseCard {
         this.misc = 1;
         this.baseMagicNumber = this.misc;
         this.magicNumber = this.baseMagicNumber;
-        //this.exhaust = true;
+        this.exhaust = true;
     }
 
     @Override
