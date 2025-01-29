@@ -141,8 +141,8 @@
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
-    "DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength."
+    "DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. NL If Fatal, permanently increase this card's number of  hits by 1. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. NL If Fatal, permanently increase this card's number of  hits by 1. NL Exhaust."
   },
   "${modID}:VoidWallGrenade": {
     "NAME": "Void Wall Grenade",
@@ -151,8 +151,8 @@
   },
   "${modID}:LightweightKnife": {
     "NAME": "Lightweight Knife",
-    "DESCRIPTION": "{@@}Deal !D! damage. Lose !M! HP.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. Lose !M! HP."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Lose !M! HP."
   },
   "${modID}:Incandescence": {
     "NAME": "Incandescence",
