@@ -360,11 +360,11 @@
   },
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",
-    "DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar card in your deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar card in your deck.",
     "EXTENDED_DESCRIPTION": [
       " NL (You have ",
-      " Burns)"
+      " *Solar card{!${modID}:ONYOURMARKCOUNT!|>1=s})"
     ]
   },
   "${modID}:CalculatedSpark": {
