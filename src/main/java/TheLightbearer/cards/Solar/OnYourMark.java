@@ -34,15 +34,11 @@ public class OnYourMark extends BaseCard {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
-        this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] + 0 + this.cardStrings.EXTENDED_DESCRIPTION[1];
-        this.initializeDescription();
-        setCustomVar("ONYOURMARKCOUNT",0);
         setExhaust(true,false);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
         int solarCount = countSolar();
         if(solarCount > 0){
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p,this.magicNumber*solarCount), this.magicNumber*solarCount));
@@ -50,6 +46,8 @@ public class OnYourMark extends BaseCard {
             addToBot(new ApplyPowerAction(p, p, new VigorPower(p, this.magicNumber*solarCount), this.magicNumber*solarCount));
         }
 
+        this.rawDescription = (this.upgraded ? this.cardStrings.UPGRADE_DESCRIPTION: this.cardStrings.DESCRIPTION);
+        this.initializeDescription();
     }
 
     private int countSolar(){
@@ -68,38 +66,29 @@ public class OnYourMark extends BaseCard {
                     count++;
             }
         }
-        setCustomVar("ONYOURMARKCOUNT", count);
         return count;
     }
 
     public void applyPowers() {
         super.applyPowers();
-        updateDescription();
+        this.rawDescription = (this.upgraded ? this.cardStrings.UPGRADE_DESCRIPTION: this.cardStrings.DESCRIPTION)
+                + this.cardStrings.EXTENDED_DESCRIPTION[0] + countSolar();
+        if(countSolar() == 1){
+            this.rawDescription +=  this.cardStrings.EXTENDED_DESCRIPTION[1];
+        }else{
+            this.rawDescription += this.cardStrings.EXTENDED_DESCRIPTION[2];
+        }
+        this.initializeDescription();
     }
 
     public void onMoveToDiscard() {
-        updateDescription();
-    }
-
-    public void calculateCardDamage(AbstractMonster mo) {
-        super.calculateCardDamage(mo);
-        updateDescription();
+        this.rawDescription = (this.upgraded ? this.cardStrings.UPGRADE_DESCRIPTION: this.cardStrings.DESCRIPTION);
+        this.initializeDescription();
     }
 
     @Override
     public void upgrade() {
         super.upgrade();
-        updateDescription();
-    }
-
-
-    private void updateDescription(){
-        if(!this.upgraded){
-            this.rawDescription = this.cardStrings.DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] + countSolar() + this.cardStrings.EXTENDED_DESCRIPTION[1];
-        }else{
-            this.rawDescription = this.cardStrings.UPGRADE_DESCRIPTION + this.cardStrings.EXTENDED_DESCRIPTION[0] + countSolar() + this.cardStrings.EXTENDED_DESCRIPTION[1];
-        }
-        this.initializeDescription();
     }
 
     @Override
