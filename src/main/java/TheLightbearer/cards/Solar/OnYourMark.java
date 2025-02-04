@@ -54,17 +54,19 @@ public class OnYourMark extends BaseCard {
 
     private int countSolar(){
         int count = 0;
-        for(AbstractCard c : AbstractDungeon.player.drawPile.group){
-            if(c.tags.contains(SOLAR))
-                count++;
-        }
-        for(AbstractCard c : AbstractDungeon.player.hand.group){
-            if(c.tags.contains(SOLAR))
-                count++;
-        }
-        for(AbstractCard c : AbstractDungeon.player.discardPile.group){
-            if(c.tags.contains(SOLAR))
-                count++;
+        if(AbstractDungeon.isPlayerInDungeon()) {
+            for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+                if (c.tags.contains(SOLAR))
+                    count++;
+            }
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.tags.contains(SOLAR))
+                    count++;
+            }
+            for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+                if (c.tags.contains(SOLAR))
+                    count++;
+            }
         }
         setCustomVar("ONYOURMARKCOUNT", count);
         return count;
