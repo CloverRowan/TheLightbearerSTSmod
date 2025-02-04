@@ -32,16 +32,16 @@ public class JumpStart extends BaseCard {
     public JumpStart() {
         super(ID, info, "arc");
         setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
-        setInnate(true,true);
+        setInnate(true,false);
         tags.add(ARC);
-        setExhaust(true);
+        setExhaust(true,false);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         //addToBot(new DrawCardAction(p,this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, 2), 2));
-        addToBot(new ApplyPowerAction(p,p, new Energized(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new Energized(p, this.magicNumber)));
     }
 
     @Override
