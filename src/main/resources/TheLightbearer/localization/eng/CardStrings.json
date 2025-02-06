@@ -355,8 +355,8 @@
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",
-    "DESCRIPTION": "{@@}Gain !B! Block. NL Discard all *Burns in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Discard all *Burns in your hand."
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact."
   },
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",
