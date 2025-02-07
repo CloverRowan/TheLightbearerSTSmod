@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.actions.watcher.SkipEnemiesTurnAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -14,6 +15,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+
+import java.util.stream.LongStream;
 
 public class ComfortingFlamesAction extends AbstractGameAction {
     private final AbstractPlayer p;
@@ -43,8 +46,8 @@ public class ComfortingFlamesAction extends AbstractGameAction {
             for(int i = 0; i < 10; i++){
                 addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ComfortingFlamesEffect(p.hb.cX,p.hb.cY+200)));
             }
-            addToBot((AbstractGameAction)new DamageAction(this.target, this.info));
-            addToBot((AbstractGameAction) new GainBlockAction(p,this.Block));
+            addToBot(new LoseHPAction(p, p, info.base));
+            addToBot(new GainBlockAction(p,this.Block));
         }
         if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersDead())
             AbstractDungeon.actionManager.clearPostCombatActions();
