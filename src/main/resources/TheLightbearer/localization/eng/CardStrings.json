@@ -62,7 +62,7 @@
   "${modID}:HeavyKnife": {
     "NAME": "Heavy Knife",
     "DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
       "If you need to use it for stuff.",
@@ -91,8 +91,8 @@
   },
   "${modID}:SparkOfFeedback": {
     "NAME": "Spark Of Feedback",
-    "DESCRIPTION": "{@@}Whenever you take damage, draw !M! card{!M!|>1=s}.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you take damage, draw !M! card{!M!|>1=s}."
+    "DESCRIPTION": "{@@}Whenever you lose HP, draw !M! card{!M!|>1=s}.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you lose HP, draw !M! card{!M!|>1=s}."
   },
   "${modID}:TouchOfVoid": {
     "NAME": "Touch Of Void",
@@ -141,8 +141,8 @@
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
-    "DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage twice. NL Gain !M! Strength."
+    "DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. NL If Fatal, permanently increase this card's number of  hits by 1. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. NL If Fatal, permanently increase this card's number of  hits by 1. NL Exhaust."
   },
   "${modID}:VoidWallGrenade": {
     "NAME": "Void Wall Grenade",
@@ -151,13 +151,13 @@
   },
   "${modID}:LightweightKnife": {
     "NAME": "Lightweight Knife",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Shuffle a *Burn into your discard pile."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Lose !M! HP."
   },
   "${modID}:Incandescence": {
     "NAME": "Incandescence",
-    "DESCRIPTION": "{@@}Whenever you draw a *Burn, deal !M! damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw a *Burn, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "{@@}Lose !M! HP. NL Gain [E] [E]. NL Gain !${modID}:INCANDESCENCEM2! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}}Lose !M! HP. NL Gain [E] [E]. NL Gain !${modID}:INCANDESCENCEM2! ${modID}:Charge_Of_Light."
   },
   "${modID}:GunpowderGamble": {
     "NAME": "Gunpowder Gamble",
@@ -166,8 +166,8 @@
   },
   "${modID}:LineEmUp": {
     "NAME": "Line 'Em Up",
-    "DESCRIPTION": "{@@}Gain !M! Vigor. NL Gain 2 ${modID}:Charges_Of_Light.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor. NL Gain 2 ${modID}:Charges_Of_Light."
+    "DESCRIPTION": "{@@}Gain !M! Vigor. NL Gain 2 ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor. NL Gain 2 ${modID}:Charge_Of_Light."
   },
   "${modID}:KnockEmDown": {
     "NAME": "Knock 'Em Down",
@@ -275,8 +275,8 @@
   },
   "${modID}:JumpStart": {
     "NAME": "Jump Start",
-    "DESCRIPTION": "{@@}Innate. NL Next turn, draw 2 cards and gain [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Next turn, draw 2 cards and gain [E] [E]. NL Exhaust."
+    "DESCRIPTION": "{@@}Innate. NL Next turn, draw !M! card{!M!|>1=s} and gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@} NL Next turn, draw !M! card{!M!|>1=s} and gain [E] [E]."
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",
@@ -355,16 +355,17 @@
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",
-    "DESCRIPTION": "{@@}Gain !B! Block. NL Discard all *Burns in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Discard all *Burns in your hand."
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact."
   },
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",
-    "DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor for each *Burn in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar-Infused card in your deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar-Infused card in your deck.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have ",
-      " Burns)"
+      " NL (",
+      " *Solar card.)",
+      " *Solar cards.)"
     ]
   },
   "${modID}:CalculatedSpark": {
@@ -404,8 +405,8 @@
   },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
-    "DESCRIPTION": "{@@}Take !D! damage. NL Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. Shuffle !M! *Burn into your discard pile."
+    "DESCRIPTION": "{@@}Lose !D! HP. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Lose !D! HP. NL Gain !B! Block."
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",

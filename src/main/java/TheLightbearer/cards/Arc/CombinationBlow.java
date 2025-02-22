@@ -1,15 +1,20 @@
 package TheLightbearer.cards.Arc;
 
 
+import TheLightbearer.CustomActions.CombinationBlowAction;
+import TheLightbearer.CustomActions.HeavyKnifeAction;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.defect.IncreaseMiscAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
@@ -26,25 +31,46 @@ public class CombinationBlow extends BaseCard {
             1
     );
     private static final int DAMAGE = 4;
-    private static final int UPG_DAMAGE = 2;
-    private static final int MAGIC_NUMBER = 1;
+    private static final int UPG_DAMAGE = 1;
+
+    //private int hits = 1;
 
     public CombinationBlow() {
         super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
-        setMagic(MAGIC_NUMBER);
         tags.add(ARC);
+        this.misc = 1;
+        this.baseMagicNumber = this.misc;
+        this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) { // new order dosent buff damage
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ApplyPowerAction(p,p, new StrengthPower(p,magicNumber), magicNumber));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        for(int i = 0; i < this.magicNumber; i++) {
+            addToBot(new CombinationBlowAction(p, m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), this.magicNumber, this.uuid));
+            addToBot(new WaitAction(0.05f));
+        }
     }
 
     @Override
     public AbstractCard makeCopy() {
         return new CombinationBlow();
     }
+
+    public void applyPowers(){
+        this.baseMagicNumber = this.misc;
+        this.magicNumber = this.baseMagicNumber;
+        super.applyPowers();
+        initializeDescription();
+    }
+
+    public void triggerAtStartOfTurn() {
+        //applyPowers();
+    }
+
+    public void increaseHits(){
+        //this.hits += 1;
+    }
+
 }

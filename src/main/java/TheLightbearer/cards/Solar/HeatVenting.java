@@ -3,11 +3,13 @@ package TheLightbearer.cards.Solar;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
 
@@ -23,23 +25,24 @@ public class HeatVenting extends BaseCard {
             2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int BLOCK = 13;
-    private static final int UPG_BLOCK = 3;
+    private static final int BLOCK = 10;
+    private static final int UPG_BLOCK = 4;
+
+    private static final int MAGIC_NUMBER = 1;
+    private static final int UPG_MAGIC_NUMBER = 0;
+
 
     public HeatVenting() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, this.block));
-        for(int i = 0; i < p.hand.size(); i++){
-            AbstractCard c = p.hand.group.get(i);
-            if(c.name.equals("Burn"))
-                addToBot(new DiscardSpecificCardAction(c));
-        }
+        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, this.magicNumber)));
     }
 
     @Override
