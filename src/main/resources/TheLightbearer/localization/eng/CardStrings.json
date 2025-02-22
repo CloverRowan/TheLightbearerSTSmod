@@ -474,6 +474,11 @@
   "NAME": "Choose Solar",
     "DESCRIPTION": "{@@}Add a random *Solar-Infused card to your hand. It costs 0 this turn.",
     "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Solar-Infused cards to your hand. They cost 0 this turn."
-}
+  },
+  "${modID}:Thorn": {
+    "NAME": "Thorn",
+    "DESCRIPTION": "{@@}Deal !D! damage and apply 2 Poison !M! times.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage and apply 2 Poison !M! times."
+  }
 }
 
