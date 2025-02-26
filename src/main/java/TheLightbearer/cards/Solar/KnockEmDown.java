@@ -1,4 +1,4 @@
-package TheLightbearer.cards.Super;
+package TheLightbearer.cards.Solar;
 
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
