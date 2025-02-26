@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -93,6 +94,10 @@ public abstract class BaseCard extends CustomCard {
         this.magicUpgrade = 0;
         setBackgroundTexture("TheLightbearer/character/character/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element + ".png",
                 "TheLightbearer/character/character/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element +  "_p.png");
+        //if(this.tags.contains(SUPERSPELL)){
+        //    setBannerTexture("TheLightbearer/character/character/cardback/super/attack_super_banner.png", "TheLightbearer/character/character/cardback/super/attack_super_banner_p.png");
+        //}
+
     }
     public BaseCard(String ID, int cost, CardType cardType, CardTarget target, CardRarity rarity, CardColor color, boolean upgradesDescription, String element)
     {
@@ -103,6 +108,35 @@ public abstract class BaseCard extends CustomCard {
     {
         this(ID, cost, cardType, target, rarity, color, "none");
         this.upgradesDescription = upgradesDescription;
+    }
+
+    //Set color of banner and frame to rare:
+    public void forceRare(){
+        this.bannerSmallRegion = ImageMaster.CARD_BANNER_RARE;
+        this.bannerLargeRegion = ImageMaster.CARD_BANNER_RARE_L;
+
+        switch (type)
+        {
+            case ATTACK:
+                this.frameSmallRegion = ImageMaster.CARD_FRAME_ATTACK_RARE;
+                this.frameLargeRegion = ImageMaster.CARD_FRAME_ATTACK_RARE_L;
+                break;
+            case POWER:
+                this.frameSmallRegion = ImageMaster.CARD_FRAME_POWER_RARE;
+                this.frameLargeRegion = ImageMaster.CARD_FRAME_POWER_RARE_L;
+                break;
+            default:
+                this.frameSmallRegion = ImageMaster.CARD_FRAME_SKILL_RARE;
+                this.frameLargeRegion = ImageMaster.CARD_FRAME_SKILL_RARE_L;
+                break;
+        }
+        this.frameMiddleRegion = ImageMaster.CARD_RARE_FRAME_MID;
+        this.frameLeftRegion = ImageMaster.CARD_RARE_FRAME_LEFT;
+        this.frameRightRegion = ImageMaster.CARD_RARE_FRAME_RIGHT;
+
+        this.frameMiddleLargeRegion = ImageMaster.CARD_RARE_FRAME_MID_L;
+        this.frameLeftLargeRegion = ImageMaster.CARD_RARE_FRAME_LEFT_L;
+        this.frameRightLargeRegion = ImageMaster.CARD_RARE_FRAME_RIGHT_L;
     }
 
     private static String getName(String ID) {

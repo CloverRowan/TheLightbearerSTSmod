@@ -18,5 +18,12 @@
     "Add a Super Card to your deck.",
     "Pick a Card."
       ]
+  },
+  "${modID}:CommuneOption": {
+  "TEXT": [
+    "Commune",
+    "Add a Super Card to your deck.",
+    "Choose a Card"
+    ]
   }
 }

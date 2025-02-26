@@ -1,6 +1,7 @@
 package TheLightbearer;
 
 
+import TheLightbearer.util.SuperReward;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.abstracts.CustomScreen;
@@ -23,6 +24,8 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rewards.RewardItem;
+import com.megacrit.cardcrawl.rewards.RewardSave;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -44,7 +47,8 @@ public class TheLightbearer implements
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber{
+        PostInitializeSubscriber,
+        PostCampfireSubscriber{
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -282,13 +286,18 @@ public class TheLightbearer implements
         BaseMod.addAudio("ShadowshotCast", "TheLightbearer/audio/ShadowshotCast.ogg");
         BaseMod.addAudio("SpectralBladesCast", "TheLightbearer/audio/SpectralBladesCast.ogg");
     }
-    /*public void registerCustomRewards(){
+
+    @Override
+    public boolean receivePostCampfire() {
+        return true;
+    }
+    public void registerCustomRewards(){
         BaseMod.registerCustomReward(
-                SUPER_REWARD_TYPE,
+                RewardItem.RewardType.CARD,
                 rewardSave -> new SuperReward(),
                 customReward -> new RewardSave(customReward.type.toString(),null,0,0)
         );
      }
 
-     */
+
 }
