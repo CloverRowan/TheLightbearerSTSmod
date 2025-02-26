@@ -61,8 +61,8 @@
   },
   "${modID}:HeavyKnife": {
     "NAME": "Heavy Knife",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End Your Turn.",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End your turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End your turn.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
       "If you need to use it for stuff.",
@@ -276,7 +276,7 @@
   "${modID}:JumpStart": {
     "NAME": "Jump Start",
     "DESCRIPTION": "{@@}Innate. NL Next turn, draw !M! card{!M!|>1=s} and gain [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@} NL Next turn, draw !M! card{!M!|>1=s} and gain [E] [E]."
+    "UPGRADE_DESCRIPTION": "{@@}Next turn, draw !M! card{!M!|>1=s} and gain [E] [E]."
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",
@@ -405,13 +405,13 @@
   },
   "${modID}:ComfortingFlames": {
     "NAME": "Comforting Flames",
-    "DESCRIPTION": "{@@}Lose !D! HP. NL Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "{@@}Lose !D! HP. NL Gain !B! Block."
+    "DESCRIPTION": "{@@}Lose !M! HP. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Lose !M! HP. NL Gain !B! Block."
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
-    "DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your draw pile. NL Retain. Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your draw pile. NL Retain. Exhaust.",
+    "DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "",
       "",

@@ -34,8 +34,6 @@ public class MasterOfLight extends BaseCard {
     private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = 0;
 
-    private String descriptionString = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-            + " NL Improved for each *Solar-Infused, *Arc-Infused, and *Void-Infused card in your draw pile. NL Retain. Exhaust.";
 
     public MasterOfLight() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
@@ -47,7 +45,8 @@ public class MasterOfLight extends BaseCard {
         tags.add(VOID);
         tags.add(ARC);
         setExhaust(true);
-        this.rawDescription = descriptionString;
+        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
+                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
     }
 
 
@@ -55,8 +54,8 @@ public class MasterOfLight extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         countCards();
         calculateCardDamage(null);
-        addToBot(new GainBlockAction(p, this.block));
         addToBot(new DamageAction(m, new DamageInfo(p,this.damage, DamageInfo.DamageType.NORMAL)));
+        addToBot(new GainBlockAction(p, this.block));
         addToBot(new DrawCardAction(this.magicNumber));
     }
 
@@ -67,19 +66,22 @@ public class MasterOfLight extends BaseCard {
     public void applyPowers(){
         countCards();
         super.applyPowers();
-        this.rawDescription = descriptionString;
+        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
+                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
         initializeDescription();
     }
 
     public void onMoveToDiscard(){
-        this.rawDescription = descriptionString;
+        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
+                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
         initializeDescription();
     }
 
 
     public void calculateCardDamage(AbstractMonster mo){
         super.calculateCardDamage(mo);
-        this.rawDescription = descriptionString;
+        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
+                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
         initializeDescription();
     }
 

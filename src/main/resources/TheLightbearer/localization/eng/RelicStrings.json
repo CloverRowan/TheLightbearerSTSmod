@@ -24,7 +24,7 @@
     "NAME": "Dimmer Switch",
     "FLAVOR": "Turn down the light turn up the party.",
     "DESCRIPTIONS": [
-      "Whenever you gain #b10 #y${modID}:Charge_Of_Light, gain [E]."
+      "Whenever you gain #b10 #y${modID}:Charge_Of_Light, gain [E] ."
     ]
   },
   "${modID}:SagirasShell": {

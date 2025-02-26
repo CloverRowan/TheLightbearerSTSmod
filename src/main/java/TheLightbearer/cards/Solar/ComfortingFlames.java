@@ -46,7 +46,7 @@ public class ComfortingFlames extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ComfortingFlamesAction(p, m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), this.block));
+        addToBot(new ComfortingFlamesAction(p, m, new DamageInfo(p, this.magicNumber, DamageInfo.DamageType.THORNS), this.block));
     }
 
     @Override
