@@ -235,8 +235,8 @@
   },
   "${modID}:ExpelDarkness": {
     "NAME": "Expel Darkness",
-    "DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to ALL Enemies",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply !M! Weak and Vulnerable to ALL Enemies"
+    "DESCRIPTION": "{@@}Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust."
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",

@@ -134,5 +134,13 @@
       "Gain #b",
       " additional [E] next turn."
     ]
+  },
+  "${modID}:MonsterFrailPower": {
+    "NAME": "Monster Frail",
+    "DESCRIPTIONS": [
+      "Gain #b25% less #yBlock for #b",
+      " turn.",
+      " turns."
+    ]
   }
 }
