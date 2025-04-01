@@ -177,7 +177,7 @@
   "${modID}:AcrobatsDodge": {
     "NAME": "Acrobat's Dodge",
     "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Temporary Strength. NL Gain !B! Block. NL This card's Block is affected by Strength."
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength."
   },
   "${modID}:BladeBarrage": {
     "NAME": "Blade Barrage",
@@ -255,8 +255,8 @@
   },
   "${modID}:MonteCarlo": {
     "NAME": "Monte Carlo",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain !M! ${modID}:Charge_Of_Light",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Gain !M! ${modID}:Charge_Of_Light"
+    "DESCRIPTION": "{@@}Deal !D! damage. NL This card's damage is increased by your ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL This card's damage is increased by your ${modID}:Charge_Of_Light. NL Gain !M! ${modID}:Charge_Of_Light"
   },
   "${modID}:VigilanceWing": {
     "NAME": "Vigilance Wing",

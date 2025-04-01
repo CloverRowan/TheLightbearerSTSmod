@@ -1,6 +1,7 @@
 package TheLightbearer.cards.Arc;
 
 
+import TheLightbearer.CustomActions.CheckPowerStacks;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ChargeOfLightPower;
@@ -13,7 +14,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static TheLightbearer.util.CustomTags.ARC;
+import static TheLightbearer.util.CustomTags.*;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class MonteCarlo extends BaseCard {
 
@@ -25,7 +27,7 @@ public class MonteCarlo extends BaseCard {
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 4;
     private static final int UPG_DAMAGE = 3;
 
     private static final int MAGIC_NUMBER = 2;
@@ -39,9 +41,25 @@ public class MonteCarlo extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p,new ChargeOfLightPower(p, this.magicNumber)));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        if(this.upgraded){
+            addToBot(new ApplyPowerAction(p,p,new ChargeOfLightPower(p, this.magicNumber)));
+        }
+
     }
+
+    public void applyPowers(){
+        super.applyPowers();
+        this.baseDamage =  (this.upgraded ? DAMAGE + UPG_DAMAGE : DAMAGE) +  new CheckPowerStacks(player,makeID("ChargeOfLightPower")).CheckPowerStacksAction();
+    }
+
+
+    public void calculateCardDamage(AbstractMonster mo){
+        super.calculateCardDamage(mo);
+        this.baseDamage =  (this.upgraded ? DAMAGE + UPG_DAMAGE : DAMAGE) +  new CheckPowerStacks(player,makeID("ChargeOfLightPower")).CheckPowerStacksAction();
+
+    }
+
 
     @Override
     public AbstractCard makeCopy() {

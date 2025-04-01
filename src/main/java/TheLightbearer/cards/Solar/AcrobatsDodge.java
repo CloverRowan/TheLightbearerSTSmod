@@ -39,7 +39,8 @@ public class AcrobatsDodge extends BaseCard {
     private static final int MAGIC_NUMBER = 2;
     private static final int UPG_MAGIC_NUMBER = 0;
     private String descriptionString = "Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength." ;
-    private String upgradedDescriptionString = "Gain !M! Temporary Strength. NL Gain !B! Block. NL This card's Block is affected by Strength.";
+    //private String upgradedDescriptionString = "Gain !M! Temporary Strength. NL Gain !B! Block. NL This card's Block is affected by Strength.";
+    private String upgradedDescriptionString = "Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength.";
 
     public AcrobatsDodge() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
@@ -50,17 +51,19 @@ public class AcrobatsDodge extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(this.upgraded){
+       /*if(this.upgraded){
             addToBot(new TempStrengthAction(p,magicNumber));
             addToBot(new GainBlockAction(p, p, block));
         }else{
             addToBot(new GainBlockAction(p, p, block));
             addToBot(new TempStrengthAction(p,magicNumber));
-        }
+        }*/
+        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new TempStrengthAction(p,magicNumber));
 
     }
     public void applyPowers(){
-        this.baseBlock =(this.upgraded ? UPG_BLOCK : BLOCK) + (new CheckPowerStacks(player,"Strength")).CheckPowerStacksAction();
+        this.baseBlock =(this.upgraded ? BLOCK + UPG_BLOCK : BLOCK) + (new CheckPowerStacks(player,"Strength")).CheckPowerStacksAction();
         super.applyPowers();
         this.rawDescription = (this.upgraded ? upgradedDescriptionString : descriptionString);
         initializeDescription();
