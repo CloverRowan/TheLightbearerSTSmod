@@ -310,8 +310,8 @@
   },
   "${modID}:FulminisDischarge": {
     "NAME": "Fulminis Discharge",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have 5 or less cards in your draw pile, remove your Weak.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Deal !D! damage. NL If you have 5 or less in your draw pile, remove your Weak."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL If you draw an attack, gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL If you draw an attack, gain !B! Block."
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",

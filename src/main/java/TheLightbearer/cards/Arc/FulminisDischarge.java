@@ -1,12 +1,14 @@
 package TheLightbearer.cards.Arc;
 
 
+import TheLightbearer.CustomActions.FulminisDischargeAction;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
 import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -29,36 +31,25 @@ public class FulminisDischarge extends BaseCard {
     private static final int DAMAGE = 7;
     private static final int UPG_DAMAGE = 3;
 
-    private static final int MAGIC_NUMBER = 5;
+    private static final int MAGIC_NUMBER = 1;
+
+    private static final int BLOCK = 3;
+    private static final int UPG_BLOCK = 2;
 
     public FulminisDischarge() {
         super(ID, info, "arc");
         setMagic(MAGIC_NUMBER);
         setDamage(DAMAGE, UPG_DAMAGE);
-        this.showEvokeValue = true;
-        this.showEvokeOrbCount = 1;
-        setSelfRetain(false,true);
+        setBlock(BLOCK, UPG_BLOCK);
         tags.add(ARC);
-        ExhaustiveVariable.setBaseValue(this, 2);
+        //ExhaustiveVariable.setBaseValue(this, 2);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(p.drawPile.size() <= 5 && player.hasPower("Weakened")){
-            //logger.info("passed logic");
-            /*new ConsumePower(p,"Flex",this.magicNumber,true).ConsumePowerAction();
-            //logger.info("Strength should reduce");
-            for (AbstractPower FindPower : player.powers) {
-                if (FindPower.ID.equals("Flex") && FindPower.amount <= 0) {
-                    addToBot(new RemoveSpecificPowerAction(p,p,"Flex"));
-                }
-            }*/
-
-        addToBot(new RemoveSpecificPowerAction(p,p,"Weakened"));
-
-        }
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        }
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DrawCardAction(this.magicNumber, new FulminisDischargeAction(this.block)));
+    }
 
     @Override
     public AbstractCard makeCopy() {
