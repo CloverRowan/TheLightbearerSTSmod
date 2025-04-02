@@ -39,7 +39,7 @@ public class JumpStart extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //addToBot(new DrawCardAction(p,this.magicNumber));
+        addToBot(new DrawCardAction(p, 1));
         addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.magicNumber), this.magicNumber));
         addToBot(new ApplyPowerAction(p, p, new Energized(p, this.magicNumber)));
     }
