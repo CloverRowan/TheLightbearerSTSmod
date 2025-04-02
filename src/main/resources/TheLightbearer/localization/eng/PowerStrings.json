@@ -142,5 +142,12 @@
       " turn.",
       " turns."
     ]
+  },
+  "${modID}:SiphonEnergyPower": {
+    "NAME": "Siphon Energy",
+    "DESCRIPTIONS": [
+      "Whenever you play an attack, gain ",
+      " #yCharge #yOf #yLight"
+    ]
   }
 }

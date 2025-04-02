@@ -495,6 +495,11 @@
     "NAME": "Shadowshot",
     "DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Ethereal NL {@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "${modID}:SiphonEnergy": {
+    "NAME": "Siphon Energy",
+    "DESCRIPTION": "{@@}Whenever you play an attack, gain !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play an attack, gain !M! ${modID}:Charge_Of_Light."
   }
 }
 
