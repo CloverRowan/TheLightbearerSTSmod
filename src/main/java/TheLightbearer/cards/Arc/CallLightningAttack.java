@@ -34,7 +34,7 @@ public class CallLightningAttack extends BaseCard {
         super(ID, info, "arc");
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(ARC);
-
+        this.forceRare();
     }
 
     @Override
