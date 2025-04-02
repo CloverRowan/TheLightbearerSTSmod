@@ -56,7 +56,7 @@ public class RaidenFlux extends BaseRelic {
         if(card.cardID.equals(makeID("ArcStaff")) && isUsed == false){
             //logger.info("passing logic gate");
             addToBot(new MakeTempCardInHandAction(card));
-            addToBot(new ApplyPowerAction(player,player,new ChargeOfLightPower(player, 10)));
+            addToBot(new ApplyPowerAction(player,player,new ChargeOfLightPower(player, ChargeOfLightPower.SUPER_COST)));
             addToBot(new GainEnergyAction(2));
             isUsed = true;
             //logger.info("orig done");

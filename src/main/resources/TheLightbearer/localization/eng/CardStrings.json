@@ -157,7 +157,7 @@
   "${modID}:Incandescence": {
     "NAME": "Incandescence",
     "DESCRIPTION": "{@@}Lose !M! HP. NL Gain [E] [E]. NL Gain !${modID}:INCANDESCENCEM2! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "{@@}}Lose !M! HP. NL Gain [E] [E]. NL Gain !${modID}:INCANDESCENCEM2! ${modID}:Charge_Of_Light."
+    "UPGRADE_DESCRIPTION": "{@@}Lose !M! HP. NL Gain [E] [E]. NL Gain !${modID}:INCANDESCENCEM2! ${modID}:Charge_Of_Light."
   },
   "${modID}:GunpowderGamble": {
     "NAME": "Gunpowder Gamble",

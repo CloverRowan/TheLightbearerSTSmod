@@ -91,6 +91,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
                 new ChargeOfLightPower(player, 1)));
     }
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        /* Give charge when playing an attack:
         if (player != null && AbstractDungeon.currMapNode != null &&
                 AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT &&
                 c.type.equals(AbstractCard.CardType.ATTACK)) {
@@ -98,6 +99,7 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
             addToTop(new ApplyPowerAction(player, player,
                     new ChargeOfLightPower(player, 1)));
         }
+        */
         if(player.hasPower("DuplicationPower")){
             for (int i = 0; i<=1; i++) {
                 freeCharge.add(playForFree);
