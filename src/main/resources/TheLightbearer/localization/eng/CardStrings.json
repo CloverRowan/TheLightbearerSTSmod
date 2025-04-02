@@ -480,6 +480,21 @@
     "NAME": "Thorn",
     "DESCRIPTION": "{@@}Deal !D! damage and apply 2 Poison !M! times.",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage and apply 2 Poison !M! times."
+  },
+  "${modID}:BladeBarrageToken": {
+    "NAME": "Blade Barrage",
+    "DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Deal !D! damage twice to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Deal !D! damage twice to ALL enemies. NL Exhaust."
+  },
+  "${modID}:ArcStaffToken": {
+    "NAME": "Arc Staff",
+    "DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and ${modID}:Super_Armor for !M! turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and ${modID}:Super_Armor for !M! turns. NL Exhaust."
+  },
+  "${modID}:ShadowshotToken": {
+    "NAME": "Shadowshot",
+    "DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal NL {@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust."
   }
 }
 

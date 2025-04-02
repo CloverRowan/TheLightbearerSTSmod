@@ -1,5 +1,7 @@
 package TheLightbearer.relics;
 
+import TheLightbearer.cards.Super.Tokens.ArcStaffToken;
+import TheLightbearer.cards.Super.Tokens.ShadowshotToken;
 import TheLightbearer.character.LightbearerCharacter;
 
 import TheLightbearer.powers.ChargeOfLightPower;
@@ -55,19 +57,29 @@ public class RaidenFlux extends BaseRelic {
         //logger.info("using a card with orig");
         if(card.cardID.equals(makeID("ArcStaff")) && isUsed == false){
             //logger.info("passing logic gate");
-            addToBot(new MakeTempCardInHandAction(card));
+            AbstractCard c = new ArcStaffToken();
+            if(card.upgraded){
+                c.upgrade();
+            }
+            addToBot(new MakeTempCardInHandAction(c));
             addToBot(new ApplyPowerAction(player,player,new ChargeOfLightPower(player, ChargeOfLightPower.SUPER_COST)));
-            addToBot(new GainEnergyAction(2));
+            //addToBot(new GainEnergyAction(2));
             isUsed = true;
+            stopPulse();
             //logger.info("orig done");
         }
 
     }
-
+    @Override
+    public void atPreBattle() {
+        isUsed = false; // Make sure usedThisTurn is set to false at the start of each combat.
+        beginLongPulse();     // Pulse while the player can click on it.
+    }
     @Override
     public void onVictory() {
         super.onVictory();
         isUsed = false;
+        stopPulse();
     }
     @Override
     public String getUpdatedDescription() {
