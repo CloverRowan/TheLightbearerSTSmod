@@ -4,11 +4,18 @@ import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RemoveAllBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 import static TheLightbearer.util.CustomTags.*;
 
@@ -25,24 +32,55 @@ public class FusionGrenade extends BaseCard {
     );
 
     private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 3;
+    private static final int UPG_DAMAGE = 2;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUMBER = 1;
 
 
     public FusionGrenade() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        for(int i = 0; i < p.hand.size(); i++){
-            AbstractCard c = p.hand.group.get(i);
-            if(c.cardID.equals("Burn"))
-                addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        if (fusionCheck()){
+            addToBot(new SFXAction("THUNDERCLAP", 0.05F));
+            addToBot(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
+            addToBot(new RemoveAllBlockAction(m, p));
+
+            addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber, AbstractGameAction.AttackEffect.POISON));
         }
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        if(fusionCheck()) {
+            glowColor = GOLD_BORDER_GLOW_COLOR;
+        }
+        else {
+            glowColor = BLUE_BORDER_GLOW_COLOR;
+        }
+    }
+
+    private boolean fusionCheck(){
+        boolean hasArc = false;
+        boolean hasVoid = false;
+        if(AbstractDungeon.isPlayerInDungeon()) {
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.tags.contains(ARC)) {
+                    hasArc = true;
+                }
+                if (c.tags.contains(VOID)) {
+                    hasVoid = true;
+                }
+            }
+        }
+        return hasArc && hasVoid;
     }
 
     @Override
