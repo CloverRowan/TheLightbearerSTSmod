@@ -39,6 +39,13 @@ public class StylishExecution extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        for (AbstractPower pow: m.powers) {
+            if(pow.type.equals(AbstractPower.PowerType.DEBUFF)){
+                addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+
+            }
+        }
+        /*
         if(m.hasPower(SlowPower.POWER_ID)) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
@@ -59,6 +66,7 @@ public class StylishExecution extends BaseCard {
         if(m.hasPower(GatheringStormPower.POWER_ID)) {
             addToTop(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
+        */
     }
 
 
