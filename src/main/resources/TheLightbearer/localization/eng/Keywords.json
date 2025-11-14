@@ -82,5 +82,15 @@
       "Infusion:"
     ],
     "DESCRIPTION": "Does an additional effect for each card in your hand, draw pile, and discard pile with a matching element"
+  },
+  {
+    "PROPER_NAME": "Monster Frail",
+    "NAMES": [
+      "Monster Frail",
+      "MonsterFrail",
+      "Monster_Frail",
+      "monster_frail"
+    ],
+    "DESCRIPTION": "Enemy gains #b25% less #yBlock."
   }
 ]
