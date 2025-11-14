@@ -191,8 +191,8 @@
   },
   "${modID}:ElementalPlating": {
     "NAME": "Elemental Plating",
-    "DESCRIPTION": "{@@}Whenever you draw a *Burn, gain !M! Block.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw a *Burn, gain !M! Block."
+    "DESCRIPTION": "{@@}For each other *Solar-Infused card in your hand, gain 2 Plated Armor.",
+    "UPGRADE_DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL For each other *Solar-Infused card in your hand, gain 2 Plated Armor."
   },
   "${modID}:BarrierOfVoid": {
     "NAME": "Barrier of Void",

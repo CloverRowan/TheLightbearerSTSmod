@@ -5,9 +5,12 @@ import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ElementalPlatingPower;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
 
@@ -24,19 +27,35 @@ public class ElementalPlating extends BaseCard {
     );
 
 
-    private static  final int costUpgrade = 0;
-    private static final int MAGIC_NUMBER = 5;
+    //private static  final int costUpgrade = 0;
+    private static final int MAGIC_NUMBER = 0;
+    private static final int UPG_MAGIC_NUMBER = 1;
 
     public ElementalPlating() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
-        setCostUpgrade(costUpgrade);
-        setMagic(MAGIC_NUMBER);
+        //setCostUpgrade(costUpgrade);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p,new ElementalPlatingPower(p, this.magicNumber)));
+        //addToBot(new ApplyPowerAction(p,p,new ElementalPlatingPower(p, this.magicNumber)));
+        addToBot(new DrawCardAction(this.magicNumber));
+        int solarCount = countSolar() - 1;
+        addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, solarCount * 2)));
+
+    }
+
+    private int countSolar(){
+        int count = 0;
+        if(AbstractDungeon.isPlayerInDungeon()) {
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.tags.contains(SOLAR))
+                    count++;
+            }
+        }
+        return count;
     }
 
     @Override
