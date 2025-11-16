@@ -23,24 +23,25 @@ public class WorldlineZero extends BaseCard {
             CardTarget.ALL_ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int DAMAGE = 5;
-    private static final int MAGIC_NUMBER = 3;
-    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int DAMAGE = 2;
+    private static final int UPG_DAMAGE = 2;
+    //private static final int MAGIC_NUMBER = 3;
+    //private static final int UPG_MAGIC_NUMBER = 2;
 
 
     public WorldlineZero() {
         super(ID, info, "arc");
-        setDamage(DAMAGE);
-        setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
+        setDamage(DAMAGE, UPG_DAMAGE);
+        //setMagic(MAGIC_NUMBER,UPG_MAGIC_NUMBER);
         this.isMultiDamage = true;
         tags.add(ARC);
-
+        setEthereal(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot((AbstractGameAction)new ModifyDamageAction(this.uuid, this.magicNumber));
+        addToBot((AbstractGameAction)new ModifyDamageAction(this.uuid, this.baseDamage));
     }
 
     @Override
