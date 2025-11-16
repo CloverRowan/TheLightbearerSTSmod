@@ -3,12 +3,17 @@ package TheLightbearer.cards.Solar;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.powers.RegenPower;
+import com.megacrit.cardcrawl.powers.RegrowPower;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
 
@@ -24,23 +29,24 @@ public class EmberOfMercy extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int BLOCK = 15;
-    private static final int UPG_BLOCK = 5;
+    //private static final int BLOCK = 15;
+    //private static final int UPG_BLOCK = 5;
 
-    private static final int MAGIC_NUMBER = 2;
-    private static final int UPG_MAGIC_NUMBER = 0;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUMBER = 1;
 
     public EmberOfMercy() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
-        setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
+        //setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
+        setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new MakeTempCardInDiscardAction(new Burn(), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new RegenPower(p, this.magicNumber), this.magicNumber));
+
     }
 
     @Override
