@@ -285,6 +285,7 @@ public class TheLightbearer implements
         BaseMod.addAudio("GatheringStormCast", "TheLightbearer/audio/GatheringStormCast.ogg");
         BaseMod.addAudio("ShadowshotCast", "TheLightbearer/audio/ShadowshotCast.ogg");
         BaseMod.addAudio("SpectralBladesCast", "TheLightbearer/audio/SpectralBladesCast.ogg");
+        BaseMod.addAudio("SuperCharged", "TheLightbearer/audio/SuperChargedSFX.wav");
     }
 
     @Override

@@ -16,7 +16,7 @@ public class CommuneOption extends AbstractCampfireOption {
 
     public static final String[] TEXT = uiStrings.TEXT;
 
-    private static final Texture IMG = TextureLoader.getTexture("TheLightbearer/images/cards/skill/CallOnLight.png");
+    private static final Texture IMG = TextureLoader.getTexture("TheLightbearer/images/ui/CommuneOption.png");
 
     public CommuneOption(boolean active){
         this.label = TEXT[0];

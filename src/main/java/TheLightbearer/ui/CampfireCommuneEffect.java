@@ -45,7 +45,7 @@ public class CampfireCommuneEffect extends AbstractGameEffect {
         }
         if (!AbstractDungeon.isScreenUp && !this.rewardGiven) {
             this.rewardGiven = true;
-            CardCrawlGame.sound.play("ATTACK_MAGIC_SLOW_2");
+            CardCrawlGame.sound.playV("SuperCharged", 16f);
             (AbstractDungeon.getCurrRoom()).rewards.clear();
             SuperReward s = new SuperReward();
             s.generate_reward_cards();
@@ -54,16 +54,12 @@ public class CampfireCommuneEffect extends AbstractGameEffect {
         }
         if (this.duration < 1.0F && !this.openedScreen) {
             this.openedScreen = true;
+            ((RestRoom)AbstractDungeon.getCurrRoom()).cutFireSound();
         }
         if (this.duration < 0.0F) {
             this.isDone = true;
-            //((RestRoom)AbstractDungeon.getCurrRoom()).fadeIn();
+            ((RestRoom)AbstractDungeon.getCurrRoom()).fadeIn();
             (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
-            /*if (CampfireUI.hidden) {
-                AbstractRoom.waitTimer = 0.0F;
-                (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
-                ((RestRoom)AbstractDungeon.getCurrRoom()).cutFireSound();
-            }*/
         }
     }
 
