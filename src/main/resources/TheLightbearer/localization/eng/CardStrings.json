@@ -186,8 +186,8 @@
   },
   "${modID}:EmberOfMercy": {
     "NAME": "Ember of Mercy",
-    "DESCRIPTION": "{@@}Gain !B! Block. NL Shuffle !M! *Burns into your discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Shuffle !M! *Burns into your discard pile."
+    "DESCRIPTION": "{@@}Gain !M! Regen. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Regen. NL Exhaust."
   },
   "${modID}:ElementalPlating": {
     "NAME": "Elemental Plating",
