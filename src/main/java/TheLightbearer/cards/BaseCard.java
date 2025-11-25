@@ -93,7 +93,7 @@ public abstract class BaseCard extends CustomCard {
         this.blockUpgrade = 0;
         this.magicUpgrade = 0;
         setBackgroundTexture("TheLightbearer/images/character/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element + ".png",
-                "TheLightbearer/character/images/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element +  "_p.png");
+                "TheLightbearer/images/character/cardback/" + element + "/" + type.toString().toLowerCase() + "_" + element +  "_p.png");
         //if(this.tags.contains(SUPERSPELL)){
         //    setBannerTexture("TheLightbearer/character/character/cardback/super/attack_super_banner.png", "TheLightbearer/character/character/cardback/super/attack_super_banner_p.png");
         //}

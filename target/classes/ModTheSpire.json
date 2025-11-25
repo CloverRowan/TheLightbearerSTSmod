@@ -1,0 +1,11 @@
+{
+  "modid": "TheLightbearer",
+  "name": "TheLightbearer",
+  "author_list": ["Mokiie, UwU, STF"],
+  "description": "Character based on the Hunter class from Destiny.",
+  "version": "1.0.7",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
+  "dependencies": ["basemod", "stslib"],
+  "update_json": ""
+}

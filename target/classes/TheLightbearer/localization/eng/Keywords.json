@@ -1,0 +1,96 @@
+[
+  {
+    "PROPER_NAME": "This is displayed in the tooltip.",
+    "NAMES": [
+      "these",
+      "are",
+      "detected",
+      "in",
+      "the",
+      "text"
+    ],
+    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "multiword keyword",
+      "multiword_keyword",
+      "multiword_keywords"
+    ],
+    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "PROPER_NAME": "Super",
+    "NAMES": [
+      "super"
+    ],
+    "DESCRIPTION": "Can only be played if you have at least #b5 #yCharge #yOf #yLight."
+  },
+  {
+    "PROPER_NAME": "Charge Of Light",
+    "NAMES": [
+      "Charge Of Light",
+      "Charge_Of_Light",
+      "Charge_of_Light",
+      "Charges_of_Light",
+      "Charges_Of_Light",
+      "charge_of_light",
+      "charges_of_light"
+    ],
+    "DESCRIPTION": "#ySupers consume #b5 #yCharge #yOf #yLight when played."
+  },
+  {
+  "PROPER_NAME": "Corpse Explosion",
+  "NAMES": [
+    "corpse explosion",
+    "corpse_explosion"
+  ],
+  "DESCRIPTION": "When the enemy dies, deal damage equal to its Max HP to ALL enemies."
+  },
+  {
+    "PROPER_NAME": "Slow",
+    "NAMES": [
+      "slow",
+      "Slow"
+    ],
+    "DESCRIPTION": "Whenever you play a card, receives #b10% more damage from #yAttacks this turn."
+  },
+  {
+    "PROPER_NAME": "Synergy",
+    "NAMES": [
+      "synergy",
+      "Synergy"
+    ],
+    "DESCRIPTION": "Once per combat when you play the listed card gain a bonus use."
+  },
+  {
+    "PROPER_NAME": "Super Armor",
+    "NAMES": [
+      "Super Armor",
+      "Super_Armor",
+      "super armor",
+      "super_armor"
+    ],
+    "DESCRIPTION": "Take 50% less attack damage."
+  },
+  {
+    "PROPER_NAME": "Infusion",
+    "NAMES": [
+      "Infusion",
+      "infusion",
+      "Infusion:"
+    ],
+    "DESCRIPTION": "Does an additional effect for each card in your hand, draw pile, and discard pile with a matching element"
+  },
+  {
+    "PROPER_NAME": "Monster Frail",
+    "NAMES": [
+      "Monster Frail",
+      "MonsterFrail",
+      "Monster_Frail",
+      "monster_frail"
+    ],
+    "DESCRIPTION": "Enemy gains #b25% less #yBlock."
+  }
+]

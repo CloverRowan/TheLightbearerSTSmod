@@ -1,0 +1,505 @@
+{
+  "TheLightbearer:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "TheLightbearer:MyCard": {
+    "NAME": "MyCard",
+    "DESCRIPTION": "Deal !D! damage NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "TheLightbearer:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "{@@}Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "TheLightbearer:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "{@@}Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "TheLightbearer:GuardiansFate": {
+    "NAME": "Guardian's Fate",
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Scry !M! cards.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Scry !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "TheLightbearer:QuickDraw": {
+    "NAME": "Quick Draw",
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}.",
+    "UPGRADE_DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "TheLightbearer:HeavyKnife": {
+    "NAME": "Heavy Knife",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End your turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If this defeats an enemy, take an extra turn after this one. NL End your turn.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "TheLightbearer:BlessingOfRadiance": {
+    "NAME": "Blessing of Radiance",
+    "DESCRIPTION": "{@@}Gain !B! Block and !M! TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block and !M! TheLightbearer:Charge_Of_Light."
+  },
+  "TheLightbearer:TravelersIncandescence": {
+    "NAME": "Traveler's Might",
+    "DESCRIPTION": "{@@}Ethereal. NL Gain !M! Strength and !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !M! Strength and !M! Dexterity."
+  },
+  "TheLightbearer:GoldenGun": {
+    "NAME": "Golden Gun",
+    "DESCRIPTION": "{@@}TheLightbearer:Super NL Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "{@@}TheLightbearer:Super NL Deal !D! damage !M! times."
+  },
+  "TheLightbearer:EchoOfDilation": {
+    "NAME": "Echo Of Dilation",
+    "DESCRIPTION": "{@@}Ethereal. NL Apply TheLightbearer:Slow. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Apply TheLightbearer:Slow. NL Exhaust."
+  },
+  "TheLightbearer:SparkOfFeedback": {
+    "NAME": "Spark Of Feedback",
+    "DESCRIPTION": "{@@}Whenever you lose HP, draw !M! card{!M!|>1=s}.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you lose HP, draw !M! card{!M!|>1=s}."
+  },
+  "TheLightbearer:TouchOfVoid": {
+    "NAME": "Touch Of Void",
+    "DESCRIPTION": "{@@}Deal !D! damage and randomly Exhaust !M! card.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage and Exhaust !M! card."
+  },
+  "TheLightbearer:TripmineGrenade": {
+    "NAME": "Tripmine Grenade",
+    "DESCRIPTION": "{@@}Whenever you are attacked this turn, deal !M! damage back.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Whenever you are attacked this turn, deal !M! damage back."
+  },
+  "TheLightbearer:MarksmansDodge": {
+    "NAME": "Rapid Reload",
+    "DESCRIPTION": "{@@}Exhaust NL Draw !M! card{!M!|>1=s}.",
+    "UPGRADE_DESCRIPTION": "{@@}Exhaust NL Draw !M! card{!M!|>1=s}."
+  },
+  "TheLightbearer:TrappersAmbush": {
+    "NAME": "Trapper's Ambush",
+    "DESCRIPTION": "{@@}Apply !M! Weak to an enemy. NL Gain !M! TheLightbearer:Charge_Of_Light. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! TheLightbearer:Charge_Of_Light. NL Exhaust."
+  },
+  "TheLightbearer:StylishExecution": {
+    "NAME": "Stylish Execution",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Deal damage again for each unique debuff applied to the enemy.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Deal damage again for each unique debuff applied to the enemy."
+  },
+  "TheLightbearer:EchoOfHarvest": {
+    "NAME": "Echo Of Harvest",
+    "DESCRIPTION": "{@@}Whenever you Exhaust a card gain !M! Temporary HP.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you Exhaust a card gain !M! Temporary HP."
+  },
+  "TheLightbearer:VanishingStep": {
+    "NAME": "VanishingStep",
+    "DESCRIPTION": "{@@}Gain !B! Block and Exhaust up to 2 cards.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block and Exhaust up to 2 cards."
+  },
+  "TheLightbearer:EchoShield": {
+    "NAME": "Echo Shield",
+    "DESCRIPTION": "{@@}Gain !B! Block NL Generate a temporary Echo Shield in your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block NL Generate a temporary Echo Shield in your hand."
+  },
+  "TheLightbearer:EchoShieldToken": {
+    "NAME": "Echo Shield",
+    "DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block NL Generate a temporary Echo Shield in your hand NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block NL Generate a temporary Echo Shield in your hand NL Exhaust."
+  },
+  "TheLightbearer:CombinationBlow": {
+    "NAME": "Combination Blow",
+    "DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. NL If Fatal, permanently increase this card's number of  hits by 1. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. NL If Fatal, permanently increase this card's number of  hits by 1. NL Exhaust."
+  },
+  "TheLightbearer:VoidWallGrenade": {
+    "NAME": "Void Wall Grenade",
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. Gain !M! TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. Gain !M! TheLightbearer:Charge_Of_Light."
+  },
+  "TheLightbearer:LightweightKnife": {
+    "NAME": "Lightweight Knife",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Lose !M! HP."
+  },
+  "TheLightbearer:Incandescence": {
+    "NAME": "Incandescence",
+    "DESCRIPTION": "{@@}Lose !M! HP. NL Gain [E] [E]. NL Gain !TheLightbearer:INCANDESCENCEM2! TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Lose !M! HP. NL Gain [E] [E]. NL Gain !TheLightbearer:INCANDESCENCEM2! TheLightbearer:Charge_Of_Light."
+  },
+  "TheLightbearer:GunpowderGamble": {
+    "NAME": "Gunpowder Gamble",
+    "DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was *Solar-Infused, hit an extra time.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to a random enemy !M! times. If the last card played this combat was *Solar-Infused, hit an extra time."
+  },
+  "TheLightbearer:LineEmUp": {
+    "NAME": "Line 'Em Up",
+    "DESCRIPTION": "{@@}Apply !M! Vulnerable. NL Apply !M! TheLightbearer:Monster_Frail. NL Gain 2 TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Apply !M! Vulnerable. NL Apply !M! TheLightbearer:Monster_Frail. NL Gain 2 TheLightbearer:Charge_Of_Light."
+  },
+  "TheLightbearer:KnockEmDown": {
+    "NAME": "Knock 'Em Down",
+    "DESCRIPTION": "{@@}Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage !M! times."
+  },
+  "TheLightbearer:AcrobatsDodge": {
+    "NAME": "Acrobat's Dodge",
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Temporary Strength. NL This card's Block is affected by Strength."
+  },
+  "TheLightbearer:BladeBarrage": {
+    "NAME": "Blade Barrage",
+    "DESCRIPTION": "{@@}TheLightbearer:Super NL Deal !D! damage twice to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "{@@}TheLightbearer:Super NL Deal !D! damage twice to ALL enemies."
+  },
+  "TheLightbearer:EmberOfMercy": {
+    "NAME": "Ember of Mercy",
+    "DESCRIPTION": "{@@}Gain !M! Regen. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Regen. NL Exhaust."
+  },
+  "TheLightbearer:ElementalPlating": {
+    "NAME": "Elemental Plating",
+    "DESCRIPTION": "{@@}For each other *Solar-Infused card in your hand, gain 2 Plated Armor.",
+    "UPGRADE_DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL For each other *Solar-Infused card in your hand, gain 2 Plated Armor."
+  },
+  "TheLightbearer:BarrierOfVoid": {
+    "NAME": "Barrier of Void",
+    "DESCRIPTION": "{@@}Gain !B! Block for every card in your exhaust pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block for every card in your exhaust pile. NL Exhaust."
+  },
+  "TheLightbearer:ConsumeTheFuture": {
+    "NAME": "Consume The Future",
+    "DESCRIPTION": "{@@}Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted NL Randomize the cost of cards in your hand NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain NL Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted. NL Randomize the cost of cards in your hand. NL Exhaust."
+  },
+  "TheLightbearer:FearTheVoid": {
+    "NAME": "Fear The Void",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Scry !M!.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Scry !M!."
+  },
+  "TheLightbearer:FeedTheVoid": {
+    "NAME": "Feed The Void",
+    "DESCRIPTION": "{@@}At the start of your turn, Exhaust up to one card.",
+    "UPGRADE_DESCRIPTION": "{@@}At the start of your turn, Exhaust up to one card."
+  },
+  "TheLightbearer:SpectralBlades": {
+    "NAME": "Spectral Blades",
+    "DESCRIPTION": "{@@}TheLightbearer:Super NL Gain TheLightbearer:Super_Armor and 3 Strength for !M! turns. NL Gain 15 Temporary HP.",
+    "UPGRADE_DESCRIPTION": "{@@}TheLightbearer:Super NL Gain TheLightbearer:Super_Armor and 3 Strength for !M! turns. NL Gain 15 Temporary HP."
+  },
+  "TheLightbearer:StareIntoTheVoid": {
+    "NAME": "Stare Into The Void",
+    "DESCRIPTION": "{@@}Ethereal. NL Lose !M!% of current Hp. Put a card from your Exhaust pile into your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Lose !M!% of current Hp. Put a card from your Exhaust pile into your hand",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Costs ",
+      " HP)"
+    ]
+  },
+  "TheLightbearer:EmbraceMadness": {
+    "NAME": "Embrace Madness",
+    "DESCRIPTION": "{@@}Gain !B! Block. If the enemy intends to attack, apply !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. If the enemy intends to attack, apply !M! Vulnerable."
+  },
+  "TheLightbearer:ExpelDarkness": {
+    "NAME": "Expel Darkness",
+    "DESCRIPTION": "{@@}Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust."
+  },
+  "TheLightbearer:ShunTheLight": {
+    "NAME": "Shun The Light",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Consume !M! TheLightbearer:Charge_Of_Light to gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Consume !M! TheLightbearer:Charge_Of_Light to gain !B! Block."
+  },
+  "TheLightbearer:CallOnLight": {
+    "NAME": "Call On Light",
+    "DESCRIPTION": "Gain !M! TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "Gain !M! TheLightbearer:Charge_Of_Light."
+  },
+  "TheLightbearer:Equalize": {
+    "NAME": "Equalize",
+    "DESCRIPTION": "{@@}Consume all TheLightbearer:Charge_Of_Light NL Gain Energy equal to half the amount removed. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Consume all TheLightbearer:Charge_Of_Light NL Gain Energy equal to half the amount removed. NL Exhaust."
+  },
+  "TheLightbearer:MonteCarlo": {
+    "NAME": "Monte Carlo",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL This card's damage is increased by your TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL This card's damage is increased by your TheLightbearer:Charge_Of_Light. NL Gain !M! TheLightbearer:Charge_Of_Light"
+  },
+  "TheLightbearer:VigilanceWing": {
+    "NAME": "Vigilance Wing",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If your hand contains 3 or less other cards, deal !D! damage again.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If your hand contains 3 or less other cards, deal !D! damage again."
+  },
+  "TheLightbearer:FlareBlast": {
+    "NAME": "Flare Blast",
+    "DESCRIPTION": "{@@}Deal !D! Damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit."
+  },
+  "TheLightbearer:LightningStrike": {
+    "NAME": "Lightning Strike",
+    "DESCRIPTION": "{@@}Deal !D! Damage. NL Choose a card from your discard pile to return to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage NL Choose a card from your discard pile to return to your hand."
+  },
+  "TheLightbearer:JumpStart": {
+    "NAME": "Jump Start",
+    "DESCRIPTION": "{@@}Innate. NL Draw 1 card. NL Next turn, draw !M! card{!M!|>1=s} and gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Draw 1 card. NL Next turn, draw !M! card{!M!|>1=s} and gain [E] [E]."
+  },
+  "TheLightbearer:CompoundingExhaustion": {
+    "NAME": "Compounding Exhaustion",
+    "DESCRIPTION": "{@@}Deal !D! damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage."
+  },
+  "TheLightbearer:VolatileCollapse": {
+    "NAME": "Volatile Collapse",
+    "DESCRIPTION": "{@@}Whenever you Exhaust a card, deal !M! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you Exhaust a card, deal !M! damage to a random enemy."
+  },
+  "TheLightbearer:RagingCurrent": {
+    "NAME": "Raging Current",
+    "DESCRIPTION": "{@@}Whenever you draw a card this turn, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw a card this turn, gain !M! Block."
+  },
+  "TheLightbearer:ShockingTumble": {
+    "NAME": "Shocking Tumble",
+    "DESCRIPTION": "{@@}Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL If the last card played this combat was an Attack, gain !B! Block again."
+  },
+  "TheLightbearer:DisorientingBlow": {
+    "NAME": "Disorienting Blow",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Apply !M! Weak."
+  },
+  "TheLightbearer:TempestStrike": {
+    "NAME": "Tempest Strike",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If the enemy intends to attack, deal !D! damage again."
+  },
+  "TheLightbearer:FulminisDischarge": {
+    "NAME": "Fulminis Discharge",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL If you draw an *Arc-Infused card, gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL If you draw an *Arc-Infused card, gain !B! Block."
+  },
+  "TheLightbearer:GatheringStorm": {
+    "NAME": "Gathering Storm",
+    "DESCRIPTION": "{@@}TheLightbearer:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, ALL enemies lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}TheLightbearer:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, ALL enemies lose !M! HP."
+  },
+  "TheLightbearer:LethalCurrent": {
+    "NAME": "Lethal Current",
+    "DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies loses !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies loses !M! HP. NL Exhaust."
+  },
+  "TheLightbearer:ElectroPlating": {
+    "NAME": "Electro Plating",
+    "DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent. NL Exhaust."
+  },
+  "TheLightbearer:ArcStaff": {
+    "NAME": "Arc Staff",
+    "DESCRIPTION": "{@@}TheLightbearer:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and TheLightbearer:Super_Armor for !M! turns.",
+    "UPGRADE_DESCRIPTION": "{@@}TheLightbearer:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and TheLightbearer:Super_Armor for !M! turns."
+},
+  "TheLightbearer:FlowState": {
+    "NAME": "Flow State",
+    "DESCRIPTION": "{@@}Ethereal. NL Whenever you play an Attack, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play an Attack, draw 1 card."
+  },
+  "TheLightbearer:Deadshot": {
+    "NAME": "Deadshot",
+    "DESCRIPTION": "{@@}At the start of each turn, gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "{@@}At the start of each turn, gain !M! Vigor."
+  },
+  "TheLightbearer:Shadowshot": {
+    "NAME": "Shadowshot",
+    "DESCRIPTION": "{@@}TheLightbearer:Super NL Apply TheLightbearer:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "{@@}TheLightbearer:Super NL Apply TheLightbearer:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies."
+  },
+  "TheLightbearer:FusionGrenade": {
+    "NAME": "Fusion Grenade",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have an *Arc-Infused card and *Void-Infused card in your hand, remove all Block from the enemy and apply !M! Poison first.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If you have an *Arc-Infused card and *Void-Infused card in your hand, remove all Block from the enemy and apply !M! Poison first."
+  },
+  "TheLightbearer:HeatVenting": {
+    "NAME": "Heat Venting",
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact."
+  },
+  "TheLightbearer:OnYourMark": {
+    "NAME": "On Your Mark",
+    "DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar-Infused card in your deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar-Infused card in your deck.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " *Solar card.)",
+      " *Solar cards.)"
+    ]
+  },
+  "TheLightbearer:CalculatedSpark": {
+  "NAME": "Calculated Spark",
+  "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Energy next turn.",
+  "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Energy next turn."
+},
+  "TheLightbearer:StaticPass": {
+    "NAME": "Static Pass",
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL Enemies. Draw a card for each enemy hit.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL Enemies. Draw a card for each enemy hit. NL Draw 1 additional card."
+  },
+  "TheLightbearer:PowerDifferential": {
+  "NAME": "Power Differential",
+  "DESCRIPTION": "{@@}Ethereal. NL Whenever you Attack, gain Block equal to half unblocked damage dealt.",
+  "UPGRADE_DESCRIPTION": "{@@}Whenever you Attack, gain Block equal to half unblocked damage dealt."
+},
+  "TheLightbearer:ArcWelding": {
+    "NAME": "Arc Welding",
+    "DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block."
+  },
+  "TheLightbearer:CallLightningAttack": {
+    "NAME": "Spark",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile, it returns to your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Whenever you draw a card while this is in your discard pile, it returns to your hand."
+  },
+  "TheLightbearer:CallLightning": {
+    "NAME": "Call Lightning",
+    "DESCRIPTION": "{@@}Add a *Spark to your hand.",
+    "UPGRADE_DESCRIPTION": "{@@}Add an Upgraded *Spark to your hand."
+  },
+  "TheLightbearer:InvigoratingRoar": {
+    "NAME": "Invigorating Roar",
+    "DESCRIPTION": "{@@}Gain !M! Temporary HP. NL Gain !M! Temporary Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Temporary HP. NL Gain !M! Temporary Strength. NL Exhaust."
+  },
+  "TheLightbearer:ComfortingFlames": {
+    "NAME": "Comforting Flames",
+    "DESCRIPTION": "{@@}Lose !M! HP. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "{@@}Lose !M! HP. NL Gain !B! Block."
+  },
+  "TheLightbearer:MasterOfLight": {
+    "NAME": "Master of Light",
+    "DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "TheLightbearer:WhisperOfTheWorm": {
+    "NAME": "Whisper of The Worm",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 2 Energy.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 2 Energy.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (3",
+      " left).",
+      " NL (Ready!)"
+    ]
+  },
+  "TheLightbearer:Telesto": {
+    "NAME": "Telesto",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers early when a card is Exhausted.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers early when a card is Exhausted."
+  },
+  "TheLightbearer:WardcliffCoil": {
+    "NAME": "Wardcliff Coil",
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc-Infused card in your hand, draw pile, and discard pile.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc-Infused card in your hand, draw pile, and discard pile.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have !M! other *Arc-Infused cards.)"
+    ]
+  },
+  "TheLightbearer:Jotun": {
+    "NAME": "Jötun",
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!."
+  },
+  "TheLightbearer:WorldlineZero": {
+    "NAME": "Worldline Zero",
+    "DESCRIPTION": "{@@}Ethereal. NL Deal !D! damage to ALL enemies. NL Double this card's base damage this combat.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Deal !D! damage to ALL enemies. NL Double this card's base damage this combat."
+  },
+  "TheLightbearer:AceOfSpades": {
+    "NAME": "Ace of Spades",
+    "DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to ALL other enemies and gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to ALL other enemies and gain !M! Strength."
+  },
+  "TheLightbearer:TractorCannon": {
+    "NAME": "Tractor Cannon",
+    "DESCRIPTION": "{@@}Apply !M! Weak. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Apply !M! Weak. NL Exhaust."
+  },
+  "TheLightbearer:ChooseArc": {
+    "NAME": "Choose Arc",
+    "DESCRIPTION": "{@@}Add a random *Arc-Infused card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Arc-Infused cards to your hand. They cost 0 this turn."
+  },
+  "TheLightbearer:ChooseVoid": {
+    "NAME": "Choose Void",
+    "DESCRIPTION": "{@@}Add a random *Void-Infused card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Void-Infused cards to your hand. They cost 0 this turn."
+  },
+  "TheLightbearer:ChooseSolar": {
+  "NAME": "Choose Solar",
+    "DESCRIPTION": "{@@}Add a random *Solar-Infused card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Solar-Infused cards to your hand. They cost 0 this turn."
+  },
+  "TheLightbearer:Thorn": {
+    "NAME": "Thorn",
+    "DESCRIPTION": "{@@}Deal !D! damage and apply 2 Poison !M! times.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage and apply 2 Poison !M! times."
+  },
+  "TheLightbearer:BladeBarrageToken": {
+    "NAME": "Blade Barrage",
+    "DESCRIPTION": "{@@}Ethereal NL TheLightbearer:Super NL Deal !D! damage twice to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal NL TheLightbearer:Super NL Deal !D! damage twice to ALL enemies. NL Exhaust."
+  },
+  "TheLightbearer:ArcStaffToken": {
+    "NAME": "Arc Staff",
+    "DESCRIPTION": "{@@}Ethereal NL TheLightbearer:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and TheLightbearer:Super_Armor for !M! turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal NL TheLightbearer:Super NL Gain [E] and draw 1 card at the start of your next !M! turns. Gain 3 Dexterity and TheLightbearer:Super_Armor for !M! turns. NL Exhaust."
+  },
+  "TheLightbearer:ShadowshotToken": {
+    "NAME": "Shadowshot",
+    "DESCRIPTION": "{@@}Ethereal NL TheLightbearer:Super NL Apply TheLightbearer:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal NL {@@}TheLightbearer:Super NL Apply TheLightbearer:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "TheLightbearer:SiphonEnergy": {
+    "NAME": "Siphon Energy",
+    "DESCRIPTION": "{@@}Whenever you play an attack, gain !M! TheLightbearer:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play an attack, gain !M! TheLightbearer:Charge_Of_Light."
+  }
+}
+

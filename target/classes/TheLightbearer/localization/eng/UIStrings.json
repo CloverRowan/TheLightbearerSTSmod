@@ -1,0 +1,29 @@
+{
+  "TheLightbearer:Example": {
+    "TEXT": [
+      "This is",
+      "an array of Strings."
+    ],
+    "EXTRA_TEXT": [
+      "This is another",
+      "array of Strings."
+    ],
+    "TEXT_DICT": {
+      "This": "Contains pairs of Strings, used to get values based on keys.",
+      "This is a key": "This is a value."
+    }
+  },
+  "TheLightbearer:SuperReward": {
+    "TEXT": [
+    "Add a Super Card to your deck.",
+    "Pick a Card."
+      ]
+  },
+  "TheLightbearer:CommuneOption": {
+  "TEXT": [
+    "Commune",
+    "Add a Super Card to your deck.",
+    "Choose a Card"
+    ]
+  }
+}

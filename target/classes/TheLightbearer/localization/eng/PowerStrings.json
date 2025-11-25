@@ -1,0 +1,153 @@
+{
+  "TheLightbearer:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "TheLightbearer:ChargeOfLightPower": {
+    "NAME": "Charge of Light",
+    "DESCRIPTIONS": [
+      "Gain #b1 #yCharge #yOf #yLight at the start of your turn and when you play an attack. #ySupers consume #b5 #yCharge #yOf #yLight when played."
+    ]
+  },
+  "TheLightbearer:SuperCharged": {
+    "NAME": "Super charged",
+    "DESCRIPTIONS": [
+      "Consumed by #y",
+      "Supers",
+      " to make them playable."
+    ]
+  },
+  "TheLightbearer:SparkOfFeedbackPower": {
+    "NAME": "Spark Of Feedback",
+    "DESCRIPTIONS": [
+      "When you take damage draw #b"
+    ]
+  },
+  "TheLightbearer:EchoOfHarvestPower": {
+    "NAME": "Echo Of Harvest",
+    "DESCRIPTIONS": [
+      "When you Exhaust a card gain ",
+      " Temporary HP"
+    ]
+  },
+  "TheLightbearer:SpectralBladesPower": {
+  "NAME": "Spectral Blades",
+  "DESCRIPTIONS": [
+    "Gain #b3 Strength. In #b",
+    " lose #b3 Strength"
+  ]
+  },
+  "TheLightbearer:FeedTheVoidPower": {
+    "NAME": "Feed The Void",
+    "DESCRIPTIONS": [
+      "At the start of your turn Exhaust up to #b"
+    ]
+  },
+  "TheLightbearer:DeadshotPower": {
+    "NAME": "Deadshot",
+    "DESCRIPTIONS": [
+      "At the start of your turn gain #b",
+      " Vigor."
+    ]
+  },
+  "TheLightbearer:VolatileCollapsePower": {
+    "NAME": "Volatile Collapse",
+    "DESCRIPTIONS": [
+      "When you Exhaust a card Deal #b",
+      " Damage to a random enemy."
+    ]
+  },
+  "TheLightbearer:RagingCurrentPower": {
+    "NAME": "Raging Current",
+    "DESCRIPTIONS": [
+      "This Turn when you Draw a card gain #b",
+      " Block."
+    ]
+  },
+  "TheLightbearer:FlowStatePower": {
+    "NAME": "Flow State",
+    "DESCRIPTIONS": [
+      "When you play an attack draw #b"
+    ]
+  },
+  "TheLightbearer:GatheringStormPower": {
+    "NAME": "Gathering Storm",
+    "DESCRIPTIONS": [
+      "At the start of its next turn, loses #b",
+      " HP.",
+      "At the start of its turn, loses #b"
+    ]
+  },
+  "TheLightbearer:ArcStaffPower": {
+    "NAME": "Arc Staff",
+    "DESCRIPTIONS": [
+      "Gain [E] and draw #b1 card at the start of each turn."
+    ]
+  },
+  "TheLightbearer:PowerDifferentialPower": {
+    "NAME": "Power Differential",
+    "DESCRIPTIONS": [
+      "When you deal unblocked attack damage, gain #b",
+      "% as Block."
+    ]
+  },
+  "TheLightbearer:ElementalPlatingPower": {
+    "NAME": "Elemental Plating",
+    "DESCRIPTIONS": [
+      "Whenever you draw a Burn, gain #b",
+      " Block."
+    ]
+  },
+  "TheLightbearer:CallLightningPower": {
+    "NAME": "Call Lightning",
+    "DESCRIPTIONS": [
+      "Whenever you draw a card, recall #yDischarge to your hand from your discard pile."
+    ]
+  },
+  "TheLightbearer:TelestoPower": {
+    "NAME": "Telesto Bolts",
+    "DESCRIPTIONS": [
+      "At the start of its NEXT turn, loses #b",
+      " HP.",
+      "At the start of its turn, loses #b",
+      " NL Triggers early when a card is Exhausted."
+    ]
+  },
+  "TheLightbearer:IncandescencePower": {
+    "NAME": "Incandescence",
+    "DESCRIPTIONS": [
+      "When you draw a #yBurn deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "TheLightbearer:SuperArmor": {
+    "NAME": "Super Armor",
+    "DESCRIPTIONS": [
+      "Take 50% less attack damage."
+    ]
+  },
+  "TheLightbearer:Energized": {
+    "NAME": "Energized",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " additional [E] next turn."
+    ]
+  },
+  "TheLightbearer:MonsterFrailPower": {
+    "NAME": "Monster Frail",
+    "DESCRIPTIONS": [
+      "Gain #b25% less #yBlock for #b",
+      " turn.",
+      " turns."
+    ]
+  },
+  "TheLightbearer:SiphonEnergyPower": {
+    "NAME": "Siphon Energy",
+    "DESCRIPTIONS": [
+      "Whenever you play an attack, gain ",
+      " #yCharge #yOf #yLight"
+    ]
+  }
+}

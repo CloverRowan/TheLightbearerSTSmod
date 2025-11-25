@@ -1,0 +1,25 @@
+{
+  "TheLightbearer:PotionID": {
+    "NAME": "Some Kind of Potion",
+    "DESCRIPTIONS": [
+      "Little",
+      " pieces ",
+      "that get put together",
+      " into a description.",
+      " Exactly how depends on the potion, and you can set it up however you want."
+    ]
+  },
+  "TheLightbearer:BottleOfLight": {
+    "NAME": "Bottle Of Light",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yCharges #yOf #yLight."
+    ]
+  },  "TheLightbearer:LiquidFate": {
+  "NAME": "Liquid Fate",
+  "DESCRIPTIONS": [
+    "Chose Arc, Solar, or Void gain #b",
+    " Card of that type, it costs #b0 this turn. "
+  ]
+}
+}

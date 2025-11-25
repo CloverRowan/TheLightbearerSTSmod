@@ -1,0 +1,467 @@
+{
+	"skeleton": {
+		"hash": "",
+		"spine": "3.8.99"
+	},
+	"bones": [
+		{
+			"name": "root",
+			"x": 256,
+			"y": 10,
+			"rotation": -2.06
+		},
+		{
+			"name": "Leg1",
+			"parent": "root",
+			"length": 276,
+			"x": -301.92,
+			"y": 197.39,
+			"rotation": -112.32
+		},
+		{
+			"name": "Torso",
+			"parent": "Leg1",
+			"length": 227,
+			"x": -235.26,
+			"y": 47.11,
+			"rotation": -158.12
+		},
+		{
+			"name": "Leg2",
+			"parent": "Leg1",
+			"length": 203,
+			"x": -105.94,
+			"y": 224.75,
+			"rotation": 24.2
+		},
+		{
+			"name": "Arm1",
+			"parent": "Torso",
+			"length": 102,
+			"x": 182.95,
+			"y": -83.63,
+			"rotation": -162.19
+		},
+		{
+			"name": "Head",
+			"parent": "Torso",
+			"length": 135,
+			"x": 237.34,
+			"y": 0.37,
+			"rotation": -11.64
+		},
+		{
+			"name": "Arm2",
+			"parent": "Torso",
+			"length": 138,
+			"x": 218.2,
+			"y": 110.49,
+			"rotation": 144.85
+		},
+		{
+			"name": "Thigh",
+			"parent": "Torso",
+			"length": 156,
+			"x": -21.92,
+			"y": 1.13,
+			"rotation": 179.32
+		},
+		{
+			"name": "Arm3",
+			"parent": "Arm1",
+			"length": 57,
+			"x": 102.32,
+			"y": 9.57,
+			"rotation": 71.64
+		},
+		{
+			"name": "Ghost",
+			"parent": "Head",
+			"length": 31,
+			"x": 102.02,
+			"y": -230.63,
+			"rotation": 11.61
+		},
+		{
+			"name": "Arm4",
+			"parent": "Arm2",
+			"length": 97,
+			"x": 142.31,
+			"y": 3.27,
+			"rotation": 35
+		},
+		{
+			"name": "RightHand",
+			"parent": "Arm4",
+			"length": 64,
+			"x": 115.74,
+			"y": -1.56,
+			"rotation": 6.77
+		},
+		{
+			"name": "GhostHand",
+			"parent": "Arm3",
+			"length": 51,
+			"x": 78.89,
+			"y": 4.8,
+			"rotation": 17.99
+		}
+	],
+	"slots": [
+		{
+			"name": "CloakLeft",
+			"bone": "Torso",
+			"attachment": "NEWCloakLeft"
+		},
+		{
+			"name": "CloakMiddle",
+			"bone": "Torso",
+			"attachment": "NEWCloakMiddle"
+		},
+		{
+			"name": "Thigh",
+			"bone": "Thigh",
+			"attachment": "NEWThigh"
+		},
+		{
+			"name": "Shadow",
+			"bone": "Leg1",
+			"attachment": "Shadow"
+		},
+		{
+			"name": "RightHand",
+			"bone": "RightHand",
+			"attachment": "NEWRightHand"
+		},
+		{
+			"name": "Leg2",
+			"bone": "Leg2",
+			"attachment": "NEWLeg2"
+		},
+		{
+			"name": "Head",
+			"bone": "Head",
+			"attachment": "NEWHead"
+		},
+		{
+			"name": "Ghost",
+			"bone": "Ghost",
+			"attachment": "NEWGhost"
+		},
+		{
+			"name": "Arm4",
+			"bone": "Arm4",
+			"attachment": "NEWArm4"
+		},
+		{
+			"name": "Arm3",
+			"bone": "Arm3",
+			"attachment": "NEWArm3"
+		},
+		{
+			"name": "Arm2",
+			"bone": "Arm2",
+			"attachment": "NEWArm2"
+		},
+		{
+			"name": "Arm1",
+			"bone": "Arm1",
+			"attachment": "NEWArm1"
+		},
+		{
+			"name": "Torso",
+			"bone": "Torso",
+			"attachment": "NEWTorso"
+		},
+		{
+			"name": "GhostHand",
+			"bone": "GhostHand",
+			"attachment": "NEWGhostHand"
+		},
+		{
+			"name": "Leg1",
+			"bone": "Leg1",
+			"attachment": "NEWLeg1_1"
+		}
+	],
+	"animations": {
+		"idle": {
+			"bones": {
+				"Torso": {
+					"translate": [
+						{
+							"time": 0,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"time": 2,
+							"x": 9.5692,
+							"y": 4.3371
+						},
+						{
+							"time": 4,
+							"x": 0,
+							"y": 0
+						}
+					]
+				},
+				"Arm1": {
+					"rotate": [
+						{
+							"time": 0,
+							"angle": 0
+						},
+						{
+							"time": 2,
+							"angle": -2.43
+						},
+						{
+							"time": 4,
+							"angle": 0
+						}
+					]
+				},
+				"Arm2": {
+					"rotate": [
+						{
+							"time": 0,
+							"angle": 0
+						},
+						{
+							"time": 2,
+							"angle": -1.79
+						},
+						{
+							"time": 4,
+							"angle": 0
+						}
+					]
+				},
+				"Arm3": {
+					"rotate": [
+						{
+							"time": 0,
+							"angle": 0
+						},
+						{
+							"time": 2,
+							"angle": -16.91
+						},
+						{
+							"time": 4,
+							"angle": 0
+						}
+					]
+				},
+				"Arm4": {
+					"rotate": [
+						{
+							"time": 0,
+							"angle": 0
+						},
+						{
+							"time": 2,
+							"angle": -6.47
+						},
+						{
+							"time": 4,
+							"angle": 0
+						}
+					]
+				},
+				"RightHand": {
+					"rotate": [
+						{
+							"time": 0,
+							"angle": 0
+						},
+						{
+							"time": 2,
+							"angle": 5.7
+						},
+						{
+							"time": 4,
+							"angle": 0
+						}
+					]
+				},
+				"GhostHand": {
+					"rotate": [
+						{
+							"time": 0,
+							"angle": 0
+						},
+						{
+							"time": 2,
+							"angle": 12.96
+						},
+						{
+							"time": 0,
+							"angle": 0
+						}
+					]
+				}
+			},
+			"slots": {},
+			"ik": {},
+			"deform": {
+				"default": {}
+			}
+		}
+	},
+	"physics": [],
+	"skins":
+		{
+          "default": {
+              "CloakLeft": {
+                  "NEWCloakLeft": {
+                      "name": "NEWCloakLeft",
+                      "width": 501,
+                      "height": 142,
+                      "x": -98.69,
+                      "y": 166.56,
+                      "rotation": 177.61
+                  }
+              },
+              "CloakMiddle": {
+                  "NEWCloakMiddle": {
+                      "name": "NEWCloakMiddle",
+                      "width": 275,
+                      "height": 242,
+                      "x": -191.12,
+                      "y": 34.96,
+                      "rotation": 178.34
+                  }
+              },
+              "Thigh": {
+                  "NEWThigh": {
+                      "name": "NEWThigh",
+                      "width": 275,
+                      "height": 209,
+                      "x": 82.15,
+                      "y": -19.07,
+                      "rotation": 88.37
+                  }
+              },
+              "Shadow": {
+                  "Shadow": {
+                      "name": "Shadow",
+                      "width": 669,
+                      "height": 241,
+                      "x": 164.62,
+                      "y": 221.31,
+                      "rotation": 111.33
+                  }
+              },
+              "RightHand": {
+                  "NEWRightHand": {
+                      "name": "NEWRightHand",
+                      "width": 73,
+                      "height": 110,
+                      "x": 32.49,
+                      "y": -14.49,
+                      "rotation": 74
+                  }
+              },
+              "Leg2": {
+                  "NEWLeg2": {
+                      "name": "NEWLeg2",
+                      "width": 304,
+                      "height": 161,
+                      "x": 94.34,
+                      "y": 19.42
+                  }
+              },
+              "Head": {
+                  "NEWHead": {
+                      "name": "NEWHead",
+                      "width": 207,
+                      "height": 185,
+                      "x": 40.82,
+                      "y": 10.45,
+                      "rotation": -81.32
+                  }
+              },
+              "Ghost": {
+                  "NEWGhost": {
+                      "name": "NEWGhost",
+                      "width": 39,
+                      "height": 52,
+                      "x": 2.66,
+                      "y": 0.61,
+                      "rotation": -89.12
+                  }
+              },
+              "Arm4": {
+                  "NEWArm4": {
+                      "name": "NEWArm4",
+                      "width": 63,
+                      "height": 131,
+                      "x": 46.75,
+                      "y": -1.27,
+                      "rotation": 83.03
+                  }
+              },
+              "Arm3": {
+                  "NEWArm3": {
+                      "name": "NEWArm3",
+                      "width": 43,
+                      "height": 101,
+                      "x": 38.66,
+                      "y": -12.15,
+                      "rotation": 95.33
+                  }
+              },
+              "Arm2": {
+                  "NEWArm2": {
+                      "name": "NEWArm2",
+                      "width": 67,
+                      "height": 157,
+                      "x": 50.18,
+                      "y": 16.26,
+                      "rotation": 93.61
+                  }
+              },
+              "Arm1": {
+                  "NEWArm1": {
+                      "name": "NEWArm1",
+                      "width": 56,
+                      "height": 140,
+                      "x": 60.68,
+                      "y": -0.28,
+                      "rotation": 66.85
+                  }
+              },
+              "Torso": {
+                  "NEWTorso": {
+                      "name": "NEWTorso",
+                      "width": 209,
+                      "height": 303,
+                      "x": 96.01,
+                      "y": 18.52,
+                      "rotation": -93
+                  }
+              },
+              "GhostHand": {
+                  "NEWGhostHand": {
+                      "name": "NEWGhostHand",
+                      "width": 52,
+                      "height": 93,
+                      "x": 33.81,
+                      "y": -9.48,
+                      "rotation": 68.08
+                  }
+              },
+              "Leg1": {
+                  "NEWLeg1_1": {
+                      "name": "NEWLeg1_1",
+                      "width": 366,
+                      "height": 86,
+                      "x": 148.44,
+                      "y": -5.79
+                  }
+              }
+          }
+      }
+}

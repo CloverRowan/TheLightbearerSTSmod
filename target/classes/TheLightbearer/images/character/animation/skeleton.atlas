@@ -1,0 +1,111 @@
+
+TheLightbearer.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NEWCloakLeft
+  rotate: false
+  xy: 1,244
+  size: 501,142
+  orig: 501,142
+  offset:0,0
+  index: -1
+NEWCloakMiddle
+  rotate: false
+  xy: 672,1
+  size: 275,242
+  orig: 275,242
+  offset:0,0
+  index: -1
+NEWThigh
+  rotate: false
+  xy: 715,245
+  size: 275,209
+  orig: 275,209
+  offset:0,0
+  index: -1
+Shadow
+  rotate: false
+  xy: 1,1
+  size: 669,241
+  orig: 669,241
+  offset:0,0
+  index: -1
+NEWRightHand
+  rotate: false
+  xy: 275,388
+  size: 73,110
+  orig: 73,110
+  offset:0,0
+  index: -1
+NEWLeg2
+  rotate: false
+  xy: 715,456
+  size: 304,161
+  orig: 304,161
+  offset:0,0
+  index: -1
+NEWHead
+  rotate: false
+  xy: 1,388
+  size: 207,185
+  orig: 207,185
+  offset:0,0
+  index: -1
+NEWGhost
+  rotate: false
+  xy: 408,483
+  size: 39,52
+  orig: 39,52
+  offset:0,0
+  index: -1
+NEWArm4
+  rotate: false
+  xy: 210,388
+  size: 63,131
+  orig: 63,131
+  offset:0,0
+  index: -1
+NEWArm3
+  rotate: false
+  xy: 578,550
+  size: 43,101
+  orig: 43,101
+  offset:0,0
+  index: -1
+NEWArm2
+  rotate: false
+  xy: 949,1
+  size: 67,157
+  orig: 67,157
+  offset:0,0
+  index: -1
+NEWArm1
+  rotate: false
+  xy: 350,388
+  size: 56,140
+  orig: 56,140
+  offset:0,0
+  index: -1
+NEWTorso
+  rotate: false
+  xy: 504,245
+  size: 209,303
+  orig: 209,303
+  offset:0,0
+  index: -1
+NEWGhostHand
+  rotate: false
+  xy: 408,388
+  size: 52,93
+  orig: 52,93
+  offset:0,0
+  index: -1
+NEWLeg1_1
+  rotate: false
+  xy: 210,550
+  size: 366,86
+  orig: 366,86
+  offset:0,0
+  index: -1
