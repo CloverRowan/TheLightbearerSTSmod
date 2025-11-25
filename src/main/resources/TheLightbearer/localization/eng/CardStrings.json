@@ -340,8 +340,8 @@
   },
   "${modID}:Deadshot": {
     "NAME": "Deadshot",
-    "DESCRIPTION": "{@@}At the start of each turn, gain !M! Vigor.",
-    "UPGRADE_DESCRIPTION": "{@@}At the start of each turn, gain !M! Vigor."
+    "DESCRIPTION": "{@@}The first attack you play each turn is played twice.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL The first attack you play each turn is played twice."
   },
   "${modID}:Shadowshot": {
     "NAME": "Shadowshot",

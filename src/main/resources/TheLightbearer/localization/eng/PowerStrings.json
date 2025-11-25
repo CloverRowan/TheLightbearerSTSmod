@@ -48,8 +48,9 @@
   "${modID}:DeadshotPower": {
     "NAME": "Deadshot",
     "DESCRIPTIONS": [
-      "At the start of your turn gain #b",
-      " Vigor."
+      "The first attack you play each turn is played twice.",
+      "The first #b",
+      " attacks you play each turn are played twice."
     ]
   },
   "${modID}:VolatileCollapsePower": {
