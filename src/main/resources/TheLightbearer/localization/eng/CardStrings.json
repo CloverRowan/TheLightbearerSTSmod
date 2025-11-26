@@ -350,8 +350,8 @@
   },
   "${modID}:FusionGrenade": {
     "NAME": "Fusion Grenade",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have an *Arc-Infused card and *Void-Infused card in your hand, remove all Block from the enemy and apply !M! Poison first.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If you have an *Arc-Infused card and *Void-Infused card in your hand, remove all Block from the enemy and apply !M! Poison first."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If you have an *Arc-Infused card and *Void-Infused card in your hand, remove all Block from the enemy and apply !M! Weak first.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If you have an *Arc-Infused card and *Void-Infused card in your hand, remove all Block from the enemy and apply !M! Weak first."
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",

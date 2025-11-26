@@ -15,6 +15,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 import static TheLightbearer.util.CustomTags.*;
@@ -33,7 +35,7 @@ public class FusionGrenade extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 2;
-    private static final int MAGIC_NUMBER = 3;
+    private static final int MAGIC_NUMBER = 2;
     private static final int UPG_MAGIC_NUMBER = 1;
 
 
@@ -52,7 +54,7 @@ public class FusionGrenade extends BaseCard {
             addToBot(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
             addToBot(new RemoveAllBlockAction(m, p));
 
-            addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber, AbstractGameAction.AttackEffect.POISON));
+            addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber, AbstractGameAction.AttackEffect.POISON));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
     }
