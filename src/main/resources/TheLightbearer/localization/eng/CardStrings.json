@@ -106,8 +106,8 @@
   },
   "${modID}:MarksmansDodge": {
     "NAME": "Rapid Reload",
-    "DESCRIPTION": "{@@}Exhaust NL Draw !M! card{!M!|>1=s}.",
-    "UPGRADE_DESCRIPTION": "{@@}Exhaust NL Draw !M! card{!M!|>1=s}."
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Exhaust."
   },
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
@@ -131,13 +131,13 @@
   },
   "${modID}:EchoShield": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": "{@@}Gain !B! Block NL Generate a temporary Echo Shield in your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block NL Generate a temporary Echo Shield in your hand."
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Add an Echo Shield to your hand with Ethereal and Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Add an Echo Shield to your hand with Ethereal and Exhaust."
   },
   "${modID}:EchoShieldToken": {
     "NAME": "Echo Shield",
-    "DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block NL Generate a temporary Echo Shield in your hand NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block NL Generate a temporary Echo Shield in your hand NL Exhaust."
+    "DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block. NL Add an Echo Shield to your hand with Ethereal and Exhaust. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal. NL Gain !B! Block. NL Add an Echo Shield to your hand with Ethereal and Exhaust. NL Exhaust."
   },
   "${modID}:CombinationBlow": {
     "NAME": "Combination Blow",
