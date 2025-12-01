@@ -53,8 +53,8 @@ public class FusionGrenade extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (fusionCheck()){
             addToBot(new SFXAction("THUNDERCLAP", 0.05F));
-            addToBot(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
             for (AbstractMonster monster: AbstractDungeon.getCurrRoom().monsters.monsters) {
+                addToBot(new VFXAction(new LightningEffect(monster.drawX, monster.drawY), 0.05F));
                 addToBot(new RemoveAllBlockAction(monster, p));
             }
         }
