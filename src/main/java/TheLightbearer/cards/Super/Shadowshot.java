@@ -40,6 +40,7 @@ public class Shadowshot extends BaseCard {
         setMagic(MAGIC_NUMBER);
         tags.add(SUPERSPELL);
         tags.add(VOID);
+        this.isMultiDamage = true;
         this.forceRare();
     }
 
@@ -48,7 +49,7 @@ public class Shadowshot extends BaseCard {
         addToBot((AbstractGameAction)new WaitAction(0.8F));
         CardCrawlGame.sound.playV("ShadowshotCast", 8f);
         addToBot(new ApplyPowerAction(m, p, new CorpseExplosionPower(m),1,AbstractGameAction.AttackEffect.POISON));
-        addToBot(new DamageAllEnemiesAction(p,this.damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DamageAllEnemiesAction(p,this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, this.magicNumber, false)));
         }

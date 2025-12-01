@@ -31,7 +31,7 @@ import static TheLightbearer.util.CustomTags.*;
 import static TheLightbearer.util.GeneralUtils.removePrefix;
 import static TheLightbearer.util.TextureLoader.getCardTextureString;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
-
+import static TheLightbearer.TheLightbearer.logger;
 
 public abstract class BaseCard extends CustomCard {
     final private static Map<String, DynamicVariable> customVars = new HashMap<>();
@@ -529,6 +529,9 @@ public abstract class BaseCard extends CustomCard {
 
                     }
                     ArrayList<AbstractCard> cards = AbstractDungeon.actionManager.cardsPlayedThisCombat;
+                    if(card.purgeOnUse){
+                        return super.canPlay(card);
+                    }
 
                     for(AbstractRelic r : player.relics){
                         //logger.info(r.toString());

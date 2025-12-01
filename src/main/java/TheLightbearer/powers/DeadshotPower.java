@@ -11,10 +11,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
-
+import static TheLightbearer.TheLightbearer.logger;
 import java.util.ArrayList;
 
 import static TheLightbearer.TheLightbearer.makeID;
+import static TheLightbearer.util.CustomTags.SUPERSPELL;
 
 
 public class DeadshotPower extends BasePower implements CloneablePowerInterface {
@@ -56,6 +57,14 @@ public class DeadshotPower extends BasePower implements CloneablePowerInterface 
         }
 
         if (!card.purgeOnUse && this.amount > 0 && attacksPlayedThisTurn.size() - this.cardsDoubledThisTurn <= this.amount && card.type.equals(AbstractCard.CardType.ATTACK)) {
+
+            //Allows supers to be double-played regardless of light
+            if(card.tags.contains(SUPERSPELL)){
+                ArrayList<Boolean> freeChargeCopy = ChargeOfLightPower.getFreeCharge();
+                freeChargeCopy.add(true);
+                ChargeOfLightPower.setFreeCharge(freeChargeCopy);
+            }
+
             this.cardsDoubledThisTurn++;
             flash();
             AbstractMonster m = null;

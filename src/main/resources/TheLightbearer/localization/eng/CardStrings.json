@@ -442,7 +442,7 @@
     ]
   },
   "${modID}:Jotun": {
-    "NAME": "Jötun",
+    "NAME": "Jötunn",
     "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!.",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!."
   },
