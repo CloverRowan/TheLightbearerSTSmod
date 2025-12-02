@@ -28,10 +28,10 @@ public class ShunTheLight extends BaseCard {
     );
     private static final int DAMAGE = 7;
     private static final int UPG_DAMAGE = 2;
-    private static final int MAGIC_NUMBER = 4;
-    private static final int UPG_MAGIC_NUMBER = 0;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUMBER = -2;
     private static final int BLOCK = 6;
-    private static final int UPG_BLOCK = 2;
+    private static final int UPG_BLOCK = 0;
 
 
     public ShunTheLight() {

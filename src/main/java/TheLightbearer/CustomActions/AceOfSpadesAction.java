@@ -30,9 +30,9 @@ public class AceOfSpadesAction extends AbstractGameAction {
             AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY,AttackEffect.BLUNT_LIGHT));
             this.target.damage(this.info);
             if(this.target.isDying || this.target.currentHealth<=0){
-                addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.info.base, true), DamageInfo.DamageType.THORNS, AttackEffect.FIRE));
+                addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.target.maxHealth, true), DamageInfo.DamageType.THORNS, AttackEffect.FIRE));
                 //addToBot(new DamageAllEnemiesAction(p, this.info.base, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
-                addToBot(new ApplyPowerAction(p, p, new StrengthPower(p,this.magicNumber), this.magicNumber));
+                //addToBot(new ApplyPowerAction(p, p, new StrengthPower(p,this.magicNumber), this.magicNumber));
             }
             if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
                 AbstractDungeon.actionManager.clearPostCombatActions();

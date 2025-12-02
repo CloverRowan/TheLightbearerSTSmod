@@ -25,8 +25,8 @@ public class LightningStrike extends BaseCard {
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1
     );
-    private static final int DAMAGE = 8;
-    private static final int UPG_DAMAGE = 3;
+    private static final int DAMAGE = 4;
+    private static final int UPG_DAMAGE = 2;
 
     private static final int MAGIC_NUMBER = 1;
 

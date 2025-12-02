@@ -166,8 +166,8 @@
   },
   "${modID}:LineEmUp": {
     "NAME": "Line 'Em Up",
-    "DESCRIPTION": "{@@}Apply !M! Vulnerable. NL Apply !M! ${modID}:Monster_Frail. NL Gain 2 ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "{@@}Apply !M! Vulnerable. NL Apply !M! ${modID}:Monster_Frail. NL Gain 2 ${modID}:Charge_Of_Light."
+    "DESCRIPTION": "{@@}Apply !M! Vulnerable. NL Apply !M! ${modID}:Monster_Frail. NL Gain !${modID}:LINEEMUPM2! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Apply !M! Vulnerable. NL Apply !M! ${modID}:Monster_Frail. NL Gain !${modID}:LINEEMUPM2! ${modID}:Charge_Of_Light."
   },
   "${modID}:KnockEmDown": {
     "NAME": "Knock 'Em Down",
@@ -246,7 +246,7 @@
   "${modID}:CallOnLight": {
     "NAME": "Call On Light",
     "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light."
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:Equalize": {
     "NAME": "Equalize",
@@ -453,8 +453,8 @@
   },
   "${modID}:AceOfSpades": {
     "NAME": "Ace of Spades",
-    "DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to ALL other enemies and gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal !D! damage to ALL other enemies and gain !M! Strength."
+    "DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal damage equal to its Max HP to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. If this defeats an enemy, deal damage equal to its Max HP to ALL enemies."
   },
   "${modID}:TractorCannon": {
     "NAME": "Tractor Cannon",

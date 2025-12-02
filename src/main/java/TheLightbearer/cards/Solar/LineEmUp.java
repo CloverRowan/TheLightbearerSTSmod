@@ -28,13 +28,16 @@ public class LineEmUp extends BaseCard {
 
 
     private static final int MAGIC_NUMBER = 3;
-    private static final int UPG_MAGIC_NUMBER = 1;
+    private static final int UPG_MAGIC_NUMBER = 0;
+
+    private static final int SECOND_MAGIC_NUMBER = 2;
+    private static final int UPG_SECOND_MAGIC_NUMBER = 2;
 
     public LineEmUp() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
-        setExhaust(true);
+        setCustomVar("LINEEMUPM2", SECOND_MAGIC_NUMBER, UPG_SECOND_MAGIC_NUMBER);
     }
 
     @Override
@@ -42,7 +45,7 @@ public class LineEmUp extends BaseCard {
         //addToBot(new ApplyPowerAction(p, p, new VigorPower(p, this.magicNumber), this.magicNumber));
         addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
         addToBot(new ApplyPowerAction(m, p, new MonsterFrailPower(m, this.magicNumber), this.magicNumber));
-        addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p,2)));
+        addToBot(new ApplyPowerAction(p,p, new ChargeOfLightPower(p,this.customVar("LINEEMUPM2"))));
     }
 
     @Override
