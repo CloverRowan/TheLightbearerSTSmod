@@ -419,9 +419,9 @@
     ]
   },
   "${modID}:WhisperOfTheWorm": {
-    "NAME": "Whisper of The Worm",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 2 Energy.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play this, gain 2 Energy.",
+    "NAME": "Whisper of the Worm",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play Whisper of the Worm, gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Every third time you play Whisper of the Worm, gain [E] [E].",
     "EXTENDED_DESCRIPTION": [
       " NL (3",
       " left).",

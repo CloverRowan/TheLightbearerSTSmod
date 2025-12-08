@@ -150,5 +150,11 @@
       "Whenever you play an attack, gain ",
       " #yCharge #yOf #yLight"
     ]
+  },
+  "${modID}:WhisperPower": {
+    "NAME": "White Nail",
+    "DESCRIPTIONS": [
+      "Every third time you play #yWhisper #yof #ythe #yWorm, gain [E] [E] ."
+    ]
   }
 }
