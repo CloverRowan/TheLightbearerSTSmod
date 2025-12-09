@@ -34,7 +34,8 @@ public class OnYourMark extends BaseCard {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
-        setExhaust(true,false);
+        setCostUpgrade(0);
+        setExhaust(true);
     }
 
     @Override
