@@ -1,49 +1,46 @@
-Bugs:
-Wardcliff coil interacts strangely with Chemical X
-Character art is very purple
-
-
 Todo:
-Rework Solar burns
-
-Make Traveler do something and replace Little Light
-
-Reword Master of Light's description to be more clear
-Sound effects for exotic weapons
-More card effect animations
-
-buff telesto
-rework jotun
-dimmer switch description E
-buff telesto
-buff worldine zero
 readme for github
 make github public
-ember of mercy and comforting flames too similar
-lightweight knife and heavyweight knife too similar
-make consume the future exhaust deck without adding random cards
+
+Add Traveler back as a relic that does something
+Make commune campfire transition smoother
+
+Cards:
+    buff telesto
+    rework jotun
+    Reword Master of Light's description to be more clear
+    Wardcliff coil interacts strangely with Chemical X
 
 Art:
-	make new icon for echo of harvest instead of stealing invincible
 	Custom cardback for non-element cards
 	Art for a few cards
+	    Touch of Void
+	    Siphon Energy
+	    Gunpowder gamble
+	    Stylish execution
+	    Deadshot
 	End screen after heart
 	Big spinning energy orb
+	More card effect animations
+	Sound effects for exotic weapons
+        Jotunn
+        Monte Carlo
+        Telesto
+        Tractor Cannon
+        Vigilance Wing
+        Wardcliff Coil
+        Whisper of the Worm
+        Worldline Zero
 
 
 maybe:
-	make bonus card from relics exhaust, synergy effect trigger automatically?
-	change font size on consume the future unupgraded description?
-	stylish execution upgrade?
+	make bonus card from relics exhaust, or synergy effect trigger automatically?
 	more relics
+	more cheap powers
 	events
-	bosses
+	enemies/bosses
 	card trail based on element
 	flow state infinite with 2 zero cost cards and small deck
-	rename some echo cards that use the same words (echo, spark, ember)
-
-Strings:
-	charge vs charges of light
-	wardcliff coil, consume the future and master of light description too long
-	master of light string has an extra space or something??? the wiggles	
+	rename some echo cards (dilation, harvest, shield)
+	Mintyspire upgrade text highlight
 	

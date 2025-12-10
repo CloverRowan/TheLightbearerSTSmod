@@ -1,10 +1,12 @@
 package TheLightbearer.CustomActions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
@@ -27,6 +29,7 @@ public class AceOfSpadesAction extends AbstractGameAction {
 
     public void update() {
         if(this.duration == 0.1F && this.target != null){
+            CardCrawlGame.sound.playV("AceOfSpades", 4f);
             AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY,AttackEffect.BLUNT_LIGHT));
             this.target.damage(this.info);
             if(this.target.isDying || this.target.currentHealth<=0){

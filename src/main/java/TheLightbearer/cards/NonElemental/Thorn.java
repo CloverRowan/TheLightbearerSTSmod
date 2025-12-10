@@ -9,9 +9,11 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
@@ -42,9 +44,15 @@ public class Thorn extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int i;
+        if(this.upgraded){
+            CardCrawlGame.sound.playV("ThornTriple", 4f);
+        }else{
+            CardCrawlGame.sound.playV("ThornDouble", 4f);
+        }
         for (i=0; i<this.magicNumber; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.POISON));
             addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, POISON)));
+            addToBot(new WaitAction(0.5F));
         }
     }
 
