@@ -42,7 +42,7 @@ public class ElementalPlating extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         //addToBot(new ApplyPowerAction(p,p,new ElementalPlatingPower(p, this.magicNumber)));
         addToBot(new DrawCardAction(this.magicNumber));
-        int solarCount = countSolar() - 1;
+        int solarCount = countSolar();
         addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, solarCount * 2)));
 
     }
