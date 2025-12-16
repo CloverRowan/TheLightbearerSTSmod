@@ -3,6 +3,7 @@ package TheLightbearer.cards.Solar;
 
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
+import TheLightbearer.powers.TripminePower;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -46,7 +47,7 @@ public class TripmineGrenade extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
         //addToBot(new DamageAllEnemiesAction(p,this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
-        addToBot(new ApplyPowerAction(p, p, new FlameBarrierPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new TripminePower(p, this.magicNumber), this.magicNumber));
 
     }
 

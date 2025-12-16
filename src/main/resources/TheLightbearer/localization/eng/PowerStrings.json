@@ -156,5 +156,12 @@
     "DESCRIPTIONS": [
       "Every third time you play #yWhisper #yof #ythe #yWorm, gain [E] [E] ."
     ]
+  },
+  "${modID}:TripminePower": {
+    "NAME": "Tripmine",
+    "DESCRIPTIONS": [
+      "Whenever you are attacked this turn, deal ",
+      " damage to ALL enemies."
+    ]
   }
 }

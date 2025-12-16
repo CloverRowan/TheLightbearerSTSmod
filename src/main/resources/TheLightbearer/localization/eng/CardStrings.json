@@ -101,8 +101,8 @@
   },
   "${modID}:TripmineGrenade": {
     "NAME": "Tripmine Grenade",
-    "DESCRIPTION": "{@@}Whenever you are attacked this turn, deal !M! damage back.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Whenever you are attacked this turn, deal !M! damage back."
+    "DESCRIPTION": "{@@}Whenever you are attacked this turn, deal !M! damage to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Whenever you are attacked this turn, deal !M! damage to ALL enemies. NL Exhaust."
   },
   "${modID}:MarksmansDodge": {
     "NAME": "Rapid Reload",
