@@ -40,6 +40,7 @@ public class EmberOfMercy extends BaseCard {
         //setBlock(BLOCK, UPG_BLOCK); //Sets the card's Block and how much it changes when upgraded.
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
+        tags.add(CardTags.HEALING);
         setExhaust(true);
     }
 

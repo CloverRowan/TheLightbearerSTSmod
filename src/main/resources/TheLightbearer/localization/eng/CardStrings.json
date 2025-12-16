@@ -325,8 +325,8 @@
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
-    "DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent. NL Exhaust."
+    "DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent."
   },
   "${modID}:ArcStaff": {
     "NAME": "Arc Staff",
