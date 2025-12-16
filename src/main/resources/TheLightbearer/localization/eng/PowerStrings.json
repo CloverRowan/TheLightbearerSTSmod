@@ -77,7 +77,7 @@
     "NAME": "Gathering Storm",
     "DESCRIPTIONS": [
       "At the start of its next turn, loses #b",
-      " HP.",
+      " HP. Increases by 1 each turn.",
       "At the start of its turn, loses #b"
     ]
   },

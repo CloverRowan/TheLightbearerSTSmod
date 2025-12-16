@@ -92,5 +92,16 @@
       "monster_frail"
     ],
     "DESCRIPTION": "Enemy gains #b25% less #yBlock."
+  },
+  {
+    "PROPER_NAME": "Gathering Storm",
+    "NAMES": [
+      "Gathering Storm",
+      "Gathering_Storm",
+      "gathering_storm",
+      "gatheringstorm",
+      "GatheringStorm"
+    ],
+    "DESCRIPTION": "Enemy loses HP at the start of their turn. Each turn, damage is increased by #b1."
   }
 ]

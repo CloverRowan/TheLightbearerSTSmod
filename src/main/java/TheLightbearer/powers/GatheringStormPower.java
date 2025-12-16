@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -34,12 +35,7 @@ public class GatheringStormPower extends BasePower implements CloneablePowerInte
     }
 
     public void updateDescription() {
-        if(counter == 0){
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
-        }else{
-            this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[1];
-        }
-
+        this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[1];
     }
 
     public void onInitialApplication(){
@@ -48,18 +44,12 @@ public class GatheringStormPower extends BasePower implements CloneablePowerInte
 
     public void atStartOfTurn(){
         if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 1){
+                !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             flashWithoutSound();
-            //addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
-            addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.NONE));
             addToBot(new VFXAction((new LightningEffect(this.owner.drawX, this.owner.drawY))));
             addToBot(new SFXAction("ORB_LIGHTNING_EVOKE", 0.1F));
-            addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
-        }else if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 0){
-            flashWithoutSound();
-            this.counter = 1;
-            this.updateDescription();
+            addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.NONE));
+            addToBot(new ApplyPowerAction(this.owner, this.owner, this, 1));
         }
     }
 
@@ -71,12 +61,7 @@ public class GatheringStormPower extends BasePower implements CloneablePowerInte
 
     @Override
     public int getHealthBarAmount() {
-        if(counter ==1){
-            return this.amount;
-        }
-        else{
-            return 0;
-        }
+        return this.amount;
     }
 
     @Override

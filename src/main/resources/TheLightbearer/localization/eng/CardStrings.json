@@ -315,8 +315,8 @@
   },
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
-    "DESCRIPTION": "{@@}${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, ALL enemies lose !M! HP.",
-    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Deal !D! damage. NL At the start of the enemy's NEXT turn, ALL enemies lose !M! HP."
+    "DESCRIPTION": "{@@}${modID}:Super NL Apply !M! ${modID}:Gathering_Storm to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "${modID}:Super NL Apply !M! ${modID}:Gathering_Storm to ALL enemies."
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
