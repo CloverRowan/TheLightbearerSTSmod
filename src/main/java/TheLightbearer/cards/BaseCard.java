@@ -9,6 +9,7 @@ import TheLightbearer.util.CardStats;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -593,6 +594,14 @@ public abstract class BaseCard extends CustomCard {
         }
     }
 
+    public BaseCard makeToken(BaseCard c){
+        c.setExhaust(true);
+        c.setEthereal(true);
+        c.rawDescription = "Ethereal. NL " + this.rawDescription + " NL Exhaust.";
+        c.initializeDescription();
+        //logger.info("BaseCard makeToken called: " + c.cardID + " " + c.exhaust);
+        return c;
+    }
 
     private static class LocalVarInfo {
         int base, value, upgrade;

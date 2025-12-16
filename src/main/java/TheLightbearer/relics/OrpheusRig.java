@@ -1,5 +1,7 @@
 package TheLightbearer.relics;
 
+import TheLightbearer.CustomActions.MakeTempTokenInHandAction;
+import TheLightbearer.cards.BaseCard;
 import TheLightbearer.cards.Super.Tokens.ShadowshotToken;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ChargeOfLightPower;
@@ -14,13 +16,13 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 
 import static TheLightbearer.TheLightbearer.*;
-import static TheLightbearer.util.CustomTags.VOID;
+import static TheLightbearer.util.CustomTags.*;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class OrpheusRig extends BaseRelic {
     private static final String NAME = "OrpheusRig";
     public static final String ID = makeID(NAME);
-    private static final RelicTier RARITY = RelicTier.UNCOMMON; //The relic's rarity.
+    private static final RelicTier RARITY = RelicTier.RARE; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.MAGICAL; //The sound played when the relic is clicked.
     private Boolean isUsed = false;
 
@@ -57,18 +59,16 @@ public class OrpheusRig extends BaseRelic {
     public void onUseCard(AbstractCard card, UseCardAction useCardAction) {
         super.onUseCard(card, useCardAction);
         //logger.info("using a card with orig");
-        if(card.cardID.equals(makeID("Shadowshot")) && isUsed == false){
-            //logger.info("passing logic gate");
-            AbstractCard c = new ShadowshotToken();
+        if(card.tags.contains(SUPERSPELL) && card.tags.contains(VOID) && isUsed == false){
+            BaseCard c = (BaseCard)card.makeSameInstanceOf();
             if(card.upgraded){
                 c.upgrade();
             }
-            addToBot(new MakeTempCardInHandAction(c));
-            addToBot(new ApplyPowerAction(player,player,new ChargeOfLightPower(player, ChargeOfLightPower.SUPER_COST)));
-            //addToBot(new GainEnergyAction(2));
-           isUsed = true;
-           stopPulse();
-           //logger.info("orig done");
+            c.costForTurn = 0;
+            addToBot(new MakeTempTokenInHandAction(c));
+            addToBot(new ApplyPowerAction(player, player, new ChargeOfLightPower(player, ChargeOfLightPower.SUPER_COST)));
+            isUsed = true;
+            stopPulse();
         }
 
     }

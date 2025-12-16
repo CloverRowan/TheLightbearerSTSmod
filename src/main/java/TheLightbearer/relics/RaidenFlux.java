@@ -1,5 +1,7 @@
 package TheLightbearer.relics;
 
+import TheLightbearer.CustomActions.MakeTempTokenInHandAction;
+import TheLightbearer.cards.BaseCard;
 import TheLightbearer.cards.Super.Tokens.ArcStaffToken;
 import TheLightbearer.cards.Super.Tokens.ShadowshotToken;
 import TheLightbearer.character.LightbearerCharacter;
@@ -18,12 +20,13 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 
 import static TheLightbearer.TheLightbearer.makeID;
 import static TheLightbearer.util.CustomTags.ARC;
+import static TheLightbearer.util.CustomTags.SUPERSPELL;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class RaidenFlux extends BaseRelic {
     private static final String NAME = "RaidenFlux";
     public static final String ID = makeID(NAME);
-    private static final RelicTier RARITY = RelicTier.UNCOMMON; //The relic's rarity.
+    private static final RelicTier RARITY = RelicTier.RARE; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.MAGICAL; //The sound played when the relic is clicked.
     private Boolean isUsed = false;
 
@@ -55,18 +58,16 @@ public class RaidenFlux extends BaseRelic {
     public void onUseCard(AbstractCard card, UseCardAction useCardAction) {
         super.onUseCard(card, useCardAction);
         //logger.info("using a card with orig");
-        if(card.cardID.equals(makeID("ArcStaff")) && isUsed == false){
-            //logger.info("passing logic gate");
-            AbstractCard c = new ArcStaffToken();
+        if(card.tags.contains(SUPERSPELL) && card.tags.contains(ARC) && isUsed == false){
+            BaseCard c = (BaseCard)card.makeSameInstanceOf();
             if(card.upgraded){
                 c.upgrade();
             }
-            addToBot(new MakeTempCardInHandAction(c));
-            addToBot(new ApplyPowerAction(player,player,new ChargeOfLightPower(player, ChargeOfLightPower.SUPER_COST)));
-            //addToBot(new GainEnergyAction(2));
+            c.costForTurn = 0;
+            addToBot(new MakeTempTokenInHandAction(c));
+            addToBot(new ApplyPowerAction(player, player, new ChargeOfLightPower(player, ChargeOfLightPower.SUPER_COST)));
             isUsed = true;
             stopPulse();
-            //logger.info("orig done");
         }
 
     }

@@ -1,6 +1,7 @@
 package TheLightbearer.cards.Void;
 
 
+import TheLightbearer.CustomActions.MakeTempTokenInHandAction;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
@@ -34,14 +35,10 @@ public class EchoShield extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        if(this.upgraded){
-            AbstractCard c = new EchoShieldToken();
+        EchoShield c = new EchoShield();
+        if(this.upgraded)
             c.upgrade();
-            addToBot(new MakeTempCardInHandAction( c,1));
-        }
-        else {
-            addToBot(new MakeTempCardInHandAction(new EchoShieldToken(), 1));
-        }
+        addToBot(new MakeTempTokenInHandAction(c,1));
     }
 
     @Override
