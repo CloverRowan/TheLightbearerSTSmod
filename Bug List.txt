@@ -34,7 +34,6 @@ Art:
 
 
 maybe:
-	make bonus card from relics exhaust, or synergy effect trigger automatically?
 	more relics
 	more cheap powers
 	events

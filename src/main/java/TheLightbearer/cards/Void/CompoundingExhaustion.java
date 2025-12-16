@@ -10,7 +10,9 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 
 import static TheLightbearer.util.CustomTags.*;
 
@@ -25,7 +27,7 @@ public class CompoundingExhaustion extends BaseCard {
             1
     );
     private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 4;
+    private static final int UPG_DAMAGE = 2;
 
     private static final int MAGIC_NUMBER = 1;
 
@@ -43,19 +45,18 @@ public class CompoundingExhaustion extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        for(int i = 0; i < this.magicNumber; i++)
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
     @Override
     public void triggerOnExhaust(){
         AbstractCard copyOfThis = this.makeCopy();
-
-   for (int i = 0; i <=1; i++ ){
-      copyOfThis.cost = cost + 1;
-      copyOfThis.costForTurn = copyOfThis.cost;
-      copyOfThis.baseDamage = baseDamage * 2;
-          copyOfThis.isCostModified = true;
-      }
-        addToTop(new MakeTempCardInHandAction(copyOfThis));
+        copyOfThis.magicNumber = this.magicNumber + 1;
+        copyOfThis.baseMagicNumber = this.baseMagicNumber +1;
+        if(this.upgraded)
+            copyOfThis.upgrade();
+        AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(copyOfThis));
+        copyOfThis.initializeDescription();
     }
     @Override
     public AbstractCard makeCopy() {

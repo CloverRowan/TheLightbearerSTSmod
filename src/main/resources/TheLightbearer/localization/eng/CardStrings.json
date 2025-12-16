@@ -280,8 +280,8 @@
   },
   "${modID}:CompoundingExhaustion": {
     "NAME": "Compounding Exhaustion",
-    "DESCRIPTION": "{@@}Deal !D! damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. When Exhausted add a copy of this card to your hand that costs 1 more and does twice as much damage."
+    "DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. When Exhausted add a copy of this card to your hand and increase number of hits by 1.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage !M! time{!M!|>1=s}. When Exhausted add a copy of this card to your hand and increase number of hits by 1."
   },
   "${modID}:VolatileCollapse": {
     "NAME": "Volatile Collapse",
