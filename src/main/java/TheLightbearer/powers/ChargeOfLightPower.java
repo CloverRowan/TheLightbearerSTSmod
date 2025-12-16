@@ -1,5 +1,7 @@
 package TheLightbearer.powers;
 
+import TheLightbearer.TheLightbearer;
+import TheLightbearer.relics.DimmerSwitch;
 import basemod.interfaces.CloneablePowerInterface;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -51,6 +53,11 @@ public class ChargeOfLightPower extends BasePower implements CloneablePowerInter
 
     @Override
     public void stackPower(int stackAmount) {
+        for (AbstractRelic r : player.relics){
+            if(r.relicId.equals(makeID("DimmerSwitch"))){
+                ((DimmerSwitch)r).stack(stackAmount);
+            }
+        }
         /*if(this.amount%10 + stackAmount >= 10 && AbstractDungeon.player != null && AbstractDungeon.currMapNode != null &&
                 AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
 

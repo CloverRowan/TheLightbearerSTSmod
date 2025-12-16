@@ -8,7 +8,7 @@
   "${modID}:ChargeOfLightPower": {
     "NAME": "Charge of Light",
     "DESCRIPTIONS": [
-      "Gain #b1 #yCharge #yOf #yLight at the start of your turn and when you play an attack. #ySupers consume #b5 #yCharge #yOf #yLight when played."
+      "Gain #b1 #yCharge #yOf #yLight at the start of your turn. #ySupers consume #b5 #yCharge #yOf #yLight when played."
     ]
   },
   "${modID}:SuperCharged": {
