@@ -16,9 +16,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.PoisonPower;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 import static TheLightbearer.util.CustomTags.*;
@@ -37,7 +35,7 @@ public class FusionGrenade extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 2;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = 1;
 
 
@@ -51,14 +49,18 @@ public class FusionGrenade extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (fusionCheck()){
-            addToBot(new SFXAction("THUNDERCLAP", 0.05F));
-            for (AbstractMonster monster: AbstractDungeon.getCurrRoom().monsters.monsters) {
-                addToBot(new VFXAction(new LightningEffect(monster.drawX, monster.drawY), 0.05F));
-                addToBot(new RemoveAllBlockAction(monster, p));
-            }
-        }
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
+        int aliveMonsters = 0;
+        for(AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters){
+            if(!monster.isDead)
+                aliveMonsters++;
+        }
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters)
+            addToBot(new ApplyPowerAction(mo, p, new StrengthPower(mo, -this.magicNumber*aliveMonsters), -this.magicNumber*aliveMonsters, true, AbstractGameAction.AttackEffect.NONE));
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+            if (!mo.hasPower("Artifact"))
+                addToBot(new ApplyPowerAction(mo, p, new GainStrengthPower(mo, this.magicNumber*aliveMonsters), this.magicNumber*aliveMonsters, true, AbstractGameAction.AttackEffect.NONE));
+        }
     }
 
     @Override

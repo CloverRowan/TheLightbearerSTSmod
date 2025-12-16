@@ -350,8 +350,8 @@
   },
   "${modID}:FusionGrenade": {
     "NAME": "Fusion Grenade",
-    "DESCRIPTION": "{@@}Deal !D! damage to all enemies. NL If your hand contains an *Arc-Infused and *Void-Infused card, remove all Block from the enemy first.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to all enemies. NL If your hand contains an *Arc-Infused and *Void-Infused card, remove all Block from the enemy first."
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL For each enemy hit, ALL enemies lose !M! Strength this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL For each enemy hit, ALL enemies lose !M! Strength this turn."
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",
