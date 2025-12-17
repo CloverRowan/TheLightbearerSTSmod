@@ -10,7 +10,7 @@
     "NAME": "Little Light",
     "FLAVOR": "Your faithful spark of light.",
     "DESCRIPTIONS": [
-      "When you take damage that leaves you at or below 50% HP, heal #b10 HP. NL Can trigger once per combat."
+      "When your HP drops to 50% or lower, heal #b10 HP. NL Can trigger once per floor."
     ]
   },
   "${modID}:TheTraveler": {

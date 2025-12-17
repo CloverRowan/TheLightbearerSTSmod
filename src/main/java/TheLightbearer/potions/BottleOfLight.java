@@ -30,15 +30,6 @@ public class BottleOfLight extends BasePotion {
     public void use(AbstractCreature target) {
         if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
             addToBot(new ApplyPowerAction(player, player,new ChargeOfLightPower(player,this.potency)));
-            for(AbstractRelic r : player.relics){
-                if(r.relicId.equals("TheLightbearer:DimmerSwitch")){
-                   if(player.hasRelic("SacredBark")){
-                       r.counter += 20;
-                   }else{
-                       r.counter += 10;
-                   }
-                }
-            }
         }
     }
     public int getPotency(int ascensionLevel) {

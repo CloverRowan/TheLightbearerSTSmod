@@ -111,7 +111,7 @@
   },
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
-    "DESCRIPTION": "{@@}Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust.",
+    "DESCRIPTION": "{@@}Apply !M! Weak to ALL enemies. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust."
   },
   "${modID}:StylishExecution": {

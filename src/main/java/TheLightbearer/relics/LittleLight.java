@@ -32,9 +32,14 @@ public class LittleLight extends BaseRelic{
         beginLongPulse();
     }
 
+    public void onEnterRoom(AbstractRoom room) {
+        used = false;
+        beginLongPulse();
+    }
+
 
     public void healPlayer() {
-        if(!used && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+        if(!used) {
             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             int healAmt = 10;
             AbstractDungeon.player.heal(healAmt, true);
