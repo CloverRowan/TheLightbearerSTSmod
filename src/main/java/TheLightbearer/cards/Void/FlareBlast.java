@@ -1,21 +1,17 @@
-package TheLightbearer.cards.Solar;
+package TheLightbearer.cards.Void;
 
 
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
-import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static TheLightbearer.util.CustomTags.SOLAR;
 import static TheLightbearer.util.CustomTags.VOID;
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 //Called Endless Entropy in game
 public class FlareBlast extends BaseCard {
@@ -26,7 +22,7 @@ public class FlareBlast extends BaseCard {
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             CardRarity.COMMON, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            1
+            0
     );
     private static final int DAMAGE = 2;
     private static final int UPG_DAMAGE = 1;
@@ -36,7 +32,7 @@ public class FlareBlast extends BaseCard {
 
 
     public FlareBlast() {
-        super(ID, info, "solar");
+        super(ID, info, "void");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(VOID);

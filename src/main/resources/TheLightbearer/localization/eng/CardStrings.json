@@ -265,8 +265,8 @@
   },
   "${modID}:FlareBlast": {
     "NAME": "Endless Entropy",
-    "DESCRIPTION": "{@@}Whenever you draw this card, add a copy of it into your hand. NL Deal !D! d enemies. NL Draw !M! card{!M!|>1=s}. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw this card, add a copy of it into your hand. NL Deal !D! d enemies. NL Draw !M! card{!M!|>1=s}. NL Exhaust."
+    "DESCRIPTION": "{@@}Whenever you draw this card, add a copy of it into your hand. NL Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw this card, add a copy of it into your hand. NL Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL Exhaust."
   },
   "${modID}:LightningStrike": {
     "NAME": "Lightning Strike",
