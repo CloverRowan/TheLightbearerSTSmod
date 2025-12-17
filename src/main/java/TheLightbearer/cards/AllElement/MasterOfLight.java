@@ -1,5 +1,6 @@
-package TheLightbearer.cards;
+package TheLightbearer.cards.AllElement;
 
+import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.DamageAction;

@@ -8,10 +8,10 @@ Liquid fate:
     Broken interaction with sacred bark
     Make it offer one of each element instead of picking without knowing?
     Exhaust effect when selecting an option, use DiscoveryAction instead?
+Endless agony but it draws (0 cost void attack)
 
 Cards:
     buff telesto
-    rework jotun
     Reword Master of Light's description to be more clear
     Wardcliff coil interacts strangely with Chemical X
 

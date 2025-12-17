@@ -1,17 +1,16 @@
-package TheLightbearer.cards.Arc;
+package TheLightbearer.cards.AllElement;
 
 
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.SiphonEnergyPower;
-import TheLightbearer.powers.SparkOfFeedbackPower;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static TheLightbearer.util.CustomTags.ARC;
+import static TheLightbearer.util.CustomTags.*;
 
 public class SiphonEnergy extends BaseCard {
 
@@ -26,8 +25,10 @@ public class SiphonEnergy extends BaseCard {
     private static final int MAGIC_NUMBER= 1;
     private static final int UPG_MAGIC_NUMBER = 0;
     public SiphonEnergy() {
-        super(ID, info, "arc");
+        super(ID, info);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(SOLAR);
+        tags.add(VOID);
         tags.add(ARC);
         setCostUpgrade(1);
     }

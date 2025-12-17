@@ -3,12 +3,14 @@ package TheLightbearer.cards.Solar;
 import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
@@ -25,15 +27,15 @@ public class Jotun extends BaseCard {
             2//The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 18;
+    private static final int DAMAGE = 12;
     private static final int UPG_DAMAGE = 6;
-    private static final int EXHAUSTIVE = 2;
+    private static final int MAGIC = 4;
+    private static final int UPG_MAGIC = 2;
 
     public Jotun() {
         super(ID, info, "solar"); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-        setMagic(EXHAUSTIVE);
-        ExhaustiveVariable.setBaseValue(this, EXHAUSTIVE);
+        setMagic(MAGIC,UPG_MAGIC);
         this.isMultiDamage = true;
         tags.add(SOLAR);
     }
@@ -41,6 +43,15 @@ public class Jotun extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAllEnemiesAction(p,this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
+        int aliveMonsters = 0;
+        for(AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters){
+            if(!monster.isDead)
+                aliveMonsters++;
+        }
+        if(!AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()){
+            addToBot(new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player, this.magicNumber * aliveMonsters));
+        }
+
     }
 
     @Override

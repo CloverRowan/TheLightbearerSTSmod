@@ -464,7 +464,10 @@ public abstract class BaseCard extends CustomCard {
     public void renderBorderText(SpriteBatch sb, float xPos, float yPos, float yOffsetBase, float scale, boolean renderBottom){
         String text;
         Color color;
-        if(this.tags.contains(VOID)){
+        if(this.tags.contains(ARC) && this.tags.contains(SOLAR) && this.tags.contains(VOID)) {
+            text = "All Elements";
+            color = Settings.CREAM_COLOR.cpy();
+        }else if(this.tags.contains(VOID)){
             text = "Void-Infused";
             color = Settings.PURPLE_COLOR;
         }else if(this.tags.contains(SOLAR)){
@@ -478,11 +481,6 @@ public abstract class BaseCard extends CustomCard {
             color = Settings.CREAM_COLOR.cpy();
         }else{
             text = null;
-            color = Settings.CREAM_COLOR.cpy();
-        }
-
-        if(this.cardID.equals(makeID("MasterOfLight"))){
-            text = "All Elements";
             color = Settings.CREAM_COLOR.cpy();
         }
 

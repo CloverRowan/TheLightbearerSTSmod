@@ -264,9 +264,9 @@
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL If your hand contains 3 or less other cards, deal !D! damage again."
   },
   "${modID}:FlareBlast": {
-    "NAME": "Flare Blast",
-    "DESCRIPTION": "{@@}Deal !D! Damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! Damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit."
+    "NAME": "Endless Entropy",
+    "DESCRIPTION": "{@@}Whenever you draw this card, add a copy of it into your hand. NL Deal !D! d enemies. NL Draw !M! card{!M!|>1=s}. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you draw this card, add a copy of it into your hand. NL Deal !D! d enemies. NL Draw !M! card{!M!|>1=s}. NL Exhaust."
   },
   "${modID}:LightningStrike": {
     "NAME": "Lightning Strike",
@@ -443,8 +443,8 @@
   },
   "${modID}:Jotun": {
     "NAME": "Jötunn",
-    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Exhaustive !stslib:ex!."
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL Gain !M! Temporary HP for each enemy hit."
   },
   "${modID}:WorldlineZero": {
     "NAME": "Worldline Zero",

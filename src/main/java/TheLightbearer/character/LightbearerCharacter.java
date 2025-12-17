@@ -1,7 +1,7 @@
 package TheLightbearer.character;
 
 //import TheLightbearer.screens.TutorialScreen;
-import TheLightbearer.cards.NonElemental.BlessingOfRadiance;
+import TheLightbearer.cards.AllElement.BlessingOfRadiance;
 import TheLightbearer.powers.ChargeOfLightPower;
 import TheLightbearer.cards.NonElemental.Defend;
 import TheLightbearer.cards.NonElemental.ShunTheLight;
