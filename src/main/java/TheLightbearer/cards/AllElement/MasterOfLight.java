@@ -46,8 +46,7 @@ public class MasterOfLight extends BaseCard {
         tags.add(VOID);
         tags.add(ARC);
         setExhaust(true);
-        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
+        setDescription();
     }
 
 
@@ -62,28 +61,26 @@ public class MasterOfLight extends BaseCard {
 
         //this.rawDescription = "Deal " + this.damage + " damage. NL Gain " + this.block + " Block. NL Draw "+ this.magicNumber + " card" + (this.magicNumber > 1 ? "s." : ".") ;
 
-
+    private void setDescription(){
+        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
+                + cardStrings.EXTENDED_DESCRIPTION[0];
+        initializeDescription();
+    }
 
     public void applyPowers(){
         countCards();
         super.applyPowers();
-        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
-        initializeDescription();
+        setDescription();
     }
 
     public void onMoveToDiscard(){
-        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
-        initializeDescription();
+        setDescription();
     }
 
 
     public void calculateCardDamage(AbstractMonster mo){
         super.calculateCardDamage(mo);
-        this.rawDescription = "Deal !D! damage, gain !B! Block, draw !M! card" + (this.magicNumber > 1 ? "s." : ".")
-                + " NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.";
-        initializeDescription();
+        setDescription();
     }
 
     private void countCards(){

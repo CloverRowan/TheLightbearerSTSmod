@@ -103,5 +103,15 @@
       "GatheringStorm"
     ],
     "DESCRIPTION": "Enemy loses HP at the start of their turn. Each turn, damage is increased by #b1."
+  },
+  {
+    "PROPER_NAME": "Resonates",
+    "NAMES": [
+      "Resonates",
+      "Resonate",
+      "resonates",
+      "resonate"
+    ],
+    "DESCRIPTION": "Effect repeats for each matching Elemental-Infused card in your hand, draw pile, and discard pile."
   }
 ]

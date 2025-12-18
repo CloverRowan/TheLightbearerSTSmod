@@ -212,7 +212,7 @@
   "${modID}:FeedTheVoid": {
     "NAME": "Feed The Void",
     "DESCRIPTION": "{@@}At the start of your turn, Exhaust up to one card.",
-    "UPGRADE_DESCRIPTION": "{@@}At the start of your turn, Exhaust up to one card."
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL At the start of your turn, Exhaust up to one card."
   },
   "${modID}:SpectralBlades": {
     "NAME": "Spectral Blades",
@@ -235,8 +235,8 @@
   },
   "${modID}:ExpelDarkness": {
     "NAME": "Expel Darkness",
-    "DESCRIPTION": "{@@}Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust."
+    "DESCRIPTION": "{@@}Retain. NL Transfer your Weak Vulnerable and Frail to an enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Transfer your Weak Vulnerable and Frail to an enemy."
   },
   "${modID}:ShunTheLight": {
     "NAME": "Shun The Light",
@@ -360,8 +360,8 @@
   },
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",
-    "DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar-Infused card in your deck. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength for each *Solar-Infused card in your deck. NL Exhaust.",
+    "DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength. NL ${modID}:Resonates with *Solar. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Vigor and Temporary Strength. NL ${modID}:Resonates with *Solar. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (",
       " *Solar card.)",
@@ -396,7 +396,7 @@
   "${modID}:CallLightning": {
     "NAME": "Call Lightning",
     "DESCRIPTION": "{@@}Add a *Spark to your hand.",
-    "UPGRADE_DESCRIPTION": "{@@}Add an Upgraded *Spark to your hand."
+    "UPGRADE_DESCRIPTION": "{@@}Add a *Spark+ to your hand."
   },
   "${modID}:InvigoratingRoar": {
     "NAME": "Invigorating Roar",
@@ -410,10 +410,10 @@
   },
   "${modID}:MasterOfLight": {
     "NAME": "Master of Light",
-    "DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL Improved for each *Solar-Infused, *Void-Infused, and *Arc-Infused card in your deck. NL Retain. Exhaust.",
+    "DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL ${modID}:Resonates with *Solar, *Void, and *Arc respectively. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage, gain !B! Block, draw !M! card{!M!|>1=s}. NL ${modID}:Resonates with *Solar, *Void, and *Arc respectively. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "",
+      " NL ${modID}:Resonates with *Solar, *Void, and *Arc respectively. NL Exhaust.",
       "",
       ""
     ]
@@ -435,10 +435,10 @@
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",
-    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc-Infused card in your hand, draw pile, and discard pile.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. Hits an extra time for each other *Arc-Infused card in your hand, draw pile, and discard pile.",
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. ${modID}:Resonates with *Arc.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies X times. ${modID}:Resonates with *Arc.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have !M! other *Arc-Infused cards.)"
+      " NL (Hits !M! extra times.)"
     ]
   },
   "${modID}:Jotun": {

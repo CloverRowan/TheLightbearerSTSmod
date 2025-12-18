@@ -34,8 +34,8 @@ public class ExpelDarkness extends BaseCard {
 
     public ExpelDarkness() {
         super(ID, info,"void");
-        setExhaust(true);
-        setSelfRetain(false, true);
+        setSelfRetain(true);
+        setExhaust(true, false);
         tags.add(VOID);
     }
 

@@ -64,7 +64,7 @@ public class WardcliffCoil extends BaseCard {
     }
 
    public void applyPowers() {
-        this.magicNumber = this.baseMagicNumber = countCards() - 1;
+        this.magicNumber = this.baseMagicNumber = countCards();
         super.applyPowers();
         this.rawDescription = this.cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
         initializeDescription();
