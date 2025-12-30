@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static TheLightbearer.TheLightbearer.makeID;
@@ -21,7 +22,8 @@ public class FlowStatePower extends BasePower implements CloneablePowerInterface
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + (this.amount > 1 ? " cards." : " card.");
+        this.description = DESCRIPTIONS[0] + this.amount + (this.amount > 1 ? " cards." : " card.") + DESCRIPTIONS[1] +
+                this.amount + DESCRIPTIONS[2] + (this.amount > 1 ? " cards." : " card.") + DESCRIPTIONS[3];
     }
 
     @Override
@@ -30,6 +32,20 @@ public class FlowStatePower extends BasePower implements CloneablePowerInterface
         if(card.type == AbstractCard.CardType.ATTACK){
             addToBot(new DrawCardAction(this.amount));
         }
+    }
+
+    public void onInitialApplication(){
+        super.onInitialApplication();
+        AbstractDungeon.player.gameHandSize -= 1;
+    }
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        AbstractDungeon.player.gameHandSize -= stackAmount;
+    }
+
+    public void reducePower(int reduceAmount) {
+        super.reducePower(reduceAmount);
+        AbstractDungeon.player.gameHandSize += reduceAmount;
     }
 
     @Override

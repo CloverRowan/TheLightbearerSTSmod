@@ -48,4 +48,5 @@ maybe:
 	flow state infinite with 2 zero cost cards and small deck
 	rename some echo cards (dilation, harvest, shield)
 	Mintyspire upgrade text highlight
+	Make Flow State's debuff a separate power so it can be blocked by artifact?
 	

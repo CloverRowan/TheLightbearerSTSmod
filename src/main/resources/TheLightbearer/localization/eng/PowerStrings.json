@@ -70,7 +70,10 @@
   "${modID}:FlowStatePower": {
     "NAME": "Flow State",
     "DESCRIPTIONS": [
-      "When you play an attack draw #b"
+      "When you play an attack draw #b",
+      " Draw #b",
+      " less ",
+      " at the start of your turn."
     ]
   },
   "${modID}:GatheringStormPower": {

@@ -111,8 +111,8 @@
   },
   "${modID}:TrappersAmbush": {
     "NAME": "Trapper's Ambush",
-    "DESCRIPTION": "{@@}Apply !M! Weak to ALL enemies. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to an enemy. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust."
+    "DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to ALL enemies. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Innate. NL Apply !M! Weak to ALL enemies. NL Gain !M! ${modID}:Charge_Of_Light. NL Exhaust."
   },
   "${modID}:StylishExecution": {
     "NAME": "Stylish Execution",
@@ -335,8 +335,8 @@
 },
   "${modID}:FlowState": {
     "NAME": "Flow State",
-    "DESCRIPTION": "{@@}Ethereal. NL Whenever you play an Attack, draw 1 card.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you play an Attack, draw 1 card."
+    "DESCRIPTION": "{@@}Whenever you play an Attack, draw 1 card. NL Draw 1 less card at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play an Attack, draw 1 card. NL Draw 1 less card at the start of your turn."
   },
   "${modID}:Deadshot": {
     "NAME": "Deadshot",

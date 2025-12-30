@@ -20,7 +20,7 @@ public class FlowState extends BaseCard {
             CardType.POWER, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             CardRarity.UNCOMMON, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            3
+            2
     );
     private static final int MAGIC_NUMBER = 1;
 
@@ -29,9 +29,9 @@ public class FlowState extends BaseCard {
     public FlowState() {
         super(ID, info, "arc");
         setMagic(MAGIC_NUMBER);
-         //setCostUpgrade(3);
+         setCostUpgrade(1);
         tags.add(ARC);
-        setEthereal(true,false);
+        //setEthereal(true,false);
     }
 
     @Override
