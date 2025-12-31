@@ -8,7 +8,7 @@ Liquid fate:
     Broken interaction with sacred bark
     Make it offer one of each element instead of picking without knowing?
     Exhaust effect when selecting an option, use DiscoveryAction instead?
-Endless agony but it draws (0 cost void attack)
+    Switch to just be attack potion but supers?
 
 Cards:
     buff telesto
@@ -28,6 +28,7 @@ Art:
 	End screen after heart
 	Big spinning energy orb
 	More card effect animations
+	Void damage effect (recolor poison purple maybe)
 	Sound effects for exotic weapons
         Jotunn
         Monte Carlo
