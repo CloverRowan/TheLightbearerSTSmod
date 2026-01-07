@@ -201,7 +201,7 @@
   },
   "${modID}:ConsumeTheFuture": {
     "NAME": "Consume The Future",
-    "DESCRIPTION": "{@@}Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted NL Randomize the cost of cards in your hand NL Exhaust.",
+    "DESCRIPTION": "{@@}Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted NL Randomize the cost of cards in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "{@@}Retain NL Exhaust your draw pile. NL Add a new random card to your hand for each card Exhausted. NL Randomize the cost of cards in your hand. NL Exhaust."
   },
   "${modID}:FearTheVoid": {
@@ -245,8 +245,8 @@
   },
   "${modID}:CallOnLight": {
     "NAME": "Call On Light",
-    "DESCRIPTION": "Gain !M! ${modID}:Charge_Of_Light.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! ${modID}:Charge_Of_Light."
+    "DESCRIPTION": "{@@}Gain !M! ${modID}:Charge_Of_Light.",
+    "UPGRADE_DESCRIPTION": "{@@}Retain. NL Gain !M! ${modID}:Charge_Of_Light."
   },
   "${modID}:Equalize": {
     "NAME": "Equalize",
@@ -316,7 +316,7 @@
   "${modID}:GatheringStorm": {
     "NAME": "Gathering Storm",
     "DESCRIPTION": "{@@}${modID}:Super NL Apply !M! ${modID}:Gathering_Storm to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "${modID}:Super NL Apply !M! ${modID}:Gathering_Storm to ALL enemies."
+    "UPGRADE_DESCRIPTION": "{@@}${modID}:Super NL Apply !M! ${modID}:Gathering_Storm to ALL enemies."
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
@@ -494,7 +494,7 @@
   "${modID}:ShadowshotToken": {
     "NAME": "Shadowshot",
     "DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Ethereal NL {@@}${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "{@@}Ethereal NL ${modID}:Super NL Apply ${modID}:Corpse_Explosion NL Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL Exhaust."
   },
   "${modID}:SiphonEnergy": {
     "NAME": "Siphon Energy",

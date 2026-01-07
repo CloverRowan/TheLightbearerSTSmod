@@ -25,11 +25,11 @@ public class Telesto extends BaseCard {
             CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             2
     );
-    private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 2;
+    private static final int DAMAGE = 10;
+    private static final int UPG_DAMAGE = 5;
 
-    private static final int MAGIC_NUMBER = 10;
-    private static final int UPG_MAGIC_NUMBER = 5;
+    private static final int MAGIC_NUMBER = 4;
+    private static final int UPG_MAGIC_NUMBER = 2;
 
     public Telesto() {
         super(ID, info,"void");

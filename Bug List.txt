@@ -12,8 +12,7 @@ Cards:
 Art:
 	Custom cardback for non-element cards
 	Art for a few cards
-	    Liquid Fate choices ChooseArc/Void/Solar
-	    Modified strike or defend to be more visually distinct
+	    Combination blow?
 	    Touch of Void
 	    Siphon Energy
 	    Gunpowder gamble
