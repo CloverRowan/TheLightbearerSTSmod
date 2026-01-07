@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.ArrayList;
 
 import static TheLightbearer.util.CustomTags.VOID;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+
 @AutoAdd.Ignore
 @AutoAdd.NotSeen
 public class ChooseVoid extends BaseCard {
@@ -49,6 +51,11 @@ public class ChooseVoid extends BaseCard {
         AbstractCard c = pickVoidCard();
         addToBot(new MakeTempCardInHandAction(c));
         c.setCostForTurn(0);
+        if(player.hasRelic("SacredBark")){
+            AbstractCard d = pickVoidCard();
+            addToBot(new MakeTempCardInHandAction(d));
+            d.setCostForTurn(0);
+        }
 
     }
     @Override

@@ -17,13 +17,16 @@ import javassist.expr.FieldAccess;
 
 import java.util.ArrayList;
 
+import static TheLightbearer.character.LightbearerCharacter.Enums.THE_LIGHTBEARER;
+
 public class AddCommuneButtonPatch {
     @SpirePatch(clz = CampfireUI.class, method = "initializeButtons")
     public static class AddKeys {
         @SpireInsertPatch(locator = Locator.class)
         public static void patch(CampfireUI __instance, ArrayList<AbstractCampfireOption> ___buttons) {
             boolean active = true;
-            ___buttons.add(new CommuneOption(active));
+            if(AbstractDungeon.player.chosenClass == THE_LIGHTBEARER)
+                ___buttons.add(new CommuneOption(active));
         }
 /*
         @SpireInstrumentPatch

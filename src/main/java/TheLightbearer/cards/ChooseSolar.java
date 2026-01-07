@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.ArrayList;
 
 import static TheLightbearer.util.CustomTags.SOLAR;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+
 @AutoAdd.Ignore
 @AutoAdd.NotSeen
 public class ChooseSolar extends BaseCard {
@@ -49,6 +51,11 @@ public class ChooseSolar extends BaseCard {
         AbstractCard c = pickSolarCard();
         addToBot(new MakeTempCardInHandAction(c));
         c.setCostForTurn(0);
+        if(player.hasRelic("SacredBark")){
+            AbstractCard d = pickSolarCard();
+            addToBot(new MakeTempCardInHandAction(d));
+            d.setCostForTurn(0);
+        }
     }
     @Override
     public AbstractCard makeCopy() {

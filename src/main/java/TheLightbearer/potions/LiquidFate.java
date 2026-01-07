@@ -17,6 +17,8 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import java.util.ArrayList;
 
+import static TheLightbearer.character.LightbearerCharacter.Enums.THE_LIGHTBEARER;
+
 public class LiquidFate extends BasePotion {
 
     private static final String ID = TheLightbearer.makeID("LiquidFate");
@@ -29,7 +31,7 @@ public class LiquidFate extends BasePotion {
         this.labOutlineColor = Color.GRAY.cpy();
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
-
+        this.playerClass = THE_LIGHTBEARER;
     }
 
     public void use(AbstractCreature target) {
@@ -39,6 +41,8 @@ public class LiquidFate extends BasePotion {
             elementChoices.add(new ChooseSolar());
             elementChoices.add(new ChooseVoid());
             addToBot(new ChooseOneAction(elementChoices));
+//            if(this.potency == 2)
+//                addToBot(new ChooseOneAction(elementChoices));
         }
 
     }
@@ -49,7 +53,10 @@ public class LiquidFate extends BasePotion {
 
     @Override
     public String getDescription() {
-        return potionStrings.DESCRIPTIONS[0] + potency + potionStrings.DESCRIPTIONS[1];
+        if(this.potency == 1)
+            return potionStrings.DESCRIPTIONS[0] + potency + potionStrings.DESCRIPTIONS[1];
+        else
+            return potionStrings.DESCRIPTIONS[0] + potency + potionStrings.DESCRIPTIONS[2];
     }
 
     public BasePotion makeCopy() {

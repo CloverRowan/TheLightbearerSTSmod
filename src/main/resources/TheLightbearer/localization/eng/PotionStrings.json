@@ -18,8 +18,9 @@
   },  "${modID}:LiquidFate": {
   "NAME": "Liquid Fate",
   "DESCRIPTIONS": [
-    "Chose Arc, Solar, or Void gain #b",
-    " Card of that type, it costs #b0 this turn. "
+    "Chose Arc, Solar, or Void. Gain #b",
+    " card of that type, it costs #b0 this turn.",
+    " cards of that type, they cost #b0 this turn. "
   ]
 }
 }

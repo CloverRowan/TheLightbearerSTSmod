@@ -4,21 +4,15 @@ make github public
 
 Add Traveler back as a relic that does something
 Make commune campfire transition smoother
-Liquid fate:
-    Broken interaction with sacred bark
-    Make it offer one of each element instead of picking without knowing?
-    Exhaust effect when selecting an option, use DiscoveryAction instead?
-    Switch to just be attack potion but supers?
 
 Cards:
-    buff telesto
     Reword Master of Light's description to be more clear
     Wardcliff coil interacts strangely with Chemical X
 
 Art:
 	Custom cardback for non-element cards
 	Art for a few cards
-	    Liquid Fate choices ChooseArc/Void/Solar (if we keep it like that)
+	    Liquid Fate choices ChooseArc/Void/Solar
 	    Modified strike or defend to be more visually distinct
 	    Touch of Void
 	    Siphon Energy

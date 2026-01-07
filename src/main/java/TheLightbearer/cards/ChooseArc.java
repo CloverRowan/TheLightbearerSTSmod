@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.ArrayList;
 
 import static TheLightbearer.util.CustomTags.ARC;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 @AutoAdd.Ignore
 @AutoAdd.NotSeen
@@ -31,7 +32,7 @@ public class ChooseArc extends BaseCard {
 
     public ChooseArc() {
         super(ID, info, "arc");
-}
+    }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -47,14 +48,19 @@ public class ChooseArc extends BaseCard {
         }
         return list.get(AbstractDungeon.cardRng.random(list.size() - 1));
     }
-        public void onChoseThisOption () {
-            AbstractCard c = pickArcCard();
-            addToBot(new MakeTempCardInHandAction(c));
-            c.setCostForTurn(0);
-        }
-        @Override
-        public AbstractCard makeCopy() {
-            return new ChooseArc();
+    public void onChoseThisOption () {
+        AbstractCard c = pickArcCard();
+        addToBot(new MakeTempCardInHandAction(c));
+        c.setCostForTurn(0);
+        if(player.hasRelic("SacredBark")){
+            AbstractCard d = pickArcCard();
+            addToBot(new MakeTempCardInHandAction(d));
+            d.setCostForTurn(0);
         }
     }
+    @Override
+    public AbstractCard makeCopy() {
+        return new ChooseArc();
+    }
+}
 

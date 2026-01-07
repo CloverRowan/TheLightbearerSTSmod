@@ -430,8 +430,8 @@
   },
   "${modID}:Telesto": {
     "NAME": "Telesto",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers early when a card is Exhausted.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers early when a card is Exhausted."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers an extra time whenever a card is Exhausted.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers an extra time whenever a card is Exhausted."
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",
@@ -463,18 +463,18 @@
   },
   "${modID}:ChooseArc": {
     "NAME": "Choose Arc",
-    "DESCRIPTION": "{@@}Add a random *Arc-Infused card to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Arc-Infused cards to your hand. They cost 0 this turn."
+    "DESCRIPTION": "{@@}Add a random [#00DDDD]Arc-Infused[] card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random [#00DDDD]Arc-Infused[] cards to your hand. They cost 0 this turn."
   },
   "${modID}:ChooseVoid": {
     "NAME": "Choose Void",
-    "DESCRIPTION": "{@@}Add a random *Void-Infused card to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Void-Infused cards to your hand. They cost 0 this turn."
+    "DESCRIPTION": "{@@}Add a random [#DD82DD]Void-Infused[] card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random [#DD82DD]Void-Infused[] cards to your hand. They cost 0 this turn."
   },
   "${modID}:ChooseSolar": {
   "NAME": "Choose Solar",
-    "DESCRIPTION": "{@@}Add a random *Solar-Infused card to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Add 2 random *Solar-Infused cards to your hand. They cost 0 this turn."
+    "DESCRIPTION": "{@@}Add a random [#FFA500]Solar-Infused[] card to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "{@@}Add 2 random [#FFA500]Solar-Infused[] cards to your hand. They cost 0 this turn."
   },
   "${modID}:Thorn": {
     "NAME": "Thorn",

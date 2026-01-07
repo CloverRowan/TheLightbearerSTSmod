@@ -66,7 +66,7 @@ public class TelestoPower extends BasePower implements CloneablePowerInterface, 
             //logger.info("passed logic gate");
             //addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
             addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
-            addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
+            //addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
         }
     }
 

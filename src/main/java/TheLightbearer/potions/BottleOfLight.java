@@ -1,9 +1,11 @@
 package TheLightbearer.potions;
 
 import TheLightbearer.TheLightbearer;
+import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.powers.ChargeOfLightPower;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -12,6 +14,7 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
+import static TheLightbearer.character.LightbearerCharacter.Enums.THE_LIGHTBEARER;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class BottleOfLight extends BasePotion {
@@ -25,6 +28,7 @@ public class BottleOfLight extends BasePotion {
         this.labOutlineColor = Color.GRAY.cpy();
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
+        this.playerClass = THE_LIGHTBEARER;
 
     }
     public void use(AbstractCreature target) {
