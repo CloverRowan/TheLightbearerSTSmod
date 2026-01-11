@@ -22,7 +22,7 @@ public class ElectroPlating extends BaseCard {
             -1
     );
     private static final int MAGIC_NUMBER = 2;
-    private static final int UPG_MAGIC_NUMBER = 1;
+    private static final int UPG_MAGIC_NUMBER = 0;
     private boolean freeToPlayOnce = false;
 
     public ElectroPlating() {
@@ -34,7 +34,7 @@ public class ElectroPlating extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-       addToBot(new ElectroPlatingAction(p,this.magicNumber,this.upgraded,this.freeToPlayOnce,energyOnUse));
+        addToBot(new ElectroPlatingAction(p, this.magicNumber, this.upgraded, this.freeToPlayOnce, energyOnUse));
     }
 
     @Override

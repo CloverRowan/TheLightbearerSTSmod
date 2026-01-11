@@ -325,8 +325,8 @@
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
-    "DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Metallicize for every energy spent."
+    "DESCRIPTION": "{@@}Gain !M! Metallicize X times.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Metallicize X+1 times."
   },
   "${modID}:ArcStaff": {
     "NAME": "Arc Staff",
@@ -355,8 +355,8 @@
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",
-    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact."
+    "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
   },
   "${modID}:OnYourMark": {
     "NAME": "On Your Mark",

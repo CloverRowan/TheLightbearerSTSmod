@@ -33,6 +33,9 @@ public class ElectroPlatingAction extends AbstractGameAction {
             effect += 2;
             p.getRelic(ChemicalX.ID).flash();
         }
+        if(upgraded){
+            effect += 1;
+        }
         if (effect > 0) {
             for (int i = 0; i < effect; ++i) {
 
