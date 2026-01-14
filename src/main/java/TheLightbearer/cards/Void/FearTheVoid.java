@@ -5,12 +5,18 @@ import TheLightbearer.cards.BaseCard;
 import TheLightbearer.character.LightbearerCharacter;
 import TheLightbearer.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import static TheLightbearer.util.CustomTags.*;
 
@@ -26,8 +32,8 @@ public class FearTheVoid extends BaseCard {
     );
     private static final int DAMAGE = 15;
     private static final int UPG_DAMAGE = 5;
-    private static final int MAGIC_NUMBER = 2;
-    private static final int UPG_MAGIC_NUMBER = 3;
+    private static final int MAGIC_NUMBER = 1;
+    private static final int UPG_MAGIC_NUMBER = 0;
 
 
 
@@ -41,8 +47,50 @@ public class FearTheVoid extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot( new ScryAction(this.magicNumber));
+        int voidCount = countVoid();
+        if(voidCount > 0){
+            addToBot(new ScryAction(voidCount));
+        }
+        this.rawDescription = (this.upgraded ? this.cardStrings.UPGRADE_DESCRIPTION: this.cardStrings.DESCRIPTION);
+        this.initializeDescription();
     }
+
+    private int countVoid(){
+        int count = 0;
+        if(AbstractDungeon.isPlayerInDungeon()) {
+            for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+                if (c.tags.contains(VOID))
+                    count++;
+            }
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.tags.contains(VOID))
+                    count++;
+            }
+            for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+                if (c.tags.contains(VOID))
+                    count++;
+            }
+        }
+        return count;
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = (this.upgraded ? this.cardStrings.UPGRADE_DESCRIPTION: this.cardStrings.DESCRIPTION)
+                + this.cardStrings.EXTENDED_DESCRIPTION[0] + countVoid();
+        if(countVoid() == 1){
+            this.rawDescription +=  this.cardStrings.EXTENDED_DESCRIPTION[1];
+        }else{
+            this.rawDescription += this.cardStrings.EXTENDED_DESCRIPTION[2];
+        }
+        this.initializeDescription();
+    }
+
+    public void onMoveToDiscard() {
+        this.rawDescription = (this.upgraded ? this.cardStrings.UPGRADE_DESCRIPTION: this.cardStrings.DESCRIPTION);
+        this.initializeDescription();
+    }
+
 
     @Override
     public AbstractCard makeCopy() {

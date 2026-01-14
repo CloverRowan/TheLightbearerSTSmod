@@ -206,8 +206,13 @@
   },
   "${modID}:FearTheVoid": {
     "NAME": "Fear The Void",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL Scry !M!.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Scry !M!."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Scry !M!. NL Scrying ${modID}:Resonates with [#DD82DD]Void[].",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL Scry !M!. NL Scrying ${modID}:Resonates with [#DD82DD]Void[].",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " [#DD82DD]Void[] card.)",
+      " [#DD82DD]Void[] cards.)"
+    ]
   },
   "${modID}:FeedTheVoid": {
     "NAME": "Feed The Void",
