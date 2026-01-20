@@ -15,7 +15,7 @@ import static TheLightbearer.TheLightbearer.makeID;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 
-public class TripminePower extends BasePower implements CloneablePowerInterface, NonStackablePower {
+public class TripminePower extends BasePower implements CloneablePowerInterface {
     public static final String POWER_ID = makeID("TripminePower");
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = true;
@@ -33,13 +33,14 @@ public class TripminePower extends BasePower implements CloneablePowerInterface,
         if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != this.owner) {
             this.flash();
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters)
-                this.addToTop(new DamageAction(mo, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+                if(!mo.isDead && !mo.isDeadOrEscaped())
+                    this.addToTop(new DamageAction(mo, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
         }
 
         return damageAmount;
     }
     public void atStartOfTurn() {
-        this.addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, "Flame Barrier"));
+        this.addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, POWER_ID));
     }
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];

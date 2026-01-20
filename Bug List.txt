@@ -8,6 +8,9 @@ Make commune campfire transition smoother
 Cards:
     Reword Master of Light's description to be more clear
     Wardcliff coil interacts strangely with Chemical X
+    Make Call Lightning not need a power (need to patch onCardDraw probably)
+    Add visual indicator for when Deadshot is active
+    Make numbers green when you have dex for Barrier of Void and strength for Acrobat's Dodge
 
 Art:
 	Custom cardback for non-element cards

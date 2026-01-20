@@ -245,7 +245,7 @@ public class LightbearerCharacter extends CustomPlayer {
 
     public void preBattlePrep(){
         super.preBattlePrep();
-        AbstractDungeon.player.powers.add(new ChargeOfLightPower(AbstractDungeon.player,0));
+        AbstractDungeon.player.powers.add(new ChargeOfLightPower(AbstractDungeon.player,1));
     }
 
 }

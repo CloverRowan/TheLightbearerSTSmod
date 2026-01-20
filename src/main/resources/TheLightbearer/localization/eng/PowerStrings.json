@@ -113,10 +113,10 @@
   "${modID}:TelestoPower": {
     "NAME": "Telesto Bolts",
     "DESCRIPTIONS": [
-      "At the start of its NEXT turn, loses #b",
-      " HP.",
-      "At the start of its turn, loses #b",
-      " NL Triggers early when a card is Exhausted."
+      "For the next two turns ",
+      "This turn ",
+      "whenever a card is Exhausted, loses #b",
+      " HP."
     ]
   },
   "${modID}:IncandescencePower": {

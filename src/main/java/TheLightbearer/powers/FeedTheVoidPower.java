@@ -19,7 +19,7 @@ public class FeedTheVoidPower extends BasePower implements CloneablePowerInterfa
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + " card" + (this.amount > 1 ? "s." :".");
+        this.description = DESCRIPTIONS[0] + this.amount + " card" + (this.amount > 1 ? "s" :"") + "in your hand.";
     }
 
     @Override

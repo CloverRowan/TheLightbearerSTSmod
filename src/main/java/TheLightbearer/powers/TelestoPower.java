@@ -18,8 +18,7 @@ import static TheLightbearer.TheLightbearer.logger;
 import static TheLightbearer.TheLightbearer.makeID;
 
 
-public class TelestoPower extends BasePower implements CloneablePowerInterface, EnemyOnExhaust.EnemyOnExhaustPower,
-            HealthBarRenderPower {
+public class TelestoPower extends BasePower implements CloneablePowerInterface, EnemyOnExhaust.EnemyOnExhaustPower{
         public static final String POWER_ID = makeID("TelestoPower");
         private static final PowerType TYPE = PowerType.DEBUFF;
         private static final boolean TURN_BASED = false;
@@ -33,9 +32,9 @@ public class TelestoPower extends BasePower implements CloneablePowerInterface, 
 
         public void updateDescription() {
             if(counter == 0){
-                this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + DESCRIPTIONS[3];
+                this.description = DESCRIPTIONS[0] + DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[3];
             }else{
-                this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[1]+ DESCRIPTIONS[3];
+                this.description = DESCRIPTIONS[1] + DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[3];
             }
 
         }
@@ -49,7 +48,7 @@ public class TelestoPower extends BasePower implements CloneablePowerInterface, 
                     !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 1){
                 flashWithoutSound();
                 //addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
-                addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
+                //addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
                 addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
             }else if((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
                     !AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.counter == 0){
@@ -71,25 +70,25 @@ public class TelestoPower extends BasePower implements CloneablePowerInterface, 
     }
 
     @Override
-        public AbstractPower makeCopy() {
-            return new TheLightbearer.powers.GatheringStormPower(owner, amount);
+    public AbstractPower makeCopy() {
+            return new TheLightbearer.powers.TelestoPower(owner, amount);
         }
 
-
-        @Override
-        public int getHealthBarAmount() {
-            if(counter ==1){
-                return this.amount;
-            }
-            else{
-                return 0;
-            }
-        }
-
-        @Override
-        public Color getColor() {
-            return Color.ROYAL;
-        }
+//
+//        @Override
+//        public int getHealthBarAmount() {
+//            if(counter ==1){
+//                return this.amount;
+//            }
+//            else{
+//                return 0;
+//            }
+//        }
+//
+//        @Override
+//        public Color getColor() {
+//            return Color.ROYAL;
+//        }
     }
 
 

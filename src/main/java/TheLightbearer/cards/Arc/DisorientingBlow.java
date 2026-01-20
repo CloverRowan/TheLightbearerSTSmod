@@ -26,7 +26,7 @@ public class DisorientingBlow extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 7;
     private static final int UPG_DAMAGE = 2;
 
     private static final int MAGIC_NUMBER = 2;

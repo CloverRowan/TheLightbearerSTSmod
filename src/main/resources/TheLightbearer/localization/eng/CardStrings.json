@@ -196,8 +196,12 @@
   },
   "${modID}:BarrierOfVoid": {
     "NAME": "Barrier of Void",
-    "DESCRIPTION": "{@@}Gain !B! Block for every card in your exhaust pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block for every card in your exhaust pile. NL Exhaust."
+    "DESCRIPTION": "{@@}Gain !M! Block for every card in your exhaust pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !M! Block for every card in your exhaust pile. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+    " NL (Gain ",
+    " Block.)"
+  ]
   },
   "${modID}:ConsumeTheFuture": {
     "NAME": "Consume The Future",
@@ -375,8 +379,8 @@
   },
   "${modID}:CalculatedSpark": {
   "NAME": "Calculated Spark",
-  "DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Energy next turn.",
-  "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Gain !M! Energy next turn."
+  "DESCRIPTION": "{@@}Gain !B! Block. NL Next turn, gain [E] [E].",
+  "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block. NL Next turn, gain [E] [E]."
 },
   "${modID}:StaticPass": {
     "NAME": "Static Pass",
@@ -435,8 +439,8 @@
   },
   "${modID}:Telesto": {
     "NAME": "Telesto",
-    "DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers an extra time whenever a card is Exhausted.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL At the start of the enemy's NEXT turn, it takes !M! damage. Triggers an extra time whenever a card is Exhausted."
+    "DESCRIPTION": "{@@}Deal !D! damage. NL For the next two turns, whenever a card is Exhausted the enemy loses !M! HP.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage. NL For the next two turns, whenever a card is Exhausted the enemy loses !M! HP."
   },
   "${modID}:WardcliffCoil": {
     "NAME": "Wardcliff Coil",

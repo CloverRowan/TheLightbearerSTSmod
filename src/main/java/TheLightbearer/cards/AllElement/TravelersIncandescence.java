@@ -1,4 +1,4 @@
-package TheLightbearer.cards.Solar;
+package TheLightbearer.cards.AllElement;
 
 
 import TheLightbearer.cards.BaseCard;
@@ -11,7 +11,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-import static TheLightbearer.util.CustomTags.NONE;
+import static TheLightbearer.util.CustomTags.*;
+import static TheLightbearer.util.CustomTags.ARC;
 
 public class TravelersIncandescence extends BaseCard {
     //Named Traveler's Might in game
@@ -29,6 +30,9 @@ public class TravelersIncandescence extends BaseCard {
     private static  final int costUpgrade = 2;
     public TravelersIncandescence() {
         super(ID, info, "none");
+        tags.add(SOLAR);
+        tags.add(VOID);
+        tags.add(ARC);
         setMagic(MAGIC_NUMBER);
         setEthereal(baseEthereal,upgEthereal);
         setCostUpgrade(costUpgrade);

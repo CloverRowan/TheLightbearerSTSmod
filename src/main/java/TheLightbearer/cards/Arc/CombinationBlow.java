@@ -58,6 +58,15 @@ public class CombinationBlow extends BaseCard {
         return new CombinationBlow();
     }
 
+    @Override
+    public AbstractCard makeSameInstanceOf(){
+        AbstractCard card = makeStatEquivalentCopy();
+        card.uuid = this.uuid;
+        card.misc = this.misc;
+        card.magicNumber = card.baseMagicNumber = this.baseMagicNumber;
+        return card;
+    }
+
     public void applyPowers(){
         this.baseMagicNumber = this.misc;
         this.magicNumber = this.baseMagicNumber;

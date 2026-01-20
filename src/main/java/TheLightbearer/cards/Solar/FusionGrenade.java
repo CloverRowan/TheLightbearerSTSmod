@@ -64,32 +64,6 @@ public class FusionGrenade extends BaseCard {
     }
 
     @Override
-    public void triggerOnGlowCheck() {
-        if(fusionCheck()) {
-            glowColor = GOLD_BORDER_GLOW_COLOR;
-        }
-        else {
-            glowColor = BLUE_BORDER_GLOW_COLOR;
-        }
-    }
-
-    private boolean fusionCheck(){
-        boolean hasArc = false;
-        boolean hasVoid = false;
-        if(AbstractDungeon.isPlayerInDungeon()) {
-            for (AbstractCard c : AbstractDungeon.player.hand.group) {
-                if (c.tags.contains(ARC)) {
-                    hasArc = true;
-                }
-                if (c.tags.contains(VOID)) {
-                    hasVoid = true;
-                }
-            }
-        }
-        return hasArc && hasVoid;
-    }
-
-    @Override
     public AbstractCard makeCopy() { //Optional
         return new FusionGrenade();
     }
