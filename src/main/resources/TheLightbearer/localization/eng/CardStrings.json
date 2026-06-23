@@ -329,8 +329,8 @@
   },
   "${modID}:LethalCurrent": {
     "NAME": "Lethal Current",
-    "DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies loses !M! HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies loses !M! HP. NL Exhaust."
+    "DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies lose !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Whenever you play a card this turn, ALL Enemies lose !M! HP. NL Exhaust."
   },
   "${modID}:ElectroPlating": {
     "NAME": "Electro Plating",
@@ -359,8 +359,8 @@
   },
   "${modID}:FusionGrenade": {
     "NAME": "Fusion Grenade",
-    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL For each enemy hit, ALL enemies lose !M! Strength this turn.",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL For each enemy hit, ALL enemies lose !M! Strength this turn."
+    "DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL For each enemy hit, ALL enemies lose !M! Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage to ALL enemies. NL For each enemy hit, ALL enemies lose !M! Strength. Nl Exhaust"
   },
   "${modID}:HeatVenting": {
     "NAME": "Heat Venting",

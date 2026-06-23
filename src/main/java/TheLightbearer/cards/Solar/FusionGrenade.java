@@ -45,6 +45,7 @@ public class FusionGrenade extends BaseCard {
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(SOLAR);
         this.isMultiDamage = true;
+        setExhaust(true);
     }
 
     @Override
@@ -57,10 +58,6 @@ public class FusionGrenade extends BaseCard {
         }
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters)
             addToBot(new ApplyPowerAction(mo, p, new StrengthPower(mo, -this.magicNumber*aliveMonsters), -this.magicNumber*aliveMonsters, true, AbstractGameAction.AttackEffect.NONE));
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!mo.hasPower("Artifact"))
-                addToBot(new ApplyPowerAction(mo, p, new GainStrengthPower(mo, this.magicNumber*aliveMonsters), this.magicNumber*aliveMonsters, true, AbstractGameAction.AttackEffect.NONE));
-        }
     }
 
     @Override

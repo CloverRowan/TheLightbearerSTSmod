@@ -64,7 +64,7 @@ public class WardcliffCoilAction extends AbstractGameAction {
 
 
             for (int i = 0; i < effect; ++i) {
-                addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) this.p, this.multiDamage, this.damageType, AbstractGameAction.AttackEffect.NONE, true));
+                addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) this.p, this.multiDamage, this.damageType, AttackEffect.BLUNT_LIGHT, true));
 
             }
         }
